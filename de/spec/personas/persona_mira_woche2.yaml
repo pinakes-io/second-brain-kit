@@ -1,0 +1,62 @@
+# Persona (erfunden, keine realen Daten) – Trockenlauf 4, 03.11.2026; Fortsetzung von persona-mira
+id: persona-mira-woche2
+fiktiv: true
+autor: claude
+sprache: de
+kurz: Mira (persona-mira) kommt nach einer Woche zurück, Ablage steht; Stufe 2 über mehrere Sitzungen, schaltet den Bereich
+  Termine dazu.
+geraet: laptop
+zeit_minuten: 20
+digital: hoch
+testet:
+- Rückkehr nach einer Woche
+- Stufe 2 über Sitzungen
+- Bereich nachträglich zuschalten
+- Wochenrückblick-Erinnerung
+- später fragen
+antworten:
+  s1.zweck:
+  - Wissen und Recherchen sammeln
+  - Texte schreiben
+  - Entscheidungen vorbereiten
+  s1.felder:
+  - Arbeit, Beruf, Ausbildung
+  s1.zeit: 30 bis 60 Minuten
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Laptop oder Chromebook im Browser
+  - Smartphone
+  s1.grenzen:
+  - 'Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)'
+  - Geldbeträge
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+nachruesten:
+  s1.felder:
+  - Termine, Post, Ämter
+ablauf:
+- 'Woche 2, neuer Chat: "Hallo, weiter mit den Fragen"'
+- beantwortet eine Stufe-2-Runde, sagt bei zwei Fragen "später"
+- 'schreibt: "Ich will auch Termine und Post drin haben"'
+- Wochenrückblick ist neun Tage her
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - arbeit
+  - entscheidungen
+  - wissen
+  - schreibstil
+  module_nachher:
+  - person
+  - werkzeuge
+  - arbeit
+  - entscheidungen
+  - wissen
+  - schreibstil
+  - termine
+erwartung_nutzer:
+  skills:
+  - decision-clarify
+  - knowledge-note
+  - appointment-prep

@@ -1,0 +1,30 @@
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: kern
+name: Kern (immer da, kein Modul)
+version: 0.1
+art: kern
+aktivierung: {immer: true}
+skills: [setup-brain, onboarding-interview, fact-check, weekly-review, brain-check]
+skills_nachruestbar: [area-manager, skill-tailor]   # Entscheid 03.11.: Bereiche im laufenden Betrieb dazunehmen, pausieren, aktualisieren; außerhalb des Upload-Budgets; skill-tailor: Zuschnitt aus Vorlagen, Entscheid 03.11. (Auftrag START_HERE)
+vorlagen:
+  - {name: 00_Status, art: doc, hinweis: "Index, Versionsstempel, Feldkarte, Ablage-Karte, Grenzen"}
+  - {name: 01_Profil, art: doc}
+  - {name: 02_Offene_Fragen, art: doc}
+  - {name: Eingang, art: doc}
+  - {name: Journal, art: doc}
+  - {name: Fakten-Ledger, art: doc}
+  - {name: Wochenplan, art: doc}
+  - {name: Archiv, art: ordner}
+ablage_karte:
+  - "Stand, Index, Feldkarte, Grenzen -> 00_Status"
+  - "Angaben zur Person -> 01_Profil"
+  - "Noch offene Fragen -> 02_Offene_Fragen"
+  - "Schnell Abgelegtes, unsortiert -> Eingang"
+  - "Was passiert ist und warum -> Journal"
+  - "Zahlen, Fristen, Regeln mit Quelle -> Fakten-Ledger"
+  - "Plan der Woche -> Wochenplan"
+  - "Arbeitsregeln und Vorlieben -> 01_Profil, Abschnitt Regeln"
+profilfelder: {}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

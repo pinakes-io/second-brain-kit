@@ -1,0 +1,23 @@
+# 2026-11-03 (dry run 4, decision): fields generalised, leftovers from the reference case removed, fields for the stage 2 catalogue.
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+# 2026-11-01: skills plain-prose-de and plain-prose-en entered (decision 2026-11-01: two skills,).
+id: schreibstil
+name: Writing style
+version: 0.2
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Write texts"}]}
+kanal_detail: chat
+skills: [plain-prose-de, plain-prose-en]
+skills_nachruestbar: [style-profile]   # decision 2026-11-03: offered at the end of the interview, not in the upload budget
+anweisungsbaustein: |
+  ## Area Writing style
+  - Edit German texts ("rework", "tighten", "plain prose") with plain-prose-de; English texts with plain-prose-en. You talk to me in English, only the text itself stays in its language.
+  - Style rules and words are in the Style_Profile. You only add new rules there after my agreement.
+vorlagen: [{name: Style_Profile, art: doc}]
+ablage_karte: ["Sample texts, style rules, words I (do not) use, English house rule -> Style_Profile"]
+profilfelder:
+  textarten: {typ: liste, pflicht: false}
+  beispieltext: {typ: text, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

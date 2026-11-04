@@ -1,0 +1,38 @@
+# Example workflow, NOT active. To use it, copy this file to .github/workflows/checks.yml
+# after the repository has been scanned for secrets and you are happy with what runs on every push.
+name: checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pyyaml
+      - run: python tools/spec_pruefen.py en/spec
+      - run: python tools/spec_pruefen.py de/spec
+      - run: python tools/skelett.py pruefen en
+      - run: python tools/skelett.py pruefen de
+      - run: python tools/plain_prose_pruefen.py skills en
+      - run: python tools/plain_prose_pruefen.py skills de
+      - run: python tools/pack_pruefen.py skill de
+      - run: python tools/protokoll_pruefen.py skill de
+      - run: python tools/pack_pruefen.py skill en
+      - run: python tools/protokoll_pruefen.py skill en
+      - run: python tools/nachtraeglich_pruefen.py de/spec
+      - run: python tools/nachtraeglich_pruefen.py en/spec
+      - run: python tools/vorlage_pruefen.py pruefen .
+      - run: python tools/vorlage_pruefen.py selbsttest .
+      - run: python tools/lang_parity.py pruefen de en
+      - run: python tools/lang_parity.py selbsttest de en
+      - run: python tools/zip_bauen.py en
+      - run: python tools/zip_bauen.py de

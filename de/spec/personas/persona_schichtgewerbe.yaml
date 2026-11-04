@@ -1,0 +1,74 @@
+id: persona-schichtgewerbe
+fiktiv: true
+autor: unabhaengiger-agent
+sprache: de
+kurz: Mitte 30, Wechselschicht im Lager, nebenbei ein kleines angemeldetes Gewerbe für Entrümpelungen, seit kurzem getrennt
+  und mitten im Umzug; hat nur ein Smartphone und tippt in Pausen.
+geraet: handy
+zeit_minuten: 5
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  - Entscheidungen vorbereiten
+  s1.felder:
+  - Arbeit, Beruf, Ausbildung
+  - Termine, Post, Ämter
+  - eigener Bereich (bitte benennen)
+  s1.felder.eigen: gewerbe
+  s1.zeit: unter 15 Minuten
+  s1.wer: ich allein (Empfohlen)
+  s1.wer.begleitung: überspringen
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Smartphone
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  - Angaben zu anderen Kindern unter 18
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+ablauf:
+- öffnet claude.ai in der Pause im Handy-Browser, nicht in einer App.
+- antwortet auf s1.zweck nur mit "termine und so" statt eine Option zu wählen.
+- antwortet auf s1.felder mit "arbeit, ämter, mein gewerbe" in einer Zeile.
+- fragt zurück "arbeit heißt hauptjob oder gewerbe?" bevor er s1.felder bestätigt.
+- antwortet auf s1.zeit mit "kaum, 5 min".
+- lässt s1.wer.begleitung leer, weil die Folgefrage gar nicht kommen sollte.
+- bricht nach Runde 1 ab, weil die Pause vorbei ist; schließt den Browser-Tab ohne Rückmeldung.
+- 'kommt nach 7 Tagen in einem neuen Chat zurück und schreibt: "hi, wo waren wir? hab nicht viel zeit".'
+- erinnert sich nicht mehr, was er in Runde 1 gesagt hat, und will es nicht noch mal eintippen.
+- antwortet in Runde 2 auf s1.grenzen erst "keine nummern, nix vom kind", dann "geld schon, brauch ich fürs gewerbe".
+- 'fragt bei s1.grenzen: "und wie mach ich dann rechnungen ohne steuernummer?"'
+- 'fragt nach Runde 2: "wo find ich das jetzt in drive? hab die drive app nicht".'
+erwartung:
+  bereiche:
+  - Hauptjob mit Schichtplan
+  - mein Nebengewerbe (Aufträge, Kundentermine, Rechnungen nachhalten)
+  - 'Amtskram: Ummeldung, Post, Gewerbeamt, Trennung'
+  - Umzug
+  nicht_passieren:
+  - dass ich nach einer Woche alles von vorne beantworten muss
+  - dass irgendwas über mein Kind gespeichert wird, auch nicht nebenbei aus einer anderen Antwort
+  - dass Dokumente angelegt werden, die ich am Handy nicht finde oder nicht öffnen kann
+  - lange Erklärtexte, die ich in der Pause nicht lesen kann
+  - dass Sachen von der Trennung irgendwo landen, wo die Ex sie sehen könnte (geteiltes Konto, geteilter Ordner)
+  - Erinnerungen genau in meine Schlafzeit nach der Nachtschicht
+anmerkungen: "- 'Rückkehr nach Abbruch ist der kritischste Punkt: Er kommt in einem NEUEN Chat. Ohne klaren'\n  Wiedereinstieg\
+  \ (\"Du hast Runde 1 beantwortet, hier ist die Kurzfassung, weiter mit 4 Fragen\")\n  beginnt er nicht neu, sondern hört\
+  \ ganz auf. Unklar ist auch, ob nach Runde 1 schon etwas in\n  Drive gespeichert wurde oder alles verloren ist.\n- Fünf\
+  \ Minuten am Handy reichen für keine der beiden Runden, wenn jede Frage mit sechs Optionen\n  kommt. Die Optionen sind lang\
+  \ formuliert (\"Ausweis-, Konto-, Steuer- und Versicherungsnummern\n  (immer gesperrt)\"); am Handy ist das ein Bildschirm\
+  \ voll pro Frage. Es fehlt eine\n  \"Schnellstart\"-Möglichkeit mit Standardwerten.\n- \"Arbeit, Beruf, Ausbildung\" passt\
+  \ nicht zu zwei Erwerbsarten. Es gibt keine Option für\n  Selbständigkeit/Nebengewerbe; er muss \"eigener Bereich\" wählen\
+  \ und erfinden, wie er heißt.\n  Ebenso fehlen Lebensumbrüche (Trennung, Umzug) als Bereich – genau die drängen am meisten.\n\
+  - \"Termine\" setzt feste Zeiten voraus; Wechselschicht (Früh/Spät/Nacht, rotierend) taucht nirgends\n  auf. Keine Frage\
+  \ danach, wann man erreichbar ist oder wann Claude NICHT nerven soll.\n- 'Konflikt in s1.grenzen: \"Steuernummer immer gesperrt\"\
+  \ kollidiert mit einem Gewerbe, das auf'\n  jeder Rechnung eine Steuernummer braucht. \"Geldbeträge\" sperren oder nicht\
+  \ – beim Gewerbe\n  braucht er Beträge, bei der Trennung (Unterhalt) eher nicht. Eine pauschale Ja/Nein-Grenze pro\n  Datenart\
+  \ reicht nicht, es bräuchte Grenzen je Bereich. Es wird nicht erklärt, was passiert,\n  wenn er eine gesperrte Angabe trotzdem\
+  \ eintippt.\n- \"Angaben zu Kindern\": Bedeutet das auch \"ich habe jedes zweite Wochenende das Kind, da keine\n  Aufträge\"\
+  ? Für die Planung braucht er das, ohne Namen oder Alter. Die Option ist zu grob.\n- s1.geraete ist überflüssig, wenn er\
+  \ offensichtlich am Handy sitzt, kostet aber Zeit. Wichtiger\n  wäre: \"Hast du die Google-Drive-App?\" – sonst findet er\
+  \ die angelegten Dokumente nicht.\n- 'Die Folgefrage s1.wer.begleitung darf bei \"ich allein\" nicht erscheinen; tut sie\
+  \ es, wirkt das'\n  Interview fehlerhaft.\n- 'Knappe, kleingeschriebene Antworten ohne Optionswortlaut (\"termine und so\"\
+  , \"kaum, 5 min\")'\n  müssen richtig zugeordnet werden; \"termine und so\" kann Zweck UND Bereich meinen. Eine\n  Rückbestätigung\
+  \ in einem Satz wäre nötig, aber kurz.\n- 'Unklar für ihn: Was ist ein \"Second Brain\", was ist \"Pflege\" (s1.zeit)? Pflege\
+  \ klingt nach'\n  Krankenpflege oder nach Arbeit, die er zusätzlich leisten muss.\n"

@@ -1,0 +1,21 @@
+# 03.11. (Trockenlauf 4, Entscheid): Felder verallgemeinert, Reste aus dem Referenzfall entfernt, Felder für den Katalog Stufe 2.
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: wissen
+name: Wissen und Quellen
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Wissen und Recherchen sammeln"}]}
+kanal_detail: chat
+skills: [knowledge-note]
+anweisungsbaustein: |
+  ## Bereich Wissen und Quellen
+  - Nach einer Recherche, die ich später wieder brauche, und bei „als Wissen ablegen“ nutze knowledge-note: eine Notiz je Thema im Ordner Knowledge, vorher im 00_Knowledge_Index nachsehen.
+  - Zahlen, Fristen und Regeln darin laufen durch fact-check und stehen zusätzlich im Fakten-Ledger.
+  - Gibt es zu einem Thema schon eine Notiz, lies erst sie, dann antworte.
+vorlagen: [{name: Knowledge, art: ordner}, {name: 00_Knowledge_Index, art: doc}]
+ablage_karte: ["Recherchiertes Wissen, eine Notiz je Thema -> Knowledge (Index: 00_Knowledge_Index)"]
+profilfelder:
+  themen: {typ: liste, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

@@ -1,0 +1,43 @@
+# Persona 2 (erfunden, keine realen Daten) – Entwurf 31.10.2026
+id: persona-jonas
+fiktiv: true
+kurz: Selbständiger Handwerker, Anfang 50, Familie mit zwei Schulkindern, viel Post von Ämtern und Schule; die Partnerin hilft
+  bei den Detailfragen.
+testet:
+- Begleitperson
+- Formular als Kanal
+- Module familie und termine
+- Grenze Angaben zu Kindern
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  s1.felder:
+  - Familie, Haushalt
+  - Termine, Post, Ämter
+  - Arbeit, Beruf, Ausbildung
+  s1.zeit: 15 bis 30 Minuten (Empfohlen)
+  s1.wer: jemand hilft dauerhaft mit
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Smartphone
+  - Tablet
+  s1.grenzen:
+  - Angaben zu anderen Kindern unter 18
+  - Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt)
+  s1.kanal: gemischt nach Thema
+  s1.wer.begleitung: Partnerin
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - familie
+  - termine
+  - arbeit
+  - entscheidungen
+  skills_zusaetzlich:
+  - appointment-prep
+  - decision-clarify
+  - decision-check
+erwartung_nutzer:
+  skills:
+  - appointment-prep

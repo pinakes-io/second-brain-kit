@@ -1,0 +1,18 @@
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: werkzeuge
+name: Werkzeuge
+version: 0.1
+art: vorlage
+aktivierung: {immer: true}
+kanal_detail: chat
+skills: []
+anweisungsbaustein: |
+  ## Bereich Werkzeuge
+  - Geräte und Werkzeuge stehen in `01_Profil`, Abschnitt Technik. Am Smartphone gibst du Blöcke zum Einfügen aus statt direkter Bearbeitung.
+  - Kannst du ein Werkzeug nicht nutzen (zum Beispiel Drive nicht verbunden), sag das in einer Zeile und biete den Block-Modus an.
+vorlagen: []
+ablage_karte: []
+profilfelder: {}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

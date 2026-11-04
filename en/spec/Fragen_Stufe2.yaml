@@ -1,0 +1,219 @@
+# Interview question catalogue, stage 2 (detail) – version 0.3 of 2026-11-03 (wave 3: document language moved to stage 1, question "what is coming up",
+# sample text with tag namen, queue in 02_Open_Questions, rules for life changes; decisions 2026-11-03)
+# Decision 2026-10-31 (F1): the form of address is the first question in stage 2.
+# Order: the person first, then the modules in the order they were chosen; within a module the order of the list.
+# Limits: spec/Budget.yaml (stufe2). spaeter: true = not in the first round of a module, stays in 02_Open_Questions.
+# wenn: modul_aktiv (one of the modules is active), antwort (a stage 1 answer contains one of the options),
+#       antwort_profil (a profile field contains the value). tags: sensitivity tags; a blocked limit drops the question.
+# The wording of questions, options and rules appears verbatim in the onboarding-interview skill (checked by skelett.py).
+# Reason for each question with a persona: spec/personas/Auswertung_Trockenlauf_4.md (German package), section stage 2.
+version: 0.4
+sprache: en
+immer_angeboten: [free answer, don't know, skip, later]
+fragen:
+  # person
+  - id: s2.person.anrede
+    modul: person
+    reihenfolge: 1
+    frage: How should I address you? (first name or preferred form of address)
+    typ: text
+    pflicht: true
+    profil_pfad: person.anrede
+  - id: s2.person.ton
+    modul: person
+    frage: What should my answers be like?
+    typ: einfach
+    optionen: [short and direct (Recommended), detailed with explanations, in bullet points]
+    profil_pfad: person.kommunikation
+  - id: s2.person.feste_zeiten
+    modul: person
+    frage: When does it suit you well and when not at all? (for example shifts or quiet hours)
+    typ: text
+    spaeter: true
+    profil_pfad: person.zeit.feste_zeiten
+  # werkzeuge
+  - id: s2.werkzeuge.drive_app
+    modul: werkzeuge
+    frage: Do you have the Google Drive app on your phone or tablet?
+    typ: einfach
+    optionen: ["yes", "no"]
+    wenn: {antwort: {s1.geraete: [Smartphone, Tablet]}}
+    profil_pfad: werkzeuge.drive_app
+  - id: s2.werkzeuge.sichtbar
+    modul: werkzeuge
+    frage: Who besides you can see the documents?
+    typ: einfach
+    optionen: [only me, my companion too, someone else too]
+    wenn: {antwort: {s1.wer: ["someone helps with the setup, then I answer alone", someone keeps helping me, someone answers for me]}}
+    profil_pfad: meta.einrichtung.sichtbarkeit
+  # arbeit
+  - id: s2.arbeit.art
+    modul: arbeit
+    frage: What applies to you?
+    typ: mehrfach
+    optionen: [employed, self-employed or own business, in training or studying, looking for work, retired, other]
+    profil_pfad: arbeit.beschaeftigung
+  - id: s2.arbeit.ziele
+    modul: arbeit
+    frage: What do you want to achieve at work in the next few months?
+    typ: text
+    profil_pfad: arbeit.ziele
+  - id: s2.arbeit.trennung
+    modul: arbeit
+    frage: Should business and private matters be kept in separate documents?
+    typ: einfach
+    optionen: ["yes, separate (Recommended)", "no"]
+    wenn: {antwort_profil: {arbeit.beschaeftigung: self-employed or own business}}
+    profil_pfad: arbeit.trennung_privat
+  - id: s2.arbeit.abschluss
+    modul: arbeit
+    frage: Do you have a qualification that should be recognised? (job and country, no numbers)
+    typ: text
+    spaeter: true
+    profil_pfad: arbeit.abschluss
+  # entscheidungen
+  - id: s2.entscheidungen.anstehend
+    modul: entscheidungen
+    frage: Is there a decision coming up right now? (one sentence)
+    typ: text
+    spaeter: true
+    profil_pfad: entscheidungen.anstehend
+  # familie
+  - id: s2.familie.haushalt
+    modul: familie
+    frage: Who belongs to the household? (roles, no names)
+    typ: text
+    profil_pfad: familie.haushaltskontext
+  - id: s2.familie.kinder
+    modul: familie
+    frage: Are there children under 18 in the household? Rough ages and fixed care times
+    typ: text
+    tags: [kinder]
+    profil_pfad: familie.kind_alter
+  - id: s2.familie.pflege
+    modul: familie
+    frage: Do you look after someone (care, support)? Role and what you organise
+    typ: text
+    tags: [gesundheit]
+    spaeter: true
+    profil_pfad: familie.pflege
+  - id: s2.familie.geld
+    modul: familie
+    frage: Should the household budget be planned here?
+    typ: einfach
+    optionen: ["yes", "no"]
+    tags: [geld]
+    spaeter: true
+    profil_pfad: familie.haushaltsgeld
+  # termine
+  - id: s2.termine.stellen
+    modul: termine
+    frage: Which offices and services do you deal with often?
+    typ: mehrfach
+    optionen: [employment agency or job centre, immigration office or citizens' office, health insurer or doctors' practices, school or nursery, tax office, landlord, other]
+    profil_pfad: termine.zustaendige_stellen
+  - id: s2.termine.region
+    modul: termine
+    frage: In which state or country do you live? (for deadlines and the responsible offices)
+    typ: text
+    profil_pfad: person.region_grob
+  - id: s2.termine.vorlauf
+    modul: termine
+    frage: How early should I point out deadlines when we talk?
+    typ: einfach
+    optionen: [one week before (Recommended), two weeks before, one month before]
+    profil_pfad: termine.vorlauf
+  - id: s2.termine.ausland
+    modul: termine
+    frage: Are there deadlines in another country (passport, tax, family)?
+    typ: text
+    spaeter: true
+    profil_pfad: termine.fristen_ausland
+  - id: s2.termine.rahmen
+    modul: termine
+    frage: What needs to be considered for appointments (for example a companion or accessibility)?
+    typ: text
+    tags: [gesundheit]
+    spaeter: true
+    profil_pfad: termine.persoenliche_rahmenbedingungen
+  # wissen
+  - id: s2.wissen.themen
+    modul: wissen
+    frage: On which topics do you want to collect knowledge?
+    typ: text
+    profil_pfad: wissen.themen
+  # lernen
+  - id: s2.lernen.ziel
+    modul: lernen
+    frage: What do you want to learn, and by when?
+    typ: text
+    profil_pfad: lernen.ziel
+  - id: s2.lernen.uebung
+    modul: lernen
+    frage: How do you want to practise?
+    typ: einfach
+    optionen: [small tasks every week (Recommended), revise before exams, only look things up]
+    profil_pfad: lernen.uebungsform
+  - id: s2.lernen.stand
+    modul: lernen
+    frage: Where are you right now?
+    typ: text
+    spaeter: true
+    profil_pfad: lernen.niveau_aktuell
+  # schreibstil
+  - id: s2.schreibstil.textarten
+    modul: schreibstil
+    frage: What do you mainly write?
+    typ: mehrfach
+    optionen: [emails and letters, offers and reports, posts for the web and social media, memories and stories]
+    profil_pfad: schreibstil.textarten
+  - id: s2.schreibstil.beispiel
+    modul: schreibstil
+    frage: Paste a short text that sounds like you.
+    typ: text
+    spaeter: true
+    tags: [namen]
+    profil_pfad: schreibstil.beispieltext
+  # bauen
+  - id: s2.bauen.werkzeug
+    modul: bauen
+    frage: Which tool do you want to build with? (for example Cursor, Replit or none yet)
+    typ: text
+    profil_pfad: bauen.werkzeug
+  - id: s2.bauen.vorkenntnisse
+    modul: bauen
+    frage: How confident are you with Git and the terminal?
+    typ: einfach
+    optionen: [never used, a little, confident]
+    profil_pfad: bauen.vorkenntnisse
+  - id: s2.bauen.datenart
+    modul: bauen
+    frage: Will the project work with real data later?
+    typ: einfach
+    optionen: [sample data only (Recommended), real data too]
+    profil_pfad: bauen.datenart
+
+# Rules for stage 2 (decisions 2026-11-03). The wording appears verbatim in the skill.
+regeln:
+  takt: "A stage 2 round has at most four questions. The person first, then the areas in the order of the field map; at most four questions per area and round, the rest waits in 02_Open_Questions. At the end of each round say: \"<n> questions still open. Write \"detail questions\" when you want to continue.\""
+  spaeter_antwort: "\"Later\" is possible for every question; the question stays in 02_Open_Questions. Questions marked \"(later)\" you do not ask in the first round of an area, but when a topic needs them or the person wants more questions."
+  bedingung: "Questions with \"if …\" you ask only when the condition applies. Questions about blocked topics you never ask."
+  sensibel: "If a question carries a sensitivity tag and the topic is not blocked, say one sentence first: \"The next question is about <topic>. You can skip it or block the topic.\" After \"skip\" you do not ask again."
+  direkt: "After the setup offer the first stage 2 round once, starting with the form of address."
+  skill_anstossen: "If an area with its own guide is active, say once at the end of the setup what you can do there, with an example sentence to try."
+  spaeter_zuschalten: "If someone wants to add an area later, the skill area-manager takes care of it; the stage 2 questions of the new area then come from this catalogue."
+  warteschlange: "setup-brain creates the queue in 02_Open_Questions. Tick off answered questions there with the date; \"<n> questions still open\" is the number of open lines."
+  anrede: "If someone evades the form of address, use no name and do not ask again."
+  tempo: "If someone wants all questions at once or chose \"form\", show all open questions as one list. \"No more detail questions\" goes under Rules, the status line becomes \"stage 2 ended on request\", and you offer no further round."
+  eigene_fragen: "Own areas from the example list bring the matching questions along (table \"Own areas\")."
+  feldkarte_aendern: "If an answer contradicts an area (such as \"retired\" with work) or sounds like a new one, offer: keep · rename · pause · create new."
+  beispieltext: "You do not store the sample text. You derive three to five style features and write only those into the Style_Profile."
+  grenzen_aendern: "Limits can be set and lifted at any time. When one is set, show entries already stored and offer to remove them; when one is lifted, ask the questions that were left out."
+
+# Own areas from the example list (s1.felder, help) and the questions they bring along (decision 2026-11-03)
+eigene_bereiche:
+  a club: [s2.schreibstil.textarten, s2.person.feste_zeiten]
+  health: [s2.termine.vorlauf, s2.termine.rahmen]
+  caring for a relative: [s2.familie.pflege, s2.termine.stellen]
+  moving house: [s2.termine.region, s2.termine.stellen]
+  being new in the country: [s2.termine.region, s2.termine.stellen, s2.termine.ausland, s2.arbeit.abschluss]

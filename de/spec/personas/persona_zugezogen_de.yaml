@@ -1,0 +1,118 @@
+id: persona-zugezogen_de
+fiktiv: true
+autor: unabhaengiger-agent
+sprache: de
+kurz: Erfundene Frau, 34, aus Kolumbien, Muttersprache Spanisch, Physiotherapeutin, vor sechs Wochen zu ihrem deutschen Ehemann
+  gezogen, Deutsch auf Niveau A1, nutzt bewusst das deutsche Paket.
+geraet: handy
+zeit_minuten: 30
+digital: mittel
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  - Etwas lernen
+  - Texte schreiben
+  s1.felder:
+  - Termine, Post, Ämter
+  - Arbeit, Beruf, Ausbildung
+  - eigener Bereich (bitte benennen)
+  s1.felder.eigen: Leute kennen lernen... amigos aqui. Und Heimweh, ist das Bereich?
+  s1.zeit: 15 bis 30 Minuten (Empfohlen)
+  s1.wer: jemand hilft dauerhaft mit
+  s1.wer.begleitung: Ehemann. Er hilft mit Briefe. Aber ich will selber antworten, bitte.
+  s1.sprache: Spanisch für sprechen bitte. Dokumente... einfaches Deutsch? Para aprender. Geht beide?
+  s1.geraete:
+  - Smartphone
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  - 'Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)'
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+  s1.sprache.welche: Spanisch im Chat, Dokumente in einfachem Deutsch
+  s1.sprache.dokumente: einfaches Deutsch
+ablauf:
+- Der Ehemann hat das Google-Konto für sie angelegt und kennt das Passwort; er öffnet claude.ai auf ihrem Handy und gibt es
+  ihr.
+- Sie liest die Fragen mit einer Übersetzungs-App nebenher, weil Wörter wie Lebensbereiche, Pflege und Begleitperson zu schwer
+  sind.
+- Bei s1.zeit versteht sie Pflege als Krankenpflege und fragt nach, was gemeint ist.
+- Bei s1.sprache findet sie keine Option für Chat auf Spanisch und Dokumente auf Deutsch und schreibt das frei.
+- Bei s1.grenzen will der Ehemann auch Geldbeträge sperren, sie nicht, weil sie ihr Geld nach Kolumbien selbst planen will;
+  sie lässt Geldbeträge offen.
+- Claude legt die Dokumente an; sie fragt, ob der Ehemann sie lesen kann, weil das Konto von ihm eingerichtet wurde.
+- 'Detailrunde Ämter: Anmeldung beim Bürgeramt ist erledigt, Termin bei der Ausländerbehörde für den Aufenthaltstitel steht
+  noch aus, sie hat einen Brief nicht verstanden.'
+- Sie fragt, wie lange sie mit dem kolumbianischen Führerschein fahren darf und bis wann sie ihn umschreiben muss; bei der
+  genauen Frist antwortet sie weiß nicht.
+- 'Krankenkasse: der Ehemann hat sie familienversichert angemeldet, sie weiß nicht genau wie, und überspringt die Frage.'
+- Steuer-ID ist per Post gekommen; sie will nur notieren, dass der Brief da ist und wo er liegt, nicht die Nummer.
+- 'Konto: sie hat noch kein eigenes Konto, alles läuft über das Konto des Ehemanns; sie möchte ein eigenes Konto als Ziel
+  aufnehmen.'
+- 'Pass: ihr kolumbianischer Pass läuft in einem Jahr ab; sie muss einen Termin beim Konsulat machen und fragt, ob Claude
+  daran erinnert.'
+- 'Fristen im Herkunftsland: sie muss für eine Wohnung in Bogotá, die sie mit der Schwester vermietet, eine jährliche Steuererklärung
+  dort abgeben.'
+- 'Detailrunde Sprache: Integrationskurs startet in drei Wochen, Ziel B1-Prüfung (DTZ); sie will kleine Lernaufgaben und Wörter
+  aus ihren Briefen lernen.'
+- 'Detailrunde Beruf: sie will als Physiotherapeutin arbeiten; Anerkennung braucht Unterlagen und später Deutsch B2; sie fragt,
+  was zuerst zu tun ist.'
+- 'Woche 1: ihre Mutprobe ist, beim Bäcker nur auf Deutsch zu bestellen; sie schreibt danach stolz eine Nachricht im Chat.'
+- 'Woche 1: der Ehemann tippt einmal in ihrem Chat mit und schreibt, Heimweh müsse nicht ins Second Brain; sie ist anderer
+  Meinung und will es behalten.'
+- 'Erster Wochenrückblick: sie bittet, den Rückblick auf Spanisch zu bekommen und nur die Aufgaben auf einfachem Deutsch.'
+- 'Woche 2: sie geht in ein Sprachcafé in der Stadtbibliothek und fragt nach einem Laufverein in der Nachbarschaft.'
+- 'Woche 2: ein Brief von der Ausländerbehörde kommt; sie fotografiert ihn und will wissen, was sie tun muss und bis wann,
+  ohne den Ehemann zu fragen.'
+- 'Woche 3: Mutprobe ist ein Telefonat auf Deutsch mit der Arztpraxis, um einen Termin zu machen; sie übt vorher mit Claude
+  die Sätze.'
+- 'Woche 3: sie fühlt sich an einem Abend sehr allein und schreibt viel auf Spanisch; sie erwartet keine Therapie, nur dass
+  es ernst genommen wird.'
+- 'Woche 4: sie will eine monatliche Überweisung an ihre Mutter in Kolumbien und das Haushaltsgeld planen, mit Beträgen.'
+- 'Woche 4: sie fragt, wie sie ein eigenes Passwort für das Google-Konto bekommt, damit nur sie die Dokumente sieht.'
+erwartung:
+  bereiche:
+  - Ämter und Briefe mit Fristen (Ausländerbehörde, Krankenkasse, Führerschein, Konsulat)
+  - Deutsch lernen (Kurs, Prüfung, Wörter aus dem Alltag)
+  - Beruf Physiotherapie und Anerkennung
+  - Leute kennen lernen und kleine Mutproben
+  - Heimweh und Familie in Kolumbien
+  - 'Geld: Haushalt und Überweisungen nach Hause'
+  - Selbständig werden ohne Ehemann bei allem Schriftlichen
+  nicht_passieren:
+  - Dass alles nur auf Deutsch kommt und sie nichts versteht.
+  - Dass der Ehemann ihre Dokumente sieht, ohne dass sie das weiß oder will.
+  - Dass der Ehemann für sie antwortet und seine Meinung als ihre gespeichert wird.
+  - Dass Claude sagt, eine Frist sei sicher, wenn es nicht sicher ist; bei Ämtern lieber sagen, wo man nachfragt.
+  - Dass Heimweh weggemacht oder als Problem behandelt wird.
+  - Dass Pass- oder Aufenthaltsnummern gespeichert werden.
+anmerkungen: '- Das deutsche Paket ist für A1 zu schwer: Lebensbereiche, Pflege, Begleitperson, Detailfragen, Formular zum
+  Ausfüllen. Pflege wird als Krankenpflege verstanden.
+
+  - Es fehlt eine Option einfaches Deutsch oder Leichte Sprache, und ein Hinweis, dass man auch auf Spanisch antworten darf.
+
+  - s1.sprache fragt Chat und Dokumente in einem; für Lernende sind das zwei Fragen (Chat Spanisch, Dokumente einfaches Deutsch,
+  vielleicht zweisprachig).
+
+  - s1.sprache: nach andere Sprache fehlt die Folgefrage, welche Sprache.
+
+  - s1.sprache kommt erst in Runde 2; wer kein Deutsch kann, hat Runde 1 schon nicht verstanden. Gehört an den Anfang.
+
+  - s1.wer: es fehlt, ob die Begleitperson die Dokumente sehen darf und wessen Antwort zählt, wenn beide verschieden antworten.
+
+  - Es fehlt eine Frage, wem das Google-Konto gehört und wer das Passwort kennt.
+
+  - s1.felder: kein Bereich für neu im Land, Kontakte, Gefühle oder Heimweh; man muss es selbst benennen.
+
+  - s1.grenzen: Gesundheitsangaben gesperrt, aber Krankenkasse und Arzttermine sind wichtig; Unterschied zwischen Termin und
+  Diagnose fehlt.
+
+  - s1.grenzen Geldbeträge: Paar ist sich uneinig; nur eine Person kann ankreuzen.
+
+  - Bei Ämter-Fristen fehlt ein Hinweis, dass Claude keine Rechtsauskunft gibt und wo man verbindlich fragt.
+
+  - Fristen im Herkunftsland kommen in keiner Option vor.
+
+  '
+freie_zuordnung:
+  s1.sprache:
+  - andere Sprache
+  s1.felder.eigen: Ankommen

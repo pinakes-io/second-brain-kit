@@ -1,0 +1,23 @@
+# 03.11. (Trockenlauf 4, Entscheid): Felder verallgemeinert, Reste aus dem Referenzfall entfernt, Felder für den Katalog Stufe 2.
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+# 01.11.: Skills plain-prose-de und plain-prose-en eingetragen (Entscheid 01.11.: zwei Skills,).
+id: schreibstil
+name: Schreibstil
+version: 0.2
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Texte schreiben"}]}
+kanal_detail: chat
+skills: [plain-prose-de, plain-prose-en]
+skills_nachruestbar: [style-profile]   # Entscheid 03.11.: Angebot am Ende des Interviews, nicht im Upload-Budget
+anweisungsbaustein: |
+  ## Bereich Schreibstil
+  - Deutsche Texte überarbeiten („überarbeiten“, „straffen“, „Klartext“) → plain-prose-de; englische → plain-prose-en. Du sprichst dabei Deutsch, nur der Text bleibt englisch.
+  - Stilregeln und Wörter stehen im Stilprofil. Neue Regeln legst du dort nur nach meiner Zustimmung ab.
+vorlagen: [{name: Stilprofil, art: doc}]
+ablage_karte: ["Beispieltexte, Stilregeln, Wörter, die ich (nicht) benutze, englische Hausregel -> Stilprofil"]
+profilfelder:
+  textarten: {typ: liste, pflicht: false}
+  beispieltext: {typ: text, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

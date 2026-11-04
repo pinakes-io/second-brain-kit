@@ -1,0 +1,90 @@
+id: persona-laden
+fiktiv: true
+autor: unabhaengiger-agent
+sprache: en
+kurz: Fictional owner of a small picture-framing and print shop with two part-time staff, who wants business and private life
+  kept strictly apart and has very little time.
+geraet: gemischt
+zeit_minuten: 15
+digital: mittel
+antworten:
+  s1.zweck:
+  - Keep track of tasks and appointments
+  - Prepare decisions
+  - Write texts
+  s1.felder:
+  - Work, career, training
+  - Appointments, post, offices
+  - own area (please name it)
+  s1.felder.eigen: 'Shop money: invoices, suppliers, orders. Separate from my private things please.'
+  s1.zeit: under 15 minutes
+  s1.wer: I answer alone (Recommended)
+  s1.sprache: English
+  s1.geraete:
+  - Laptop or Chromebook in the browser
+  - Smartphone
+  s1.grenzen:
+  - ID, account, tax and insurance numbers (always blocked)
+  - Information about other children under 18
+  s1.kanal: mixed by topic
+ablauf:
+- She starts the interview on the shop laptop during a quiet hour and is interrupted twice by customers.
+- At s1.felder she does not know if her shop is Work, career, training or her own area, so she picks both.
+- 'At s1.grenzen she hesitates: she cannot block Names of other people or Amounts of money because customers, staff and invoices
+  are the core of her work.'
+- She types a free note that she wants private matters and shop matters in separate places, but no question asks about this.
+- Claude creates the documents in Google Drive; she asks whether they are in her private or her shop Google account.
+- 'First detail round on the shop: she lists three main suppliers, payment terms of 14 and 30 days, and a monthly invoice
+  run.'
+- She asks whether customer names and phone numbers for framing orders may go into the Second Brain, and answers a data-protection
+  question with don't know.
+- 'Detail round on staff: she wants a simple shift plan for the two part-timers, using roles only (P1, P2).'
+- She skips the question about long-term goals because she has no time for that now.
+- 'Week 1: she wants a draft text for a price-increase notice in the shop window and a reminder for a VAT pre-filing deadline.'
+- 'Week 1: she notices the always-blocked numbers rule and asks whether the shop VAT number on invoices is also blocked.'
+- 'First weekly review: on the smartphone on the bus, she wants it in three lines, not a page.'
+- 'Week 2: a supplier raises prices; she asks Claude to prepare the decision whether to switch supplier, with amounts.'
+- 'Week 3: a private letter (health insurance) arrives and she wants it kept out of the shop documents.'
+- 'Week 4: she asks if a part-timer could see the shift plan but not the money documents.'
+erwartung:
+  bereiche:
+  - 'Shop: orders and customers'
+  - Suppliers and purchasing
+  - Invoices, payments and deadlines
+  - Staff shifts (two part-timers)
+  - Shop texts (signs, emails, social posts)
+  - Private admin, separate from the shop
+  nicht_passieren:
+  - Business and private information mixed in the same documents.
+  - Amounts of money or customer details refused, when they are the core of the work.
+  - Staff able to see invoices, prices or private documents.
+  - Long weekly reviews that take more than a few minutes.
+  - Bank account or card numbers stored anywhere.
+anmerkungen: '- s1.grenzen is all-or-nothing per category. For a business owner names and amounts are essential, but private
+  amounts should stay out. A choice like only for the business is missing.
+
+  - There is no question about separating business and private data (separate areas, separate documents, separate Google account).
+  This is the most important point for this persona.
+
+  - always blocked tax numbers is unclear for a business: is the shop VAT ID or tax number on an invoice also blocked? The
+  question should explain.
+
+  - No question about other people who may see documents (staff, accountant, tax advisor). s1.wer only covers who answers,
+  not who reads.
+
+  - No question about customer data and data protection; the user has to raise it herself.
+
+  - s1.felder: Work, career, training sounds like an employee or a student, not like a shop owner. An option like own business
+  or self-employed is missing.
+
+  - Capitalisation is uneven (learn something, own area in lower case; others start upper case).
+
+  - s1.kanal mixed by topic: unclear who decides which topic goes to the form.
+
+  - s1.zeit under 15 minutes is the lowest option, but nothing asks when in the week she has time (quiet hours in the shop).
+
+  - Recommended labels in the options are fine but feel like pressure when time is short; a short reason would help.
+
+  '
+freie_zuordnung:
+  s1.felder.eigen: Shop

@@ -1,0 +1,19 @@
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: person
+name: Person und Situation
+version: 0.1
+art: vorlage
+aktivierung: {immer: true}
+kanal_detail: chat
+skills: []
+anweisungsbaustein: |
+  ## Bereich Person und Situation
+  - Mein Ton und meine Vorlieben stehen in `01_Profil`, Abschnitte „So spricht Claude mit mir“ und „Regeln“. Halte dich daran.
+  - Die Grenzen in `00_Status` gehen vor. Gesperrte Angaben fragst du nicht ab und speicherst du nicht.
+  - Änderungen am Profil erst nach meinem Ja, mit Wert, Status, Herkunft und Datum.
+vorlagen: []
+ablage_karte: []
+profilfelder: {}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

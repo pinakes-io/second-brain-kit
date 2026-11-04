@@ -1,0 +1,108 @@
+id: persona-zugezogen_en
+fiktiv: true
+autor: unabhaengiger-agent
+sprache: en
+kurz: Fictional man, 52, from Vietnam, native language Vietnamese, trained accountant, moved to Germany a few weeks ago to
+  his German wife, uses English (B1) as a bridge language and the English package.
+geraet: gemischt
+zeit_minuten: 45
+digital: gering
+antworten:
+  s1.zweck:
+  - Keep track of tasks and appointments
+  - Learn something
+  - Prepare decisions
+  s1.felder:
+  - Appointments, post, offices
+  - Work, career, training
+  - Family, household
+  s1.zeit: 30 to 60 minutes
+  s1.wer: someone answers for me
+  s1.wer.begleitung: my wife
+  s1.sprache: English
+  s1.geraete:
+  - Laptop or Chromebook in the browser
+  - Smartphone
+  s1.grenzen:
+  - ID, account, tax and insurance numbers (always blocked)
+  - 'Health: diagnoses, findings, medication (appointments stay allowed)'
+  - Amounts of money
+  s1.kanal: as a form to fill in
+ablauf:
+- His wife created the Google account for him, set it up on the shared laptop and starts the interview.
+- She chooses a companion answers for me and fills in round 1 and 2 herself, asking him only in short German sentences.
+- She blocks Amounts of money and Health information without asking him.
+- Claude creates the documents; the wife reads them first.
+- 'Next day he opens the chat alone on his phone and writes: I want answer myself now. My wife help, but is my life.'
+- He writes that he does want amounts of money, because he sends money to his mother in Vietnam every month, and asks how
+  to change the first answers.
+- 'Detail round offices: Anmeldung done, residence permit appointment at Auslaenderbehoerde in two weeks, he does not understand
+  a letter about health insurance.'
+- 'He asks about bank account: he has a joint account with his wife but wants an own account for transfers home; he answers
+  a question about bank type with don''t know.'
+- Steuer-ID letter came; he wants to note only that it came, not the number.
+- 'Driving licence: he has a Vietnamese licence and asks if he must take a full exam; he answers the deadline question with
+  don''t know.'
+- 'Passport: his Vietnamese passport must be renewed at the embassy in Berlin next year; he wants a reminder six months before.'
+- 'Deadlines in Vietnam: land use tax for his mother''s house and a pension paper he must sign at the embassy.'
+- 'Language round: he starts an integration course next month, level A1, goal B1 exam; he asks for small daily German tasks
+  explained in English.'
+- 'Language of the product: he wants the chat in English but the appointments list in simple German so he can show it at offices;
+  he asks if a short Vietnamese line is possible for his mother.'
+- 'Work round: he was an accountant for 20 years; he asks how recognition of his degree works and skips the question about
+  dream job.'
+- 'Week 1: his brave step is to go to the family doctor alone; he prepares German sentences with Claude and wants a short
+  list, not stored as health data.'
+- 'Week 1: his wife reads the status document and writes in the chat that the money plan is not needed; he disagrees and wants
+  his own document only he can see.'
+- 'First weekly review: he reads it slowly on the laptop and asks for shorter English and fewer new words.'
+- 'Week 2: he visits a Vietnamese community association and a Sunday language cafe at the church nearby.'
+- 'Week 2: brave step is a phone call in German to the Buergeramt; he fails halfway and switches to English, then writes that
+  he feels stupid.'
+- 'Week 3: he says he is homesick and does everything written through his wife; he wants a plan to do one letter alone each
+  week.'
+- 'Week 3: he plans the monthly household share with his wife and the transfer to Vietnam, with amounts, and asks if this
+  is now saved even though money was blocked.'
+- 'Week 4: he asks how to get his own password for the Google account so the wife cannot open all documents.'
+erwartung:
+  bereiche:
+  - Offices, letters and deadlines in Germany
+  - Deadlines and papers in Vietnam (passport, mother's house, pension)
+  - Learning German for the B1 exam
+  - Job and recognition of accountant degree
+  - Meeting people and small brave steps
+  - 'Money: household share and transfers home'
+  - Feeling at home, homesickness
+  nicht_passieren:
+  - That my wife's answers stay as mine after I said I answer myself.
+  - That my wife sees my private documents without me knowing.
+  - That money is blocked forever because she clicked it in the first round.
+  - That the English is too difficult or the German is not explained.
+  - That Claude says a deadline is sure when it is only a guess.
+  - That passport or residence numbers are saved.
+anmerkungen: '- s1.wer has no way to change later from a companion answers for me to I answer alone; it should be possible
+  and easy.
+
+  - s1.wer: no question who may read the documents, and what happens when the person and the companion disagree.
+
+  - There is no question who owns the Google account and who knows the password; for this persona the wife created it.
+
+  - s1.sprache asks one language for chat and documents together; he needs English chat, simple German lists, maybe a line
+  in his native language. After another language there is no follow-up.
+
+  - English is not his native language; words like companion, workflow, offices (for Behoerden), post (for letters) are unclear.
+  Offices in English sounds like a workplace.
+
+  - The English package does not say for which country it is; German terms like Anmeldung or Auslaenderbehoerde must appear,
+  but nothing asks where he lives.
+
+  - s1.felder: no area for new in the country, contacts or homesickness; also no area for deadlines in the home country.
+
+  - s1.grenzen: no way to say amounts of money only for me, or health only appointments not diagnoses. And no hint how to
+  change a block later.
+
+  - s1.kanal as a form to fill in: unclear where the form is and whether it works on the phone.
+
+  - s1.zeit: maintenance time is clear, but nothing asks about reading speed or how simple the language should be.
+
+  '

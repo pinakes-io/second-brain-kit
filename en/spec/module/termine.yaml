@@ -1,0 +1,23 @@
+# 2026-11-03 (dry run 4, decision): fields generalised, leftovers from the reference case removed, fields for the stage 2 catalogue.
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: termine
+name: Appointments, post and offices
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.felder, option: "Appointments, post, offices"}, {frage: s1.zweck, option: "Keep track of tasks and appointments"}]}
+kanal_detail: formular
+skills: [appointment-prep, letter-explain]
+anweisungsbaustein: |
+  ## Area Appointments, post and offices
+  - For a letter or notice, use letter-explain; for an appointment or an invitation, use appointment-prep. After the appointment you enter the result, deadlines and evidence in State_Appointments.
+  - Deadlines without an appointment go into State_Appointments with a source; numbers go through fact-check. If health is set to “appointments only”, enter only date, time and “appointment” for medical appointments, at most with the town.
+vorlagen: [{name: State_Appointments, art: doc}, {name: Letter_Scans, art: ordner}]
+ablage_karte: ["Appointments, deadlines, letters and evidence -> State_Appointments", "Photos and scans of post -> Letter_Scans"]
+profilfelder: 
+  zustaendige_stellen: {typ: liste, pflicht: false, referenz: ANERKENNUNGSSTELLE}
+  persoenliche_rahmenbedingungen: {typ: text, pflicht: false, tags: [gesundheit], referenz: PERSOENLICHE_RAHMENBEDINGUNGEN}
+  vorlauf: {typ: auswahl, pflicht: false}
+  fristen_ausland: {typ: text, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

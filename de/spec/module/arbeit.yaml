@@ -1,0 +1,25 @@
+# 03.11. (Trockenlauf 4, Entscheid): Felder verallgemeinert, Reste aus dem Referenzfall entfernt, Felder für den Katalog Stufe 2.
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: arbeit
+name: Arbeit und Ziele
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.felder, option: "Arbeit, Beruf, Ausbildung"}]}
+kanal_detail: formular
+skills: []
+skills_nachruestbar: [transcript-minutes]   # Entscheid 01.11.: Angebot am Ende des Interviews, nicht im Upload-Budget
+anweisungsbaustein: |
+  ## Bereich Arbeit und Ziele
+  - Stand, Ziele und Belege stehen in `State_Arbeit`. Lies es, bevor du zu Arbeit, Beruf oder Ausbildung etwas rätst.
+  - Angaben zu Abschlüssen, Fristen oder Anforderungen laufen durch fact-check. Ist transcript-minutes installiert, nutze ihn für Gesprächsprotokolle.
+vorlagen: [{name: State_Arbeit, art: doc}]
+ablage_karte: ["Stand, Ziele, Belege zu Arbeit und Ausbildung -> State_Arbeit"]
+profilfelder: 
+  abschluss: {typ: text, pflicht: false, referenz: ABSCHLUSS}
+  berufserfahrung: {typ: text, pflicht: false, referenz: BERUFSERFAHRUNG}
+  beschaeftigung: {typ: liste, pflicht: false, referenz: BESCHAEFTIGUNG}
+  ziele: {typ: text, pflicht: false}
+  trennung_privat: {typ: auswahl, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

@@ -1,0 +1,18 @@
+# second-brain-kit
+
+> A second brain for ordinary people on claude.ai and Google Drive. A short interview decides the structure, skills build it in the person's own Google Drive. English and German packs, nothing to install. Status: draft.
+
+If a person gave you this repository and wants a second brain, read START_HERE.md and follow it step by step. If you work on the repository itself, read AGENTS.md instead. Links are relative to this file.
+
+## Setup
+
+- [START_HERE.md](START_HERE.md): the step-by-step guide for the assistant
+- [English core instructions](en/skeleton/anweisungen/Projekt-Anweisungen.txt): the text for the project instructions, English pack
+- [German core instructions](de/skeleton/anweisungen/Projekt-Anweisungen.txt): the same, German pack
+- [README.md](README.md): overview, status and limits
+
+## Optional
+
+- [PRIVACY.md](PRIVACY.md): what happens to your data
+- [UPDATING.md](UPDATING.md): how to update skills and instructions
+- [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md): for people who help or report problems

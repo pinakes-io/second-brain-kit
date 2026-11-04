@@ -1,0 +1,3 @@
+# Probelauf 03.11.2026 (Simulation)
+Ausgaben eines unabhängigen Unteragenten, der plain-prose-de/-en in Fassung 0.2 (Stand vor den Korrekturen vom selben Tag) blind auf die 15 Fälle in `../faelle.yaml` angewendet hat. Kein Drive, keine Rückfragen. Ergebnis: 13 von 15 bestanden; de_anglizismen (Impact maximieren blieb stehen, Skill-Regression, danach behoben) fällt weiterhin durch; en_business besteht erst mit dem korrigierten Fakten-Diff (ausgeschriebene Zahlen). Kein Ersatz für den Test in claude.ai.
+Prüfung: `python3 -I tools/plain_prose_pruefen.py eval . tools/fixtures/plain-prose/eval/probelauf_03-11`

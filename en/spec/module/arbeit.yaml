@@ -1,0 +1,25 @@
+# 2026-11-03 (dry run 4, decision): fields generalised, leftovers from the reference case removed, fields for the stage 2 catalogue.
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: arbeit
+name: Work and goals
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.felder, option: "Work, career, training"}]}
+kanal_detail: formular
+skills: []
+skills_nachruestbar: [transcript-minutes]   # decision 2026-11-01: offered at the end of the interview, outside the upload budget
+anweisungsbaustein: |
+  ## Area Work and goals
+  - State, goals and evidence are in `State_Work`. Read it before you advise on work, career or training.
+  - Details on qualifications, deadlines or requirements go through fact-check. If transcript-minutes is installed, use it for conversation minutes.
+vorlagen: [{name: State_Work, art: doc}]
+ablage_karte: ["State, goals, evidence for work and training -> State_Work"]
+profilfelder: 
+  abschluss: {typ: text, pflicht: false, referenz: ABSCHLUSS}
+  berufserfahrung: {typ: text, pflicht: false, referenz: BERUFSERFAHRUNG}
+  beschaeftigung: {typ: liste, pflicht: false, referenz: BESCHAEFTIGUNG}
+  ziele: {typ: text, pflicht: false}
+  trennung_privat: {typ: auswahl, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

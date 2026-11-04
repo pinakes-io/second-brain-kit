@@ -1,0 +1,75 @@
+# Mapping profile path -> document/section (draft 2026-10-31)
+# Decision 2026-10-31: two tables. Table 1 = question catalogue (profil_pfad per question),
+# table 2 = this file. Multiple targets allowed.
+# Rule: if a required field stays open/unknown, a line is created in 02_Open_Questions (section = module).
+version: 0.1
+
+ziele:
+  meta.zweck:
+    - {dokument: 01_Profile, abschnitt: What this second brain is for}
+    - {dokument: 00_Status, abschnitt: Field map}
+  meta.felder:
+    - {dokument: 00_Status, abschnitt: Field map}
+  meta.module_aktiv:
+    - {dokument: 00_Status, abschnitt: Version stamp}
+    - {dokument: 00_Status, abschnitt: Filing map}
+  meta.eigene_bereiche:
+    - {dokument: 00_Status, abschnitt: Field map}
+  meta.einrichtung.antwortet:
+    - {dokument: 01_Profile, abschnitt: Setup}
+  meta.einrichtung.begleitperson_rolle:
+    - {dokument: 01_Profile, abschnitt: Setup}
+  meta.einrichtung.kanal_detail:
+    - {dokument: 00_Status, abschnitt: Field map}
+  person.anrede:
+    - {dokument: 01_Profile, abschnitt: Basics}
+  person.sprache.ausgabe:
+    - {dokument: 01_Profile, abschnitt: Basics}
+  person.zeit.pflege_pro_woche:
+    - {dokument: 01_Profile, abschnitt: Daily life and time}
+    - {dokument: Weekly-Plan, abschnitt: Time frame}
+  person.zeit.feste_zeiten:
+    - {dokument: 01_Profile, abschnitt: Daily life and time}
+    - {dokument: Weekly-Plan, abschnitt: Time frame}
+  person.kommunikation:
+    - {dokument: 01_Profile, abschnitt: How Claude talks to me}
+  person.regeln:
+    - {dokument: 01_Profile, abschnitt: Rules}
+  person.grenzen.nie_speichern:
+    - {dokument: 01_Profile, abschnitt: Limits}
+    - {dokument: 00_Status, abschnitt: Shared rules}
+  werkzeuge.geraete:
+    - {dokument: 01_Profile, abschnitt: Technology}
+  werkzeuge.ordner_id:
+    - {dokument: 00_Status, abschnitt: Version stamp}
+  werkzeuge.ordnername:
+    - {dokument: 00_Status, abschnitt: Version stamp}
+  meta.paket_version:
+    - {dokument: 00_Status, abschnitt: Version stamp}
+  meta.profil_version:
+    - {dokument: 01_Profile, abschnitt: Header}
+  person.anredeform:
+    - {dokument: 01_Profile, abschnitt: Basics}
+  person.grammatik_genus:
+    - {dokument: 01_Profile, abschnitt: Basics}
+  person.region_grob:
+    - {dokument: 01_Profile, abschnitt: Basics}
+
+# Module fields order their targets in their own module file (Modul_Vorlage.yaml, key "zuordnung").
+  # 2026-11-03 (dry run 4)
+  person.sprache.wunsch:
+    - {dokument: 01_Profile, abschnitt: Basics}
+  person.sprache.dokumente:
+    - {dokument: 01_Profile, abschnitt: Basics}
+  meta.einrichtung.sichtbarkeit:
+    - {dokument: 01_Profile, abschnitt: Setup}
+  werkzeuge.drive_app:
+    - {dokument: 01_Profile, abschnitt: Technology}
+  # 2026-11-03 (wave 3)
+  meta.einrichtung.schreibt:
+    - {dokument: 01_Profile, abschnitt: Setup}
+  werkzeuge.kontoinhaber:
+    - {dokument: 00_Status, abschnitt: Version stamp}
+  person.vorhaben:
+    - {dokument: 01_Profile, abschnitt: Daily life and time}
+    - {dokument: Weekly-Plan, abschnitt: Time frame}

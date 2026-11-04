@@ -1,0 +1,30 @@
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: kern
+name: Core (always there, not a module)
+version: 0.1
+art: kern
+aktivierung: {immer: true}
+skills: [setup-brain, onboarding-interview, fact-check, weekly-review, brain-check]
+skills_nachruestbar: [area-manager, skill-tailor]   # decision 2026-11-03: add, pause and update areas while in use; outside the upload budget; skill-tailor: tailoring from templates, decision 2026-11-03
+vorlagen:
+  - {name: 00_Status, art: doc, hinweis: "Index, version stamp, field map, filing map, limits"}
+  - {name: 01_Profile, art: doc}
+  - {name: 02_Open_Questions, art: doc}
+  - {name: Inbox, art: doc}
+  - {name: Journal, art: doc}
+  - {name: Fact-Ledger, art: doc}
+  - {name: Weekly-Plan, art: doc}
+  - {name: Archive, art: ordner}
+ablage_karte:
+  - "State, index, field map, limits -> 00_Status"
+  - "Details about the person -> 01_Profile"
+  - "Questions still open -> 02_Open_Questions"
+  - "Quickly filed, unsorted -> Inbox"
+  - "What happened and why -> Journal"
+  - "Numbers, deadlines, rules with a source -> Fact-Ledger"
+  - "Plan of the week -> Weekly-Plan"
+  - "Working rules and preferences -> 01_Profile, section Rules"
+profilfelder: {}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

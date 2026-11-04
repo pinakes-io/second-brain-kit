@@ -1,0 +1,53 @@
+# Persona (erfunden, keine realen Daten) – Trockenlauf 4, 03.11.2026
+id: persona-chronisch
+fiktiv: true
+autor: claude
+sprache: de
+kurz: Bürokraft in Teilzeit, Anfang 50, chronische Erkrankung mit vielen Arzt- und Therapieterminen, will Befunde und Fragen
+  für Termine sammeln; Gesundheit bewusst offen, Geld gesperrt.
+geraet: gemischt
+zeit_minuten: 20
+digital: mittel
+testet:
+- eigener Bereich Gesundheit (Lebenslage fehlt
+- L9)
+- Gesundheit offen und Geld gesperrt (gemischt)
+- Pause über Wochen
+- Dublettenprüfung eigener Bereich gegen Sperr-Tag
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  - Wissen und Recherchen sammeln
+  s1.felder:
+  - Arbeit, Beruf, Ausbildung
+  - Termine, Post, Ämter
+  - eigener Bereich (bitte benennen)
+  s1.felder.eigen: Gesundheit
+  s1.zeit: 30 bis 60 Minuten
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Smartphone
+  - Laptop oder Chromebook im Browser
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  - Geldbeträge
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+ablauf:
+- fragt bei s1.grenzen, ob ihre eigenen Gesundheitsangaben gemeint sind
+- legt den eigenen Bereich Gesundheit an; erwartet, dass Arzttermine dort und nicht in Termine landen
+- pausiert drei Wochen (Klinik) und kommt mit "Wo war ich?" zurück
+- will Zuzahlungen notieren, Geld ist aber gesperrt
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - arbeit
+  - entscheidungen
+  - termine
+  - wissen
+  - eigen:gesundheit
+erwartung_nutzer:
+  skills:
+  - appointment-prep
+  - knowledge-note

@@ -1,0 +1,20 @@
+# Nahbar-Budget (Entscheid 31.10.: Budget einführen). WERTE: Entwurf Claude, zu bestätigen.
+# Schätzwerte für Zeit sind Annahmen [ungeprüft]; Zahl der Bestätigungen hängt an R3 im Rauchtest.
+version: 0.1
+status: vorläufig
+stufe1:
+  max_fragen: 8
+  max_folgefragen: 4             # Entscheid 03.11. (Welle 3, war 3): Folgefrage Dokumentsprache
+  max_minuten: 5
+  sekunden_je_typ: {einfach: 15, mehrfach: 25, text: 30}
+einrichtung:
+  max_skill_uploads: 12         # Entscheid 01.11. (war 8): ein ZIP je Skill, Bündel nicht möglich (Befund D1)
+  max_drive_aktionen: 15        # Ordner und Dokumente, die setup-brain anlegt (je eine Bestätigung, falls nötig)
+  max_minuten: 20
+  grundaufwand_minuten: 8       # Projekt anlegen, Anweisungen einfügen, Drive verbinden, Präferenzen
+  minuten_je_upload: 1.5
+  sekunden_je_drive_aktion: 10
+stufe2:                         # Entscheid 03.11. (Trockenlauf 4): Takt für Stufe 2
+  max_fragen_je_sitzung: 4
+  max_fragen_je_modul: 4        # ohne Fragen mit spaeter: true
+  ein_modul_je_sitzung: false

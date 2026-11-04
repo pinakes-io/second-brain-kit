@@ -1,0 +1,26 @@
+# 2026-11-03 (dry run 4, decision): fields generalised, leftovers from the reference case removed, fields for the stage 2 catalogue.
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: familie
+name: Family and household
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.felder, option: "Family, household"}]}
+kanal_detail: formular
+skills: []
+anweisungsbaustein: |
+  ## Area Family and household
+  - State and appointments are in `State_Family`. If details of children are blocked, children appear only with appointments (date, time, place) as "child 1", "child 2"; if names are blocked, you write roles ("partner").
+  - You leave out blocked fields and do not ask for them.
+vorlagen: [{name: State_Family, art: doc}]
+ablage_karte: ["Family, household, childcare -> State_Family"]
+profilfelder: 
+  betreuungszeiten: {typ: text, pflicht: false, tags: [kinder], referenz: BETREUUNGSZEITEN}
+  kind_alter: {typ: text, pflicht: false, tags: [kinder], referenz: KIND_ALTER}
+  bildungseinrichtung_kind: {typ: text, pflicht: false, tags: [kinder], referenz: BILDUNGS_EINRICHTUNG_KIND}
+  familienkontext: {typ: text, pflicht: false, referenz: FAMILIENKONTEXT}
+  haushaltskontext: {typ: text, pflicht: false, referenz: HAUSHALTS_KONTEXT}
+  pflege: {typ: text, pflicht: false, tags: [gesundheit]}
+  haushaltsgeld: {typ: auswahl, pflicht: false, tags: [geld]}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

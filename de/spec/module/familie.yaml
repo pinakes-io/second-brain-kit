@@ -1,0 +1,26 @@
+# 03.11. (Trockenlauf 4, Entscheid): Felder verallgemeinert, Reste aus dem Referenzfall entfernt, Felder für den Katalog Stufe 2.
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: familie
+name: Familie und Haushalt
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.felder, option: "Familie, Haushalt"}]}
+kanal_detail: formular
+skills: []
+anweisungsbaustein: |
+  ## Bereich Familie und Haushalt
+  - Stand und Termine stehen in `State_Familie`. Sind Angaben zu Kindern gesperrt, stehen zu Kindern nur Termine (Datum, Uhrzeit, Ort) mit „Kind 1“, „Kind 2“; sind Namen gesperrt, schreibst du Rollen („Partnerin“).
+  - Gesperrte Felder lässt du aus und fragst sie nicht ab.
+vorlagen: [{name: State_Familie, art: doc}]
+ablage_karte: ["Familie, Haushalt, Betreuung -> State_Familie"]
+profilfelder: 
+  betreuungszeiten: {typ: text, pflicht: false, tags: [kinder], referenz: BETREUUNGSZEITEN}
+  kind_alter: {typ: text, pflicht: false, tags: [kinder], referenz: KIND_ALTER}
+  bildungseinrichtung_kind: {typ: text, pflicht: false, tags: [kinder], referenz: BILDUNGS_EINRICHTUNG_KIND}
+  familienkontext: {typ: text, pflicht: false, referenz: FAMILIENKONTEXT}
+  haushaltskontext: {typ: text, pflicht: false, referenz: HAUSHALTS_KONTEXT}
+  pflege: {typ: text, pflicht: false, tags: [gesundheit]}
+  haushaltsgeld: {typ: auswahl, pflicht: false, tags: [geld]}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

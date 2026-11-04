@@ -1,0 +1,49 @@
+# Persona (erfunden, keine realen Daten) – Trockenlauf 4, 03.11.2026
+id: persona-schicht
+fiktiv: true
+autor: claude
+sprache: de
+kurz: Pflegefachkraft im Wechselschichtdienst, Ende 20, alleinerziehend mit einem Kind im Grundschulalter, nur Smartphone,
+  tippt in Pausen; Kinder offen, Gesundheit gesperrt; ändert die Meinung.
+geraet: handy
+zeit_minuten: 5
+digital: mittel
+testet:
+- nur Handy
+- Meinung ändern (Lebensbereiche)
+- Pause mitten in Runde 2
+- Gesundheit gesperrt gegen Kinderarzttermine (eigene oder die des Kindes
+- L8)
+- Zeit knapp bei drei Bereichen
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  - Entscheidungen vorbereiten
+  s1.felder:
+  - Familie, Haushalt
+  - Termine, Post, Ämter
+  s1.zeit: unter 15 Minuten
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Smartphone
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  - 'Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)'
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+ablauf:
+- wählt bei s1.felder zuerst auch "Arbeit, Beruf, Ausbildung" (Dienstplan), nimmt es nach der Zusammenfassung wieder heraus
+- bricht nach der zweiten Frage von Runde 2 ab (Klingel); kommt zwei Tage später im selben Chat zurück
+- will die Impftermine des Kindes eintragen, obwohl Gesundheitsangaben gesperrt sind
+- liest lange Optionslisten am Handy nicht zu Ende
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - familie
+  - termine
+  - entscheidungen
+erwartung_nutzer:
+  skills:
+  - appointment-prep
+  - decision-clarify

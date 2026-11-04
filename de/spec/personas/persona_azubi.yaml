@@ -1,0 +1,89 @@
+id: persona-azubi
+fiktiv: true
+autor: unabhaengiger-agent
+sprache: de
+kurz: Erfundene Auszubildende, genau 18, erstes Lehrjahr Elektronikerin für Betriebstechnik, wechselt wochenweise zwischen
+  Betrieb und Berufsschule und macht fast alles am Handy.
+geraet: handy
+zeit_minuten: 10
+digital: mittel
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  - Etwas lernen
+  s1.felder:
+  - Arbeit, Beruf, Ausbildung
+  - Termine, Post, Ämter
+  s1.zeit: unter 15 Minuten
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Smartphone
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  - 'Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)'
+  - Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt)
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+ablauf:
+- Sie öffnet claude.ai abends im Bett am Handy und startet das Interview.
+- Bei s1.felder ist sie unsicher, ob Berufsschule unter Arbeit, Beruf, Ausbildung oder unter etwas lernen gehört, und kreuzt
+  beides an.
+- Bei s1.zeit wählt sie unter 15 Minuten, weil sie nach der Arbeit müde ist.
+- Bei s1.grenzen kreuzt sie Namen anderer Personen an, merkt aber nicht, dass dann ihr Ausbilder und die Klassenlehrkraft
+  nicht vorkommen dürfen.
+- Claude legt die Dokumente in Google Drive an; sie öffnet sie in der Drive-App und findet die Schrift am Handy zu klein.
+- 'Erste Detailrunde zur Ausbildung: sie nennt Blockunterricht, Klassenarbeiten und die Abgabe des Ausbildungsnachweises jeden
+  Freitag beim Betrieb.'
+- Sie fragt, ob Claude ihr den wöchentlichen Ausbildungsnachweis vorformulieren kann, und antwortet bei einer Detailfrage
+  zum Format mit weiß nicht.
+- 'Detailrunde zum Lernen: sie will für die Teil-1-Prüfung (Zwischenprüfung) im zweiten Lehrjahr Stoff wiederholen und überspringt
+  die Frage nach ihrem Lerntyp.'
+- 'Woche 1: sie meldet sich krank und fragt, wo sie festhalten soll, bis wann die Krankmeldung bei Betrieb und Berufsschule
+  sein muss, obwohl sie Gesundheitsangaben gesperrt hat.'
+- 'Erster Wochenrückblick: sie hat zwei Termine nicht eingetragen und sagt, dass sie lieber eine kurze Erinnerung als einen
+  langen Rückblick hätte.'
+- 'Woche 2: sie bekommt Post von der Krankenkasse zur Ausbildungsvergütung und will wissen, ob das unter Termine, Post, Ämter
+  gehört.'
+- 'Woche 3: Ausbildungsnachweis ist zweimal zu spät abgegeben, sie bittet um eine feste Erinnerung jeden Donnerstag.'
+- 'Woche 4: sie lässt den Wochenrückblick aus und kommt erst nach zehn Tagen wieder; sie erwartet, dass Claude ohne Vorwurf
+  wieder einsteigt.'
+erwartung:
+  bereiche:
+  - Ausbildung im Betrieb
+  - Berufsschule mit Klassenarbeiten und Fristen
+  - Ausbildungsnachweis jede Woche
+  - Lernen für die Zwischenprüfung
+  - Termine und Briefe (Krankenkasse, Betrieb)
+  nicht_passieren:
+  - Dass sie lange Texte am Handy lesen oder in Drive selbst Dokumente suchen muss.
+  - Dass Namen von Ausbilder oder Mitschülern gespeichert werden, obwohl sie das gesperrt hat.
+  - Dass der Ausbildungsnachweis komplett erfunden wird; er muss auf dem beruhen, was sie wirklich gemacht hat.
+  - Dass der Wochenrückblick sie belehrt oder schlecht dastehen lässt, wenn sie eine Woche nichts gemacht hat.
+  - Dass etwas über ihre Krankheit gespeichert wird.
+anmerkungen: '- s1.felder: Arbeit, Beruf, Ausbildung und etwas lernen überschneiden sich für Azubis; Berufsschule passt in
+  beide. Ein Hinweis fehlt, wohin Schule gehört.
+
+  - s1.felder: etwas lernen ist kleingeschrieben, die anderen Optionen groß; wirkt uneinheitlich.
+
+  - s1.zweck hat Etwas lernen, s1.felder hat etwas lernen; doppelt gefragt, Unterschied unklar.
+
+  - s1.grenzen ist nur ganz oder gar nicht. Gesundheit sperren schließt auch harmlose Fristen aus (Krankmeldung bis wann abgeben).
+  Eine Option wie nur Fristen, keine Diagnosen fehlt.
+
+  - s1.grenzen Namen anderer Personen: unklar, ob Rollen (Ausbilder, Klassenlehrkraft) dann erlaubt sind. Das sollte die Frage
+  sagen.
+
+  - s1.zeit: unter 15 Minuten ist für eine 18-Jährige schon viel; feinere Stufe (5 Minuten, nur Erinnerungen) fehlt.
+
+  - s1.geraete: Smartphone allein, aber nirgends wird gefragt, ob die Google-Drive-App installiert ist oder ob nur der Browser
+  geht.
+
+  - Es fehlt eine Frage nach dem Rhythmus (Wechsel Betrieb und Berufsschule, Blockunterricht), der für Termine zentral ist.
+
+  - Es fehlt eine Frage nach Erinnerungen bzw. Benachrichtigungen; ob Claude von sich aus erinnern kann, bleibt offen.
+
+  - Wort Second Brain und Begleitperson sind für die Zielgruppe ok; Formular zum Ausfüllen ist unklar (wo, in Drive, am Handy?).
+
+  - Alter genau 18: keine Frage dazu nötig, aber für Jüngere fehlt jede Regel; Hinweis wäre sinnvoll.
+
+  '

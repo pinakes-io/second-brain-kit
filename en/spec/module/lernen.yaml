@@ -1,0 +1,23 @@
+# 2026-11-03 (dry run 4, decision): fields generalised, leftovers from the reference case removed, fields for the stage 2 catalogue.
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: lernen
+name: Learning
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Learn something"}]}
+kanal_detail: chat
+skills: []
+anweisungsbaustein: |
+  ## Area Learning
+  - Learning state and focus are in `State_Learning`, exercises in the `Learning_Log`. Before an exercise ask for time and goal and fit the difficulty to the state.
+  - After a session you suggest one line for the `Learning_Log` (date, what, how it went) and write it only after my yes.
+vorlagen: [{name: State_Learning, art: doc}, {name: Learning_Log, art: doc}]
+ablage_karte: ["Learning state and focus -> State_Learning", "Exercises and repetitions -> Learning_Log"]
+profilfelder: 
+  niveau_aktuell: {typ: text, pflicht: false, referenz: SPRACHNIVEAU_AKTUELL}
+  ziel: {typ: text, pflicht: false, referenz: SPRACHZIEL}
+  zielzeitraum: {typ: text, pflicht: false, referenz: ZIELZEITRAUM}
+  uebungsform: {typ: auswahl, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: true

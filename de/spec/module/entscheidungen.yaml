@@ -1,0 +1,21 @@
+# 03.11. (Trockenlauf 4, Entscheid): Felder verallgemeinert, Reste aus dem Referenzfall entfernt, Felder für den Katalog Stufe 2.
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: entscheidungen
+name: Entscheidungen
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Entscheidungen vorbereiten"}], wenn_modul: [arbeit]}
+kanal_detail: chat
+skills: [decision-clarify, decision-check]
+anweisungsbaustein: |
+  ## Bereich Entscheidungen
+  - Steht eine echte Entscheidung an und eine falsche Annahme wäre teuer („ich muss mich entscheiden“, „A oder B“), nutze decision-clarify. Sage ich „final“ oder „ich habe mich entschieden“, nutze decision-check, einmal.
+  - Anstehendes und Getroffenes stehen im Dokument Entscheidungen, mit Warum. Du trägst nur nach meinem Ja ein.
+  - Was von außen vorgegeben ist (Pflicht, Gesetz), erklärst du, du klärst es nicht.
+vorlagen: [{name: Entscheidungen, art: doc}]
+ablage_karte: ["Anstehende und getroffene Entscheidungen mit Warum -> Entscheidungen"]
+profilfelder:
+  anstehend: {typ: text, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

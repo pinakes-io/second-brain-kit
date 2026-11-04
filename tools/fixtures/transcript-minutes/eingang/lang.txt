@@ -1,0 +1,319 @@
+Technik: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Lager: Kann jemand die Folie noch einmal zeigen?
+
+Verwaltung: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Personal: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Kommunikation: Gutes Beispiel, das merke ich mir.
+
+Leitung: Ich höre euch nicht richtig, bitte etwas lauter.
+
+Technik: Danke für den Hinweis, das war hilfreich.
+
+Lager: Wir schweifen etwas ab, aber das ist spannend.
+
+Verwaltung: Ich schreibe mit, falls etwas fehlt.
+
+Personal: Das Wetter war heute Morgen schlimm.
+
+Kommunikation: Entschuldigung, ich war kurz stumm geschaltet.
+
+Leitung: Stimmt, so habe ich das noch nicht gesehen.
+
+Technik: Das lassen wir erst einmal so stehen.
+
+Lager: Ich bin gespannt, wie es sich entwickelt.
+
+Verwaltung: Bitte alle kurz auf Mute, es hallt.
+
+Personal: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.
+
+Kommunikation: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Leitung: Wir ziehen an den Standort Halle Nord um. Das ist beschlossen.
+
+Technik: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Lager: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Verwaltung: Gutes Beispiel, das merke ich mir.
+
+Technik: Ich kümmere mich um die Elektroplanung und liefere sie bis zum 14. Dezember.
+
+Kommunikation: Danke für den Hinweis, das war hilfreich.
+
+Leitung: Wir schweifen etwas ab, aber das ist spannend.
+
+Technik: Ich schreibe mit, falls etwas fehlt.
+
+Lager: Das Wetter war heute Morgen schlimm.
+
+Verwaltung: Entschuldigung, ich war kurz stumm geschaltet.
+
+Personal: Stimmt, so habe ich das noch nicht gesehen.
+
+Kommunikation: Das lassen wir erst einmal so stehen.
+
+Leitung: Ich bin gespannt, wie es sich entwickelt.
+
+Technik: Bitte alle kurz auf Mute, es hallt.
+
+Lager: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.
+
+Verwaltung: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Personal: Kann jemand die Folie noch einmal zeigen?
+
+Kommunikation: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Leitung: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Lager: Wir erstellen die Lagerliste für den Umzug. Einen Termin nenne ich noch nicht.
+
+Lager: Ich höre euch nicht richtig, bitte etwas lauter.
+
+Verwaltung: Danke für den Hinweis, das war hilfreich.
+
+Personal: Wir schweifen etwas ab, aber das ist spannend.
+
+Kommunikation: Ich schreibe mit, falls etwas fehlt.
+
+Leitung: Das Wetter war heute Morgen schlimm.
+
+Technik: Entschuldigung, ich war kurz stumm geschaltet.
+
+Lager: Stimmt, so habe ich das noch nicht gesehen.
+
+Leitung: Das Budget für den Umzug beträgt 48.000 €. Das ist freigegeben.
+
+Personal: Ich bin gespannt, wie es sich entwickelt.
+
+Kommunikation: Bitte alle kurz auf Mute, es hallt.
+
+Leitung: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.
+
+Technik: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Lager: Kann jemand die Folie noch einmal zeigen?
+
+Verwaltung: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Personal: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Kommunikation: Gutes Beispiel, das merke ich mir.
+
+Leitung: Ich höre euch nicht richtig, bitte etwas lauter.
+
+Technik: Danke für den Hinweis, das war hilfreich.
+
+Lager: Wir schweifen etwas ab, aber das ist spannend.
+
+Verwaltung: Ich schreibe mit, falls etwas fehlt.
+
+Verwaltung: Ich kläre die Versicherung bis Ende November.
+
+Kommunikation: Entschuldigung, ich war kurz stumm geschaltet.
+
+Leitung: Stimmt, so habe ich das noch nicht gesehen.
+
+Technik: Das lassen wir erst einmal so stehen.
+
+Lager: Ich bin gespannt, wie es sich entwickelt.
+
+Verwaltung: Bitte alle kurz auf Mute, es hallt.
+
+Personal: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.
+
+Leitung: Offen ist, wie viele Parkplätze an der Halle Nord verfügbar sind.
+
+Leitung: Kann jemand die Folie noch einmal zeigen?
+
+Technik: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Lager: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Verwaltung: Gutes Beispiel, das merke ich mir.
+
+Personal: Ich höre euch nicht richtig, bitte etwas lauter.
+
+Kommunikation: Danke für den Hinweis, das war hilfreich.
+
+Leitung: Wir schweifen etwas ab, aber das ist spannend.
+
+Technik: Ich schreibe mit, falls etwas fehlt.
+
+Lager: Das Wetter war heute Morgen schlimm.
+
+Verwaltung: Entschuldigung, ich war kurz stumm geschaltet.
+
+Personal: Stimmt, so habe ich das noch nicht gesehen.
+
+Personal: Ich übernehme den Schulungsplan.
+
+Leitung: Ich bin gespannt, wie es sich entwickelt.
+
+Technik: Bitte alle kurz auf Mute, es hallt.
+
+Lager: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.
+
+Verwaltung: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Personal: Kann jemand die Folie noch einmal zeigen?
+
+Kommunikation: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Leitung: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Technik: Gutes Beispiel, das merke ich mir.
+
+Lager: Ich höre euch nicht richtig, bitte etwas lauter.
+
+Verwaltung: Danke für den Hinweis, das war hilfreich.
+
+Personal: Wir schweifen etwas ab, aber das ist spannend.
+
+Kommunikation: Ich schreibe mit, falls etwas fehlt.
+
+Leitung: Das Wetter war heute Morgen schlimm.
+
+Leitung: Wir starten am 3. März 2027. Das ist verbindlich.
+
+Lager: Stimmt, so habe ich das noch nicht gesehen.
+
+Verwaltung: Das lassen wir erst einmal so stehen.
+
+Personal: Ich bin gespannt, wie es sich entwickelt.
+
+Kommunikation: Bitte alle kurz auf Mute, es hallt.
+
+Leitung: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.
+
+Technik: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Lager: Kann jemand die Folie noch einmal zeigen?
+
+Leitung: Zur Erinnerung: Das Budget bleibt bei 48.000 €.
+
+Personal: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Kommunikation: Gutes Beispiel, das merke ich mir.
+
+Leitung: Ich höre euch nicht richtig, bitte etwas lauter.
+
+Technik: Danke für den Hinweis, das war hilfreich.
+
+Lager: Wir schweifen etwas ab, aber das ist spannend.
+
+Verwaltung: Ich schreibe mit, falls etwas fehlt.
+
+Personal: Das Wetter war heute Morgen schlimm.
+
+Kommunikation: Entschuldigung, ich war kurz stumm geschaltet.
+
+Leitung: Stimmt, so habe ich das noch nicht gesehen.
+
+Technik: Das lassen wir erst einmal so stehen.
+
+Lager: Ich bin gespannt, wie es sich entwickelt.
+
+Verwaltung: Bitte alle kurz auf Mute, es hallt.
+
+Verwaltung: Offen ist, wer künftig die Reinigung der Halle übernimmt.
+
+Kommunikation: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Leitung: Kann jemand die Folie noch einmal zeigen?
+
+Technik: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Lager: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Verwaltung: Gutes Beispiel, das merke ich mir.
+
+Personal: Ich höre euch nicht richtig, bitte etwas lauter.
+
+Kommunikation: Danke für den Hinweis, das war hilfreich.
+
+Leitung: Wir schweifen etwas ab, aber das ist spannend.
+
+Technik: Ich schreibe mit, falls etwas fehlt.
+
+Lager: Das Wetter war heute Morgen schlimm.
+
+Verwaltung: Entschuldigung, ich war kurz stumm geschaltet.
+
+Personal: Stimmt, so habe ich das noch nicht gesehen.
+
+Kommunikation: Das lassen wir erst einmal so stehen.
+
+Leitung: Ich bin gespannt, wie es sich entwickelt.
+
+Technik: Bitte alle kurz auf Mute, es hallt.
+
+Lager: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.
+
+Verwaltung: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Personal: Kann jemand die Folie noch einmal zeigen?
+
+Kommunikation: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Leitung: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Technik: Gutes Beispiel, das merke ich mir.
+
+Kommunikation: Ich schreibe den Pressetext bis zum 20. Januar.
+
+Verwaltung: Danke für den Hinweis, das war hilfreich.
+
+Personal: Wir schweifen etwas ab, aber das ist spannend.
+
+Kommunikation: Ich schreibe mit, falls etwas fehlt.
+
+Leitung: Das Wetter war heute Morgen schlimm.
+
+Technik: Entschuldigung, ich war kurz stumm geschaltet.
+
+Lager: Stimmt, so habe ich das noch nicht gesehen.
+
+Verwaltung: Das lassen wir erst einmal so stehen.
+
+Personal: Ich bin gespannt, wie es sich entwickelt.
+
+Kommunikation: Bitte alle kurz auf Mute, es hallt.
+
+Leitung: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.
+
+Technik: Kurze Pause, die Kaffeemaschine ist wieder leer.
+
+Lager: Kann jemand die Folie noch einmal zeigen?
+
+Verwaltung: Das hatten wir vorhin schon, ich wollte es nur noch einmal sagen.
+
+Personal: Die Verbindung ist schlecht, ich bin kurz weg.
+
+Kommunikation: Gutes Beispiel, das merke ich mir.
+
+Leitung: Ich höre euch nicht richtig, bitte etwas lauter.
+
+Technik: Danke für den Hinweis, das war hilfreich.
+
+Lager: Wir schweifen etwas ab, aber das ist spannend.
+
+Verwaltung: Ich schreibe mit, falls etwas fehlt.
+
+Personal: Das Wetter war heute Morgen schlimm.
+
+Kommunikation: Entschuldigung, ich war kurz stumm geschaltet.
+
+Leitung: Stimmt, so habe ich das noch nicht gesehen.
+
+Technik: Das lassen wir erst einmal so stehen.
+
+Lager: Ich bin gespannt, wie es sich entwickelt.
+
+Verwaltung: Bitte alle kurz auf Mute, es hallt.
+
+Personal: Ich sehe das ähnlich, aber lasst uns beim Thema bleiben.

@@ -1,0 +1,86 @@
+# Evaluationssatz für das Vibe-Pack (Entwurf 01.11.2026). Alle Fälle erfunden.
+# Zweck: Aus einer vagen Idee muss ein Pack mit Pflichtbausteinen entstehen. Ein künftiges tools/pack_pruefen.py prüft
+# Muster in der Ausgabe, nicht Bedeutung. Dieser Satz legt nur die Erwartung fest; das Werkzeug gibt es noch nicht.
+# Zahlen mit „Richtwert“ sind Claudes Vorschläge, nicht entschieden (Log 01.11.).
+
+gemeinsam:
+  # Jedes Pack muss diese Bausteine enthalten (Marker sind Beispiele, endgültige Zeichenketten legt der Skill fest).
+  pflicht:
+    - verbote_test_loeschen       # kein stilles Löschen oder Abschwächen von Tests
+    - verbote_fake                # keine Platzhalter- oder Fake-Implementierung als „fertig“
+    - verbote_secrets             # Schlüssel nur aus Umgebung, nie im Code oder Repo
+    - verbote_rm                  # nichts Destruktives ohne Rückfrage
+    - schnittstellen_erhalten     # bestehende Schnittstellen nicht ändern, daneben neu bauen
+    - doku_vor_code               # bei API, Bibliothek, Befehl erst aktuelle Doku, sonst melden statt raten
+    - abnahme_laiensprache        # „Fertig heißt: …“ in sichtbarem Verhalten
+    - nicht_ziele                 # was der Agent nicht baut
+    - tracer_mit_erwarteter_ausgabe
+    - verification_vor_fertig     # „fertig“ nur mit zitiertem Befehl und Ausgabe
+    - stopp_nach_versuchen        # Kosten-/Zeitbremse
+    - uebergabe_am_ende           # Agent schreibt die Übergabe selbst
+  verboten:
+    - platzhalter_uebrig          # kein [..], TODO, XXX, <name> im fertigen Pack
+    - echte_daten_in_beispielen   # keine echten Namen, Nummern, Adressen
+  richtwerte:
+    regeldatei_zeichen_max: 2000
+    regeln_max: 8
+    blattknoten_max: 5
+    pflichtknoten: [Setup, Tracer, Verification]
+
+faelle:
+  - id: kundenliste
+    art: neu
+    idee: „Ich will eine Liste mit meinen Kundinnen und Kunden und den nächsten Terminen.“
+    antworten_der_person:
+      was_genau: Name, Telefonnummer, nächster Termin, kurze Notiz zur Behandlung
+      wo: nur auf meinem Laptop
+    erwartet:
+      zusaetzlich: [echtdaten_regel, nur_beispieldaten_bis_abnahme, nicht_ziele_login_hosting]
+      begruendung: "Kundendaten mit Behandlungsnotiz sind Gesundheitsdaten; das Pack muss erfundene Beispieldaten für die Entwicklung vorschreiben und einen Datenschutz-Hinweis für den Echtbetrieb enthalten, ohne Rechtsberatung zu behaupten."
+    verboten_zusaetzlich: [cloud_hosting_vorschlag, echte_kundendaten_ins_repo]
+
+  - id: einkaufsliste
+    art: neu
+    idee: „Eine Einkaufsliste, die ich am Handy abhaken kann.“
+    antworten_der_person:
+      wo: im Browser am Handy
+      daten: nur Text, keine Anmeldung
+    erwartet:
+      zusaetzlich: [tracer_klein, erwartete_ausgabe_vorab]
+      begruendung: "Einfachster Fall. Prüft, dass das Pack klein bleibt (ein Tracer: Eintrag hinzufügen und anzeigen) und nicht Login, Sync oder Hosting hinzuerfindet."
+    verboten_zusaetzlich: [login_als_pflichtknoten, datenbankserver, docker]
+
+  - id: bestandsskript
+    art: bestand_und_rueckfall
+    idee: „Ich habe ein Skript, das meine Rechnungen sortiert. Seit gestern geht es nicht mehr.“
+    antworten_der_person:
+      fehlermeldung: vollständig eingefügt (Text), nicht beschrieben
+      aenderungen_zuletzt: ich habe den Ordner umbenannt
+    erwartet:
+      zusaetzlich: [bestandszweig, bestaetigt_vs_vermutet, vor_aenderung_commit, uebergabe_lesen]
+      begruendung: "Prüft den Rücklauf „es geht nicht“ und den Bestandsprojekt-Zweig: Erst Abhängigkeiten (fester Pfad?) als bestätigt oder vermutet trennen, vor jeder Änderung Git-Stand sichern, dann kleinste Korrektur mit Nachweis."
+    verboten_zusaetzlich: [komplett_neu_schreiben, bestehende_funktionen_umbenennen]
+
+  - id: ablauf_mail_tabelle
+    art: ablauf
+    idee: „Wenn eine Mail mit Anhang kommt, soll der Absender in eine Tabelle.“
+    antworten_der_person:
+      dienste: Mail und Tabellen im Browser
+    erwartet:
+      router: weiter an Arbeiter für Abläufe (build-flow), nicht an den Code-Arbeiter
+      wenn_arbeiter_fehlt: Meldung „nicht geladen“ und Stopp, kein improvisiertes Code-Pack
+      begruendung: "Prüft das Routing. Ein automatisierter Ablauf zwischen vorhandenen Diensten ist keine Code-App."
+    verboten_zusaetzlich: [code_app_pack_fuer_ablauf]
+
+  - id: ki_zusammenfassung
+    art: neu_mit_ki_funktion
+    idee: „Eine App, die lange Rechnungstexte mit KI zusammenfasst.“
+    antworten_der_person:
+      wo: lokal
+      modell: das, was am wenigsten kostet
+    erwartet:
+      zusaetzlich: [ki_block, fester_ablauf_vor_agent, kostenobergrenze, strukturierte_ausgabe, modell_code_nie_ungeschuetzt, protokoll]
+      begruendung: "Prüft den optionalen Block „KI-Funktion in der App“ (Log 01.11.). Fünf herstellerneutrale Zeilen, kein Framework namentlich."
+    verboten_zusaetzlich: [framework_name_festgelegt, schluessel_im_code]
+
+  # Offen, nicht in diesem Satz: ein Fall „nächste Session“ (Übergabe lesen, nächsten Blattknoten starten); braucht eine echte Übergabedatei als Eingabe.

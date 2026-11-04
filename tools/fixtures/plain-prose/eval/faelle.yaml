@@ -1,0 +1,172 @@
+# Evaluationssatz plain-prose-de / plain-prose-en (Entwurf 01.11.2026). Alle Texte und Namen erfunden.
+# Felder: id, sprache, textart, auftrag (was ich zum Text schreibe), text,
+#   muss: Zeichenketten, die im Ergebnis stehen müssen (Fakten, Zitate, Fachbegriffe); Zahlen im text werden zusätzlich automatisch geprüft
+#   verboten / erwartet: reguläre Ausdrücke (ohne Groß-/Kleinschreibung) gegen den Ergebnistext
+#   min_aehnlichkeit: Wortanteil, der mindestens erhalten bleiben muss (Schutz vor Übereingriff)
+#   max_laenge: höchstens dieser Anteil der Wörter des Originals (Längenziel)
+#   markdown_ok: Markdown im Ergebnis erlaubt (Standard: nein)
+# Prüfung: python3 -I tools/plain_prose_pruefen.py eval . <ordner mit <id>.txt je Fall>
+faelle:
+  - id: de_intern_mail
+    sprache: de
+    textart: intern
+    auftrag: Mach das klarer.
+    text: >-
+      Hallo Team, ich wollte nur kurz darauf hinweisen, dass die Abgabe der Reisekostenabrechnungen bis spätestens
+      Freitag, 14. November, 12 Uhr zu erfolgen hat. Es ist wichtig zu beachten, dass Belege ab 50 Euro im Original
+      eingereicht werden müssen. Bei Fragen stehe ich euch jederzeit gerne zur Verfügung. Viele Grüße, Jana
+    muss: ["14. November", "12 Uhr", "Freitag", "Jana", "Original"]
+    verboten: ["wichtig zu beachten", "zu erfolgen"]
+
+  - id: de_gender
+    sprache: de
+    textart: geschäftlich
+    auftrag: Überarbeiten bitte.
+    text: >-
+      Alle Mitarbeiter:innen werden gebeten, die Datenschutzschulung bis Ende März abzuschließen. Die Teilnehmer*innen
+      erhalten danach ein Zertifikat. Unsere KollegInnen aus dem Vertrieb haben bereits teilgenommen.
+    muss: ["Ende März", "Zertifikat", "Vertrieb"]
+    verboten: [":innen", "\\*innen", "(?-i:[a-zäöü]Innen\\b)", "_innen"]
+    erwartet: ["Mitarbeitende|Mitarbeiterinnen und Mitarbeiter", "Teilnehmende|Teilnehmerinnen und Teilnehmer|Wer teilnimmt|alle, die teilnehmen", "Kolleginnen und Kollegen|Kolleg\\w* aus dem Vertrieb|Vertrieb hat"]
+
+  - id: de_femininum
+    sprache: de
+    textart: geschäftlich
+    auftrag: Bitte klarer formulieren.
+    text: >-
+      Liebe Erstsemester, alle Studentinnen können sich unabhängig vom Studiengang ab dem 1. Oktober online
+      einschreiben. Eine Durchführung der Einschreibung vor Ort ist nicht vorgesehen.
+    muss: ["1. Oktober", "online"]
+    verboten: ["\\balle Studentinnen\\b(?! und)", "Durchführung"]
+    erwartet: ["Studierende|Studentinnen und Studenten|alle können|ihr könnt"]
+
+  - id: de_anglizismen
+    sprache: de
+    textart: intern
+    auftrag: Klartext bitte.
+    text: >-
+      Lass uns im Meeting nächste Woche die Deadline für den Rollout committen und die To-dos alignen, damit wir den
+      Impact maximieren. Das Wording im Prompt passt schon.
+    muss: ["Prompt", "nächste Woche"]
+    verboten: ["alignen", "committen", "Impact maximieren"]
+
+  - id: de_gut
+    sprache: de
+    textart: intern
+    auftrag: Kannst du das noch verbessern?
+    text: >-
+      Der Bus fährt um 7.40 Uhr ab. Wer ihn verpasst, nimmt den nächsten um 8.10 Uhr. Brotzeit bitte selbst
+      mitbringen, Getränke gibt es vor Ort.
+    muss: ["7.40 Uhr", "8.10 Uhr", "Brotzeit", "Getränke"]
+    min_aehnlichkeit: 0.8
+
+  - id: de_fach
+    sprache: de
+    textart: fach
+    auftrag: Straffen, ist für den Methodenteil meiner Abschlussarbeit.
+    text: >-
+      Die Kalibrierung des Spektrometers erfolgte mittels zertifizierter Referenzmaterialien (NIST SRM 2034). Die
+      Messunsicherheit wurde gemäß GUM bestimmt und beträgt ±0,3 nm (k = 2). Eine Abweichung von der Spezifikation
+      konnte nicht festgestellt werden.
+    muss: ["NIST SRM 2034", "GUM", "±0,3", "k = 2", "Referenzmaterialien", "Messunsicherheit", "Spezifikation"]
+    min_aehnlichkeit: 0.5
+
+  - id: de_vertrag
+    sprache: de
+    textart: geschäftlich
+    auftrag: Bitte prüf und verbessere meinen Absatz, das Zitat aus dem Mietvertrag muss so bleiben.
+    text: >-
+      Ich möchte Sie darauf hinweisen, dass laut Mietvertrag folgende Regelung gilt: „Der Mieter ist verpflichtet,
+      Schönheitsreparaturen nach Maßgabe von § 5 Abs. 2 durchzuführen, sofern diese durch die vertragsgemäße Nutzung
+      erforderlich geworden sind.“ Eine Durchführung durch mich ist daher erst nach Ablauf der Mietzeit vorgesehen.
+    muss: ["„Der Mieter ist verpflichtet, Schönheitsreparaturen nach Maßgabe von § 5 Abs. 2 durchzuführen, sofern diese durch die vertragsgemäße Nutzung erforderlich geworden sind.“"]
+
+  - id: de_unsicher
+    sprache: de
+    textart: geschäftlich
+    auftrag: Weniger Gelaber bitte.
+    text: >-
+      Nach ersten Schätzungen könnte sich der Umsatz im dritten Quartal möglicherweise um etwa 4 bis 6 Prozent erhöhen.
+      Die endgültigen Zahlen liegen erst Mitte Januar vor. Es ist jedoch durchaus denkbar, dass sich die Lage
+      gewissermaßen verbessert.
+    muss: ["dritten Quartal", "Mitte Januar"]
+    verboten: ["könnte\\b.{0,30}möglicherweise", "gewissermaßen", "durchaus"]
+    erwartet: ["Schätzung|voraussichtlich|vielleicht|könnte|dürfte|rechnen|erwarten|vorläufig"]
+
+  - id: de_laenge
+    sprache: de
+    textart: werbung
+    auftrag: Kürz das auf die Hälfte.
+    text: >-
+      Unser innovatives, ganzheitliches Komplettpaket revolutioniert die Art und Weise, wie Sie Ihre Buchhaltung
+      erledigen. Mit maßgeschneiderten Lösungen und einem nahtlosen Onboarding bringen wir Ihr Unternehmen auf das
+      nächste Level. Nicht nur sparen Sie Zeit, sondern auch Nerven. Unsere Software kostet 49 € im Monat und lässt sich
+      14 Tage kostenlos testen. Darüber hinaus bieten wir einen umfassenden Support, der Ihnen jederzeit zur Verfügung
+      steht. Zusammenfassend lässt sich sagen: Die Entscheidung für uns ist eine Entscheidung für die Zukunft.
+    muss: ["Buchhaltung", "kostenlos"]
+    verboten: ["innovativ", "ganzheitlich", "nahtlos", "nächste Level", "Zusammenfassend"]
+    max_laenge: 0.6
+
+  - id: de_mail_vermieter
+    sprache: de
+    textart: geschäftlich
+    auftrag: Kurze Mail an den Vermieter, bitte klarer. Ich kopiere sie direkt ins Mailprogramm.
+    text: >-
+      Sehr geehrte Damen und Herren, hiermit möchte ich Ihnen mitteilen, dass die Heizung in meiner Wohnung seit dem
+      3. November nicht funktionsfähig ist. Ich bitte um eine zeitnahe Behebung des Mangels. Mit freundlichen Grüßen
+    muss: ["3. November", "Heizung"]
+    verboten: ["Behebung"]
+
+  - id: en_business
+    sprache: en
+    textart: business
+    auftrag: Tighten this please.
+    text: >-
+      We are excited to announce that our team has leveraged cutting-edge technology to deliver a seamless onboarding
+      experience. This represents a game-changer for our customers, who can now complete setup in approximately 15
+      minutes instead of 2 hours. Moving forward, we will continue to foster innovation across our ecosystem.
+    muss: ["onboarding", "hours"]
+    verboten: ["leverag", "seamless", "game-changer", "foster", "cutting-edge", "approximately"]
+
+  - id: en_gut
+    sprache: en
+    textart: intern
+    auftrag: Can you improve this?
+    text: >-
+      The meeting moved to Thursday at 3 p.m. Bring the color proofs and the budget sheet. If you can't make it, send
+      Dana your notes by noon.
+    muss: ["Thursday", "3 p.m.", "color", "Dana", "noon"]
+    verboten: ["colour"]
+    min_aehnlichkeit: 0.8
+
+  - id: en_hedge
+    sprache: en
+    textart: business
+    auftrag: Make it clearer.
+    text: >-
+      It could potentially be argued that the new filter may arguably reduce false alarms by perhaps 10 to 20 percent,
+      although the pilot only covered 40 cases and the vendor has not published its method.
+    muss: ["false alarms", "pilot", "vendor"]
+    verboten: ["arguably", "could potentially"]
+    erwartet: ["\\bmay\\b|\\bmight\\b|\\bcould\\b|suggest|early|small|only"]
+
+  - id: en_quote
+    sprache: en
+    textart: report
+    auftrag: Tighten this paragraph but keep the quote.
+    text: >-
+      The board met on 4 March. As the chair put it, “we are not in the business of guessing, we are in the business of
+      knowing.” After the meeting, a decision was made by the board to postpone the vote.
+    muss: ["4 March", "“we are not in the business of guessing, we are in the business of knowing.”"]
+    verboten: ["a decision was made"]
+
+  - id: en_nominal
+    sprache: en
+    textart: business
+    auftrag: Plain English please.
+    text: >-
+      The implementation of the new policy resulted in a reduction in the utilization of overtime, and an assessment
+      of the impact on employee satisfaction is currently being undertaken by HR in order to facilitate the
+      determination of next steps.
+    muss: ["HR", "overtime"]
+    verboten: ["in order to", "utilization", "facilitate"]

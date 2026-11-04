@@ -1,0 +1,21 @@
+# 2026-11-03 (dry run 4, decision): fields generalised, leftovers from the reference case removed, fields for the stage 2 catalogue.
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: entscheidungen
+name: Decisions
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Prepare decisions"}], wenn_modul: [arbeit]}
+kanal_detail: chat
+skills: [decision-clarify, decision-check]
+anweisungsbaustein: |
+  ## Area Decisions
+  - If a real decision is pending and a wrong assumption would be costly ("I have to decide", "A or B"), use decision-clarify. If I say "final" or "I have decided", use decision-check, once.
+  - Pending and taken decisions are in the document Decisions, with the reason. You only add entries after my yes.
+  - What is imposed from outside (obligation, law) you explain, you do not clarify it.
+vorlagen: [{name: Decisions, art: doc}]
+ablage_karte: ["Pending and taken decisions with the reason -> Decisions"]
+profilfelder:
+  anstehend: {typ: text, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

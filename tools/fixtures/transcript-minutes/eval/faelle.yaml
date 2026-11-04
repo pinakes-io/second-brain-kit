@@ -1,0 +1,102 @@
+# Evaluationssatz für den Skill transcript-minutes (Entwurf 01.11.2026). Alle Gespräche und Namen erfunden.
+# Zweck: Aus einem Transkript muss ein Protokoll mit Kennungen, Aufgabentabelle und lückenloser Abdeckung entstehen.
+# tools/protokoll_pruefen.py prüft Muster und Zahlen, keine Bedeutung. Die Erwartungen unten sind Claudes Lesart
+# der Auftragsregeln (Übergabe 01.11.), nicht einzeln entschieden.
+# Felder je Fall:
+#   datei, gut        Eingang bzw. Beispielprotokoll (gut ist Pflicht für den Selbsttest, ausgenommen lang: wird erzeugt)
+#   titel             Muster für die Titelzeile
+#   kennung           zeit | absatz (wie der Eingang gezählt wird)
+#   beschluesse       Muster, je eines muss in einem Beschluss vorkommen; [] heißt: keinen Abschnitt Beschlüsse
+#   beschluesse_max   höchste Zahl Beschlüsse (Standard: Zahl der Muster)
+#   beschluesse_verboten  Muster, die in Beschlüssen nicht stehen dürfen (überholte Beschlüsse)
+#   offen             Muster, je eines muss unter Offene Punkte vorkommen
+#   aufgaben          genau diese Aufgaben: stichwort, zustaendig, frist (Text oder Liste zulässiger Texte)
+#   themen_min        Mindestzahl Themenblöcke (Höchstzahl immer 5)
+#   muss              Zeichenketten, die im Protokoll stehen müssen
+#   hoechstens_einmal Muster, die in Beschlüssen, Inhalt und Offenen Punkten höchstens einmal vorkommen
+#   gemeinsam         Kennungslisten, die in einer einzigen Aussage zusammen stehen müssen
+#   verbotene_namen   Muster, die nirgends im Protokoll stehen dürfen (Grenze „Namen anderer Personen“)
+#   rollen_ok         Muster für zulässige Rollenbezeichnungen in Zuständig, wenn Namen gesperrt sind
+
+faelle:
+  - id: kurz_zeitmarken
+    art: Besprechung mit Zeitmarken
+    datei: eingang/kurz_zeitmarken.txt
+    gut: gut/kurz_zeitmarken.md
+    titel: 'Besprechung'
+    kennung: zeit
+    beschluesse: ['Anbieter B', 'Ende Februar 2027']
+    offen: ['alten Tickets']
+    aufgaben:
+      - {stichwort: 'Vertragsentwurf', zustaendig: 'Einkauf', frist: 'bis Freitag'}
+      - {stichwort: 'technisch prüfen', zustaendig: 'Technik', frist: '15. Januar'}
+      - {stichwort: 'Teams', zustaendig: 'Schriftführung', frist: ['offen', 'sobald der Vertrag unterschrieben']}
+    themen_min: 2
+    muss: ['12.400', '15. Januar', 'Ende Februar 2027']
+
+  - id: kurz_ohne
+    art: Interview ohne Zeitmarken, Namen gesperrt
+    datei: eingang/kurz_ohne.txt
+    gut: gut/kurz_ohne.md
+    titel: 'Interview'
+    kennung: absatz
+    beschluesse: ['Oktober 2025']
+    offen: []
+    aufgaben:
+      - {stichwort: 'Auswertung', zustaendig: 'Befragte', frist: 'nächste Woche'}
+    themen_min: 2
+    muss: ['April 2025', 'Oktober 2025']
+    verbotene_namen: ['Tamsorn', 'Quillen', '\bFrau\b']
+    rollen_ok: '(?i)befragt|interview|person [ab]|gesprächspartner|inhaber|betriebs|schreinerei'
+
+  - id: doppelt
+    art: Besprechung, doppelt genannte Fakten, überholter Beschluss
+    datei: eingang/doppelt.txt
+    gut: gut/doppelt.md
+    titel: 'Besprechung'
+    kennung: absatz
+    beschluesse: ['15\. Juni']
+    beschluesse_max: 2
+    beschluesse_verboten: ['1\. Juni']
+    offen: ['Eröffnungsfeier']
+    aufgaben:
+      - {stichwort: 'Plakate', zustaendig: 'Quillen', frist: 'bis zum 10. Mai'}
+      - {stichwort: 'früher bezogen', zustaendig: 'Tamsorn', frist: 'bis Ende der Woche'}
+    themen_min: 2
+    muss: ['8.500', '15. Juni', '10. Mai']
+    hoechstens_einmal: ['8\.500', '3\.000']
+    gemeinsam: [['A5', 'A8'], ['A2', 'A7']]
+
+  - id: fehlende_fristen
+    art: Telefonat, Fristen und Zuständige fehlen, Vorschläge ohne Zusage
+    datei: eingang/fehlende_fristen.txt
+    gut: gut/fehlende_fristen.md
+    titel: 'Gesprächsnotiz|Telefonat'
+    kennung: zeit
+    beschluesse: []
+    offen: ['vierteljährlich']
+    aufgaben:
+      - {stichwort: 'Techniker', zustaendig: 'Service', frist: ['offen', 'per Mail']}
+      - {stichwort: 'Schlüssel', zustaendig: 'offen', frist: ['offen', 'bevor der Techniker kommt']}
+      - {stichwort: 'Wartungsprotokoll', zustaendig: 'Buchhaltung', frist: 'offen'}
+    themen_min: 2
+    muss: ['30. September 2027']
+
+  - id: lang
+    art: Workshop, 160 Absätze (erzeugt mit protokoll_pruefen.py erzeugen)
+    datei: eingang/lang.txt
+    gut: gut/lang.md
+    titel: 'Workshop'
+    kennung: absatz
+    beschluesse: ['Halle Nord', '48\.000', '3\. März 2027']
+    offen: ['Parkplätze', 'Reinigung']
+    aufgaben:
+      - {stichwort: 'Elektroplanung', zustaendig: 'Technik', frist: '14. Dezember'}
+      - {stichwort: 'Lagerliste', zustaendig: 'Lager', frist: 'offen'}
+      - {stichwort: 'Versicherung', zustaendig: 'Verwaltung', frist: 'Ende November'}
+      - {stichwort: 'Schulungsplan', zustaendig: 'Personal', frist: 'offen'}
+      - {stichwort: 'Pressetext', zustaendig: 'Kommunikation', frist: '20. Januar'}
+    themen_min: 3
+    muss: ['48.000', '3. März 2027', '14. Dezember', '20. Januar', 'Ende November']
+    hoechstens_einmal: ['48\.000']
+    gemeinsam: [['A45', 'A99']]

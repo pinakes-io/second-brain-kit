@@ -1,0 +1,27 @@
+# Modul-Vorlage (Entwurf 31.10.2026, Format 2)
+# Entscheide 31.10.: Module im einheitlichen Format, später zuschaltbar ohne Überschreiben, plus eigene Bereiche;
+# Module als Daten (je Modul eine Datei in spec/module/, Prüfung durch tools/spec_pruefen.py).
+id: beispiel                 # Kleinbuchstaben; eigene Bereiche: eigen:<name> (legt setup-brain im Chat an)
+name: Beispielbereich
+version: 0.1
+art: vorlage                 # kern | vorlage | eigen
+aktivierung:                 # mindestens eine Regel; "immer" nur für kern, person, werkzeuge
+  wenn_antwort: [{frage: s1.felder, option: "..."}]   # Option wörtlich aus Fragen_Stufe1.yaml
+  wenn_modul: []                                        # aktiv, sobald eines dieser Module aktiv ist
+kanal_detail: chat           # chat | formular
+skills: []                   # Kern-Skills nie hier
+skills_nachruestbar: []      # optionale Zusatz-Skills, am Ende des Interviews angeboten, außerhalb des Upload-Budgets
+anweisungsbaustein: |        # wird an die Kern-Anweisungen gehängt; Ziel unter 1.500 Zeichen
+  ## Bereich Beispiel
+vorlagen:                    # Drive-Dokumente und Ordner, die setup-brain anlegt (nur wenn sie fehlen)
+  - {name: State_Beispiel, art: doc}
+ablage_karte:                # Zeilen für die Ablage-Karte in 00_Status
+  - "Stand, Entscheidungen, Belege zum Bereich -> State_Beispiel"
+profilfelder: {}             # name: {typ, pflicht, tags: [kinder|gesundheit|geld|namen], referenz: PLATZHALTER}
+fragen: []                   # Stufe-2-Fragen; Format wie Fragen_Stufe2.yaml; profil_pfad <modul>.<feld>; optional tags
+zuordnung: {}                # profil_pfad -> [{dokument, abschnitt}]
+eigener_projektkandidat: false
+
+# Eigener Bereich (eigen:<name>), von setup-brain im Chat angelegt: ein State-Dokument, eine Zeile Ablage-Karte,
+# Eintrag in module_aktiv; keine Skills, keine Fragen. brain-check schlägt den Umstieg auf ein Vorlagenmodul vor.
+# Tags (F7): eine in Stufe 1 gesetzte Grenze lässt Felder und Fragen mit passendem Tag weg.

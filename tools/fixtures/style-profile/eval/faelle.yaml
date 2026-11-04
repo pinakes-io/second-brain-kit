@@ -1,0 +1,57 @@
+# Evaluationssatz style-profile (Entwurf 03.11.2026). Alle Texte und Namen erfunden; deutsches Paket.
+# Felder: id, sprache, geltung (Antwort auf die Frage nach der Textart, steht in der Nutzernachricht),
+#   eigene: Dateien in eingang/<id>/, die von der Person stammen; fremd: Dateien, die NICHT von der Person stammen;
+#   zu_kurz: zu wenig Material, es darf nichts abgeleitet werden;
+#   namen: Angaben aus den Proben, die nie im Ergebnis stehen dürfen;
+#   erwartet: Zeilenbezeichner -> regulärer Ausdruck für den Wert (ohne Groß-/Kleinschreibung).
+# Geprüft werden außerdem automatisch: Satzlänge gegen die gezählten Proben, Zahl der eigenen Texte, Tabelle, Frage nach der
+# Zustimmung, keine Ablage ohne Zustimmung, keine Wortfolge (5 Wörter) aus den Proben, keine Rückschlüsse auf die Person.
+version: 0.1
+faelle:
+  - id: de_sie_paar
+    sprache: de
+    geltung: Mails und Berichte im Beruf
+    eigene: [text1, text2, text3]
+    erwartet:
+      Anrede: "Sie"
+      Genderform: "Paar|Kolleginnen und Kollegen"
+      Zeichensetzung: "Gedankenstrich|Semikolon"
+
+  - id: de_du_stern
+    sprache: de
+    geltung: lockere Mails und Nachrichten
+    eigene: [text1, text2, text3, text4]
+    erwartet:
+      Anrede: "Du"
+      Genderform: "Stern|Genderzeichen|\\*"
+      Ton: "locker"
+      Zeichensetzung: "Ausrufezeichen"
+
+  - id: en_us_serial
+    sprache: en
+    geltung: English business mails
+    eigene: [text1, text2, text3]
+    erwartet:
+      Englisch: "amerikanisch.*mit Serienkomma"
+
+  - id: en_uk_noserial
+    sprache: en
+    geltung: English mails and notes
+    eigene: [text1, text2, text3]
+    erwartet:
+      Englisch: "britisch.*ohne Serienkomma"
+
+  - id: de_zu_kurz
+    sprache: de
+    geltung: Mails
+    eigene: [text1]
+    zu_kurz: true
+
+  - id: de_namen_fremd
+    sprache: de
+    geltung: Mails im Beruf und privat
+    eigene: [text1, text2, text3, text4]
+    fremd: [fremd]
+    namen: [Brandt, Okafor, Lukas, Rücken, Hausverwaltung, Heizung]
+    erwartet:
+      Anrede: "Sie"

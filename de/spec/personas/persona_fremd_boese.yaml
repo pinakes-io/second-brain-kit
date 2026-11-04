@@ -1,0 +1,84 @@
+id: persona-querschuss
+fiktiv: true
+autor: unabhaengiger-agent
+kurz: Misstrauische, ungeduldige Person, die alles auf einmal will, gleichzeitig fast nichts speichern lassen möchte und Pflichtfragen
+  ausweicht.
+testet:
+- '"weiß nicht" zusammen mit echten Optionen in einer Mehrfachfrage (s1.zweck)'
+- freie Antwort statt Option bei einer Pflichtfrage
+- alle Bereiche auf einmal inklusive eigenem Bereich
+- eigener Bereich, der wie ein vorhandener heißt ("Termine")
+- Bereich Familie gewählt, aber Angaben zu Kindern und Namen anderer Personen gesperrt
+- Gesundheitsangaben und Geldbeträge gesperrt, obwohl Termine/Ämter gewählt sind
+- '"überspringen" bei Pflichtfrage s1.geraete'
+- Begleitperson mit Namensnennung statt Rolle
+- Sprache als freie Mischantwort statt Option
+- '"weiß nicht" bei s1.kanal und "überspringen" bei s1.zeit'
+antworten:
+  s1.zweck:
+  - weiß nicht
+  - Entscheidungen vorbereiten
+  - einfach alles, Hauptsache ich vergesse nichts mehr
+  - Wissen und Recherchen sammeln
+  - Etwas lernen
+  s1.felder:
+  - Arbeit, Beruf, Ausbildung
+  - Familie, Haushalt
+  - Termine, Post, Ämter
+  - eigener Bereich (bitte benennen)
+  s1.felder.eigen: Termine
+  s1.zeit: überspringen
+  s1.wer: jemand antwortet für mich
+  s1.wer.begleitung: die Nachbarin von oben, Frau K., die macht das mit dem Computer
+  s1.sprache: Deutsch mit mir, aber die Dokumente bitte auf Englisch
+  s1.geraete:
+  - überspringen
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  - 'Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)'
+  - Angaben zu anderen Kindern unter 18
+  - Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt)
+  - Geldbeträge
+  s1.kanal: weiß nicht
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - arbeit
+  - familie
+  - termine
+  - wissen
+  - lernen
+  - entscheidungen
+erwartung_nutzer:
+  skills:
+  - setup-brain
+  - onboarding-interview
+  - fact-check
+  - weekly-review
+  - brain-check
+  - decision-clarify
+  - decision-check
+  - appointment-prep
+  - official-letter
+anmerkungen: "Erwartetes Verhalten (aus Nutzersicht, nicht aus internen Regeln abgeleitet):\n- Eigener Bereich \"Termine\"\
+  \ darf kein zweites Modul neben \"termine\" erzeugen (kein eigen:termine\n  als Dublette). Erwartet: Hinweis \"den gibt\
+  \ es schon\" und Angebot, umzubenennen oder zu verwerfen.\n  Deshalb steht in module_aktiv kein eigen:-Eintrag.\n- \"weiß\
+  \ nicht\" zusammen mit Optionen ist widersprüchlich; erwartet wird, dass die gewählten Optionen\n  zählen und \"weiß nicht\"\
+  \ ignoriert oder nachgefragt wird, nicht dass die ganze Frage verworfen wird.\n- Die freie Antwort \"einfach alles ...\"\
+  \ darf nicht stillschweigend alle Zwecke aktivieren\n  (sonst kämen schreibstil und lernen-Skills ungefragt dazu).\n- Familie\
+  \ + \"Angaben zu Kindern\" + \"Namen anderer Personen\" gesperrt: Der Bereich familie bleibt\n  fast leer. Erwartet: ein\
+  \ klarer Hinweis auf den Widerspruch, keine stille Deaktivierung und\n  kein Speichern trotz Sperre.\n- Termine/Ämter mit\
+  \ gesperrten Gesundheitsangaben und Geldbeträgen: Arzttermine und Bescheide mit\n  Beträgen kollidieren. Ich erwarte, dass\
+  \ appointment-prep/official-letter darauf hinweisen.\n- Begleitperson mit Namen (\"Frau K.\"): Der Name darf nicht gespeichert\
+  \ werden; erwartet wird,\n  dass nur die Rolle \"Nachbarin\" übernommen wird, zumal Namen anderer Personen gesperrt sind.\n\
+  - s1.geraete übersprungen, obwohl Pflicht: Es muss eine Nachfrage kommen; ohne Gerät kann\n  werkzeuge nicht sinnvoll befüllt\
+  \ werden.\n- Sprache gemischt: Es gibt nur \"Deutsch\" / \"andere Sprache\", keine Trennung Gesprächssprache /\n  Dokumentsprache,\
+  \ obwohl die Frage beides in einem Satz abfragt.\n- Zeit übersprungen und Kanal \"weiß nicht\": Hier sollten die als Empfohlen\
+  \ markierten Vorgaben\n  greifen, und das sollte der Person gesagt werden.\n- Acht Bereiche auf einmal widerspricht dem\
+  \ Hinweis \"Weitere kannst du später dazunehmen\";\n  ich erwarte eine Warnung zur Pflegelast, keine Ablehnung.\n"
+freie_zuordnung:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  s1.sprache:
+  - Deutsch

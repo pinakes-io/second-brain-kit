@@ -1,0 +1,64 @@
+id: persona-pflegender-rentner
+fiktiv: true
+autor: unabhaengiger-agent
+kurz: Rentner, 71, pflegt zu Hause seine Ehefrau mit beginnender Demenz, kämpft mit Briefen von Pflegekasse und Ämtern und
+  muss bald entscheiden, ob ein Pflegedienst oder ein Heimplatz nötig wird; die erwachsene Tochter wohnt weit weg und hilft
+  beim Einrichten.
+testet:
+- Person ohne Beruf (kein Bereich arbeit, obwohl niemand "Ruhestand" auswählen kann)
+- Pflegefall in der Familie bei gleichzeitig gesperrten Namen anderer Personen
+- Begleitperson aus der Ferne (Rolle Tochter) und Tablet als einziges Gerät
+- Kombination termine + entscheidungen + wissen ohne lernen und schreibstil
+- geringe Pflegezeit (unter 15 Minuten) trotz vieler Bereiche
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  - Entscheidungen vorbereiten
+  - Wissen und Recherchen sammeln
+  s1.felder:
+  - Familie, Haushalt
+  - Termine, Post, Ämter
+  s1.zeit: unter 15 Minuten
+  s1.wer: jemand hilft beim Einrichten, danach allein
+  s1.wer.begleitung: erwachsene Tochter, hilft per Videoanruf
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Tablet
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  - Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt)
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - familie
+  - termine
+  - entscheidungen
+  - wissen
+erwartung_nutzer:
+  skills:
+  - setup-brain
+  - onboarding-interview
+  - fact-check
+  - weekly-review
+  - brain-check
+  - appointment-prep
+  - official-letter
+  - decision-clarify
+  - decision-check
+  - knowledge-note
+anmerkungen: "- Es gibt keine Option für \"Pflege eines Angehörigen\" oder \"Gesundheit\". Der wichtigste\n  Lebensbereich\
+  \ dieser Person passt nur halb in \"Familie, Haushalt\". Soll er stattdessen einen\n  eigenen Bereich \"Pflege\" anlegen?\
+  \ Das wird nicht erklärt.\n- Bei den Grenzen hat er \"Gesundheitsangaben\" bewusst NICHT angekreuzt, weil er Arzttermine\
+  \ und\n  Pflegegrad-Briefe ablegen will. Ihm ist aber nicht klar, ob die Gesundheitsangaben seiner Frau\n  damit gemeint\
+  \ sind oder nur seine eigenen. Gleiches bei \"Namen anderer Personen\": Er will den\n  Namen seiner Frau nicht speichern,\
+  \ aber der Pflegedienst und die Hausärztin sollen auffindbar\n  sein. Ich erwarte hier Rückfragen oder stilles Fehlverhalten\
+  \ (Bereich familie wird leer/sinnlos).\n- Die Versicherungsnummer ist \"immer gesperrt\"; Briefe der Pflegekasse enthalten\
+  \ sie aber fast\n  immer. Unklar, ob official-letter solche Briefe dann überhaupt verarbeiten darf oder nur schwärzt.\n\
+  - \"Unter 15 Minuten\" bei sechs Bereichen: realistisch für ihn, aber ich erwarte, dass das Produkt\n  warnt oder den weekly-review\
+  \ entsprechend kürzt. Eine Rückmeldung dazu fehlt in den Fragen.\n- \"Wer beantwortet die Detailfragen?\" passt nur ungefähr:\
+  \ Die Tochter ist nur bei der Einrichtung\n  dabei, später nutzt er es allein. Eine Option \"nur beim Einrichten\" fehlt.\n\
+  - Ruheständler finden sich bei \"Arbeit, Beruf, Ausbildung\" nicht wieder; das ist richtig so, aber\n  eine Zeile \"ich\
+  \ bin im Ruhestand\" in den Grunddaten wäre hilfreich, damit nicht nach Beruf gefragt wird.\n- \"Laptop oder Chromebook\
+  \ im Browser\" klingt technisch; er weiß nicht, ob sein Tablet mit\n  Google Drive ohne Installation reicht.\n"

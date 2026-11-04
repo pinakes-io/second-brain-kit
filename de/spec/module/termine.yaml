@@ -1,0 +1,23 @@
+# 03.11. (Trockenlauf 4, Entscheid): Felder verallgemeinert, Reste aus dem Referenzfall entfernt, Felder für den Katalog Stufe 2.
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: termine
+name: Termine, Post und Ämter
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.felder, option: "Termine, Post, Ämter"}, {frage: s1.zweck, option: "Den Überblick über Aufgaben und Termine behalten"}]}
+kanal_detail: formular
+skills: [appointment-prep, letter-explain]
+anweisungsbaustein: |
+  ## Bereich Termine, Post und Ämter
+  - Bei einem Brief oder Bescheid nutze letter-explain, bei einem Termin oder einer Einladung appointment-prep. Ergebnis, Fristen und Belege trägst du nach dem Termin in State_Termine ein.
+  - Fristen ohne Termin kommen mit Quelle in State_Termine, Zahlen laufen durch fact-check. Ist Gesundheit auf „nur Termine“ gesetzt, trägst du bei Arztterminen nur Datum, Uhrzeit und „Termin“ ein, höchstens mit der Stadt.
+vorlagen: [{name: State_Termine, art: doc}, {name: Briefe_Scans, art: ordner}]
+ablage_karte: ["Termine, Fristen, Briefe und Belege -> State_Termine", "Fotos und Scans von Post -> Briefe_Scans"]
+profilfelder: 
+  zustaendige_stellen: {typ: liste, pflicht: false, referenz: ANERKENNUNGSSTELLE}
+  persoenliche_rahmenbedingungen: {typ: text, pflicht: false, tags: [gesundheit], referenz: PERSOENLICHE_RAHMENBEDINGUNGEN}
+  vorlauf: {typ: auswahl, pflicht: false}
+  fristen_ausland: {typ: text, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

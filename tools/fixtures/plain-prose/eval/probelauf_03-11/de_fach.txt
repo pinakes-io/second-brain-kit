@@ -1,0 +1,4 @@
+Die Kalibrierung des Spektrometers erfolgte mittels zertifizierter Referenzmaterialien (NIST SRM 2034). Die Messunsicherheit wurde gemäß GUM bestimmt und beträgt ±0,3 nm (k = 2). Eine Abweichung von der Spezifikation konnte nicht festgestellt werden.
+
+✎ Geändert: nichts. Fachtext (Methodenteil): Passiv, Fachbegriffe und Belege bleiben, es gibt keine Floskeln oder Füllwörter zu straffen.
+Gezählt, nicht gemessen: Ø Wörter je Satz 11 → 11 · längster Satz 13 → 13 · Passivsätze 2 → 2

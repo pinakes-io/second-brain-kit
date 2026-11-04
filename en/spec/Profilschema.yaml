@@ -1,0 +1,62 @@
+# Personal profile – schema (draft 2026-10-31)
+# Decision 2026-10-31: personal profile kept separate; module fields live in their module (Modul_Vorlage.yaml),
+# language texts live in the language pack. Only what every person has is listed here.
+# Every field is stored as an entry:
+#   wert:   the value (or empty)
+#   status: answered | open | unknown | skipped   ("unknown" never means "certain")
+#   quelle: user | companion | derived | unknown  (modelled on the platform's origin list)
+#   datum:  YYYY-MM-DD of the last change
+schema_version: 0.1
+
+meta:
+  profil_version: {typ: ganzzahl, pflicht: true, hinweis: rises with every confirmed change}
+  paket_version: {typ: text, pflicht: true, hinweis: "version stamp, also in 00_Status"}
+  zweck: {typ: liste, pflicht: true, frage: s1.zweck}
+  felder: {typ: liste, pflicht: true, frage: s1.felder}
+  module_aktiv: {typ: liste, pflicht: true, abgeleitet_aus: [zweck, felder], hinweis: core modules person and werkzeuge are always on}
+  eigene_bereiche: {typ: liste, pflicht: false, frage: s1.felder.eigen, hinweis: "names of own areas (module eigen:<name>)"}
+  einrichtung:
+    antwortet: {typ: auswahl, pflicht: true, frage: s1.wer}
+    begleitperson_rolle: {typ: text, pflicht: false, hinweis: "role instead of a name, e.g. partner or friend"}
+    kanal_detail: {typ: auswahl, pflicht: false, frage: s1.kanal}
+    sichtbarkeit: {typ: auswahl, pflicht: false, frage: s2.werkzeuge.sichtbar}
+    schreibt: {typ: auswahl, pflicht: false, frage: s1.vorsatz}
+
+person:
+  anrede: {typ: text, pflicht: true, frage: s2.person.anrede, hinweis: "first name or preferred form of address; replaces {{NUTZERIN}}; first question in stage 2 (decision 2026-10-31)"}
+  anredeform: {typ: auswahl, optionen: [informal, formal], pflicht: false, hinweis: the reference package had the form fixed in the text}
+  grammatik_genus: {typ: auswahl, optionen: [she, he, neutral], pflicht: false, hinweis: "gap in the reference package (she/her was fixed), see the README of the generic package"}
+  sprache:
+    ausgabe: {typ: auswahl, pflicht: true, frage: s1.sprache, fest: en}
+    wunsch: {typ: text, pflicht: false, frage: s1.sprache.welche, hinweis: 'language wish after "another language" (decision 2026-11-03)'}
+    dokumente: {typ: auswahl, pflicht: false, frage: s1.sprache.dokumente}
+  region_grob: {typ: text, pflicht: false, frage: s2.termine.region, hinweis: "rough only, e.g. state or region; replaces {{WOHNREGION}}"}
+  zeit:
+    pflege_pro_woche: {typ: auswahl, pflicht: false, frage: s1.zeit}
+    feste_zeiten: {typ: text, pflicht: false, frage: s2.person.feste_zeiten, hinweis: "replaces {{FESTE_ARBEITSZEIT}}, {{FESTE_ARBEITSTAGE}} in general"}
+  kommunikation: {typ: text, pflicht: false, frage: s2.person.ton, hinweis: "tone, length, what annoys; section 8 of the reference package (decision 2026-10-31: in the personal profile)"}
+  vorhaben: {typ: text, pflicht: false, hinweis: 'monthly question in the weekly review'}
+  regeln: {typ: liste, pflicht: false, hinweis: "working rules and preferences, e.g. clients get drafts as PDF first (decision 2026-11-01, D10)"}
+  grenzen:
+    nie_speichern: {typ: liste, pflicht: true, frage: s1.grenzen, fest_enthalten: [Identifikationsnummern, Zugangsdaten]}
+
+werkzeuge:
+  geraete: {typ: liste, pflicht: true, frage: s1.geraete, hinweis: "replaces {{GERAET_MOBIL}}, {{GERAET_NOTEBOOK}}, {{GERAET_TABLET}}"}
+  ordner_id: {typ: text, pflicht: true, quelle: abgeleitet, hinweis: set by setup-brain; replaces <<ORDNER_ID_EINTRAGEN>>}
+  ordnername: {typ: text, pflicht: true, vorgabe: Second Brain}
+  drive_app: {typ: auswahl, pflicht: false, frage: s2.werkzeuge.drive_app}
+  kontoinhaber: {typ: auswahl, pflicht: false, hinweis: 'own account or that of another person (wave 3)'}
+
+# Module fields and sensitivity tags have lived in spec/module/*.yaml (profilfelder, tags) since 2026-10-31.
+# Remaining placeholders from the reference catalogue (section B) that are not module fields:
+referenz_platzhalter:
+  person: [NUTZERIN, MUTTERSPRACHE, BEZUGSPERSON (role, with inflected forms derived), GERAET_*, WOHNREGION, FESTE_ARBEITSZEIT, FESTE_ARBEITSTAGE]
+  generator_vorgaben: [ORDNERNAME, FORMULAR_TITEL, DAUER, NAME_BEISPIEL_1, NAME_BEISPIEL_2, AUSGANGSLAGE_KURZFASSUNG, ANLIEGEN, ANZAHL_BLOECKE, WOCHENSTUNDEN]
+  nur_referenz: [HOBBY_BUDGET, BERUF_ANERKENNUNG, GRENZWERT_BEISPIEL, REGIONALE_SPRACHFAERBUNG, HERKUNFTSSPRACHE, SCHRIFT_HERKUNFTSSPRACHE, BERUFSOPTION_1, BERUF_HERKUNFT, BERUFSLIZENZ_DETAILS, BELEG_KOMPETENZ_2-5, LANDESPORTAL, BUNDESLAND, ALLTAGSORTE, ELTERNTERMIN_BEISPIEL]
+# Note: mapping made by hand from the catalogue [not checked for completeness].
+
+# Fixed value lists (decision 2026-11-01, findings D7/D8). Skills and project instructions must name them word for word
+# (checked by skeleton/tools/skelett.py). Versions: profile version is an integer, package version in 00_Status, none per document.
+werte:
+  status: [answered, open, unknown, skipped, outdated]
+  quelle: [user, companion, derived, unknown]

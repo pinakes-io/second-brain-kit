@@ -1,0 +1,11 @@
+[00:05] Kundin: Guten Tag, es geht um unsere Wartungsvereinbarung für die Lüftungsanlage.
+[00:30] Service: Ich sehe den Vertrag. Er läuft noch bis zum 30. September 2027.
+[01:10] Kundin: Die Anlage im zweiten Stock macht seit Tagen ein Geräusch. Könnte jemand vorbeikommen?
+[01:40] Service: Ich schicke einen Techniker. Einen Termin nenne ich Ihnen per Mail.
+[02:15] Kundin: Der Zugang zum Dach ist verschlossen.
+[02:30] Service: Dann muss jemand den Schlüssel organisieren, bevor der Techniker kommt.
+[03:00] Kundin: Außerdem brauche ich eine Kopie des letzten Wartungsprotokolls.
+[03:20] Service: Das schickt Ihnen die Buchhaltung.
+[03:45] Kundin: Wir müssten noch klären, ob die Wartung künftig vierteljährlich statt halbjährlich laufen soll.
+[04:10] Service: Dazu kann ich heute nichts sagen.
+[04:30] Kundin: Gut, danke Ihnen.

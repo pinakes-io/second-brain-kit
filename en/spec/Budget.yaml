@@ -1,0 +1,20 @@
+# Approachability budget (decision 2026-10-31: introduce a budget). VALUES: draft, to be confirmed.
+# Time estimates are assumptions [unchecked]; the number of confirmations depends on R3 in the smoke test.
+version: 0.1
+status: vorläufig
+stufe1:
+  max_fragen: 8
+  max_folgefragen: 4             # decision 2026-11-03 (wave 3, was 3): follow-up document language
+  max_minuten: 5
+  sekunden_je_typ: {einfach: 15, mehrfach: 25, text: 30}
+einrichtung:
+  max_skill_uploads: 12         # decision 2026-11-01 (was 8): one ZIP per skill, bundles are not possible (finding D1)
+  max_drive_aktionen: 15        # folders and documents that setup-brain creates (one confirmation each, if needed)
+  max_minuten: 20
+  grundaufwand_minuten: 8       # create project, paste instructions, connect Drive, preferences
+  minuten_je_upload: 1.5
+  sekunden_je_drive_aktion: 10
+stufe2:                         # decision 2026-11-03 (dry run 4): pace of stage 2
+  max_fragen_je_sitzung: 4
+  max_fragen_je_modul: 4        # without questions with spaeter: true
+  ein_modul_je_sitzung: false

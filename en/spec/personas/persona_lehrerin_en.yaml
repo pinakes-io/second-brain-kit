@@ -1,0 +1,45 @@
+# Persona (invented, no real data) – dry run 4, 2026-11-03
+id: persona-lehrerin-en
+fiktiv: true
+autor: claude
+sprache: en
+kurz: Secondary school teacher, early 30s, collects teaching material and plans the term, laptop at home and phone at school.
+geraet: gemischt
+zeit_minuten: 20
+digital: mittel
+testet:
+- English pack baseline
+- work plus knowledge
+- children ambiguous (pupils or own children)
+- comparison with de
+antworten:
+  s1.zweck:
+  - Keep track of tasks and appointments
+  - Collect knowledge and research
+  s1.felder:
+  - Work, career, training
+  s1.zeit: 15 to 30 minutes (Recommended)
+  s1.wer: I answer alone (Recommended)
+  s1.sprache: English
+  s1.geraete:
+  - Laptop or Chromebook in the browser
+  - Smartphone
+  s1.grenzen:
+  - ID, account, tax and insurance numbers (always blocked)
+  - Information about other children under 18
+  - Amounts of money
+  s1.kanal: in the chat in small rounds (Recommended)
+ablauf:
+- asks whether "Information about children" means her pupils or only her own children (she has none)
+- in stage 2 wants to note parent-teacher meetings without pupil names
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - arbeit
+  - entscheidungen
+  - wissen
+  - termine
+erwartung_nutzer:
+  skills:
+  - knowledge-note

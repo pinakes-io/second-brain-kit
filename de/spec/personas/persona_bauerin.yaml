@@ -1,0 +1,48 @@
+# Persona 6 (erfunden, keine realen Daten) – Entwurf 01.11.2026, Format wie die anderen Personas
+# Zuvor unter docs/vibe-pack/; nach spec/personas/ gezogen, nachdem der Aktivierungsweg für das Modul bauen entschieden war.
+id: persona-bauerin
+fiktiv: true
+kurz: Selbständige Physiotherapeutin, Mitte 30, kein Programmierhintergrund, hat von Vibe Coding gehört und will ihre Terminübersicht
+  und Kundenliste selbst bauen; arbeitet am Laptop, Budget für Werkzeuge gering.
+testet:
+- Modul bauen
+- Echtdaten-Regel
+- Grenzen Gesundheit und Namen
+- Abnahme in Laiensprache
+- Ablauf statt Code-App
+- Bestandsprojekt
+- Rücklauf
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  - Etwas bauen (App, Skript oder Ablauf)
+  s1.felder:
+  - Arbeit, Beruf, Ausbildung
+  - Termine, Post, Ämter
+  s1.zeit: 15 bis 30 Minuten (Empfohlen)
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Laptop oder Chromebook im Browser
+  s1.grenzen:
+  - 'Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)'
+  - Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt)
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - arbeit
+  - termine
+  - entscheidungen
+  - bauen
+erwartung_nutzer:
+  skills:
+  - build-router
+  - vibe-pack
+anmerkungen:
+- 'Bau-Vorkenntnisse: Git nie benutzt, Terminal nie benutzt, kein Coding-Agent installiert; nickt Vorschläge schnell ab, liest
+  keine Testergebnisse, schickt Fehlermeldungen als Beschreibung statt als Text.'
+- 'Kundendaten mit Behandlungsnotizen sind im Alltag Gesundheitsdaten: Das Pack darf für die Entwicklung nur erfundene Beispieldaten
+  vorsehen.'
+- 'Ideen, die sie im Verlauf mitbringt: siehe docs/vibe-pack/eval/faelle.yaml.'

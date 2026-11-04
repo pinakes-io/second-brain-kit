@@ -1,0 +1,91 @@
+id: persona-poweruser
+fiktiv: true
+autor: unabhaengiger-agent
+sprache: en
+kurz: A senior backend developer and freelance consultant (invented initials T.K.) who wants everything at once, ticks every
+  option plus two own areas, skips all optional and most round-2 questions, wants Claude to build him an automation, and expects
+  the whole setup to be done in 20 minutes on his laptop.
+geraet: laptop
+zeit_minuten: 20
+antworten:
+  s1.zweck:
+  - Keep track of tasks and appointments
+  - Collect knowledge and research
+  - Prepare decisions
+  - Write texts
+  - Learn something
+  - Build something (app, script or workflow)
+  s1.felder:
+  - Work, career, training
+  - Family, household
+  - Appointments, post, offices
+  - own area (please name it)
+  s1.felder.eigen: Homelab; Freelance clients
+  s1.zeit: under 15 minutes
+  s1.wer: I answer alone (Recommended)
+  s1.sprache: skip
+  s1.geraete: skip
+  s1.grenzen: skip
+  s1.kanal: skip
+ablauf:
+- Opens claude.ai in a browser tab on his laptop during a lunch break, Google Drive already connected.
+- Before the first question appears he writes "Just set up everything, I'll fill in details later. Can we skip the interview?".
+- Answers all of round 1 in a single message, "all of them / all of them + Homelab and Freelance clients / <15 / alone", instead
+  of picking options one by one.
+- Writes two own areas into the one free-text field, separated by a semicolon, and expects two separate areas.
+- Types "skip" for every question of round 2 in one line, "skip skip skip skip", without reading the options.
+- Because he skipped s1.sprache he later writes in a mix of English and German technical terms and asks why one document came
+  out in the wrong language.
+- Because he skipped s1.grenzen he pastes a block from a client project's config file into the chat in minute 9, including
+  what looks like an access token, and asks "store this under Freelance clients".
+- Asks in minute 11 "can you put a cron job on this that pulls my GitHub issues and my calendar into the status doc every
+  morning?".
+- When told what is and is not possible from the chat, he asks for a Google Apps Script or an API key setup instead, and wants
+  Markdown files rather than Google Docs.
+- In minute 14 he writes "this is taking too long, which docs exist already?" and wants a list of file names and links.
+- At minute 20 the first detail-question round for "Work, career, training" starts; he answers "skip" three times and closes
+  the tab.
+- Comes back after 3 weeks and writes "Status doc is stale. Why didn't it update itself?".
+- Comes back the same evening and writes "Merge Research and Learn something, they're the same thing. And delete Family, I
+  never use it."
+erwartung:
+  bereiche:
+  - client projects with deadlines, invoices to send and open tasks per client
+  - homelab (servers, network, things to fix or upgrade)
+  - reading list and research notes on tech topics
+  - learning (a new programming language, a certification)
+  - family logistics and household appointments, low priority
+  - official post and taxes, low priority
+  - a working automation that collects tasks from his other tools without him doing anything
+  nicht_passieren:
+  - The setup taking longer than about 20 minutes before he has a usable result.
+  - Being asked the same thing twice or being forced through every detail round before anything works.
+  - Secrets, tokens, passwords or client confidential data being written into a Drive document because he pasted them in a
+    hurry.
+  - Client names or client data ending up in the same place as family documents, or shared by accident.
+  - A promise of automation ("it will update itself") that the product cannot keep.
+  - '"skip" being silently replaced with defaults he never sees and cannot change later.'
+  - Areas he asked to remove still generating questions.
+anmerkungen: "- Batch answers: he answers a whole round in one message in shorthand (\"all of them\", \"<15\"). The\n  interview\
+  \ must cope with that and not insist on one question at a time.\n- s1.felder.eigen allows one name, but he wants two own\
+  \ areas. There is no \"add another area\" path.\n- \"all of them\" on s1.zweck and s1.felder plus \"under 15 minutes\" on\
+  \ s1.zeit is a contradiction the\n  interview should notice and say out loud (honest trade-off), instead of quietly creating\
+  \ six areas\n  he will never maintain.\n- \"learn something\" appears both as a purpose (s1.zweck) and as an area (s1.felder),\
+  \ and \"Research,\n  interests\" overlaps \"Collect knowledge and research\". For him this looks like a sloppy schema.\n\
+  - Skipping s1.grenzen is the dangerous case. The options cover ID/account/tax numbers but not the\n  things a developer\
+  \ actually pastes: passwords, API keys, access tokens, private keys, client\n  confidential material, other people's personal\
+  \ data from a customer database. A \"Secrets and\n  credentials\" item is missing, and it should probably be blocked even\
+  \ when the question is skipped.\n- \"always blocked\" on the first s1.grenzen option: it is unclear whether skipping still\
+  \ keeps that\n  block. The person should be told what happens on \"skip\" for this question.\n- Skipping s1.sprache: what\
+  \ language is then used? He writes Denglish; documents may end up in a\n  random language. The default after \"skip\" should\
+  \ be stated.\n- Skipping s1.geraete and s1.kanal is harmless for him, but he would want to know the defaults.\n- \"Build\
+  \ something (app, script or workflow)\" raises the expectation that Claude can install or run\n  a scheduled automation.\
+  \ If the setup is chat plus Google Drive only, the interview should say early\n  and plainly what \"build\" means here (e.g.\
+  \ Claude writes a script he runs himself) before he invests\n  time. Otherwise the first real disappointment comes in week\
+  \ 3 with a stale status doc.\n- s1.wer: \"(Recommended)\" labels feel patronising to this user; harmless, but he skips faster\
+  \ because\n  of them.\n- Missing for him: a fast path (\"express setup\" with visible defaults), a way to see the created\n\
+  \  documents as a list with links, a way to merge, rename or remove areas later, and a choice of file\n  format (Google\
+  \ Docs vs. plain text/Markdown).\n- Missing: separation of work/client data from private data, which matters legally for\
+  \ a freelancer.\n- The detail rounds per area: with six or seven areas and \"skip\" as the default answer, he will\n  produce\
+  \ almost empty documents. The interview should be able to stop asking for an area after\n  repeated skips and offer to come\
+  \ back later instead.\n"

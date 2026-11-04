@@ -1,0 +1,23 @@
+# 03.11. (Trockenlauf 4, Entscheid): Felder verallgemeinert, Reste aus dem Referenzfall entfernt, Felder für den Katalog Stufe 2.
+# Modul (Entwurf 31.10.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+id: lernen
+name: Lernen
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Etwas lernen"}]}
+kanal_detail: chat
+skills: []
+anweisungsbaustein: |
+  ## Bereich Lernen
+  - Lernstand und Fokus stehen in `State_Lernen`, Übungen im `Lernprotokoll`. Frage vor einer Übung nach Zeit und Ziel und passe die Schwierigkeit an den Stand an.
+  - Nach einer Einheit schlägst du eine Zeile für das `Lernprotokoll` vor (Datum, was, wie lief es) und schreibst sie nur nach meinem Ja.
+vorlagen: [{name: State_Lernen, art: doc}, {name: Lernprotokoll, art: doc}]
+ablage_karte: ["Lernstand und Fokus -> State_Lernen", "Übungen und Wiederholungen -> Lernprotokoll"]
+profilfelder: 
+  niveau_aktuell: {typ: text, pflicht: false, referenz: SPRACHNIVEAU_AKTUELL}
+  ziel: {typ: text, pflicht: false, referenz: SPRACHZIEL}
+  zielzeitraum: {typ: text, pflicht: false, referenz: ZIELZEITRAUM}
+  uebungsform: {typ: auswahl, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: true

@@ -1,0 +1,41 @@
+# Persona 1 (erfunden, keine realen Daten) – Entwurf 31.10.2026
+id: persona-mira
+fiktiv: true
+kurz: Freiberufliche Grafikerin, Ende 30, alleinlebend, arbeitet am Laptop, sammelt Fachwissen und schreibt Angebote und Blogtexte.
+testet:
+- Module wissen und schreibstil (kein Vorbild in der Referenz)
+- Entscheidungs-Skills über arbeit
+- Kanal Chat
+antworten:
+  s1.zweck:
+  - Wissen und Recherchen sammeln
+  - Texte schreiben
+  - Entscheidungen vorbereiten
+  s1.felder:
+  - Arbeit, Beruf, Ausbildung
+  s1.zeit: 30 bis 60 Minuten
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Laptop oder Chromebook im Browser
+  - Smartphone
+  s1.grenzen:
+  - 'Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)'
+  - Geldbeträge
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - arbeit
+  - entscheidungen
+  - wissen
+  - schreibstil
+  skills_zusaetzlich:
+  - decision-clarify
+  - decision-check
+  - knowledge-note
+erwartung_nutzer:
+  skills:
+  - decision-clarify
+  - knowledge-note

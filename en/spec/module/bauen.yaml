@@ -1,0 +1,25 @@
+# Module (draft 2026-11-01). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+# Decisions 2026-11-01: activation through s1.zweck, skills router and vibe-pack (the workflow skill can be added later),
+# profile fields tool, prior knowledge, kind of data, Drive document Build_Projects.
+id: bauen
+name: Build
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Build something (app, script or workflow)"}]}
+kanal_detail: chat
+skills: [build-router, vibe-pack]
+anweisungsbaustein: |
+  ## Area Build
+  - If I want to build something (app, script, workflow), the skill build-router starts first. It hands over to vibe-pack (code) or, if installed, to the workflow skill.
+  - If a skill is not loaded, say so in one line and stop. Do not build a plan from memory.
+  - The project state is in the doc Build_Projects. Until acceptance only invented sample data goes into a project, no real data.
+  - Tool, prior knowledge and kind of data are in the profile, section Build.
+vorlagen: [{name: Build_Projects, art: doc}]
+ablage_karte: ["Goal, acceptance, state and last handover per build project -> Build_Projects"]
+profilfelder:
+  werkzeug: {typ: text, pflicht: false, hinweis: "coding tool, for example Cursor, Windsurf, Replit or none"}
+  vorkenntnisse: {typ: auswahl, pflicht: false, optionen: [never used, a little, confident], hinweis: "Git and terminal"}
+  datenart: {typ: auswahl, pflicht: false, optionen: [sample data only, real data too], hinweis: "whether the project later works with real data; decides the real-data rule in the pack"}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

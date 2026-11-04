@@ -1,0 +1,18 @@
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: werkzeuge
+name: Tools
+version: 0.1
+art: vorlage
+aktivierung: {immer: true}
+kanal_detail: chat
+skills: []
+anweisungsbaustein: |
+  ## Area Tools
+  - Devices and tools are in `01_Profile`, section Technology. On a smartphone you output blocks to paste instead of direct editing.
+  - If you cannot use a tool (for example Drive is not connected), say so in one line and offer the block mode.
+vorlagen: []
+ablage_karte: []
+profilfelder: {}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

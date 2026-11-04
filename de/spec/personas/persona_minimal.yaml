@@ -1,0 +1,39 @@
+# Persona (erfunden, keine realen Daten) – Trockenlauf 4, 03.11.2026
+id: persona-minimal
+fiktiv: true
+autor: claude
+sprache: de
+kurz: Angestellte in der Verwaltung, Mitte 40, will nur Termine und Post im Griff haben, nimmt jede Empfehlung, Laptop, fünf
+  Minuten.
+geraet: laptop
+zeit_minuten: 5
+digital: mittel
+testet:
+- kürzester Pfad (Grundlinie)
+- ein Bereich
+- alle Empfehlungen
+- Standardwerte
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  s1.felder:
+  - Termine, Post, Ämter
+  s1.zeit: 15 bis 30 Minuten (Empfohlen)
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Laptop oder Chromebook im Browser
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+ablauf:
+- antwortet auf jede Runde mit "passt so" oder der ersten Option
+- will nach der Einrichtung sofort aufhören; Stufe 2 erst in der nächsten Woche
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - termine
+erwartung_nutzer:
+  skills:
+  - appointment-prep

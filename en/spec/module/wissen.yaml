@@ -1,0 +1,21 @@
+# 2026-11-03 (dry run 4, decision): fields generalised, leftovers from the reference case removed, fields for the stage 2 catalogue.
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: wissen
+name: Knowledge and sources
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Collect knowledge and research"}]}
+kanal_detail: chat
+skills: [knowledge-note]
+anweisungsbaustein: |
+  ## Area Knowledge and sources
+  - After research that I will need again later, and when I say "file as knowledge", use knowledge-note: one note per topic in the folder Knowledge, check 00_Knowledge_Index first.
+  - Numbers, deadlines and rules in it go through fact-check and are also entered in the Fact-Ledger.
+  - If a note already exists for a topic, read it first, then answer.
+vorlagen: [{name: Knowledge, art: ordner}, {name: 00_Knowledge_Index, art: doc}]
+ablage_karte: ["Researched knowledge, one note per topic -> Knowledge (index: 00_Knowledge_Index)"]
+profilfelder:
+  themen: {typ: liste, pflicht: false}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

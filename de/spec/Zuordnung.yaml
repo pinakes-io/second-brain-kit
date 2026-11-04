@@ -1,0 +1,75 @@
+# Zuordnung Profilpfad -> Dokument/Abschnitt (Entwurf 31.10.2026)
+# Entscheid 31.10.: zwei Tabellen. Tabelle 1 = Fragenkatalog (profil_pfad je Frage),
+# Tabelle 2 = diese Datei. Mehrfachziele erlaubt.
+# Regel: Bleibt ein Pflichtfeld offen/unbekannt, entsteht eine Zeile in 02_Offene_Fragen (Abschnitt = Modul).
+version: 0.1
+
+ziele:
+  meta.zweck:
+    - {dokument: 01_Profil, abschnitt: Wofür dieses Second Brain}
+    - {dokument: 00_Status, abschnitt: Feldkarte}
+  meta.felder:
+    - {dokument: 00_Status, abschnitt: Feldkarte}
+  meta.module_aktiv:
+    - {dokument: 00_Status, abschnitt: Versionsstempel}
+    - {dokument: 00_Status, abschnitt: Ablage-Karte}
+  meta.eigene_bereiche:
+    - {dokument: 00_Status, abschnitt: Feldkarte}
+  meta.einrichtung.antwortet:
+    - {dokument: 01_Profil, abschnitt: Einrichtung}
+  meta.einrichtung.begleitperson_rolle:
+    - {dokument: 01_Profil, abschnitt: Einrichtung}
+  meta.einrichtung.kanal_detail:
+    - {dokument: 00_Status, abschnitt: Feldkarte}
+  person.anrede:
+    - {dokument: 01_Profil, abschnitt: Kurzdaten}
+  person.sprache.ausgabe:
+    - {dokument: 01_Profil, abschnitt: Kurzdaten}
+  person.zeit.pflege_pro_woche:
+    - {dokument: 01_Profil, abschnitt: Alltag und Zeit}
+    - {dokument: Wochenplan, abschnitt: Zeitrahmen}
+  person.zeit.feste_zeiten:
+    - {dokument: 01_Profil, abschnitt: Alltag und Zeit}
+    - {dokument: Wochenplan, abschnitt: Zeitrahmen}
+  person.kommunikation:
+    - {dokument: 01_Profil, abschnitt: So spricht Claude mit mir}
+  person.regeln:
+    - {dokument: 01_Profil, abschnitt: Regeln}
+  person.grenzen.nie_speichern:
+    - {dokument: 01_Profil, abschnitt: Grenzen}
+    - {dokument: 00_Status, abschnitt: Gemeinsame Regeln}
+  werkzeuge.geraete:
+    - {dokument: 01_Profil, abschnitt: Technik}
+  werkzeuge.ordner_id:
+    - {dokument: 00_Status, abschnitt: Versionsstempel}
+  werkzeuge.ordnername:
+    - {dokument: 00_Status, abschnitt: Versionsstempel}
+  meta.paket_version:
+    - {dokument: 00_Status, abschnitt: Versionsstempel}
+  meta.profil_version:
+    - {dokument: 01_Profil, abschnitt: Kopf}
+  person.anredeform:
+    - {dokument: 01_Profil, abschnitt: Kurzdaten}
+  person.grammatik_genus:
+    - {dokument: 01_Profil, abschnitt: Kurzdaten}
+  person.region_grob:
+    - {dokument: 01_Profil, abschnitt: Kurzdaten}
+
+# Modulfelder ordnen ihre Ziele in der eigenen Modul-Datei (Modul_Vorlage.yaml, Schlüssel "zuordnung").
+  # 03.11. (Trockenlauf 4)
+  person.sprache.wunsch:
+    - {dokument: 01_Profil, abschnitt: Kurzdaten}
+  person.sprache.dokumente:
+    - {dokument: 01_Profil, abschnitt: Kurzdaten}
+  meta.einrichtung.sichtbarkeit:
+    - {dokument: 01_Profil, abschnitt: Einrichtung}
+  werkzeuge.drive_app:
+    - {dokument: 01_Profil, abschnitt: Technik}
+  # 03.11. (Welle 3)
+  meta.einrichtung.schreibt:
+    - {dokument: 01_Profil, abschnitt: Einrichtung}
+  werkzeuge.kontoinhaber:
+    - {dokument: 00_Status, abschnitt: Versionsstempel}
+  person.vorhaben:
+    - {dokument: 01_Profil, abschnitt: Alltag und Zeit}
+    - {dokument: Wochenplan, abschnitt: Zeitrahmen}

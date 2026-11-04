@@ -1,0 +1,27 @@
+# Module template (draft 2026-10-31, format 2)
+# Decisions 2026-10-31: modules in a uniform format, can be switched on later without overwriting, plus own areas;
+# modules as data (one file per module in spec/module/, checked by tools/spec_pruefen.py).
+id: beispiel                 # lower case; own areas: eigen:<name> (setup-brain creates them in the chat)
+name: Example area
+version: 0.1
+art: vorlage                 # kern | vorlage | eigen
+aktivierung:                 # at least one rule; "immer" only for kern, person, werkzeuge
+  wenn_antwort: [{frage: s1.felder, option: "..."}]   # option word for word from Fragen_Stufe1.yaml
+  wenn_modul: []                                        # active as soon as one of these modules is active
+kanal_detail: chat           # chat | formular
+skills: []                   # never core skills here
+skills_nachruestbar: []      # optional add-on skills, offered at the end of the interview, outside the upload budget
+anweisungsbaustein: |        # appended to the core instructions; target under 1,500 characters
+  ## Area Example
+vorlagen:                    # Drive documents and folders that setup-brain creates (only if they are missing)
+  - {name: State_Example, art: doc}
+ablage_karte:                # lines for the filing map in 00_Status
+  - "State, decisions, evidence for the area -> State_Example"
+profilfelder: {}             # name: {typ, pflicht, tags: [kinder|gesundheit|geld|namen], referenz: PLACEHOLDER}
+fragen: []                   # stage 2 questions; format like Fragen_Stufe2.yaml; profil_pfad <module>.<field>; optional tags
+zuordnung: {}                # profil_pfad -> [{dokument, abschnitt}]
+eigener_projektkandidat: false
+
+# Own area (eigen:<name>), created by setup-brain in the chat: one State document, one line in the filing map,
+# an entry in module_aktiv; no skills, no questions. brain-check suggests switching to a template module.
+# Tags (F7): a limit set in stage 1 leaves out fields and questions with a matching tag.

@@ -1,0 +1,4 @@
+Lass uns im Meeting nächste Woche die Deadline für den Rollout festlegen und die To-dos abstimmen, damit wir die Wirkung maximieren. Das Wording im Prompt passt schon.
+
+✎ Geändert: 3 Anglizismen ersetzt (committen → festlegen, alignen → abstimmen, Impact → Wirkung) · Meeting, Deadline, Rollout, To-dos, Wording und Prompt bleiben als etablierte Wörter
+Gezählt, nicht gemessen: Ø Wörter je Satz 13,5 → 13,5 · längster Satz 21 → 21 · Passivsätze 0 → 0

@@ -1,0 +1,25 @@
+# Modul (Entwurf 01.11.2026). Format: spec/Modul_Vorlage.yaml. Geprüft von tools/spec_pruefen.py.
+# Entscheide 01.11.: Aktivierung über s1.zweck, Skills Router und vibe-pack
+# (n8n-Skill nachrüstbar), Profilfelder Werkzeug, Vorkenntnisse, Datenart, Drive-Dokument Bauprojekte.
+id: bauen
+name: Bauen
+version: 0.1
+art: vorlage
+aktivierung: {wenn_antwort: [{frage: s1.zweck, option: "Etwas bauen (App, Skript oder Ablauf)"}]}
+kanal_detail: chat
+skills: [build-router, vibe-pack]
+anweisungsbaustein: |
+  ## Bereich Bauen
+  - Will ich etwas bauen (App, Skript, Ablauf), startet zuerst der Skill build-router. Er leitet an vibe-pack (Code) oder, wenn installiert, an den Ablauf-Skill.
+  - Ist ein Skill nicht geladen, sag das in einer Zeile und stopp. Baue keinen Plan aus dem Gedächtnis.
+  - Der Projektstand steht im Doc Bauprojekte. Bis zur Abnahme kommen nur erfundene Beispieldaten in ein Projekt, keine echten.
+  - Werkzeug, Vorkenntnisse und Datenart stehen im Profil, Abschnitt Bauen.
+vorlagen: [{name: Bauprojekte, art: doc}]
+ablage_karte: ["Ziel, Abnahme, Stand und letzte Übergabe je Bauprojekt -> Bauprojekte"]
+profilfelder:
+  werkzeug: {typ: text, pflicht: false, hinweis: "Coding-Werkzeug, zum Beispiel Cursor, Windsurf, Replit oder keines"}
+  vorkenntnisse: {typ: auswahl, pflicht: false, optionen: [nie benutzt, etwas, sicher], hinweis: "Git und Terminal"}
+  datenart: {typ: auswahl, pflicht: false, optionen: [nur Beispieldaten, auch echte Daten], hinweis: "Ob das Projekt später mit echten Daten arbeitet; entscheidet über die Echtdaten-Regel im Pack"}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

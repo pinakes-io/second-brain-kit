@@ -1,0 +1,107 @@
+id: persona-proxyson
+fiktiv: true
+autor: unabhaengiger-agent
+sprache: en
+kurz: A 79-year-old retired man (invented initials R.V.) with low digital skills and weakening eyesight whose adult son sets
+  up the second brain and types the answers for him while the father sits next to him with a tablet; the two disagree on purpose
+  and on what may be stored, the father wants almost everything sensitive blocked, and he would rather read the documents
+  in Dutch, his first language, while chatting in English.
+geraet: gemischt
+zeit_minuten: 45
+antworten:
+  s1.zweck:
+  - Keep track of tasks and appointments
+  - Write texts
+  s1.felder:
+  - Appointments, post, offices
+  - Family, household
+  - own area (please name it)
+  s1.felder.eigen: Dad's memories (stories for the grandchildren)
+  s1.zeit: under 15 minutes
+  s1.wer: someone answers for me
+  s1.wer.begleitung: son, I live 200 km away and help him with paperwork by phone and on visits
+  s1.sprache: another language
+  s1.geraete:
+  - Laptop or Chromebook in the browser
+  - Tablet
+  s1.grenzen:
+  - ID, account, tax and insurance numbers (always blocked)
+  - Information about other children under 18
+  - Amounts of money
+  s1.kanal: mixed by topic
+  s1.sprache.welche: Dutch for the documents please, but talk to him in English, he reads Dutch more easily but speaks English
+    every day
+  s1.sprache.dokumente: two languages (yours and English)
+ablauf:
+- The son opens claude.ai on his own laptop, logged into the father's new Google account that the son created last week; the
+  father watches from the sofa with his tablet.
+- The son reads each question aloud; the father has trouble with the word "areas of life" and asks what it means.
+- On s1.zweck the father says "Write texts" only (letters, his memories); the son adds "Keep track of tasks and appointments"
+  because missed hospital letters are the real reason they are doing this; the father grumbles but lets it stand.
+- On s1.felder the son wants "Appointments, post, offices" and "Family, household"; the father insists on his own area for
+  his memories; the son types the name in his own words, not the father's ("Dad's memories"), and the father later dislikes
+  that title.
+- On s1.zeit the son picks "under 15 minutes" thinking of his own time; the father has unlimited time but cannot use it alone;
+  nobody can tell whose time the question means.
+- On s1.wer the son first picks "I answer with a companion", then changes it to "a companion answers for me" when he realises
+  he is the one typing; he asks in chat whether he must now switch to "he" or "I" in his answers.
+- On s1.sprache the only options are English or another language; the son types a free-text sentence asking for two languages
+  (English chat, Dutch documents) and is unsure whether this was understood.
+- On s1.grenzen the father says "nothing about my health, nothing about the grandchildren, no names, no money"; the son ticks
+  children and money but deliberately leaves out "Health information" and "Names of other people", because the appointments
+  are mostly doctors and the cardiology clinic, and the post comes from named offices.
+- The father notices on the tablet a moment later that health and names are not ticked and says out loud "I said no health";
+  the son types into the chat "my father wants health blocked, I think we need it for the appointments, what do we do?".
+- The son writes "Health information is ok, but only appointment dates and the clinic, no diagnoses" which is not one of the
+  options.
+- On s1.kanal the son picks "mixed by topic" because the father may want to talk about memories himself later, while the paperwork
+  should be quick forms for the son.
+- Ten days later the father, alone with the tablet, opens claude.ai and types "This is R. himself, not my son. I want the
+  health things taken out. And please call my area My stories."
+- Two days after that the son comes back on his laptop and writes "Did my father change something? The clinic appointment
+  from last week is gone."
+- In a detail round the son is asked about "Family, household" and answers with the first name of the father's late wife;
+  the father had blocked names and objects when he sees it in the document.
+erwartung:
+  bereiche:
+  - letters from offices, the pension and the health insurer, with what has to be done and by when
+  - doctor and hospital appointments (dates and places only, as the son sees it)
+  - household things like the heating service and the cleaner's visits
+  - '"My stories": memories from his childhood and working life, written down for the grandchildren'
+  nicht_passieren:
+  - Diagnoses, medication or anything medical written into a document against the father's explicit wish.
+  - Names or details of the grandchildren stored anywhere.
+  - The son's overrides silently treated as the father's own decision without the father seeing what was decided.
+  - Documents created in English only, so the father cannot comfortably read them, or in Dutch only, so the son cannot check
+    them.
+  - A change the father makes alone being silently undone by the son's next session, or the other way round, without either
+    of them noticing.
+  - The father being shown long, technical or many-option questions on the small tablet screen.
+  - Anything from the memories area being shared or used outside his own Google Drive.
+anmerkungen: "- Whose answer counts: \"a companion answers for me\" exists, but nothing in the questions handles the\n  case\
+  \ where the companion and the person disagree. There is no way to record \"the person wants X, the\n  companion wants Y\"\
+  , and no point where the person confirms what the companion entered. Here the son\n  overrode s1.grenzen on two items; the\
+  \ interview cannot tell that this happened.\n- Consent: the person who owns the data never explicitly agrees to the companion\
+  \ answering. For an\n  elderly parent (or a support worker's client) that is the most important question, and it is missing.\n\
+  - s1.wer wording is confusing for the typist: the companion reads \"I answer alone\" and does not know\n  whether \"I\"\
+  \ means himself or his father. The option texts assume the person is the one typing.\n- s1.wer.begleitung asks for \"the\
+  \ role\" but people answer with relationships plus context\n  (\"son, 200 km away\"). Fine, but it shows that the role alone\
+  \ does not say whether the companion is\n  present every time or only sometimes, which matters for later detail rounds.\n\
+  - s1.zeit is ambiguous with two people: the person's time or the companion's time?\n- s1.sprache bundles \"talk to you\"\
+  \ and \"write the documents\" into one answer. A bilingual household\n  needs two answers (chat English, documents Dutch)\
+  \ or even documents in both languages so the\n  companion can check them. \"another language\" has no follow-up field visible\
+  \ in the question list.\n- s1.grenzen is all-or-nothing per item. Real needs are partial: \"appointment dates and clinic\
+  \ yes,\n  diagnoses no\" or \"first names of doctors yes, family names no\". Ticking \"Names of other people\"\n  probably\
+  \ makes an appointments-and-post area useless, and nobody explains that trade-off before\n  the person ticks it. The person\
+  \ should be told in plain words what a block will make impossible.\n- \"Information about children\" is unclear: his own\
+  \ children are adults (including the companion\n  typing). Does it mean minors, grandchildren, or the son himself?\n- \"\
+  Names of other people\" collides with the free-text own area: \"Dad's memories\" will be full of names.\n  Is a late spouse\
+  \ \"another person\"? The interview does not say.\n- s1.felder: \"learn something\" appears both as a purpose and as an\
+  \ area; for this person it is noise.\n  \"Research, interests\" means nothing to him. Six options are too many for him to\
+  \ hear read aloud.\n- The own area is named by whoever types. There must be an easy way to rename it later, in the\n  person's\
+  \ own words.\n- s1.geraete: the questions assume one person with devices. Here two people use two devices on one\n  account.\
+  \ That is the real situation for most companion setups and it is not asked.\n- s1.kanal \"as a form to fill in\": for a\
+  \ person with poor eyesight on a tablet, a form may be worse\n  than chat; for the son it is better. Again one answer for\
+  \ two people.\n- Missing: what should happen when the person returns alone and contradicts the companion; who gets\n  the\
+  \ last word; whether the companion should be told about changes. Also missing: an accessibility\n  question (large text,\
+  \ short questions, reading aloud).\n- \"Upkeep\" in s1.zeit is jargon for this person; \"looking after it\" would be clearer.\n"

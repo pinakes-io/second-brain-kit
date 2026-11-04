@@ -1,0 +1,38 @@
+# Persona 3 (erfunden, keine realen Daten) – Entwurf 31.10.2026
+id: persona-sofia
+fiktiv: true
+kurz: Studentin im ersten Semester, Anfang 20, nutzt fast nur das Smartphone, will eine Sprache lernen, Entscheidungen zur
+  Studienwahl vorbereiten und ein Hobby festhalten.
+testet:
+- eigener Bereich
+- Modul lernen
+- Entscheidungs-Skills ohne Bereich Arbeit
+- nur Smartphone
+- Sprache ungleich Deutsch
+antworten:
+  s1.zweck:
+  - Etwas lernen
+  - Entscheidungen vorbereiten
+  s1.felder:
+  - eigener Bereich (bitte benennen)
+  s1.zeit: unter 15 Minuten
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: andere Sprache
+  s1.geraete:
+  - Smartphone
+  s1.grenzen:
+  - Angaben zu anderen Kindern unter 18
+  s1.kanal: als Formular zum Ausfüllen
+  s1.felder.eigen: Klettern
+  s1.sprache.dokumente: wie der Chat (Empfohlen)
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - lernen
+  - entscheidungen
+  - eigen:klettern
+  skills_zusaetzlich: []
+erwartung_nutzer:
+  skills:
+  - decision-clarify

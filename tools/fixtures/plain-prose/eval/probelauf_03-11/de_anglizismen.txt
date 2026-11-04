@@ -1,0 +1,4 @@
+Lass uns im Meeting nächste Woche die Deadline für den Rollout festlegen und die To-dos abstimmen, damit wir den Impact maximieren. Das Wording im Prompt passt schon.
+
+✎ Geändert: 2 Modewörter ersetzt (committen → festlegen, alignen → abstimmen)
+Gezählt, nicht gemessen: Ø Wörter je Satz 13,5 → 13,5 · längster Satz 21 → 21 · Passivsätze 0 → 0

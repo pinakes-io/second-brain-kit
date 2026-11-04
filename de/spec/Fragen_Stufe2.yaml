@@ -1,0 +1,219 @@
+# Fragenkatalog Interview Stufe 2 (Detail) – Fassung 0.3 vom 03.11.2026 (Welle 3: Dokumentsprache nach Stufe 1, Frage „Was steht an?“,
+# Beispieltext mit Tag namen, Warteschlange in 02_Offene_Fragen, Regeln zu Lebenswechseln; Entscheide 03.11.)
+# Entscheid 31.10. (F1): Die Anrede ist die erste Frage in Stufe 2.
+# Reihenfolge: Person zuerst, dann die Module in der Reihenfolge ihrer Wahl; innerhalb eines Moduls die Listenfolge.
+# Obergrenzen: spec/Budget.yaml (stufe2). spaeter: true = nicht in der ersten Runde eines Moduls, bleibt in 02_Offene_Fragen.
+# wenn: modul_aktiv (eines der Module aktiv), antwort (Stufe-1-Antwort enthält eine der Optionen),
+#       antwort_profil (ein Profilfeld enthält den Wert). tags: Sensibel-Tags; eine gesperrte Grenze lässt die Frage weg.
+# Wortlaut der Fragen, Optionen und Regeln steht wörtlich im Skill onboarding-interview (geprüft von skelett.py).
+# Begründung je Frage mit einer Persona: spec/personas/Auswertung_Trockenlauf_4.md, Abschnitt Stufe 2.
+version: 0.4
+sprache: de
+immer_angeboten: [freie Antwort, weiß nicht, überspringen, später]
+fragen:
+  # person
+  - id: s2.person.anrede
+    modul: person
+    reihenfolge: 1
+    frage: Wie soll ich dich ansprechen? (Vorname oder Wunschanrede, und du oder Sie)
+    typ: text
+    pflicht: true
+    profil_pfad: person.anrede
+  - id: s2.person.ton
+    modul: person
+    frage: Wie sollen meine Antworten sein?
+    typ: einfach
+    optionen: [kurz und direkt (Empfohlen), ausführlich mit Erklärung, in Stichpunkten]
+    profil_pfad: person.kommunikation
+  - id: s2.person.feste_zeiten
+    modul: person
+    frage: Wann passt es dir gut und wann gar nicht? (zum Beispiel Schicht oder ruhige Stunden)
+    typ: text
+    spaeter: true
+    profil_pfad: person.zeit.feste_zeiten
+  # werkzeuge
+  - id: s2.werkzeuge.drive_app
+    modul: werkzeuge
+    frage: Hast du die Google-Drive-App auf dem Handy oder Tablet?
+    typ: einfach
+    optionen: [ja, nein]
+    wenn: {antwort: {s1.geraete: [Smartphone, Tablet]}}
+    profil_pfad: werkzeuge.drive_app
+  - id: s2.werkzeuge.sichtbar
+    modul: werkzeuge
+    frage: Wer außer dir kann die Dokumente sehen?
+    typ: einfach
+    optionen: [nur ich, meine Begleitperson auch, noch jemand anderes]
+    wenn: {antwort: {s1.wer: ["jemand hilft beim Einrichten, danach allein", jemand hilft dauerhaft mit, jemand antwortet für mich]}}
+    profil_pfad: meta.einrichtung.sichtbarkeit
+  # arbeit
+  - id: s2.arbeit.art
+    modul: arbeit
+    frage: Was trifft auf dich zu?
+    typ: mehrfach
+    optionen: [angestellt, selbständig oder eigenes Geschäft, in Ausbildung oder Studium, auf Jobsuche, im Ruhestand, anderes]
+    profil_pfad: arbeit.beschaeftigung
+  - id: s2.arbeit.ziele
+    modul: arbeit
+    frage: Was willst du in der Arbeit in den nächsten Monaten erreichen?
+    typ: text
+    profil_pfad: arbeit.ziele
+  - id: s2.arbeit.trennung
+    modul: arbeit
+    frage: Sollen Geschäft und Privates in getrennten Dokumenten stehen?
+    typ: einfach
+    optionen: ["ja, getrennt (Empfohlen)", nein]
+    wenn: {antwort_profil: {arbeit.beschaeftigung: selbständig oder eigenes Geschäft}}
+    profil_pfad: arbeit.trennung_privat
+  - id: s2.arbeit.abschluss
+    modul: arbeit
+    frage: Hast du einen Abschluss, der anerkannt werden soll? (Beruf und Land, ohne Nummern)
+    typ: text
+    spaeter: true
+    profil_pfad: arbeit.abschluss
+  # entscheidungen
+  - id: s2.entscheidungen.anstehend
+    modul: entscheidungen
+    frage: Steht gerade eine Entscheidung an? (ein Satz)
+    typ: text
+    spaeter: true
+    profil_pfad: entscheidungen.anstehend
+  # familie
+  - id: s2.familie.haushalt
+    modul: familie
+    frage: Wer gehört zum Haushalt? (Rollen, keine Namen)
+    typ: text
+    profil_pfad: familie.haushaltskontext
+  - id: s2.familie.kinder
+    modul: familie
+    frage: Gibt es Kinder unter 18 im Haushalt? Alter grob und feste Betreuungszeiten
+    typ: text
+    tags: [kinder]
+    profil_pfad: familie.kind_alter
+  - id: s2.familie.pflege
+    modul: familie
+    frage: Kümmerst du dich um jemanden (Pflege, Begleitung)? Rolle und was du organisierst
+    typ: text
+    tags: [gesundheit]
+    spaeter: true
+    profil_pfad: familie.pflege
+  - id: s2.familie.geld
+    modul: familie
+    frage: Soll das Haushaltsgeld hier geplant werden?
+    typ: einfach
+    optionen: [ja, nein]
+    tags: [geld]
+    spaeter: true
+    profil_pfad: familie.haushaltsgeld
+  # termine
+  - id: s2.termine.stellen
+    modul: termine
+    frage: Mit welchen Stellen hast du oft zu tun?
+    typ: mehrfach
+    optionen: [Arbeitsagentur oder Jobcenter, Ausländerbehörde oder Bürgeramt, Krankenkasse oder Arztpraxen, Schule oder Kita, Finanzamt, Vermieter, andere]
+    profil_pfad: termine.zustaendige_stellen
+  - id: s2.termine.region
+    modul: termine
+    frage: In welchem Bundesland oder Land wohnst du? (für Fristen und zuständige Stellen)
+    typ: text
+    profil_pfad: person.region_grob
+  - id: s2.termine.vorlauf
+    modul: termine
+    frage: Wie früh soll ich dich auf Fristen hinweisen, wenn wir sprechen?
+    typ: einfach
+    optionen: [eine Woche vorher (Empfohlen), zwei Wochen vorher, einen Monat vorher]
+    profil_pfad: termine.vorlauf
+  - id: s2.termine.ausland
+    modul: termine
+    frage: Gibt es Fristen in einem anderen Land (Pass, Steuer, Familie)?
+    typ: text
+    spaeter: true
+    profil_pfad: termine.fristen_ausland
+  - id: s2.termine.rahmen
+    modul: termine
+    frage: Was muss bei Terminen beachtet werden (zum Beispiel Begleitung oder Barrierefreiheit)?
+    typ: text
+    tags: [gesundheit]
+    spaeter: true
+    profil_pfad: termine.persoenliche_rahmenbedingungen
+  # wissen
+  - id: s2.wissen.themen
+    modul: wissen
+    frage: Zu welchen Themen willst du Wissen sammeln?
+    typ: text
+    profil_pfad: wissen.themen
+  # lernen
+  - id: s2.lernen.ziel
+    modul: lernen
+    frage: Was willst du lernen und bis wann?
+    typ: text
+    profil_pfad: lernen.ziel
+  - id: s2.lernen.uebung
+    modul: lernen
+    frage: Wie willst du üben?
+    typ: einfach
+    optionen: [kleine Aufgaben jede Woche (Empfohlen), vor Prüfungen wiederholen, nur nachschlagen]
+    profil_pfad: lernen.uebungsform
+  - id: s2.lernen.stand
+    modul: lernen
+    frage: Wo stehst du gerade?
+    typ: text
+    spaeter: true
+    profil_pfad: lernen.niveau_aktuell
+  # schreibstil
+  - id: s2.schreibstil.textarten
+    modul: schreibstil
+    frage: Was schreibst du vor allem?
+    typ: mehrfach
+    optionen: [E-Mails und Briefe, Angebote und Berichte, Beiträge für Web und soziale Medien, Erinnerungen und Geschichten]
+    profil_pfad: schreibstil.textarten
+  - id: s2.schreibstil.beispiel
+    modul: schreibstil
+    frage: Füge einen kurzen Text ein, der nach dir klingt.
+    typ: text
+    spaeter: true
+    tags: [namen]
+    profil_pfad: schreibstil.beispieltext
+  # bauen
+  - id: s2.bauen.werkzeug
+    modul: bauen
+    frage: Mit welchem Werkzeug willst du bauen? (zum Beispiel Cursor, Replit oder noch keines)
+    typ: text
+    profil_pfad: bauen.werkzeug
+  - id: s2.bauen.vorkenntnisse
+    modul: bauen
+    frage: Wie sicher bist du mit Git und dem Terminal?
+    typ: einfach
+    optionen: [nie benutzt, etwas, sicher]
+    profil_pfad: bauen.vorkenntnisse
+  - id: s2.bauen.datenart
+    modul: bauen
+    frage: Arbeitet das Projekt später mit echten Daten?
+    typ: einfach
+    optionen: [nur Beispieldaten (Empfohlen), auch echte Daten]
+    profil_pfad: bauen.datenart
+
+# Regeln für Stufe 2 (Entscheide 03.11.). Wortlaut steht wörtlich im Skill.
+regeln:
+  takt: "Eine Runde Stufe 2 hat höchstens vier Fragen. Zuerst die Person, dann die Bereiche in der Reihenfolge der Feldkarte; je Bereich und Runde höchstens vier Fragen, der Rest wartet in 02_Offene_Fragen. Am Ende jeder Runde sagst du: „Noch <n> Fragen offen. Schreib „Detailfragen“, wenn du weitermachen willst.“"
+  spaeter_antwort: "„später“ geht bei jeder Frage; die Frage bleibt in 02_Offene_Fragen. Fragen mit „(später)“ stellst du nicht in der ersten Runde eines Bereichs, sondern wenn ein Thema sie braucht oder die Person mehr Fragen möchte."
+  bedingung: "Fragen mit „wenn …“ stellst du nur, wenn die Bedingung zutrifft. Fragen zu gesperrten Themen stellst du nie."
+  sensibel: "Trägt eine Frage ein Sensibel-Tag und ist das Thema nicht gesperrt, sagst du vorher einen Satz: „Die nächste Frage betrifft <Thema>. Du kannst sie überspringen oder das Thema sperren.“ Nach „überspringen“ fragst du nicht erneut."
+  direkt: "Nach der Einrichtung bietest du einmal die erste Runde Stufe 2 an, beginnend mit der Anrede."
+  skill_anstossen: "Ist ein Bereich aktiv, für den es eine eigene Anleitung gibt, nennst du am Ende der Einrichtung einmal, was du dort kannst, mit einem Beispielsatz zum Ausprobieren."
+  spaeter_zuschalten: "Will jemand später einen Bereich dazunehmen, übernimmt das der Skill area-manager; die Stufe-2-Fragen des neuen Bereichs kommen danach aus diesem Katalog."
+  warteschlange: "Die Warteschlange in 02_Offene_Fragen legt setup-brain an. Beantwortete Fragen hakst du dort mit Datum ab; „Noch <n> Fragen offen“ ist die Zahl der offenen Zeilen."
+  anrede: "Weicht jemand bei der Anrede aus, bleibst du beim Du ohne Namen und fragst nicht erneut. Schreibt oder wählt jemand „Sie“, siezt du ab dann."
+  tempo: "Will jemand alle Fragen auf einmal oder hat „Formular“ gewählt, zeigst du alle offenen Fragen als eine Liste. „Keine Detailfragen mehr“ trägst du unter Regeln ein, setzt die Statuszeile auf „Stufe 2 beendet auf Wunsch“ und bietest keine Runde mehr an."
+  eigene_fragen: "Eigene Bereiche aus der Beispielliste holen die passenden Fragen dazu (Tabelle „Eigene Bereiche“)."
+  feldkarte_aendern: "Widerspricht eine Antwort einem Bereich (etwa „im Ruhestand“ bei Arbeit) oder klingt sie nach einem neuen, bietest du an: behalten · umbenennen · pausieren · neu anlegen."
+  beispieltext: "Den Beispieltext speicherst du nicht. Du leitest drei bis fünf Stilmerkmale ab und schreibst nur sie ins Stilprofil."
+  grenzen_aendern: "Grenzen lassen sich jederzeit setzen und lösen. Beim Setzen zeigst du schon gespeicherte Einträge und bietest an, sie zu entfernen; beim Lösen holst du weggelassene Fragen nach."
+
+# Eigene Bereiche aus der Beispielliste (s1.felder, Hilfe) und die Fragen, die sie dazuholen (Entscheid 03.11.)
+eigene_bereiche:
+  Verein: [s2.schreibstil.textarten, s2.person.feste_zeiten]
+  Gesundheit: [s2.termine.vorlauf, s2.termine.rahmen]
+  Pflege von Angehörigen: [s2.familie.pflege, s2.termine.stellen]
+  Umzug: [s2.termine.region, s2.termine.stellen]
+  neu in Deutschland: [s2.termine.region, s2.termine.stellen, s2.termine.ausland, s2.arbeit.abschluss]

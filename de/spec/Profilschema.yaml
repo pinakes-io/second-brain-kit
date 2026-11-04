@@ -1,0 +1,62 @@
+# Personenprofil – Schema (Entwurf 31.10.2026)
+# Entscheid 31.10.: Personenprofil getrennt; Modulfelder liegen im jeweiligen Modul (Modul_Vorlage.yaml),
+# Sprachtexte im Sprachpaket (nur de). Hier nur, was jede Person hat.
+# Jedes Feld wird als Eintrag gespeichert:
+#   wert:   der Wert (oder leer)
+#   status: beantwortet | offen | unbekannt | uebersprungen   ("unbekannt" heißt nie "sicher")
+#   quelle: nutzer | begleitperson | abgeleitet | unbekannt    (angelehnt an die Herkunftsliste der Plattform)
+#   datum:  JJJJ-MM-TT der letzten Änderung
+schema_version: 0.1
+
+meta:
+  profil_version: {typ: ganzzahl, pflicht: true, hinweis: steigt bei jeder bestätigten Änderung}
+  paket_version: {typ: text, pflicht: true, hinweis: "Versionsstempel, auch in 00_Status"}
+  zweck: {typ: liste, pflicht: true, frage: s1.zweck}
+  felder: {typ: liste, pflicht: true, frage: s1.felder}
+  module_aktiv: {typ: liste, pflicht: true, abgeleitet_aus: [zweck, felder], hinweis: Kern-Module person und werkzeuge immer}
+  eigene_bereiche: {typ: liste, pflicht: false, frage: s1.felder.eigen, hinweis: "Namen eigener Bereiche (Modul eigen:<name>)"}
+  einrichtung:
+    antwortet: {typ: auswahl, pflicht: true, frage: s1.wer}
+    begleitperson_rolle: {typ: text, pflicht: false, hinweis: "Rolle statt Name, z. B. Partner oder Freundin"}
+    kanal_detail: {typ: auswahl, pflicht: false, frage: s1.kanal}
+    sichtbarkeit: {typ: auswahl, pflicht: false, frage: s2.werkzeuge.sichtbar}
+    schreibt: {typ: auswahl, pflicht: false, frage: s1.vorsatz}
+
+person:
+  anrede: {typ: text, pflicht: true, frage: s2.person.anrede, hinweis: "Vorname oder Wunschanrede; ersetzt {{NUTZERIN}}; erste Frage in Stufe 2 (Entscheid 31.10.)"}
+  anredeform: {typ: auswahl, optionen: [du, Sie], pflicht: false, hinweis: Referenz hatte die Form fest im Text}
+  grammatik_genus: {typ: auswahl, optionen: [sie, er, neutral], pflicht: false, hinweis: "Lücke der Referenz (sie/ihr fest), siehe LIESMICH des generischen Pakets"}
+  sprache:
+    ausgabe: {typ: auswahl, pflicht: true, frage: s1.sprache, fest: de}
+    wunsch: {typ: text, pflicht: false, frage: s1.sprache.welche, hinweis: 'Sprachwunsch nach „andere Sprache“ (Entscheid 03.11.)'}
+    dokumente: {typ: auswahl, pflicht: false, frage: s1.sprache.dokumente}
+  region_grob: {typ: text, pflicht: false, frage: s2.termine.region, hinweis: "nur grob, z. B. Bundesland; ersetzt {{WOHNREGION}}"}
+  zeit:
+    pflege_pro_woche: {typ: auswahl, pflicht: false, frage: s1.zeit}
+    feste_zeiten: {typ: text, pflicht: false, frage: s2.person.feste_zeiten, hinweis: "ersetzt {{FESTE_ARBEITSZEIT}}, {{FESTE_ARBEITSTAGE}} allgemein"}
+  kommunikation: {typ: text, pflicht: false, frage: s2.person.ton, hinweis: "Ton, Länge, was nervt; Referenz-Abschnitt 8 (Entscheid 31.10.: im Personenprofil)"}
+  vorhaben: {typ: text, pflicht: false, hinweis: 'Monatsfrage im Wochenrückblick'}
+  regeln: {typ: liste, pflicht: false, hinweis: "Arbeitsregeln und Vorlieben, z. B. Kunden bekommen Entwürfe zuerst als PDF (Entscheid 01.11., D10)"}
+  grenzen:
+    nie_speichern: {typ: liste, pflicht: true, frage: s1.grenzen, fest_enthalten: [Identifikationsnummern, Zugangsdaten]}
+
+werkzeuge:
+  geraete: {typ: liste, pflicht: true, frage: s1.geraete, hinweis: "ersetzt {{GERAET_MOBIL}}, {{GERAET_NOTEBOOK}}, {{GERAET_TABLET}}"}
+  ordner_id: {typ: text, pflicht: true, quelle: abgeleitet, hinweis: von setup-brain gesetzt; ersetzt <<ORDNER_ID_EINTRAGEN>>}
+  ordnername: {typ: text, pflicht: true, vorgabe: Second Brain}
+  drive_app: {typ: auswahl, pflicht: false, frage: s2.werkzeuge.drive_app}
+  kontoinhaber: {typ: auswahl, pflicht: false, hinweis: 'mein eigenes oder das einer anderen Person (Welle 3)'}
+
+# Modulfelder und Sensibel-Tags liegen seit 31.10. in spec/module/*.yaml (profilfelder, tags).
+# Restliche Platzhalter aus dem Referenzkatalog (Abschnitt B), die kein Modulfeld sind:
+referenz_platzhalter:
+  person: [NUTZERIN, MUTTERSPRACHE, BEZUGSPERSON (Rolle, mit Fallformen abgeleitet), GERAET_*, WOHNREGION, FESTE_ARBEITSZEIT, FESTE_ARBEITSTAGE]
+  generator_vorgaben: [ORDNERNAME, FORMULAR_TITEL, DAUER, NAME_BEISPIEL_1, NAME_BEISPIEL_2, AUSGANGSLAGE_KURZFASSUNG, ANLIEGEN, ANZAHL_BLOECKE, WOCHENSTUNDEN]
+  nur_referenz: [HOBBY_BUDGET, BERUF_ANERKENNUNG, GRENZWERT_BEISPIEL, REGIONALE_SPRACHFAERBUNG, HERKUNFTSSPRACHE, SCHRIFT_HERKUNFTSSPRACHE, BERUFSOPTION_1, BERUF_HERKUNFT, BERUFSLIZENZ_DETAILS, BELEG_KOMPETENZ_2-5, LANDESPORTAL, BUNDESLAND, ALLTAGSORTE, ELTERNTERMIN_BEISPIEL]
+# Hinweis: Zuordnung per Hand aus dem Katalog [ungeprüft auf Vollständigkeit].
+
+# Feste Wertelisten (Entscheid 01.11., Befunde D7/D8). Skills und Projekt-Anweisungen müssen sie wörtlich nennen
+# (geprüft von skeleton/tools/skelett.py). Versionen: Profilversion ganze Zahl, Paketversion in 00_Status, keine je Dokument.
+werte:
+  status: [beantwortet, offen, unbekannt, übersprungen, überholt]
+  quelle: [nutzer, begleitperson, abgeleitet, unbekannt]

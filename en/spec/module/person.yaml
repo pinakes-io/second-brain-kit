@@ -1,0 +1,19 @@
+# Module (draft 2026-10-31). Format: spec/Modul_Vorlage.yaml. Checked by tools/spec_pruefen.py.
+id: person
+name: Person and situation
+version: 0.1
+art: vorlage
+aktivierung: {immer: true}
+kanal_detail: chat
+skills: []
+anweisungsbaustein: |
+  ## Area Person and situation
+  - My tone and preferences are in `01_Profile`, sections "How Claude talks to me" and "Rules". Stick to them.
+  - The limits in `00_Status` come first. You do not ask for or store blocked details.
+  - Changes to the profile only after my yes, with value, status, source and date.
+vorlagen: []
+ablage_karte: []
+profilfelder: {}
+fragen: []
+zuordnung: {}
+eigener_projektkandidat: false

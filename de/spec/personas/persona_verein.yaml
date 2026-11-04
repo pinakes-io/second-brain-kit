@@ -1,0 +1,46 @@
+# Persona (erfunden, keine realen Daten) – Trockenlauf 4, 03.11.2026
+id: persona-verein
+fiktiv: true
+autor: claude
+sprache: de
+kurz: Rentner, Mitte 60, Kassenwart eines Sportvereins, schreibt Einladungen und Protokolle; Namen anderer gesperrt, Geldbeträge
+  offen; nur ein eigener Bereich.
+geraet: laptop
+zeit_minuten: 20
+digital: gering
+testet:
+- Ehrenamt fehlt als Option
+- nur eigener Bereich
+- Namen gesperrt gegen Mitgliederliste
+- Kontonummern der Mitglieder (immer gesperrt)
+- Ruhestand ohne arbeit
+antworten:
+  s1.zweck:
+  - Den Überblick über Aufgaben und Termine behalten
+  - Texte schreiben
+  s1.felder:
+  - eigener Bereich (bitte benennen)
+  s1.felder.eigen: Verein
+  s1.zeit: unter 15 Minuten
+  s1.wer: ich allein (Empfohlen)
+  s1.sprache: Deutsch
+  s1.geraete:
+  - Laptop oder Chromebook im Browser
+  s1.grenzen:
+  - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
+  - Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt)
+  s1.kanal: im Chat in kleinen Runden (Empfohlen)
+ablauf:
+- sucht "Verein" oder "Ehrenamt" in den Optionen und findet es nicht
+- will Beitragseingänge abgleichen; dafür braucht er Namen und Kontonummern der Mitglieder
+- 'schreibt später: "Termine für die Mitgliederversammlung bitte auch" (Bereich Termine nachrüsten)'
+erwartung:
+  module_aktiv:
+  - person
+  - werkzeuge
+  - schreibstil
+  - eigen:verein
+  - termine
+erwartung_nutzer:
+  skills:
+  - plain-prose-de

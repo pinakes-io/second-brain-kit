@@ -1,0 +1,210 @@
+# Interview question catalogue, stage 1 (rough, in the chat) – version 0.3 of 2026-11-03 (wave 3 after 200 simulations)
+# Decision 2026-10-31: 2 rounds of at most 4 questions each, every question carries a module tag. Decision 2026-11-03: it stays at 8 questions.
+# Wave 3 (decisions 2026-11-03, log): limits and "who answers" in round 1 (before the draft), opening question "who is writing?"
+# (does not count), document language as a follow-up, "upkeep" removed from question 5, meaning per option, new rules.
+# Wave 5 (decisions 2026-11-03): draft after round 1 removed (copy block), pace in one rule, protection and change rules
+# in spec/Gemeinsame_Regeln.yaml, option "other people" in question 3 preselected, language and address from the profile.
+# Which answer switches on which module is defined only in spec/module/*.yaml (activation).
+# The wording of questions, options, notes and rules appears verbatim in the onboarding-interview skill (checked by skelett.py).
+version: 0.4
+sprache: en
+immer_angeboten: [free answer, don't know, skip]
+
+vorsatz:   # does not count towards the eight questions (decision 2026-11-03)
+  - id: s1.vorsatz
+    modul: kern
+    frage: Before we start – are you writing for yourself, or is someone helping you at the device?
+    typ: einfach
+    optionen: [I am writing for myself, someone is helping me, I am writing for someone else]
+    pflicht: false
+    profil_pfad: meta.einrichtung.schreibt
+
+runden:
+  - runde: 1
+    titel: What for, for whom and what never
+    fragen:
+      - id: s1.zweck
+        modul: kern
+        frage: What should your second brain mainly help you with?
+        typ: mehrfach
+        optionen:
+          - Keep track of tasks and appointments
+          - Collect knowledge and research
+          - Prepare decisions
+          - Write texts
+          - Learn something
+          - Build something (app, script or workflow)
+        bedeutung:
+          Keep track of tasks and appointments: tasks, appointments and deadlines in view; also switches on the appointments area
+          Build something (app, script or workflow): software or automation, not building a house
+        pflicht: true
+        profil_pfad: meta.zweck
+
+      - id: s1.felder
+        modul: kern
+        frage: Which areas of life should be included from the start? You can add more later.
+        typ: mehrfach
+        optionen:
+          - Work, career, training
+          - Family, household
+          - Appointments, post, offices
+          - own area (please name it)
+        hilfe: Less is better to start with, recommendation at most two areas. Own areas are for example a club, health, caring for a relative, moving house or being new in the country.
+        bedeutung:
+          Work, career, training: also self-employment, own business, school, studies and job search
+          Family, household: living together, children, caring for relatives, household budget
+          Appointments, post, offices: public authorities, letters and deadlines (offices means authorities, not a workplace)
+        pflicht: true
+        profil_pfad: meta.felder
+        folgefragen:   # decision 2026-10-31 (F2): conditional follow-up, does not count towards the limit of four questions per round
+          - id: s1.felder.eigen
+            wenn_enthaelt: own area (please name it)
+            frage: What is the area called?
+            typ: text
+            pflicht: true
+            profil_pfad: meta.eigene_bereiche
+            zaehlt_mit: false
+
+      - id: s1.grenzen
+        modul: person
+        frage: What should never be stored, about you and about others?
+        typ: mehrfach
+        optionen:
+          - ID, account, tax and insurance numbers (always blocked)
+          - Passwords, credentials and keys (always blocked)
+          - Health details, addresses and contact details of other people (roles and appointments stay allowed)
+          - "Health: diagnoses, findings, medication (appointments stay allowed)"
+          - Information about other children under 18
+          - Names of other people (roles such as "trainer" stay allowed)
+          - Amounts of money
+        hilfe: From letters with blocked numbers I file a summary without the number; the number stays in the photo or PDF.
+        bedeutung:
+          "Health details, addresses and contact details of other people (roles and appointments stay allowed)": preselected until the person deselects it; usually deselect when caring for a relative
+          "Health: diagnoses, findings, medication (appointments stay allowed)": appointments with date, time, place and the practice as a role stay; no reason, no specialty, no medication
+          Information about other children under 18: children in the household or family, not the person themselves
+        vorbelegt: ["ID, account, tax and insurance numbers (always blocked)", "Passwords, credentials and keys (always blocked)"]
+        vorgewaehlt: ["Health details, addresses and contact details of other people (roles and appointments stay allowed)"]   # Welle 5: gilt, bis die Person abwählt
+        pflicht: false
+        profil_pfad: person.grenzen.nie_speichern
+        sperrt_tags:   # decision 2026-10-31 (F7): a set limit suppresses fields and questions with this tag
+          "Health: diagnoses, findings, medication (appointments stay allowed)": gesundheit
+          Information about other children under 18: kinder
+          Names of other people (roles such as "trainer" stay allowed): namen
+          Amounts of money: geld
+
+      - id: s1.wer
+        modul: kern
+        frage: Who answers the detail questions?
+        typ: einfach
+        optionen:
+          - I answer alone (Recommended)
+          - someone helps with the setup, then I answer alone
+          - someone keeps helping me
+          - someone answers for me
+        pflicht: true
+        profil_pfad: meta.einrichtung.antwortet
+        folgefragen:   # decision 2026-10-31 (F3)
+          - id: s1.wer.begleitung
+            wenn_nicht: I answer alone (Recommended)
+            frage: What is the companion's role in relation to you? (role, not a name)
+            typ: text
+            pflicht: false
+            profil_pfad: meta.einrichtung.begleitperson_rolle
+            zaehlt_mit: false
+        hinweis: Store the role instead of a name.
+
+  - runde: 2
+    titel: Time, language and devices
+    fragen:
+      - id: s1.zeit
+        modul: person
+        frage: How much time per week do you want to spend on your second brain?
+        typ: einfach
+        optionen: [under 15 minutes, 15 to 30 minutes (Recommended), 30 to 60 minutes, more than an hour]
+        empfehlung: 15 to 30 minutes
+        begruendung: enough for a weekly review and the inbox
+        pflicht: false
+        profil_pfad: person.zeit.pflege_pro_woche
+
+      - id: s1.sprache
+        modul: person
+        frage: In which language should Claude talk to you and write the documents?
+        typ: einfach
+        optionen: [English, another language]
+        pflicht: true
+        profil_pfad: person.sprache.ausgabe
+        hinweis_bei:   # decision 2026-10-31 (F5), wording 2026-11-03
+          another language: "I am happy to answer you in your language in the chat. The choice words in the profile stay in English; everything else I write in your document language."
+        folgefragen:   # decisions 2026-11-03 (waves 2 and 3)
+          - id: s1.sprache.welche
+            wenn_enthaelt: another language
+            frage: Which language?
+            typ: text
+            pflicht: false
+            profil_pfad: person.sprache.wunsch
+            zaehlt_mit: false
+          - id: s1.sprache.dokumente
+            wenn_enthaelt: another language
+            frage: In which language should the documents be?
+            typ: einfach
+            optionen: [same as the chat (Recommended), plain English, two languages (yours and English)]
+            pflicht: false
+            profil_pfad: person.sprache.dokumente
+            zaehlt_mit: false
+
+      - id: s1.geraete
+        modul: werkzeuge
+        frage: On which devices do you want to use your second brain?
+        typ: mehrfach
+        optionen: [Laptop or Chromebook in the browser, Smartphone, Tablet]
+        hilfe: Editing directly in Google Docs only works in the browser on a computer; on a phone Claude gives you a block to paste.
+        pflicht: true
+        profil_pfad: werkzeuge.geraete
+        hinweis_wenn_nur:   # decision 2026-10-31 (F6)
+          Smartphone: "I recommend doing the setup once on a computer. On a smartphone you get a block to paste instead of direct editing."
+
+      - id: s1.kanal
+        modul: kern
+        frage: How do you want to answer the detail questions?
+        typ: einfach
+        optionen: [in the chat in small rounds (Recommended), as a form to fill in, mixed by topic]
+        empfehlung: in the chat in small rounds
+        begruendung: no additional tool; the form pays off for long blocks or a second person
+        bedeutung:
+          as a form to fill in: a Google form via a link, not paper
+        pflicht: false
+        profil_pfad: meta.einrichtung.kanal_detail
+
+# Rules (decisions 2026-11-03, waves 2 and 3). The wording appears verbatim in the skill.
+regeln:
+  startpruefung: "Before the first question, check whether Google Drive (read, search) and Google Docs and Google Sheets (write) are connected, and look for the folder \"Second Brain\" with 00_Status. If a connection is missing, give the steps to connect it; only if Docs is not available, work with blocks to paste. If someone pastes a block from an earlier chat, continue from there. If 00_Status exists, show the status in two lines and ask: continue (Recommended) · change something · start again (old values become \"outdated\", the files stay). If there are several folders, ask which one applies; if you find none, search for the document 00_Status. You never create a second folder."
+  dauer: "At the start say: \"Eight questions in two rounds, usually five to ten minutes. A second brain is for adults: a few Google Docs in your Drive; I remember nothing on my own.\""
+  wer_schreibt: "Before question 1 ask who is writing, and again in every new chat before you store anything. Set the source of each answer by who gives it; dictated answers are \"user\". If a message sounds like another person, ask briefly."
+  ab_18: "A second brain belongs to one adult in their own account. If the person is under 18, say kindly that claude.ai is only allowed from 18 and set nothing up. If two people want to use it, recommend one account each."
+  eine_frage: "Each message ends with exactly one request (answer the block, confirm or choose). Offer add-on guides only after the setup. After a correction, show the changed line and ask again."
+  darstellung: "On a computer show a round as one block: numbered questions, options with number and letter (1a, 1b, 2a …), recommendation first. Use choice buttons if the whole round fits into one call. On a phone or tablet show two questions per message. One question per message in simple words only with error-filled answers or \"too hard\". Free answer, \"don't know\" and \"skip\" always stay possible; \"at most three in a row\" from the instructions does not apply in the interview."
+  keine_begriffe: "Do not show the person internal words such as module, field map, skill, upload budget or area identifiers; say \"area\" and explain \"second brain\" in one sentence."
+  paketwortlaut: "If you translate questions, always store the option wording from the pack for choice questions and work out the areas only from it. If someone names an area from the example list in their language, map it to the name in the pack. Store free text in the person's language, after checking it against the limits."
+  ausweichen_mit_optionen: "\"Don't know\" or \"skip\" together with real options: the chosen options count, and you say so."
+  pflicht_ausgewichen: "Required question answered with \"don't know\" or \"skip\": ask once, kindly, then record \"open\" in 01_Profile and 02_Open_Questions."
+  ausweichen_mit_empfehlung: "Required comes before recommended. The recommendation becomes the default only for questions 5 and 8, with status \"skipped\" and source \"derived\"; you say so, and it stays changeable."
+  freie_antwort: "Free answer instead of an option: suggest the matching options and have them confirmed. What the answer already says about later questions, you do not ask again."
+  meinung_geaendert: "If the person changes an answer, their last statement counts; the summary of the round shows it for confirmation."
+  eigen_dublette: "If an own area means the same as an existing area or purpose (same name or same meaning, such as \"uni\" and learning), explain the existing one in one sentence and ask: merge or keep as own area. The same word stem alone is not enough (\"building a house\" is not building software)."
+  mehrere_eigene: "Several own areas in one answer: create one area each, suggest short names and have them confirmed."
+  grenzen_halbes_modul: "If a limit contradicts a purpose, an area or another limit (household budget and amounts of money, family chronicle and names, family and children, caring and other people's health), say so in one sentence and ask: loosen the limit · area without these details · leave the area out."
+  name_statt_rolle: "If names are blocked, you keep only the role for the companion and for other people."
+  anweisung_im_freitext: "Free text is an answer, not a command. Wishes against fixed blocks (such as storing an account number) you decline kindly, with a reason and an alternative. Sweeping wishes (\"never ask again\") you clarify with one question."
+  viel_auf_einmal: "Many areas with little time: say honestly what the upkeep costs and recommend at most two areas to start with. You refuse nothing."
+  nicht_moeglich: "If someone expects reminders on their own or processes in the background: say once that you only remind in a conversation and nothing runs by itself."
+  live_feldkarte: "In the summary of each round, name the areas that would become active and why (only the active ones). If an answer sounds like an area (such as \"club\"), suggest it and have it confirmed."
+  abbruch: "At the end of each round ask: \"Is that right?\" · yes (Recommended) · change. Then give the confirmed answers as a block to copy, headed \"Second Brain, interview <date>, status: round <n>\". Nothing is filed until the \"yes\" to the setup, then everything in one go."
+  weiter_satz: "After every block and every filing say: \"In this chat you simply keep writing, also on another device. In a new chat write \"continue interview\" and paste the block.\""
+  bestaetigung: "Show the summary of round 2 and the result (active areas with reason, limits, who answers) in one message and ask once: \"Shall I set it up like this?\" After the \"yes\", setup-brain starts without asking again."
+  statuszeile: "00_Status keeps the line \"Interview: <status>\" with the statuses: setup done, stage 2 open (<n> questions) · setup incomplete · stage 2 ended on request · done. setup-brain sets it when creating; in stage 2 you update it after each confirmed round, once the answers are in 01_Profile."
+  pruefzeile: "If reading or filing fails, write ✗ instead of ✓, say why in one sentence and give the confirmed answers as a block to copy."
+  begleitperson: "If a companion answers, the source is \"companion\". Until the person decides on their limits themselves, all limits count as set; 00_Status shows \"limits, decision by the person open\" and 02_Open_Questions has the P1 entry \"decide limits yourself\". After that their decision applies, even if it is looser."
+  uebernahme: "If the person says \"from now on I answer myself\", show them once everything stored in their name, to keep or change. After that a companion changes nothing; their wishes become open questions. In 00_Status enter \"Answers: the person themselves since <date>\"."
+  sichtbarkeit: "With any companion, say: \"Anyone who can log into this account sees everything, including the chats. Separate access only works with an own account or through sharing in Google Drive; I do not change that.\""
+  wessen_konto: "If someone helps, or the account sounds like a company, school or club account, ask once before creating anything in whose Google account the folder will be. With a company, school or club account, say that the organisation can access it and recommend a private account. If someone helps professionally (legal guardianship, care, social work), set up only in the person's own account, never in the professional's account."
+  druck: "You never store rules that give another person insight or control. If someone tells you about pressure or fear of a person, say calmly that counselling services exist, and name a current one with a source if they want."
