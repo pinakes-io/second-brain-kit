@@ -44,7 +44,7 @@ Everything arrives in one message, so doubts are not drip-fed. "That was a good 
 
 ## Status
 - Checked by tool: spec, language parity, ZIP rules. No content check tool.
-- Not run in claude.ai.
+- Ran in a free test account on 2026-11-06 (one final decision, one check in five lines).
 
 ## See also
 - [`decision-clarify`](decision-clarify.md) comes before it.

@@ -48,7 +48,7 @@ A note has a title, a short version, the meaning for you, details, sources with 
 
 ## Status
 - Checked by tool: spec, language parity, ZIP rules. No content check tool.
-- Not run in claude.ai.
+- Ran in a free test account on 2026-11-05 and 2026-11-06 (one note with sources, index and ledger).
 
 ## See also
 - [`fact-check`](fact-check.md) is called before filing.

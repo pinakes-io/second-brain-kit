@@ -51,7 +51,7 @@ The plan names what will be created, with counts, before anything happens. Exist
 
 ## Status
 - Checked by tool: spec, skeleton, language parity, ZIP rules.
-- An earlier version ran in a free Claude account (one walkthrough with an invented person). The current version, now more than 14,000 characters long, has not been run in claude.ai.
+- The version of 2026-11-03 ran in a free test account on 2026-11-04 (setup in about three minutes). The fixes since then (module skills named at the end, titles, journal order, empty project knowledge) have not run from a fresh start yet.
 
 ## See also
 - [`onboarding-interview`](onboarding-interview.md) delivers its input.

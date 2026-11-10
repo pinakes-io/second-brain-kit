@@ -247,19 +247,19 @@ What the labels mean: **verified** = checked in a real run, **checked** = checke
 |---|---|---|
 | Free Claude account can run custom skills | verified | one walkthrough with an invented person |
 | One skill per ZIP | verified | a bundle of several skills was rejected |
-| A Drive document as project knowledge, with up-to-date comparison | verified | same walkthrough |
+| Project knowledge | not used | a copy in the project knowledge went stale in a test; the assistant now reads `00_Status` from Drive at the start of every chat (seen 2026-11-10) |
 | Creating and editing Drive documents from the chat | verified | same walkthrough |
-| Writing into existing Google Docs and Sheets through the Google Docs and Sheets connectors | reported | seen once in a free test account; measured in the next walkthrough |
+| Writing into existing Google Docs and Sheets through the Google Docs and Sheets connectors | verified | free test account, 2026-11-04 to 2026-11-10, also from the phone app; checked against a Drive export |
 | Spec consistency (modules, questions, fields, cross-references) | checked | `tools/spec_pruefen.py` |
 | Skeleton skills match the spec word for word | checked | `tools/skelett.py` |
 | Parity between language packs | checked | `tools/lang_parity.py` (structure only, not the quality of the wording) |
 | English pack | draft | spec, skeleton and plain-prose checks pass; wording not reviewed by a native speaker; never run in a real account |
-| Core skills after the first round of fixes | draft | not yet re-run in a real account |
-| Decision, knowledge, appointment, `brain-check` and `build-router` skills | draft | first versions, not run |
-| `plain-prose-*`, `style-profile`, `area-manager`, `transcript-minutes`, `vibe-pack` | draft | German pack tool-checked; English pack checked for structure and, for `vibe-pack` and `transcript-minutes`, by the skill checks (their self-tests are German only); `transcript-minutes`, `style-profile` and `area-manager` not run in claude.ai |
-| `appointment-prep` 0.7, `letter-explain`, `skill-tailor` and the templates | draft | simulated with sub-agents and checked by tool, not run in a real account |
-| Guided start from the repository link | draft | `START_HERE.md` written, not yet run in a real account |
-| Phone use during setup | open | the setup is recommended on a computer |
+| `weekly-review`, `fact-check`, `brain-check` | ran | German pack, free test account, 2026-11-05 to 2026-11-10 |
+| `decision-clarify`, `decision-check`, `knowledge-note`, `area-manager` | ran | German pack, free test account, 2026-11-05 and 2026-11-06 |
+| `plain-prose-*`, `style-profile`, `transcript-minutes`, `build-router`, `vibe-pack` | draft | German pack tool-checked; English pack checked for structure and, for `vibe-pack` and `transcript-minutes`, by the skill checks (their self-tests are German only); not run in claude.ai yet |
+| `letter-explain`, `appointment-prep` (tailored), `skill-tailor` 0.4 | ran once | German pack, free test account, 2026-11-10: a letter explained and a reply drafted; `skill-tailor` built a checked ZIP that claude.ai accepted and that worked in use. `skill-tailor` 0.5 and the fixed `appointment-prep` have not run yet |
+| Guided start from the repository link and setup | ran | 2026-11-04 in a free test account: the link was readable, raw links derived from it were not (fallback: attach the files); interview and setup worked. The fixes since then have not been re-run from a fresh start |
+| Phone use | partly verified | writing into documents from the phone app worked once; setup is still recommended on a computer |
 
 Known gaps are listed in the status table above and in the [Roadmap](#roadmap).
 

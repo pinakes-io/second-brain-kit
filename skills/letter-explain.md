@@ -50,7 +50,7 @@ The short answer has at most about 12 lines, on a phone 5. Protective points per
 - `en/skills/letter-explain/SKILL.md` and the German twin.
 
 ## Status
-- Draft 0.7.1 (0.7 plus one clarified rule: replies only as drafts to copy, never sent): simulated only (sub-agents with invented personas and letters, a blind reviewer), not run in claude.ai. The English wording is a first translation and not reviewed.
+- Draft 0.7.1: simulated with sub-agents; ran once in a free test account on 2026-11-10 with an invented debt collection letter (explained, injected instruction ignored, reply drafted, stored without amounts). The English wording is a first translation and not reviewed.
 - Checked by tool: spec, language parity, ZIP rules. No content check tool.
 
 ## See also

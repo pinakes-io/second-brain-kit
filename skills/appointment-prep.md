@@ -49,7 +49,7 @@ Knowledge comes in three levels: fresh with a source, "as a rule, unchecked" whe
 - `en/skills/appointment-prep/SKILL.md` and the German twin.
 
 ## Status
-- Draft 0.7: simulated only (unit test by sub-agents with invented personas, 22 hard cases, a blind reviewer), not run in claude.ai. The English wording is a first translation and not reviewed.
+- Draft 0.7: simulated with sub-agents; a tailored copy ran once in a free test account on 2026-11-10. The fixed version with the rule on official sources has not run yet. The English wording is a first translation and not reviewed.
 - Checked by tool: spec, language parity, ZIP rules. No content check tool.
 
 ## See also

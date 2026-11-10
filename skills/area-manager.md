@@ -49,7 +49,7 @@ Paused areas keep their documents and their rule block with the note "(paused si
 
 ## Status
 - Checked by tool: spec, skeleton consistency (blocks, directory, skills), language parity, ZIP rules, mutation test.
-- Not run in claude.ai. A test run is planned.
+- Ran in a free test account on 2026-11-06: an area added, paused and switched on again, each after a preview.
 
 ## See also
 - [`setup-brain`](setup-brain.md) does the creating.

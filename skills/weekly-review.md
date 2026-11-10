@@ -46,7 +46,7 @@ Done only counts with evidence (confirmation, date, document). Numbers and deadl
 
 ## Status
 - Checked by tool: spec, skeleton, shared rules word for word, language parity, ZIP rules.
-- An earlier version ran in the first free-account walkthrough; the current one has not been run in claude.ai.
+- The current version ran in a free test account on 2026-11-10: inbox sorted, three questions and the monthly question, plan, filing; checked against a Drive export.
 
 ## See also
 - [`brain-check`](brain-check.md) points here when the inbox is old.

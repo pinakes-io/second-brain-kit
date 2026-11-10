@@ -8,7 +8,7 @@ Every skill is one `SKILL.md` that Claude loads in claude.ai, packaged as one ZI
   - **A1 Core:** always there, five skills.
   - **A2 Module skills:** switched on by the interview, together with the core at most 12 uploads.
   - **A3 Add-ons:** offered when they fit, outside the 12.
-- **B. Tailored to you.** Draft, not run in claude.ai: `skill-tailor` reads a template, asks three to five choices and builds a checked ZIP. Templates exist for `appointment-prep` and `letter-explain`; every other skill comes as kind A.
+- **B. Tailored to you.** Draft; version 0.4 ran once in claude.ai: `skill-tailor` reads a template, asks three to five choices and builds a checked ZIP. Templates exist for `appointment-prep` and `letter-explain`; every other skill comes as kind A.
 
 ## The map
 

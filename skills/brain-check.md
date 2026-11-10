@@ -45,7 +45,7 @@ The checks cover target against actual, duplicates, documents outside the filing
 
 ## Status
 - Checked by tool: spec, language parity, ZIP rules. No content check tool.
-- Not run in claude.ai.
+- Ran in a free test account on 2026-11-05: "check structure" started this skill, it changed nothing and proposed repairs.
 
 ## See also
 - [`setup-brain`](setup-brain.md) creates what is missing.

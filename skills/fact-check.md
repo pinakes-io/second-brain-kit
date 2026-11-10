@@ -46,7 +46,7 @@ The order of sources is statutes and official portals, then the page of the resp
 
 ## Status
 - Checked by tool: spec, language parity, ZIP rules. There is no content check tool.
-- Not run in claude.ai.
+- Ran in a free test account on 2026-11-05 and 2026-11-10: a new check with an official source and a ledger entry, and a ledger hit without a new web search.
 
 ## See also
 - [`knowledge-note`](knowledge-note.md), [`appointment-prep`](appointment-prep.md) and [`decision-clarify`](decision-clarify.md) call it.

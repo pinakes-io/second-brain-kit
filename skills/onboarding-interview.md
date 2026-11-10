@@ -53,7 +53,7 @@ Before the first question it checks that Google Drive, Docs and Sheets are conne
 
 ## Status
 - Checked by tool: questions against the spec, shared rules word for word in three skills, dry runs and simulations against invented personas (version 0.4 follows 264 simulated scenarios against version 0.3).
-- Version 0.4 has not been run in claude.ai and has not been simulated again.
+- Version 0.4 ran in a free test account on 2026-11-04 (stage 1 and two rounds of stage 2); the later wording change for phones has not run yet.
 
 ## See also
 - [`setup-brain`](setup-brain.md) is the next step.

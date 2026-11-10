@@ -23,25 +23,25 @@ All checks run on every export. They check patterns, numbers and consistency, no
 
 | Skill | Content checks | Run in claude.ai | Provenance |
 |---|---|---|---|
-| `setup-brain` | skeleton, word for word | earlier version ran | none listed |
-| `onboarding-interview` | skeleton, spec, personas | earlier version ran | none listed |
-| `weekly-review` | skeleton, word for word | earlier version ran | none listed |
-| `fact-check` | spec only | no | none listed |
-| `brain-check` | spec only | no | none listed |
-| `decision-clarify` | spec only | no | none listed |
-| `decision-check` | spec only | no | none listed |
-| `knowledge-note` | spec only | no | none listed |
-| `appointment-prep` | spec only | no (simulated, draft 0.7) | own draft |
-| `letter-explain` | spec only | no (simulated, draft 0.7.1) | own draft |
+| `setup-brain` | skeleton, word for word | version of 2026-11-03 ran (setup on 2026-11-04) | none listed |
+| `onboarding-interview` | skeleton, spec, personas | 0.4 ran (2026-11-04) | none listed |
+| `weekly-review` | skeleton, word for word | yes (2026-11-10) | none listed |
+| `fact-check` | spec only | yes (2026-11-05, 2026-11-10) | none listed |
+| `brain-check` | spec only | yes (2026-11-05) | none listed |
+| `decision-clarify` | spec only | yes (2026-11-06) | none listed |
+| `decision-check` | spec only | yes (2026-11-06) | none listed |
+| `knowledge-note` | spec only | yes (2026-11-05, 2026-11-06) | none listed |
+| `appointment-prep` | spec only | tailored version once (2026-11-10); fixed version not yet | own draft |
+| `letter-explain` | spec only | yes, one letter (2026-11-10) | own draft |
 | `plain-prose-de` | own tool, self-test, 15 cases | no (simulated twice) | none listed |
 | `plain-prose-en` | own tool, self-test, 15 cases | no (simulated twice) | own work |
 | `build-router` | spec only | no | none listed |
 | `vibe-pack` | own tool; skill check in both packages, self-test and pack patterns German only | no | own work |
 | `transcript-minutes` | own tool; skill check in both packages, self-test and minutes check German only | no | own work |
 | `style-profile` | own tool, self-test | no | own draft |
-| `area-manager` | skeleton consistency, mutation test | no | none listed |
-| `skill-tailor` | templates checked against the fixed skills, self-test | no (simulated, draft 0.4) | own draft |
+| `area-manager` | skeleton consistency, mutation test | yes (2026-11-06) | none listed |
+| `skill-tailor` | templates checked against the fixed skills, self-test | 0.4 once (2026-11-10); 0.5 not yet | own draft |
 
 ## What "ran" means
 
-The first free-account walkthrough used the first versions of the three skeleton skills with an invented person. Since then the interview, the setup and other parts have changed, and none of the later versions has been run in claude.ai yet. The tests that close this gap are described in the test guides under `docs/`.
+Ran means: used at least once in a free test account with the German pack, with an invented person and invented letters, between 2026-11-01 and 2026-11-10, and checked against the tool calls and, where noted, a Drive export. It does not mean tested by other people or in a paid plan. The English pack has not run in claude.ai. The test guides under `docs/` describe how to repeat the tests.

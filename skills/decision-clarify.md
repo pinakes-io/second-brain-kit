@@ -47,7 +47,7 @@ It asks only what would invalidate work already done: time frame, money, require
 
 ## Status
 - Checked by tool: spec, language parity, ZIP rules. No content check tool.
-- Not run in claude.ai.
+- Ran in a free test account on 2026-11-06 (one open decision, five questions, entry only after yes).
 
 ## See also
 - [`decision-check`](decision-check.md) follows when you call the decision final.
