@@ -6,7 +6,7 @@ description: Leitet aus zwei bis drei eigenen Texten mein Stilprofil ab (Satzlä
 # Style-Profile (Entwurf 0.1)
 
 ## Vorbereitung (still)
-- Lies, falls du Drive lesen darfst, das `Stilprofil` und meine Grenzen in `00_Status`. Vorhandene Zeilen bleiben.
+- Lies zuerst (außer ohne Drive-Verbindung) das `Stilprofil` und meine Grenzen in `00_Status`. Vorhandene Zeilen bleiben.
 - Prüfe das Material: zwei bis drei Texte, zusammen mindestens etwa 250 Wörter, alle von mir selbst geschrieben. Weitergeleitete Mails, Zitate, Vorlagen und Entwürfe, die eine KI geschrieben hat, zählen nicht: sag das und lass sie weg. Bei zu wenig Material nenne die Zahl, leite keine Regel ab und biete an, mehr Text zu holen. Unter etwa 500 Wörtern ist jedes Ergebnis „vorläufig“.
 - Ein Profil gilt für eine Sprache. Deutsche und englische Texte trennst du.
 - Frag genau einmal, für welche Art Text die Proben stehen (Mails, Berichte, Beiträge, alles). Das wird der Geltungsbereich.

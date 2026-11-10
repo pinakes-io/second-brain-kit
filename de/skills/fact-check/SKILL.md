@@ -9,7 +9,7 @@ description: Prüft Zahlen, Fristen, Beträge, Voraussetzungen und Regeln gegen 
 Keine Zahl und keine Regel verlässt das System ungeprüft. Ein flüssiger Satz ist kein Beleg. Jede Aussage hat Quelle, Abrufdatum und Status.
 
 ## Vorgehen
-1. Lies, falls du Drive lesen darfst, den `Fakten-Ledger` und suche, ob die Aussage schon dort steht.
+1. Lies zuerst (außer ohne Drive-Verbindung) den `Fakten-Ledger` und suche, ob die Aussage schon dort steht.
 2. Steht sie dort mit Status ✔ belegt und ist jünger als 90 Tage, benutze sie und nenne Quelle und Stand.
 3. Sonst (kein Eintrag, älter als 90 Tage, ⚠ ungeprüft, 📎 Hinweis-Quelle, ❓ unbekannt) suche im Web. Reihenfolge der Quellen: Gesetzestexte und amtliche Portale, dann die offizielle Seite der zuständigen Stelle (im Profil unter den zuständigen Stellen, falls dort eingetragen), dann Fachportale. Blogs und Foren sind nur Hinweise, nie die einzige Quelle.
 4. Trenne in der Antwort „Gesichert (Quelle, Datum)“ von „Vermutet oder noch zu klären“. Erfinde nichts. Widersprechen sich Quellen, nenne beide und glätte nichts.

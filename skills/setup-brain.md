@@ -8,7 +8,7 @@
 | Kind | A1 · Core, always |
 | Area | Core |
 | Upload | `en/dist/setup-brain.zip` · `de/dist/setup-brain.zip` (one skill per ZIP) |
-| Size | 18,478 characters (en) · 19,364 characters (de), limit 8,000 for module skills |
+| Size | 18,442 characters (en) · 19,319 characters (de), limit 8,000 for module skills |
 | Description | Creates the Drive structure of the second brain in the chat (folder "Second Brain" with the core documents and the documents of the active areas). Use when I write "set up", "create folder" or "check structure", or when the interview has been confirmed. Never overwrites anything and can run several times. |
 <!-- facts:end -->
 

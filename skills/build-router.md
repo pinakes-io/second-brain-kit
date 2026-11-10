@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Build (`bauen`) |
 | Upload | `en/dist/build-router.zip` · `de/dist/build-router.zip` (one skill per ZIP) |
-| Size | 1,644 characters (en) · 1,747 characters (de), limit 8,000 for module skills |
+| Size | 1,666 characters (en) · 1,754 characters (de), limit 8,000 for module skills |
 | Description | Entry point for anything that is to be built (app, script, tool or automated workflow). Use when I write "build" or "Build:" or mention an app, a script or a workflow. Hands over to vibe-pack (code) or the workflow skill and builds nothing itself. |
 <!-- facts:end -->
 

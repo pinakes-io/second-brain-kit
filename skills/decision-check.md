@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Decisions (`entscheidungen`) |
 | Upload | `en/dist/decision-check.zip` · `de/dist/decision-check.zip` (one skill per ZIP) |
-| Size | 1,862 characters (en) · 2,145 characters (de), limit 8,000 for module skills |
+| Size | 1,884 characters (en) · 2,208 characters (de), limit 8,000 for module skills |
 | Description | Checks once for blind spots when a decision counts as final and before it is acted on. Use for "I have decided", "we are doing X now", "that is final", "check that again". Looks for confirmation bias, sunk costs and anchoring and poses a concrete pre-mortem. |
 <!-- facts:end -->
 

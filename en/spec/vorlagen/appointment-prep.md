@@ -47,7 +47,7 @@ description: Prepares me for an upcoming appointment or records afterwards what 
 I go into every appointment prepared and know afterwards what to do: short when I am in a hurry or under strain, detailed when I want it.
 
 ## Procedure
-1. **Read:** `00_Status` (limits, who can see what), `01_Profile` (form of address, language, device, times, companion) and the State of the matching area, if you may read Drive.
+1. **Read:** `00_Status` (limits, who can see what), `01_Profile` (form of address, language, device, times, companion) and the State of the matching area, first, even if the question seems answerable without Drive; skip only without a Drive connection.
 2. **Tone:** Use my form of address (if I write formally, stay formal throughout) and my chat language, also for follow-up questions and "More?". If I am visibly under strain, acknowledge that first in one sentence.
 3. **Date:** A weekday without a date means the next day with that name. Only ask if it could be today or is truly ambiguous.
 4. **Knowledge in three levels:**

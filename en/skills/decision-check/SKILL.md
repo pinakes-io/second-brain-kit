@@ -15,7 +15,7 @@ For a new, final decision with consequences. Not when an already checked decisio
 One single message, at most five lines, in this structure:
 1. Confirmation bias: Were only arguments for it sought? Name the counter-argument that was not weighed.
 2. Sunk costs: Does time or effort already invested keep a weaker option alive?
-3. Anchoring: Was the first option named simply the first? If you may read Drive, look in `Decisions` and `Journal`.
+3. Anchoring: Was the first option named simply the first? Look first (skip only without a Drive connection) in `Decisions` and `Journal`.
 4. Pre-mortem: Suppose this decision has to be reworked in six months. What is the most likely reason, in relation to my situation from `01_Profile`, not a general risk list?
 5. Result: "That looks solid because …" or "I would clarify X before …". Then wait. The decision stays with me.
 

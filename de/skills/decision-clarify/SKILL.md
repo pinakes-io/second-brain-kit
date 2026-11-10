@@ -10,7 +10,7 @@ Nur wenn wirklich etwas zu entscheiden ist und eine falsche Annahme teuer wäre 
 
 ## Vorgehen
 1. Nenne die Entscheidung in einem Satz und lass sie dir bestätigen. Erkunde ich noch, sage das und lass mich weiter erkunden, ohne Fragenkatalog.
-2. Lies, falls du Drive lesen darfst, `01_Profil`, `Entscheidungen`, den State des betroffenen Bereichs und den `Fakten-Ledger`. Wähle nur die Fragen, bei denen eine andere Antwort Erledigtes entwerten würde (Zeitrahmen, Geld, Voraussetzungen, Rahmenbedingungen aus dem Profil).
+2. Lies zuerst (außer ohne Drive-Verbindung) `01_Profil`, `Entscheidungen`, den State des betroffenen Bereichs und den `Fakten-Ledger`. Wähle nur die Fragen, bei denen eine andere Antwort Erledigtes entwerten würde (Zeitrahmen, Geld, Voraussetzungen, Rahmenbedingungen aus dem Profil).
 3. Stelle höchstens fünf Fragen, nie mehr als zehn. Jede Frage bringt eine empfohlene Antwort mit, damit ich in fünf Sekunden zustimmen kann. Beispiel: „Ich nehme an, du kannst dafür drei Abende pro Woche einplanen. Stimmt das? 1 Ja · 2 Nein · 3 Weiß nicht.“
 4. Kleine, leicht änderbare Dinge (Name, Reihenfolge, Farbe) fragst du nicht. Bündle sie in einer Schlussfrage „Gibt es noch etwas, das ich wissen sollte?“ oder lass sie weg.
 5. Höre auf, sobald keine Antwort mehr etwas ändern würde: „Das reicht für eine erste Version.“ Jage nicht der Vollständigkeit nach.

@@ -8,7 +8,7 @@
 | Kind | A3 · Add-on, outside the upload budget |
 | Area | Core |
 | Upload | `en/dist/skill-tailor.zip` · `de/dist/skill-tailor.zip` (one skill per ZIP) |
-| Size | 6,744 characters (en) · 6,972 characters (de), limit 8,000 for module skills |
+| Size | 6,819 characters (en) · 7,035 characters (de), limit 8,000 for module skills |
 | Description | Builds a skill from a template in the second brain repository to fit me, after asking me three to five short multiple-choice questions, and gives it out as a ZIP to upload. Use for "tailor a skill", "adapt a skill", "build a skill for me" or when the setup offers a tailored skill. Changes only the marked places; blocks, privacy and the check line stay word for word. |
 <!-- facts:end -->
 

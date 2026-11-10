@@ -8,7 +8,7 @@
 | Kind | A1 · Core, always |
 | Area | Core |
 | Upload | `en/dist/fact-check.zip` · `de/dist/fact-check.zip` (one skill per ZIP) |
-| Size | 2,347 characters (en) · 2,459 characters (de), limit 8,000 for module skills |
+| Size | 2,369 characters (en) · 2,466 characters (de), limit 8,000 for module skills |
 | Description | Checks numbers, deadlines, amounts, requirements and rules against current official sources before I pass them on, apply for something or decide on them. Use for "check that", "is that still true", "fact check" and always before you state a number or rule in a consequential answer. |
 <!-- facts:end -->
 

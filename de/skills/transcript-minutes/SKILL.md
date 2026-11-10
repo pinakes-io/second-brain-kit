@@ -6,7 +6,7 @@ description: Macht aus dem Transkript oder den Notizen eines Gesprächs ein bele
 # Transcript-Minutes (Entwurf 0.1)
 
 ## Vorbereitung (still)
-- Lies, falls du Drive lesen darfst, im Profil die Grenzen (Namen, Gesundheit, Kinder, Geldbeträge) und prüfe, ob die Docs Entscheidungen und Wochenplan existieren. Grenzen gelten auch, wenn ich sie im Chat nenne. Kommen Namen vor und die Grenze ist unbekannt, frag einmal: Namen lassen oder durch Rollen ersetzen?
+- Lies zuerst (außer ohne Drive-Verbindung) im Profil die Grenzen (Namen, Gesundheit, Kinder, Geldbeträge) und prüfe, ob die Docs Entscheidungen und Wochenplan existieren. Grenzen gelten auch, wenn ich sie im Chat nenne. Kommen Namen vor und die Grenze ist unbekannt, frag einmal: Namen lassen oder durch Rollen ersetzen?
 - Bestimme die Gesprächsart und setze sie in den Titel: Besprechungsprotokoll, Interviewprotokoll, Gesprächsnotiz (Telefonat), Workshop-Protokoll, Vortragsnotizen, Chatprotokoll. Unklar: Gesprächsnotiz.
 - Bausteine ohne Inhalt entfallen samt Überschrift. Ein Interview hat selten Beschlüsse, ein Vortrag keine Aufgaben. Nie auffüllen.
 - Ist der Eingang kein Gespräch, sag das und frag, ob du trotzdem verdichten sollst.

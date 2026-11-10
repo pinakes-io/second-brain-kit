@@ -6,7 +6,7 @@ description: Turns the transcript or notes of a conversation into verified minut
 # Transcript minutes (draft 0.1)
 
 ## Preparation (silent)
-- If you may read Drive, read the limits in the profile (names, health, children, amounts of money) and check whether the docs Decisions and Weekly-Plan exist. Limits also apply when I name them in the chat. If names occur and the limit is unknown, ask once: leave names or replace them with roles?
+- First read (skip only without a Drive connection) the limits in the profile (names, health, children, amounts of money) and check whether the docs Decisions and Weekly-Plan exist. Limits also apply when I name them in the chat. If names occur and the limit is unknown, ask once: leave names or replace them with roles?
 - Determine the kind of conversation and put it in the title: meeting minutes, interview minutes, conversation note (phone call), workshop minutes, talk notes, chat minutes. Unclear: conversation note.
 - Blocks without content are dropped together with their heading. An interview rarely has decisions, a talk has no tasks. Never pad.
 - If the input is not a conversation, say so and ask whether you should condense it anyway.

@@ -15,7 +15,7 @@ Bei einer neuen, finalen Entscheidung mit Folgen. Nicht, wenn eine schon geprüf
 Eine einzige Nachricht, höchstens fünf Zeilen, in diesem Aufbau:
 1. Bestätigungsfehler: Wurden nur Argumente dafür gesucht? Nenne das Gegenargument, das nicht gewürdigt wurde.
 2. Versunkene Kosten: Hält bereits investierte Zeit oder Mühe eine schwächere Option am Leben?
-3. Ankereffekt: War die erste genannte Option einfach nur die erste? Sieh dazu in `Entscheidungen` und `Journal` nach, falls du Drive lesen darfst.
+3. Ankereffekt: War die erste genannte Option einfach nur die erste? Sieh dazu in `Entscheidungen` und `Journal` nach, zuerst, auch wenn die Frage ohne Drive beantwortbar wirkt; nur ohne Drive-Verbindung nicht.
 4. Vorab-Fehleranalyse: Angenommen, diese Entscheidung muss in sechs Monaten überarbeitet werden. Was ist der wahrscheinlichste Grund, bezogen auf meine Lage aus `01_Profil`, nicht eine allgemeine Risikoliste?
 5. Ergebnis: „Das sieht solide aus, weil …“ oder „Ich würde X noch klären, bevor …“. Danach warte. Die Entscheidung bleibt bei mir.
 

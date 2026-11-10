@@ -183,7 +183,7 @@ What Claude can do for you and what you still do by hand:
 | Reads this repository and picks the right files | Create the Claude project (one click) |
 | Shows the exact text to paste, in your language | Paste the instructions and upload the skill ZIPs |
 | Explains each step and waits for your confirmation | Connect Google Drive and confirm the permissions |
-| Runs the interview and builds the Drive structure (inside the project) | Add the two main documents to the project knowledge |
+| Runs the interview and builds the Drive structure (inside the project) | Nothing; the project knowledge stays empty |
 
 > [!IMPORTANT]
 > Claude can only read this repository if it is **public**, and only if your Claude account can open links. If it cannot, `START_HERE.md` tells Claude to ask you for the downloaded repository instead. Guided start from a link is the target and has **not been tested yet**.
@@ -200,7 +200,7 @@ What Claude can do for you and what you still do by hand:
 5. **Connect Google Drive** in the connector settings.
 6. **Start the interview.** Say that you want to set up your second brain.
 7. **Run the setup.** Ask the assistant to set it up. It lists what it is going to create, asks once, then creates folder and documents and reports what exists and what is missing.
-8. **Add the two main documents to the project.** `00_Status` and `01_Profile` go into the project knowledge, from Google Drive, so they are always loaded. In the free plan this works by importing the document link.
+8. **Leave the project knowledge empty.** The assistant reads `00_Status` from Drive at the start of every chat; a copy in the project knowledge can go stale (it did in a test).
 9. **Paste the account text.** The setup skill prints a short text for your account preferences. It makes chats outside the project aware of your Drive folder.
 
 ## Design principles

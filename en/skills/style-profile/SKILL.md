@@ -6,7 +6,7 @@ description: Derives my style profile from two or three of my own texts (sentenc
 # Style-Profile (draft 0.1)
 
 ## Preparation (silent)
-- If you may read Drive, read the `Style_Profile` and my limits in `00_Status`. Existing lines stay.
+- First read (skip only without a Drive connection) the `Style_Profile` and my limits in `00_Status`. Existing lines stay.
 - Check the material: two or three texts, together at least about 250 words, all written by me. Forwarded mails, quotations, templates and drafts written by an AI do not count: say so and leave them out. If there is too little material, give the number, derive no rule and offer to fetch more text. Below about 500 words every result is “provisional”.
 - A profile applies to one language. You keep German and English texts apart.
 - Ask exactly once what kind of text the samples stand for (mails, reports, posts, everything). That becomes the scope.

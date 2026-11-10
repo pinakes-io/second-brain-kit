@@ -8,7 +8,7 @@
 | Kind | A3 · Add-on, outside the upload budget |
 | Area | Work and goals (`arbeit`) |
 | Upload | `en/dist/transcript-minutes.zip` · `de/dist/transcript-minutes.zip` (one skill per ZIP) |
-| Size | 6,535 characters (en) · 6,679 characters (de), limit 8,000 for module skills |
+| Size | 6,557 characters (en) · 6,686 characters (de), limit 8,000 for module skills |
 | Description | Turns the transcript or notes of a conversation into verified minutes with decisions, topic blocks, open points and a task table. Use when I paste or attach a transcript (meeting, interview, phone call, workshop, talk, chat history) and write "minutes", "conversation notes", "decisions" or "tasks from this". Checks in several passes that nothing is missing and invents nothing. |
 <!-- facts:end -->
 

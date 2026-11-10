@@ -68,7 +68,7 @@ Gehört mein Anliegen zum Projekt Second Brain, sage mir, dass ich dort weitersc
 ```
 
 5. Modul-Skills: Vergleiche deine eigene Skill-Liste mit den Skills der aktiven Bereiche aus der Tabelle „Skills je Bereich“. Nenne die fehlenden in einer Zeile mit ZIP-Namen (`<skill>.zip`, einzeln hochladen) und sage, dass du bis dahin ohne sie hilfst. Fehlt keiner, lass den Punkt weg.
-6. Letzter Satz: „Füge `00_Status` und `01_Profil` im Projekt unter Files hinzu (aus Google Drive), dann sind sie immer geladen.“ Sage danach in einem Satz: Neue Bereiche kannst du später jederzeit dazunehmen („neuer Bereich“).
+6. Letzter Satz: „Ins Projektwissen kommt nichts; ich lese in jedem Chat aus Drive.“ Sage danach in einem Satz: Neue Bereiche kannst du später jederzeit dazunehmen („neuer Bereich“).
 
 ## Grenzen
 - Nie löschen, nie teilen, nie Berechtigungen ändern, nichts außerhalb des Ordners „Second Brain“ anfassen.

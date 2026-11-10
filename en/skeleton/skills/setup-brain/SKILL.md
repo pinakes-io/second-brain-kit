@@ -68,7 +68,7 @@ If my request belongs to the Second Brain project, tell me to continue writing t
 ```
 
 5. Module skills: Compare your own skill list with the skills of the active areas in the table "Skills per area". Name the missing ones in one line with their ZIP names (`<skill>.zip`, upload one by one) and say that you help without them until then. If none is missing, leave this point out.
-6. Last sentence: "Add `00_Status` and `01_Profile` to the project under Files (from Google Drive), then they are always loaded." Then say in one sentence: you can add new areas at any time later ("new area").
+6. Last sentence: "Nothing goes into the project knowledge; I read from Drive in every chat." Then say in one sentence: you can add new areas at any time later ("new area").
 
 ## Limits
 - Never delete, never share, never change permissions, touch nothing outside the folder "Second Brain".

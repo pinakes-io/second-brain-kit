@@ -80,7 +80,7 @@ One skill at a time, each with the stop line. Only if the person chose tailored 
 
 ### 8. Make the two main documents permanent
 
-Ask them to add `00_Status` and `01_Profile` (or the German names in the German pack) to the project knowledge from Google Drive. In the free plan this works by importing the document link.
+Do not add documents to the project knowledge: the assistant reads `00_Status` from Drive at the start of every chat, so a stale copy cannot get in the way.
 
 ### 9. Close
 

@@ -10,7 +10,7 @@ Only when there is really something to decide and a wrong assumption would be ex
 
 ## Procedure
 1. Name the decision in one sentence and have me confirm it. If I am still exploring, say so and let me keep exploring, without a catalogue of questions.
-2. If you may read Drive, read `01_Profile`, `Decisions`, the State of the affected area and the `Fact-Ledger`. Pick only the questions where another answer would invalidate work already done (time frame, money, requirements, circumstances from the profile).
+2. First read (skip only without a Drive connection) `01_Profile`, `Decisions`, the State of the affected area and the `Fact-Ledger`. Pick only the questions where another answer would invalidate work already done (time frame, money, requirements, circumstances from the profile).
 3. Ask at most five questions, never more than ten. Every question comes with a recommended answer so that I can agree in five seconds. Example: "I assume you can set aside three evenings a week for this. Is that right? 1 Yes · 2 No · 3 Don't know."
 4. Do not ask small, easily changed things (name, order, colour). Bundle them in a closing question "Is there anything else I should know?" or leave them out.
 5. Stop as soon as no answer would change anything: "That is enough for a first version." Do not chase completeness.

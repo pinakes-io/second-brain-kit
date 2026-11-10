@@ -31,4 +31,6 @@ Fixed after the first walkthrough over the link (free plan, 04.11. to 07.11.): t
 
 Fixed after the test of 2026-11-10: `skill-tailor` 0.5 reads the template in code from the file instead of typing it out, so the code check compares against the real template; in the `appointment-prep` template a restricted choice of appointment types now also narrows the trigger sentence of the description; `appointment-prep` and `letter-explain` give deadlines, duties and consequences as fact only with an official source, advice and advocacy portals count as hints.
 
+Fixed after the test of 2026-11-10 (second round): the project instructions say to read `00_Status` from Drive before the first answer in every chat, even if the question seems answerable without Drive, and the skills no longer say "if you may read Drive" but "first, skip only without a Drive connection"; in three tests Claude had skipped reading. The project knowledge stays empty: a copy there had gone stale in a test, so setup, README and START_HERE no longer ask to add documents to it. Where a skill sets a line limit, the instructions ask to count the lines before sending and cut.
+
 Known gaps: interview stage 2 has one question; the English wording has not been reviewed by a native speaker; most skills have not been run in a real account; the setup takes longer than the 20-minute target in simulation.

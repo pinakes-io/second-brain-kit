@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Build (`bauen`) |
 | Upload | `en/dist/vibe-pack.zip` · `de/dist/vibe-pack.zip` (one skill per ZIP) |
-| Size | 6,782 characters (en) · 7,000 characters (de), limit 8,000 for module skills |
+| Size | 6,804 characters (en) · 7,007 characters (de), limit 8,000 for module skills |
 | Description | Turns a vague idea into a pack for a coding agent (for example Cursor, Windsurf or Replit), namely a rules file and a build plan. Use when I want to build an app, a script or a tool, when my built project does not run, or when I want to continue it in a new session. Not for automated workflows between existing services such as mail, spreadsheets or calendar. |
 <!-- facts:end -->
 

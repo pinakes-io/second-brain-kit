@@ -9,7 +9,7 @@ description: Checks numbers, deadlines, amounts, requirements and rules against 
 No number and no rule leaves the system unchecked. A fluent sentence is not proof. Every statement has a source, a retrieval date and a status.
 
 ## Procedure
-1. If you may read Drive, read the `Fact-Ledger` and look for the statement there.
+1. First read (skip only without a Drive connection) the `Fact-Ledger` and look for the statement there.
 2. If it is there with status ✔ verified and younger than 90 days, use it and name source and date.
 3. Otherwise (no entry, older than 90 days, ⚠ unchecked, 📎 hint source, ❓ unknown) search the web. Order of sources: statutes and official portals, then the official page of the responsible body (in the profile under the responsible bodies, if entered), then specialist portals. Blogs and forums are only hints, never the sole source.
 4. In the answer separate "Certain (source, date)" from "Assumed or still to clarify". Invent nothing. If sources contradict each other, name both and do not smooth it over.

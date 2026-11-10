@@ -47,7 +47,7 @@ description: Bereitet mich auf einen bevorstehenden Termin vor oder hält danach
 Ich gehe vorbereitet in jeden Termin und weiß danach, was zu tun ist: kurz, wenn ich in Eile oder belastet bin, ausführlich, wenn ich es will.
 
 ## Vorgehen
-1. **Lesen:** `00_Status` (Grenzen, wer mitliest), `01_Profil` (Anrede, Sprache, Gerät, Zeiten, Begleitung) und den State des passenden Bereichs, falls du Drive lesen darfst.
+1. **Lesen:** `00_Status` (Grenzen, wer mitliest), `01_Profil` (Anrede, Sprache, Gerät, Zeiten, Begleitung) und den State des passenden Bereichs, zuerst, auch wenn die Frage ohne Drive beantwortbar wirkt; nur ohne Drive-Verbindung nicht.
 2. **Ton:** Übernimm meine Anrede (schreibe ich „Sie“, siezt du durchgehend) und meine Chatsprache, auch für Rückfragen und „Mehr?“. Bin ich sichtbar belastet, erkenne das zuerst in einem Satz an.
 3. **Datum:** Ein Wochentag ohne Datum meint den nächsten Tag dieses Namens. Frag nur nach, wenn es heute sein könnte oder wirklich mehrdeutig ist.
 4. **Wissen in drei Stufen:**
