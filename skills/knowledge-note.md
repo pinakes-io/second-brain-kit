@@ -12,6 +12,10 @@
 | Description | Files researched knowledge permanently as a note in the Drive folder Knowledge or extends an existing note, one note per topic. Applies after non-trivial research or explanation that I will need again later, and for "file as knowledge", "remember this as knowledge". Not for everyday questions, appointments or conversations. |
 <!-- facts:end -->
 
+## Why it exists
+
+Research done in a chat is gone once the chat scrolls away, and the next chat starts from scratch. This skill files what was worth finding out as one note per topic in your Drive, with sources, date and status. Later chats find it there, and a note on money, deadlines or rules is checked again before it is used once it is old.
+
 ## Triggers
 - After non-trivial research or a long explanation you will need again.
 - You write "file as knowledge" or "remember this as knowledge".

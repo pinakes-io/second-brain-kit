@@ -12,6 +12,10 @@
 | Description | Weekly review and planning for the second brain. Use when I write "weekly review" or "weekly plan" or ask where I stand. Sorts the inbox, updates the weekly plan and the journal and suggests the next week. |
 <!-- facts:end -->
 
+## Why it exists
+
+Notes pile up in the inbox, plans go stale, and after a few weeks the second brain no longer matches your life. The weekly review is the one routine that keeps it current. It sorts the inbox with you, asks three short questions and writes the plan for the next week. When time is short it shrinks to a single question rather than being skipped.
+
 ## Triggers
 - You write "weekly review" or "weekly plan", or ask where you stand.
 

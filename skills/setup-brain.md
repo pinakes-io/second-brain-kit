@@ -12,6 +12,10 @@
 | Description | Creates the Drive structure of the second brain in the chat (folder "Second Brain" with the core documents and the documents of the active areas). Use when I write "set up", "create folder" or "check structure", or when the interview has been confirmed. Never overwrites anything and can run several times. |
 <!-- facts:end -->
 
+## Why it exists
+
+Creating a folder and a dozen documents by hand is tedious, and doing it twice is how duplicates appear. This skill turns the result of the interview into the actual folder and documents. It shows the plan first, creates only what is missing and never touches what already exists, so running it again is always safe.
+
 ## Triggers
 - After the interview, when you confirm the plan.
 - You write "set up", "create folder" or "check structure".

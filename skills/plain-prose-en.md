@@ -12,6 +12,10 @@
 | Description | Edits English texts for clarity, brevity and active language. Use when I paste an English text and write "edit", "tighten", "make it clearer", "plain prose", "cut the filler" or "sounds like AI". Follows the spelling of the text (British or American), keeps my voice from the Style_Profile, invents nothing and returns the finished text with a short change line. For German texts there is plain-prose-de. |
 <!-- facts:end -->
 
+## Why it exists
+
+Text written in a hurry, or by a machine, tends to be longer and vaguer than it needs to be. This skill does for English what its German twin does for German: clearer, shorter, more active, with your voice kept. It follows the spelling the text already uses, British or American, instead of imposing one.
+
 ## Triggers
 - You paste an English text and write "edit", "tighten", "make it clearer", "plain prose", "cut the filler" or "sounds like AI".
 

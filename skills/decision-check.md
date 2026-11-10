@@ -12,6 +12,10 @@
 | Description | Checks once for blind spots when a decision counts as final and before it is acted on. Use for "I have decided", "we are doing X now", "that is final", "check that again". Looks for confirmation bias, sunk costs and anchoring and poses a concrete pre-mortem. |
 <!-- facts:end -->
 
+## Why it exists
+
+Once a decision feels final, the doubts that matter tend to go quiet. This skill gives a decision you call final exactly one short look for blind spots: confirmation bias, sunk costs, anchoring and a concrete pre-mortem. Everything comes in one message of at most five lines, and "that looks solid" is a perfectly good result.
+
 ## Triggers
 - You write "I have decided", "we are doing X now", "that is final" or "check that again".
 

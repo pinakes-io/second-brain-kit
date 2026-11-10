@@ -12,6 +12,10 @@
 | Description | Turns a vague idea into a pack for a coding agent (for example Cursor, Windsurf or Replit), namely a rules file and a build plan. Use when I want to build an app, a script or a tool, when my built project does not run, or when I want to continue it in a new session. Not for automated workflows between existing services such as mail, spreadsheets or calendar. |
 <!-- facts:end -->
 
+## Why it exists
+
+AI coding tools build quickly and drift just as quickly when they start from a vague idea. This skill turns the idea into a small pack for the coding agent: a rules file and a build plan that starts with the smallest path from input to visible output. It also helps when a built project does not run or has to continue in a new session.
+
 ## Triggers
 - You want to build an app, a script or a tool.
 - Your built project does not run, or you want to continue in a new session.

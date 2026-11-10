@@ -1,6 +1,8 @@
 # Skills
 
-Every skill is one `SKILL.md` that Claude loads in claude.ai, packaged as one ZIP per skill. This section has one page per skill: when it starts, how it works as a flow, a short example, its limits, its files and what has really been tested. The [gates page](GATES.md) shows which checks each skill has passed. The skill files themselves (the `SKILL.md` that Claude loads) are in `en/skills` and `de/skills`, the core skills in `en/skeleton/skills` and `de/skeleton/skills`.
+A skill is a small, written procedure that Claude follows when a certain kind of request comes up. Each one here does one job, and none of them is clever on its own: the interview asks, the setup creates, the weekly review keeps things current, and the checks make sure that what lands in your Drive can be trusted.
+
+Every skill is one `SKILL.md`, packaged as one ZIP. This section has one page per skill. Each page starts with the problem the skill exists for, then shows when it starts, how it works as a flow, a short example, its limits and what has really been tested. The [gates page](GATES.md) shows which checks each skill has passed. The skill files themselves are in `en/skills` and `de/skills`, the core skills in `en/skeleton/skills` and `de/skeleton/skills`.
 
 ## Two kinds of skills
 
@@ -105,6 +107,7 @@ sequenceDiagram
 
 ## How to read a page
 
+- **Why it exists** names the problem first and then how the skill answers it.
 - **Facts** at the top (kind, area, ZIP, size, description) are generated from the `SKILL.md` and the spec and checked at every export by `tools/skill_seiten_pruefen.py`.
 - **Flow** is the same procedure as in the skill, drawn. The skill text is authoritative.
 - **Status** says what was checked by a tool and what has run in claude.ai. Nothing here claims more than that.

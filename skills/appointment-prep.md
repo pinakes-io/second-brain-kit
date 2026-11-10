@@ -12,6 +12,10 @@
 | Description | Prepares me for an upcoming appointment or records afterwards what was agreed (employment agency or job centre, immigration office or citizens' office, recognition counselling, job interview, doctor, school, bank and others). Use for "prepare appointment", "what to expect", "how do I prepare" and for "the appointment was today, …". Not for simply adding an appointment to the calendar. A letter with an invitation is explained first by letter-explain. Short by default, detailed on request. |
 <!-- facts:end -->
 
+## Why it exists
+
+Appointments with offices, doctors or schools are where people most often arrive without the right paper or leave without knowing what was agreed. This skill prepares you in a short answer, with more detail only if you ask, and records afterwards what came out of it. What it cannot back with a source is marked as unchecked rather than stated as fact.
+
 ## Triggers
 - You write "prepare appointment", "what to expect", "how do I prepare" or "the appointment was today, …".
 - Not for simply adding an appointment to the calendar. A letter with an invitation goes to [`letter-explain`](letter-explain.md) first.

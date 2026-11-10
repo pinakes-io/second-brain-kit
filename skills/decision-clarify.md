@@ -12,6 +12,10 @@
 | Description | Clarifies, before a real decision, the few questions whose other answer would tip the decision. Use for "I have to decide", "should I do A or B", "I am thinking about doing X", when a wrong assumption would cost a lot of time, money or opportunity. Not for pure idea collecting. |
 <!-- facts:end -->
 
+## Why it exists
+
+Most bad decisions are not made in the final step but rest on an assumption nobody checked. This skill looks for the few questions whose other answer would tip the decision, and asks only those, each with a recommended answer. It stops as soon as no further answer would change anything. The decision itself stays with you.
+
 ## Triggers
 - You write "I have to decide", "should I do A or B" or "I am thinking about doing X".
 - A wrong assumption would cost a lot of time, money or opportunity.

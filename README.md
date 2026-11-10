@@ -1,46 +1,25 @@
 # second-brain-kit
 
-> A second brain for ordinary people. Runs on **claude.ai + Google Drive**. Nothing to install.
+A second brain for people who already have a Google account and a chat window, and nothing more. It runs on claude.ai and Google Drive. There is nothing to install.
 
-![status](https://img.shields.io/badge/status-draft-orange)
-![platform](https://img.shields.io/badge/platform-claude.ai%20%2B%20Google%20Drive-blue)
-![install](https://img.shields.io/badge/install-nothing-brightgreen)
-![languages](https://img.shields.io/badge/languages-EN%20%7C%20DE-lightgrey)
-![license](https://img.shields.io/badge/license-to%20be%20decided-lightgrey)
-
-A short interview decides what *your* second brain needs. A set of skills then builds it in your own Google Drive, and keeps it tidy from there. No Claude Desktop, no Obsidian, no terminal, no scripts you have to run.
+A short interview finds out what your second brain needs. A small set of skills then builds it in your own Drive and keeps it in order from there.
 
 > [!WARNING]
-> **Draft.** The concept has been walked through once in a free Claude account with an invented person. Most skills in this repo are first drafts that have not been tested yet. See [Status](#status) for what is verified and what is not.
+> **Draft.** Most of the core has run in a free test account with an invented person. Several skills have only been checked by tools so far. [Status](#status) says exactly what has run and what has not.
 
-## Contents
+## The idea
 
-- [Why this exists](#why-this-exists)
-- [How it works](#how-it-works)
-- [What you get](#what-you-get)
-- [Quick start: give Claude the link](#quick-start-give-claude-the-link)
-- [Manual start](#manual-start)
-- [Design principles](#design-principles)
-- [Limits you should know](#limits-you-should-know)
-- [Languages](#languages)
-- [Status](#status)
-- [Repository layout](#repository-layout)
-- [Checks](#checks)
-- [Updating](#updating)
-- [Roadmap](#roadmap)
-- [Privacy and contributions](#privacy-and-contributions)
-- [License](#license)
+Most second-brain setups assume you are at home with local tools, plugins and folders full of Markdown files. Most people are not, and they should not have to be.
 
-## Why this exists
+The usual fix is to let the assistant remember things for you. That has a cost. Chat memory is a black box: you cannot see what it holds, you cannot correct it, and you cannot tell when it has gone stale.
 
-Most second-brain setups assume you are comfortable with local tools, plugins and folders full of Markdown. Most people are not, and they should not have to be. They already have a Google account and a chat window.
+So this kit moves the memory out of the assistant and into documents you own. Everything Claude needs to know lives in your Google Drive, in plain documents you can open, read and change yourself. At the start of every chat Claude reads them first. If something is not written down, Claude does not know it.
 
-This kit takes a different route:
+Three more choices follow from that:
 
-- **Google Drive is the single source of truth.** Everything the assistant needs to remember is written to documents you can open, read and edit yourself.
-- **The assistant does not rely on its own memory.** Chat memory is a black box. Documents are not.
-- **The structure is decided by an interview**, not by a template you have to bend to fit.
-- **Everything runs in the chat.** The setup, the weekly review and the checks are skills, not programs.
+- **The interview decides the structure.** You do not bend your life to a template. You answer a few questions and get the areas you actually need.
+- **Everything happens in the chat.** Setup, the weekly review and the checks are skills that Claude runs, not programs you start.
+- **Each skill has one job.** None of them is clever on its own. Together they keep the documents honest.
 
 ## How it works
 
@@ -60,64 +39,9 @@ flowchart LR
     J --> I
 ```
 
-The interview has two stages. **Stage 1** is short (at most eight questions) and picks the modules. **Stage 2** asks module-specific questions, one area at a time, and can be paused and resumed because every answer is written to your Drive immediately.
+The interview has two stages. The first is short, eight questions at most, and only decides which areas you need. The second asks about each area in turn. You can stop at any point and pick up later, because every answer is written to your Drive the moment you give it.
 
-### Who talks to whom
-
-```mermaid
-sequenceDiagram
-    autonumber
-    participant U as You
-    participant C as Claude project
-    participant S as Skills
-    participant D as Google Drive
-    U->>C: "Start the interview"
-    C->>S: onboarding-interview
-    S-->>U: 2 rounds of questions
-    U-->>S: Answers
-    S->>D: Profile and open questions
-    U->>C: "Set it up"
-    C->>S: setup-brain
-    S->>D: Create folder and documents
-    S-->>U: Report: what exists, what is missing
-    S-->>U: Text for your account preferences
-    U->>C: Everyday use
-    C->>D: Reads status and profile first
-    C-->>U: Answer, with a line saying what was read and filed
-```
-
-## What you get
-
-A core that is always there, plus modules that the interview switches on.
-
-Every skill has its own page with a flow diagram, an example, its limits and its test status: see [`skills/`](skills/README.md) and the [gates](skills/GATES.md).
-
-| Part | What it does | Skills |
-|---|---|---|
-| **Core** (always) | Status, profile, open questions, inbox, journal, fact ledger, weekly plan (areas can be added, paused and updated later with the optional add-on `area-manager`) | `setup-brain`, `onboarding-interview`, `fact-check`, `weekly-review`, `brain-check` |
-| Person | Who you are, how you like to be addressed, your rules and limits | none |
-| Tools | Which tools and apps you use | none |
-| Work | Work, goals, evidence of what is done | `transcript-minutes` (optional) |
-| Decisions | Open and taken decisions, with the reason | `decision-clarify`, `decision-check` |
-| Family | State of family matters | none |
-| Knowledge | One note per researched topic, with sources | `knowledge-note` |
-| Appointments | Appointments, deadlines, post, evidence | `appointment-prep`, `letter-explain` |
-| Learning | State of what you are learning, practice log | none |
-| Writing style | Plain-prose editing; optional add-on `style-profile` builds your style profile from your own texts | `plain-prose-de`, `plain-prose-en` (add-on: `style-profile`) |
-| Build | Small apps, scripts and automations, built with an AI coding tool | `build-router`, `vibe-pack` |
-| Own areas | Anything else you name | none |
-
-### Two kinds of skills
-
-**A. Out of the box.** Ready-made ZIPs in `de/dist` and `en/dist`, one skill per ZIP.
-
-| | Kind | Skills | Upload |
-|---|---|---|---|
-| A1 | Core, always | `setup-brain`, `onboarding-interview`, `weekly-review`, `fact-check`, `brain-check` | always |
-| A2 | Module skills, switched on by the interview | `decision-clarify`, `decision-check`, `knowledge-note`, `appointment-prep`, `letter-explain`, `plain-prose-de`, `plain-prose-en`, `build-router`, `vibe-pack` | counted: at most 12 uploads together with the core |
-| A3 | Add-ons, offered when they fit | `transcript-minutes`, `style-profile`, `area-manager`, `skill-tailor` | outside the 12 |
-
-**B. Tailored to you (draft, not run in claude.ai).** Claude reads a skill from the repository only as a template, asks a short interview (single or multiple choice, recommendation first) and builds the skill for you as a ZIP in the chat. Only marked passages change. The fixed blocks (limits, privacy, writing format, check line, source rules) stay word for word and are checked. The add-on `skill-tailor` does this; templates exist so far for `appointment-prep` and `letter-explain` (`<pack>/spec/vorlagen/`). It needs code execution; without it, or for any other skill, you take the ready-made ZIP of kind A.
+From your answers come three things: the project instructions, the list of skills to upload and the folder with its documents in Drive. After that, everyday use is plain conversation. Claude reads your status first, answers, and files what belongs somewhere.
 
 ### What lands in your Drive
 
@@ -143,15 +67,68 @@ flowchart TD
     class M1,M2,M3,M4,M5,M6 mod;
 ```
 
-Solid boxes are the core. Dashed boxes appear only if the interview switched the matching module on.
+The solid boxes are the core and always exist. A dashed box only appears if the interview switched the matching area on.
 
-## Quick start: give Claude the link
+## The areas
 
-The goal is that you only hand Claude the link to this repository and it guides you through the whole setup on its own.
+The core is always there. Everything else is an area the interview can switch on. Some areas only need a document, others bring a skill along.
+
+| Area | What it holds | Skills |
+|---|---|---|
+| **Core** (always) | Status, profile, open questions, inbox, journal, fact ledger, weekly plan | `setup-brain`, `onboarding-interview`, `fact-check`, `weekly-review`, `brain-check` |
+| Person | Who you are, how you like to be addressed, your rules and limits | none |
+| Tools | Which tools and apps you use | none |
+| Work | Work, goals, evidence of what is done | `transcript-minutes` (optional) |
+| Decisions | Open and taken decisions, with the reason | `decision-clarify`, `decision-check` |
+| Family | State of family matters | none |
+| Knowledge | One note per researched topic, with sources | `knowledge-note` |
+| Appointments | Appointments, deadlines, post, evidence | `appointment-prep`, `letter-explain` |
+| Learning | State of what you are learning, practice log | none |
+| Writing style | Plain-prose editing, optionally your own style profile | `plain-prose-de`, `plain-prose-en` (add-on: `style-profile`) |
+| Build | Small apps, scripts and automations, built with an AI coding tool | `build-router`, `vibe-pack` |
+| Own areas | Anything else you name | none |
+
+Areas can be added, paused and updated later with the add-on `area-manager`.
+
+## The skills
+
+Every skill is one `SKILL.md` in its own ZIP. The kit keeps you to at most 12 uploads, so the skills come in three groups. Each one has its own page with a flow diagram, an example, its limits and what has really been tested: see [`skills/`](skills/README.md).
+
+**Always there (core)**
+
+- [`onboarding-interview`](skills/onboarding-interview.md) `asks eight short questions in two rounds and shows which areas become active`
+- [`setup-brain`](skills/setup-brain.md) `creates the folder and documents in Drive, never overwrites, can run again`
+- [`weekly-review`](skills/weekly-review.md) `sorts the inbox, asks three questions and plans the next week`
+- [`fact-check`](skills/fact-check.md) `checks numbers, deadlines and rules against a source and records them`
+- [`brain-check`](skills/brain-check.md) `checks the second brain for order and proposes repairs`
+
+**Switched on by the interview (module skills, counted towards the 12)**
+
+- [`decision-clarify`](skills/decision-clarify.md) `finds the few questions whose answer would tip a decision`
+- [`decision-check`](skills/decision-check.md) `gives a decision you call final exactly one blind-spot check`
+- [`knowledge-note`](skills/knowledge-note.md) `files researched knowledge as one note per topic, with sources`
+- [`appointment-prep`](skills/appointment-prep.md) `prepares an appointment or records what was agreed`
+- [`letter-explain`](skills/letter-explain.md) `explains a letter in plain words: what to do, by when, what protects you`
+- [`plain-prose-de`](skills/plain-prose-de.md), [`plain-prose-en`](skills/plain-prose-en.md) `edit texts for clarity, brevity and active language, keeping your voice`
+- [`build-router`](skills/build-router.md) `entry point for anything you want built; builds nothing itself and hands over`
+- [`vibe-pack`](skills/vibe-pack.md) `turns a vague idea into a rules file and build plan for a coding agent`
+
+**Add-ons (offered when they fit, outside the 12)**
+
+- [`transcript-minutes`](skills/transcript-minutes.md) `turns a transcript into verified minutes with decisions and tasks`
+- [`style-profile`](skills/style-profile.md) `derives your style profile from two or three of your own texts`
+- [`area-manager`](skills/area-manager.md) `adds, pauses and updates areas later`
+- [`skill-tailor`](skills/skill-tailor.md) `builds a version of a skill fitted to you`
+
+The last one deserves a word. Most skills come ready-made. `skill-tailor` takes a template, asks you three to five short choices and builds a version of the skill fitted to you, as a ZIP in the chat. Only marked passages change. The fixed parts (limits, privacy, writing format, check line, source rules) stay word for word, and a check confirms that before you get the file. Templates exist for `appointment-prep` and `letter-explain`. It needs code execution; without it you take the ready-made ZIP.
+
+## Getting started
+
+### The short way: give Claude the link
 
 1. Open a new chat in claude.ai.
 2. Paste the link to this repository and write: *"Set up a second brain for me with this."*
-3. Claude reads [`START_HERE.md`](START_HERE.md), asks which language you want, and walks you through every step, one at a time.
+3. Claude reads [`START_HERE.md`](START_HERE.md), asks which language you want and walks you through every step, one at a time.
 
 ```mermaid
 sequenceDiagram
@@ -176,96 +153,69 @@ sequenceDiagram
     P->>D: Creates your second brain
 ```
 
-What Claude can do for you and what you still do by hand:
+Claude reads the repository, picks the right files, shows you the exact text to paste and waits for your confirmation at every step. A few things only you can do: create the project, paste the instructions, upload the ZIPs and connect Google Drive. The interview and the Drive setup then run inside the project.
 
-| Claude does | You do |
-|---|---|
-| Reads this repository and picks the right files | Create the Claude project (one click) |
-| Shows the exact text to paste, in your language | Paste the instructions and upload the skill ZIPs |
-| Explains each step and waits for your confirmation | Connect Google Drive and confirm the permissions |
-| Runs the interview and builds the Drive structure (inside the project) | Nothing; the project knowledge stays empty |
+This only works if the repository is public and your account can open links. If Claude cannot read it, `START_HERE.md` tells it to ask you for the downloaded files instead.
 
-> [!IMPORTANT]
-> Claude can only read this repository if it is **public**, and only if your Claude account can open links. If it cannot, `START_HERE.md` tells Claude to ask you for the downloaded repository instead. Guided start from a link is the target and has **not been tested yet**.
+### The manual way
 
-## Manual start
+The same steps without the guide.
 
-> [!NOTE]
-> These steps describe the same flow without the guide. Parts of it are verified in a free Claude account, parts are not. See [Status](#status).
-
-1. **Accounts.** A Claude account (the free plan is enough for the walkthrough) and a Google account. Use a separate test account first, not your main one. Ideally the Google account holds no documents that other people shared with it.
-2. **Pick a language pack.** Choose `en` or `de` (see [Languages](#languages)).
+1. **Accounts.** A Claude account (the free plan is enough) and a Google account. Try it in a separate test account first, ideally one that holds no documents other people have shared with it.
+2. **Pick a language pack**, `en/` or `de/`. The pack sets the language of the instructions, the skills, the questions and the document names in your Drive. English is the source language; German is the pack that has been walked through.
 3. **Create a Claude project** and paste the core project instructions from the pack.
-4. **Turn on code execution, then upload the skills.** Skills do not work without code execution (Settings, Capabilities). Each skill is its own ZIP with exactly one skill inside, prebuilt in `<pack>/dist/` (`en/dist/` or `de/dist/`). Upload the three core skills first, then at most the skills the interview asks for (the budget is 12).
-5. **Connect Google Drive** in the connector settings.
-6. **Start the interview.** Say that you want to set up your second brain.
-7. **Run the setup.** Ask the assistant to set it up. It lists what it is going to create, asks once, then creates folder and documents and reports what exists and what is missing.
-8. **Leave the project knowledge empty.** The assistant reads `00_Status` from Drive at the start of every chat; a copy in the project knowledge can go stale (it did in a test).
-9. **Paste the account text.** The setup skill prints a short text for your account preferences. It makes chats outside the project aware of your Drive folder.
+4. **Turn on code execution** (Settings, Capabilities). Skills do not work without it.
+5. **Upload the skills** from `<pack>/dist/`, one ZIP per skill. The core first, then only what the interview asks for.
+6. **Connect Google Drive** in the connector settings.
+7. **Start the interview.** Say that you want to set up your second brain.
+8. **Run the setup.** Claude lists what it is going to create, asks once, creates the folder and documents and reports what exists and what is missing.
+9. **Leave the project knowledge empty.** Claude reads `00_Status` from Drive at the start of every chat. A copy in the project knowledge can go stale, and in a test it did.
+10. **Paste the account text.** The setup prints a short text for your account preferences, so chats outside the project also know where your Drive folder is.
 
-## Design principles
+## What keeps it honest
 
-- **One source of truth.** Drive. If it is not in a document, the assistant does not know it.
-- **Every entry says where it came from.** Value, status (`answered`, `open`, `unknown`, `skipped`), origin (`user`, `companion`, `derived`, `unknown`) and date.
-- **"Unknown" never means "certain".** Missing facts stay marked as missing.
-- **A visible check line.** Every consequential answer starts with one line saying what was read and where something was filed. It is a signal, not a guarantee.
-- **Facts carry sources.** Numbers, deadlines and rules go through `fact-check` and the fact ledger, with source, date and status.
-- **Nothing is deleted or renamed** without being asked. The assistant never sends anything in your name without a clear yes.
-- **Never stored:** ID, account, tax and insurance numbers.
-- **Decisions are recorded with the reason**, and a decision declared final gets exactly one blind-spot check before it is acted on.
-- **Small by design.** Skills stay short and each skill has one job.
+A second brain is only useful if you can trust what it says. The kit relies on a few plain rules for that.
 
-## Limits you should know
+- **Every entry says where it came from.** Value, status (`answered`, `open`, `unknown`, `skipped`), origin (`user`, `companion`, `derived`, `unknown`) and date. "Unknown" never turns into "certain".
+- **A check line on every consequential answer.** One line saying what was read and where something was filed. You can see at a glance whether Claude looked.
+- **Facts carry sources.** Numbers, deadlines and rules go through `fact-check` into the fact ledger, with source, date and status. Without a source they stay marked as unchecked.
+- **Nothing is deleted or renamed without asking**, and nothing is sent in your name without a clear yes. Old values are kept, not overwritten.
+- **Some things are never stored:** ID, account, tax and insurance numbers.
+- **Decisions keep their reason.** A decision you call final gets exactly one blind-spot check before it is acted on.
 
-The kit is built to feel approachable. These budgets are targets for the setup, not promises:
+## Known limits
 
-| Budget | Target | Status |
-|---|---|---|
-| Stage 1 of the interview | at most 8 questions, about 5 minutes | meets the target in simulation |
-| Skill uploads | at most 12 | by design |
-| Drive actions during setup | at most 15 | meets the target in simulation |
-| Setup time | at most 20 minutes | **not met yet**, about 21 to 25 minutes in simulation |
+Be clear about what kind of safety this is. Every rule above is an instruction that Claude follows. None of it is enforced from outside. The check line makes slips visible; it does not make them impossible. In testing, the rules held in most cases and failed in a few, and those failures are why several of them are now worded the way they are.
 
-Other limits come from the platforms. A free Claude account has a message limit that a full walkthrough can reach. Everything done so far is in Drive, so you can continue after the limit resets. Project instructions are length-limited, so the core instructions stay under 5,000 characters. A ZIP may contain only one skill.
+The platforms add their own limits. A free Claude account has a message limit that a full walkthrough can reach. Nothing is lost when that happens, because everything done so far is already in Drive, and you continue once the limit resets. Project instructions are length-limited, so the core instructions stay under 5,000 characters. A ZIP may contain only one skill. The kit itself sets a budget of 12 skill uploads.
 
-## Languages
-
-The kit comes in two language packs, **English** and **German**. You choose one when you install it. The pack decides the language of the project instructions, the skills, the interview questions and the names of the documents in your Drive.
-
-| Pack | Folder | Note |
-|---|---|---|
-| English | `en/` | source language of this repository |
-| German | `de/` | the first pack that was walked through |
-
-More languages can be added as further packs. The structure (question IDs, module IDs, field IDs) is the same in every pack, and a parity check keeps the packs aligned.
+The setup has further targets: at most eight questions in the first stage (about five minutes), at most 15 Drive actions and at most 20 minutes in total. The first two are met in simulation. The time is not: setup currently takes about 21 to 25 minutes.
 
 ## Status
 
-What the labels mean: **verified** = checked in a real run, **checked** = checked by a tool in the repo, **draft** = written, not run.
+Three words are used with care. **Ran** means it ran in a real claude.ai account. **Checked** means a tool in this repository checked it. **Draft** means written, not run.
 
-| Area | State | How we know |
-|---|---|---|
-| Free Claude account can run custom skills | verified | one walkthrough with an invented person |
-| One skill per ZIP | verified | a bundle of several skills was rejected |
-| Project knowledge | not used | a copy in the project knowledge went stale in a test; the assistant now reads `00_Status` from Drive at the start of every chat (seen 2026-11-10) |
-| Creating and editing Drive documents from the chat | verified | same walkthrough |
-| Writing into existing Google Docs and Sheets through the Google Docs and Sheets connectors | verified | free test account, 2026-11-04 to 2026-11-10, also from the phone app; checked against a Drive export |
-| Spec consistency (modules, questions, fields, cross-references) | checked | `tools/spec_pruefen.py` |
-| Skeleton skills match the spec word for word | checked | `tools/skelett.py` |
-| Parity between language packs | checked | `tools/lang_parity.py` (structure only, not the quality of the wording) |
-| English pack | draft | spec, skeleton and plain-prose checks pass; wording not reviewed by a native speaker; never run in a real account |
-| `weekly-review`, `fact-check`, `brain-check` | ran | German pack, free test account, 2026-11-05 to 2026-11-10 |
-| `decision-clarify`, `decision-check`, `knowledge-note`, `area-manager` | ran | German pack, free test account, 2026-11-05 and 2026-11-06 |
-| `plain-prose-*`, `style-profile`, `transcript-minutes`, `build-router`, `vibe-pack` | draft | German pack tool-checked; English pack checked for structure and, for `vibe-pack` and `transcript-minutes`, by the skill checks (their self-tests are German only); not run in claude.ai yet |
-| `letter-explain`, `appointment-prep` (tailored), `skill-tailor` 0.4 | ran once | German pack, free test account, 2026-11-10: a letter explained and a reply drafted; `skill-tailor` built a checked ZIP that claude.ai accepted and that worked in use. `skill-tailor` 0.5 and the fixed `appointment-prep` have not run yet |
-| Guided start from the repository link and setup | ran | 2026-11-04 in a free test account: the link was readable, raw links derived from it were not (fallback: attach the files); interview and setup worked. The fixes since then have not been re-run from a fresh start |
-| Phone use | partly verified | writing into documents from the phone app worked once; setup is still recommended on a computer |
+What has run, in the German pack in a free test account with an invented person:
 
-Known gaps are listed in the status table above and in the [Roadmap](#roadmap).
+- A free Claude account can run custom skills, and a ZIP may hold only one of them (a bundle was rejected).
+- Creating Drive documents and writing into existing Google Docs and Sheets through the connectors, also from the phone app, checked against a Drive export (2026-11-04 to 2026-11-10).
+- Reading `00_Status` from Drive at the start of every chat instead of using the project knowledge (seen 2026-11-10).
+- The guided start from the repository link, the interview and the setup (2026-11-04). The link itself was readable; raw links derived from it were not, so the fallback is to attach the files. The fixes made since then have not been re-run from a fresh start.
+- `weekly-review`, `fact-check`, `brain-check` (2026-11-05 to 2026-11-10).
+- `decision-clarify`, `decision-check`, `knowledge-note`, `area-manager` (2026-11-05 and 2026-11-06).
+- `letter-explain`, a tailored `appointment-prep` and `skill-tailor` 0.4, once each (2026-11-10): a letter explained and a reply drafted; `skill-tailor` built a checked ZIP that claude.ai accepted and that worked in use. `skill-tailor` 0.5 and the fixed `appointment-prep` have not run yet.
+- Phone use, partly: writing into documents from the phone worked once. Setup is still best done on a computer.
 
-## Repository layout
+What is checked by tools: spec consistency (`tools/spec_pruefen.py`), the core skills against the spec word for word (`tools/skelett.py`), and the structure of the two language packs (`tools/lang_parity.py`, structure only, not the quality of the wording).
 
-Layout of the repository:
+What is still draft:
+
+- `plain-prose-*`, `style-profile`, `transcript-minutes`, `build-router`, `vibe-pack`. The German pack is tool-checked; the English pack is checked for structure, and `vibe-pack` and `transcript-minutes` also by their skill checks (their self-tests are German only). None of them has run in claude.ai yet.
+- The English pack as a whole. Its checks pass, but no native speaker has reviewed the wording and it has never run in a real account.
+
+The [gates page](skills/GATES.md) lists which check each skill has passed.
+
+## Repository and checks
 
 ```text
 second-brain-kit/
@@ -286,8 +236,6 @@ second-brain-kit/
 └── tools/             # checks, the ZIP builder, an example check workflow (tools/ci)
 ```
 
-## Checks
-
 The checks need Python 3 and PyYAML. They test structure and consistency, not whether a skill works in a real account.
 
 ```text
@@ -298,35 +246,31 @@ python3 tools/lang_parity.py pruefen de en     # the two language packs have the
 python3 tools/zip_bauen.py en                  # rebuild the skill ZIPs into en/dist
 ```
 
-The tool and file names are in German for historical reasons and will be renamed.
+The tool and file names are in German for historical reasons and will be renamed. More languages can be added as further packs; the IDs of questions, modules and fields are the same in every pack, and the parity check keeps them aligned.
 
-## Updating
-
-Updating changes the skills and instructions, not your documents. See [UPDATING.md](UPDATING.md) and the [CHANGELOG](CHANGELOG.md).
+Updating changes the skills and instructions, never your documents. See [UPDATING.md](UPDATING.md) and the [CHANGELOG](CHANGELOG.md).
 
 ## Roadmap
 
-- [x] Concept: interview, modules as data, skills, Drive as source of truth
-- [x] Walkthrough in a free Claude account with an invented person
-- [x] First round of fixes from that walkthrough
-- [x] Core and decision, knowledge, appointment skills as drafts
-- [x] English and German packs with a parity check
-- [ ] Port the language-bound content checks (`vibe-pack`, `transcript-minutes`) to the English pack
-- [ ] Second walkthrough with the fixed skeleton
-- [ ] Guided start from the repository link, tested in a clean account
-- [ ] Stage 2 question catalogue per module
-- [ ] Module instruction blocks for all modules
-- [x] `brain-check` and `build-router` as drafts (not run in a real account)
-- [ ] Handbook for non-technical users
-- [ ] First tagged release
+Done: the concept, a first walkthrough with an invented person, a round of fixes from it, the core and the decision, knowledge and appointment skills, `brain-check` and `build-router` as drafts, and both language packs with a parity check.
+
+Next:
+
+- Port the language-bound content checks (`vibe-pack`, `transcript-minutes`) to the English pack.
+- A second walkthrough with the fixed skeleton.
+- The guided start from the repository link, tested in a clean account.
+- The stage 2 question catalogue and instruction blocks for all modules.
+- A handbook for non-technical users.
+- The first tagged release.
 
 ## Privacy and contributions
 
-- This repository contains **no real personal data**. All test persons are invented.
-- Your answers, profile and documents live only in **your** Google Drive. Read the [privacy notice](PRIVACY.md) (a draft, not legal advice).
-- Please do not open issues or pull requests that contain real personal data, credentials or copyrighted text. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
-- Not affiliated with Anthropic or Google. "Claude" and "Google Drive" are named only to say what the kit runs on.
+This repository contains no real personal data; all test persons are invented. Your answers, profile and documents live only in your own Google Drive. The [privacy notice](PRIVACY.md) is a draft, not legal advice.
+
+Please do not open issues or pull requests that contain real personal data, credentials or copyrighted text. See [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
+
+Not affiliated with Anthropic or Google. "Claude" and "Google Drive" are named only to say what the kit runs on.
 
 ## License
 
-To be decided before the first release. Until then, no license is granted.
+MIT. See [LICENSE](LICENSE).

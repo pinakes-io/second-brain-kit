@@ -12,6 +12,10 @@
 | Description | Turns the transcript or notes of a conversation into verified minutes with decisions, topic blocks, open points and a task table. Use when I paste or attach a transcript (meeting, interview, phone call, workshop, talk, chat history) and write "minutes", "conversation notes", "decisions" or "tasks from this". Checks in several passes that nothing is missing and invents nothing. |
 <!-- facts:end -->
 
+## Why it exists
+
+Minutes written from memory lose decisions and quietly gain things nobody said. This add-on turns a transcript into minutes in which every statement points back to the place in the input it came from. Several passes check that nothing is missing and nothing is invented, and anything without an owner or deadline is marked open.
+
 ## Triggers
 - You paste or attach a transcript (meeting, interview, phone call, workshop, talk, chat history) and write "minutes", "conversation notes", "decisions" or "tasks from this".
 

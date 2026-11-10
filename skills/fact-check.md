@@ -12,6 +12,10 @@
 | Description | Checks numbers, deadlines, amounts, requirements and rules against current official sources before I pass them on, apply for something or decide on them. Use for "check that", "is that still true", "fact check" and always before you state a number or rule in a consequential answer. |
 <!-- facts:end -->
 
+## Why it exists
+
+Numbers, deadlines and rules are where a confident wrong answer does the most damage, and a language model will produce one without hesitation. So before such a statement is passed on or acted upon, this skill looks for a current official source and records the statement with its source, retrieval date and status in the fact ledger. If nothing is found, the answer is "unknown", not a guess.
+
 ## Triggers
 - You write "check that", "is that still true" or "fact check".
 - Other skills call it before a number or rule appears in a consequential answer.

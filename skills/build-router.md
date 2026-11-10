@@ -12,6 +12,10 @@
 | Description | Entry point for anything that is to be built (app, script, tool or automated workflow). Use when I write "build" or "Build:" or mention an app, a script or a workflow. Hands over to vibe-pack (code) or the workflow skill and builds nothing itself. |
 <!-- facts:end -->
 
+## Why it exists
+
+"Build me something" can mean an app, a script or a workflow between services, and each needs a different approach. This skill only decides which one it is and hands over to the skill that does the work. If that skill is not installed, it says so in one fixed sentence and stops, rather than improvising a plan from memory.
+
 ## Triggers
 - You write "build" or "Build:", or mention an app, a script or a workflow.
 

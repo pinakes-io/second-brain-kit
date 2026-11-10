@@ -12,6 +12,10 @@
 | Description | Checks the second brain for order and proposes repairs. Use when I write "tidy up", "check the structure", "brain-check" or "it is a mess", or when documents are missing or duplicated. Reads first, changes only after my yes and never deletes. |
 <!-- facts:end -->
 
+## Why it exists
+
+Any set of documents drifts over time: a duplicate here, a missing section there, an inbox line that has been waiting for a month. This skill looks for that drift. It reads first, reports what it found in a few lines and proposes numbered repairs. You choose which ones run, and nothing is ever deleted.
+
 ## Triggers
 - You write "tidy up", "check the structure", "brain-check" or "it is a mess".
 - Documents are missing or duplicated.

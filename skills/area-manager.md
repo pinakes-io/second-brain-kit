@@ -12,6 +12,10 @@
 | Description | Adds areas (modules) while the second brain is in use, pauses them or updates their rules. Use when the person writes "new area", "add an area", "pause an area", "update the rules" or "I also want to use …". Changes only additively and after a yes and never deletes. |
 <!-- facts:end -->
 
+## Why it exists
+
+Life changes after the setup, and a second brain that cannot change with it goes stale. This add-on adds areas, pauses them and brings their rules up to date while the second brain is in use. It works only by adding, always after a yes, and paused areas keep their documents.
+
 ## Triggers
 - You write "new area", "add an area", "pause an area", "update the rules" or "I also want to use …".
 

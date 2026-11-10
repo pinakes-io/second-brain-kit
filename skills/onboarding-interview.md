@@ -12,6 +12,10 @@
 | Description | Runs the introductory interview for the second brain in the chat and the detail questions afterwards. Use when I write "interview", "continue interview", "detail questions", "where were we", "start setup" or "from now on I answer myself", when I tell you that something in my life is changing, when there is no folder "Second Brain" yet, or when 00_Status shows an open interview. Asks the stage 1 questions in two rounds, shows which areas become active, and runs stage 2 and later changes. |
 <!-- facts:end -->
 
+## Why it exists
+
+A second brain built from a template fits nobody quite right, and a long questionnaire is where most setups are abandoned. So the structure comes from a short interview instead: eight questions decide which areas you need, and the details follow later in small rounds. Every answer is written to Drive straight away, with where it came from, so you can stop at any point and nothing is guessed.
+
 ## Triggers
 - You write "interview", "questions" or "start setup".
 - There is no folder "Second Brain" yet, or required questions in `00_Status` are open.

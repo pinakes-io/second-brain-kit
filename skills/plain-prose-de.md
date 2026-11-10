@@ -12,6 +12,10 @@
 | Description | Edits German texts for clarity, brevity and active language. Use when I paste a German text and write "überarbeiten", "straffen", "kürzer", "klarer", "Klartext", "Floskeln raus" or "klingt nach KI". Keeps my voice from the Style_Profile, invents nothing and returns the finished text with a short change line. For English texts there is plain-prose-en. |
 <!-- facts:end -->
 
+## Why it exists
+
+Text written in a hurry, or by a machine, tends to be longer and vaguer than it needs to be. This skill edits German text for clarity, brevity and active language while keeping your voice. It cuts filler before it touches content, invents nothing and tells you in a short line what it changed.
+
 ## Triggers
 - You paste a German text and write "überarbeiten", "straffen", "kürzer", "klarer", "Klartext", "Floskeln raus" or "klingt nach KI".
 

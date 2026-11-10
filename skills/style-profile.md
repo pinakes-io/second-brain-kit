@@ -12,6 +12,10 @@
 | Description | Derives my style profile from two or three of my own texts (sentence length, tone, form of address, punctuation, gender form, frequent words, English house rule) and, after my agreement, files it in the Drive document Style_Profile. Use when I write "create style profile", "learn my style", "how do I write" or "from my texts", or paste my own texts as a style sample. Stores only derived features, never text samples. The skills plain-prose-de and plain-prose-en read the result. |
 <!-- facts:end -->
 
+## Why it exists
+
+An editing skill can only keep your voice if it knows what your voice is. This add-on derives a short style profile from two or three of your own texts: sentence length, tone, address, your frequent words and the ones you say you never use. It stores only these derived features, never your text, and only after you agree.
+
 ## Triggers
 - You write "create style profile", "learn my style", "how do I write" or "from my texts".
 - You paste your own texts as a style sample.

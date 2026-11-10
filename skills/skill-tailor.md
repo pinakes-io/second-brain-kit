@@ -12,6 +12,10 @@
 | Description | Builds a skill from a template in the second brain repository to fit me, after asking me three to five short multiple-choice questions, and gives it out as a ZIP to upload. Use for "tailor a skill", "adapt a skill", "build a skill for me" or when the setup offers a tailored skill. Changes only the marked places; blocks, privacy and the check line stay word for word. |
 <!-- facts:end -->
 
+## Why it exists
+
+A ready-made skill is written for everyone, so some of its defaults will not fit you. This add-on builds a version of a skill that does: you make three to five short choices, and it builds and checks a ZIP for you to upload. Only marked passages change. The rules that protect you (limits, privacy, the check line, source rules) stay word for word, and a check confirms it.
+
 ## Triggers
 - You ask to tailor, adapt or build a skill for you.
 - The setup (START_HERE) offers tailored skills after the core skills.
