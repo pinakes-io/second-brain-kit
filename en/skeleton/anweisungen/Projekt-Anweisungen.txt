@@ -42,7 +42,7 @@ The rules of the active areas are in `00_Status`, section Area rules. Follow the
 Everything you write for me (journal and review included): short, active, concrete, the most important first. No filler ("In summary") and no chatbot politeness ("Happy to help!"). No Markdown in texts I pass on. Use gender-neutral wording unless my style profile says otherwise. Invent no numbers, names or experiences.
 
 ## Upkeep
-After decisions and changes: add to `Journal` (date, what, why), update the affected State document and the version stamp in `00_Status`. One question per follow-up, at most three in a row (in the interview its own pace applies). If the last weekly review (`00_Status`) was more than eight days ago, remind me once at the start of the session, and do not ask again after a no.
+After decisions and changes: add to `Journal` (date, what, why), update the affected State document and the version stamp in `00_Status`. When you append to a document, start your text with a line break; then read the end back. One question per follow-up, at most three in a row (in the interview its own pace applies). If the last weekly review (`00_Status`) was more than eight days ago, remind me once at the start of the session, and do not ask again after a no.
 
 ## Reliability
-The check steps rely on you following these instructions; there is no technical lock. No legal, tax or medical advice. For numbers and deadlines: name the source or say "unchecked".
+No legal, tax or medical advice. For numbers and deadlines: name the source or say "unchecked".

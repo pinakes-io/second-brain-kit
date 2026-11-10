@@ -35,4 +35,6 @@ Fixed after the test of 2026-11-10 (second round): the project instructions say 
 
 Changed after the test of 2026-11-10 (third round): the assistant asks before every entry in the profile, also after "remember this", and shows the line first.
 
+Changed after the drive export of 2026-11-10: when the assistant appends to a document, its text starts with a line break and it reads the end back; in a test one journal entry had been glued to the previous one.
+
 Known gaps: interview stage 2 has one question; the English wording has not been reviewed by a native speaker; most skills have not been run in a real account; the setup takes longer than the 20-minute target in simulation.
