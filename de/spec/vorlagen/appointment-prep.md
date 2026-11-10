@@ -14,7 +14,7 @@ fragen:
     frage: Für welche Termine willst du dich vorbereiten lassen?
     typ: mehrfach
     optionen: [Alle (Empfohlen), Arbeitsagentur oder Jobcenter, Ausländerbehörde oder Bürgeramt, Anerkennungsberatung, Bewerbung, Arzt, Schule, Bank]
-    regel: Bei „Alle“ bleiben beide Stellen unverändert. Sonst nur die gewählten Terminarten behalten, Wortlaut und Reihenfolge der behaltenen Einträge unverändert, in der Beschreibung ohne „und andere“, damit der Skill nur bei diesen Terminen anspringt. Mindestens eine Terminart.
+    regel: Bei „Alle“ bleiben beide Stellen unverändert. Sonst nur die gewählten Terminarten behalten, Wortlaut und Reihenfolge der behaltenen Einträge unverändert, in der Beschreibung ohne „und andere“. Der Satz „Verwenden bei …“ wird dann zu „Verwenden nur bei Terminen bei <gewählte Terminarten, mit „oder“ verbunden> und dann bei „Termin vorbereiten“, „was erwartet mich“, „wie bereite ich mich vor“ und „Termin war heute, …“. Bei anderen Terminen nicht verwenden.“, damit der Skill nur bei diesen Terminen anspringt. Mindestens eine Terminart.
   - id: laenge
     frage: Wie lang sollen die Antworten sein?
     typ: einfach
@@ -38,7 +38,7 @@ kennung: In „kennung“ steht nach dem Zuschnitt „(Fassung 0.7, zugeschnitte
 ~~~skill
 ---
 name: appointment-prep
-description: Bereitet mich auf einen bevorstehenden Termin vor oder hält danach fest, was vereinbart wurde (<!-- anpassen:terminarten -->Arbeitsagentur oder Jobcenter, Ausländerbehörde oder Bürgeramt, Anerkennungsberatung, Bewerbungsgespräch, Arzt, Schule, Bank und andere<!-- /anpassen -->). Verwenden bei „Termin vorbereiten“, „was erwartet mich“, „wie bereite ich mich vor“ und bei „Termin war heute, …“. Nicht für das bloße Eintragen eines Termins. Einen Brief mit Einladung erklärt zuerst letter-explain. Kurz als Standard, ausführlich auf Wunsch.
+description: Bereitet mich auf einen bevorstehenden Termin vor oder hält danach fest, was vereinbart wurde (<!-- anpassen:terminarten -->Arbeitsagentur oder Jobcenter, Ausländerbehörde oder Bürgeramt, Anerkennungsberatung, Bewerbungsgespräch, Arzt, Schule, Bank und andere<!-- /anpassen -->). <!-- anpassen:terminarten -->Verwenden bei „Termin vorbereiten“, „was erwartet mich“, „wie bereite ich mich vor“ und bei „Termin war heute, …“.<!-- /anpassen --> Nicht für das bloße Eintragen eines Termins. Einen Brief mit Einladung erklärt zuerst letter-explain. Kurz als Standard, ausführlich auf Wunsch.
 ---
 
 # Termin-Vorbereitung <!-- anpassen:kennung -->(Entwurf 0.7, simuliert, in claude.ai ungetestet)<!-- /anpassen -->
@@ -51,7 +51,7 @@ Ich gehe vorbereitet in jeden Termin und weiß danach, was zu tun ist: kurz, wen
 2. **Ton:** Übernimm meine Anrede (schreibe ich „Sie“, siezt du durchgehend) und meine Chatsprache, auch für Rückfragen und „Mehr?“. Bin ich sichtbar belastet, erkenne das zuerst in einem Satz an.
 3. **Datum:** Ein Wochentag ohne Datum meint den nächsten Tag dieses Namens. Frag nur nach, wenn es heute sein könnte oder wirklich mehrdeutig ist.
 4. **Wissen in drei Stufen:**
-   - **Frisch:** Mit Websuche laufen Fristen, Pflichten, Gebühren und Pflicht-Unterlagen durch `fact-check` (Aussage · Quelle · Abrufdatum).
+   - **Frisch:** Fristen, Pflichten, Gebühren, Pflicht-Unterlagen und Folgen von Versäumnissen laufen durch `fact-check` (Aussage · Quelle · Abrufdatum) und gelten nur mit amtlicher Quelle (Gesetz, Behörde, zuständige Stelle). Ratgeber- und Interessenportale sind nur Hinweise; was nur dort steht, nennst du wie in der nächsten Stufe.
    - **In der Regel:** Ohne Quelle nennst du eine allgemein bekannte Regel, die meine Hauptfrage trägt, als „In der Regel …, ungeprüft, bitte bei <Stelle> bestätigen“, und empfiehlst zuerst die Handlung, die mich schützt (früh melden, fristwahrend handeln).
    - **Meist so, bitte vor Ort fragen:** Ablauf, übliche Unterlagen, Tipps, in ganzen Sätzen.
    Nichts aus den letzten beiden Stufen kommt als Tatsache in Drive oder in den `Fakten-Ledger`. Nenne keine Quelle, die nicht vorliegt.

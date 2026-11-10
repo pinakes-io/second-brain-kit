@@ -8,7 +8,7 @@
 | Kind | A3 · Add-on, outside the upload budget |
 | Area | Core |
 | Upload | `en/dist/skill-tailor.zip` · `de/dist/skill-tailor.zip` (one skill per ZIP) |
-| Size | 6,465 characters (en) · 6,681 characters (de), limit 8,000 for module skills |
+| Size | 6,744 characters (en) · 6,972 characters (de), limit 8,000 for module skills |
 | Description | Builds a skill from a template in the second brain repository to fit me, after asking me three to five short multiple-choice questions, and gives it out as a ZIP to upload. Use for "tailor a skill", "adapt a skill", "build a skill for me" or when the setup offers a tailored skill. Changes only the marked places; blocks, privacy and the check line stay word for word. |
 <!-- facts:end -->
 
@@ -53,7 +53,7 @@ flowchart TD
 - Templates: `en/spec/vorlagen/` and `de/spec/vorlagen/`; checked by `tools/vorlage_pruefen.py`.
 
 ## Status
-- Draft 0.4: simulated only (three rounds with sub-agents, last round 5 good, 2 with flaws, 0 severe), not run in claude.ai. Whether a free account can build and offer the ZIP is measured in the first real run.
+- Draft 0.4 ran once in claude.ai (free plan, German pack, template attached, 2026-11-10): it asked the four questions, built the ZIP and checked it with code; the result passed `tools/vorlage_pruefen.py gegen`, was accepted on upload, and the tailored wording showed in use. In that run Claude typed the template out instead of reading the file. Draft 0.5 reads the template in code from the file; 0.5 has not run in claude.ai yet.
 - Checked by tool: templates against the fixed skills (`tools/vorlage_pruefen.py`, with self-test), spec, language parity, ZIP rules.
 
 ## See also

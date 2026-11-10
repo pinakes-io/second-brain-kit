@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Appointments, post and offices (`termine`) |
 | Upload | `en/dist/appointment-prep.zip` · `de/dist/appointment-prep.zip` (one skill per ZIP) |
-| Size | 7,513 characters (en) · 7,465 characters (de), limit 8,000 for module skills |
+| Size | 7,702 characters (en) · 7,659 characters (de), limit 8,000 for module skills |
 | Description | Prepares me for an upcoming appointment or records afterwards what was agreed (employment agency or job centre, immigration office or citizens' office, recognition counselling, job interview, doctor, school, bank and others). Use for "prepare appointment", "what to expect", "how do I prepare" and for "the appointment was today, …". Not for simply adding an appointment to the calendar. A letter with an invitation is explained first by letter-explain. Short by default, detailed on request. |
 <!-- facts:end -->
 

@@ -14,7 +14,7 @@ fragen:
     frage: Which appointments do you want to prepare for?
     typ: mehrfach
     optionen: [All (Recommended), Employment agency or job centre, Immigration office or citizens' office, Recognition counselling, Job interview, Doctor, School, Bank]
-    regel: With "All" both places stay unchanged. Otherwise keep only the chosen types, wording and order of the kept entries unchanged, the description without "and others", so the skill only triggers for these appointments. At least one type.
+    regel: With "All" both places stay unchanged. Otherwise keep only the chosen types, wording and order of the kept entries unchanged, the description without "and others". The sentence "Use for …" then becomes "Use only for appointments with <chosen types, joined with "or"> and then for "prepare appointment", "what to expect", "how do I prepare" and "the appointment was today, …". Do not use for other appointments.", so the skill only triggers for these appointments. At least one type.
   - id: laenge
     frage: How long should the answers be?
     typ: einfach
@@ -38,7 +38,7 @@ kennung: After tailoring, "kennung" reads "(version 0.7, tailored on <YYYY-MM-DD
 ~~~skill
 ---
 name: appointment-prep
-description: Prepares me for an upcoming appointment or records afterwards what was agreed (<!-- anpassen:terminarten -->employment agency or job centre, immigration office or citizens' office, recognition counselling, job interview, doctor, school, bank and others<!-- /anpassen -->). Use for "prepare appointment", "what to expect", "how do I prepare" and for "the appointment was today, …". Not for simply adding an appointment to the calendar. A letter with an invitation is explained first by letter-explain. Short by default, detailed on request.
+description: Prepares me for an upcoming appointment or records afterwards what was agreed (<!-- anpassen:terminarten -->employment agency or job centre, immigration office or citizens' office, recognition counselling, job interview, doctor, school, bank and others<!-- /anpassen -->). <!-- anpassen:terminarten -->Use for "prepare appointment", "what to expect", "how do I prepare" and for "the appointment was today, …".<!-- /anpassen --> Not for simply adding an appointment to the calendar. A letter with an invitation is explained first by letter-explain. Short by default, detailed on request.
 ---
 
 # Appointment preparation <!-- anpassen:kennung -->(draft 0.7, simulated, untested in claude.ai)<!-- /anpassen -->
@@ -51,7 +51,7 @@ I go into every appointment prepared and know afterwards what to do: short when 
 2. **Tone:** Use my form of address (if I write formally, stay formal throughout) and my chat language, also for follow-up questions and "More?". If I am visibly under strain, acknowledge that first in one sentence.
 3. **Date:** A weekday without a date means the next day with that name. Only ask if it could be today or is truly ambiguous.
 4. **Knowledge in three levels:**
-   - **Fresh:** With web search, deadlines, duties, fees and required documents go through `fact-check` (statement · source · date retrieved).
+   - **Fresh:** Deadlines, duties, fees, required documents and consequences of missed appointments go through `fact-check` (statement · source · date retrieved) and count only with an official source (law, authority, office in charge). Advice and advocacy portals are only hints; what only they say, you give as at the next level.
    - **As a rule:** Without a source, state a commonly known rule that carries my main question as "As a rule …, unchecked, please confirm with <office>", and recommend first the action that protects me (report early, act within the deadline).
    - **Usually like this, please ask on site:** procedure, usual documents, tips, in full sentences.
    Nothing from the last two levels goes into Drive or the `Fact-Ledger` as a fact. Never name a source you do not have.
