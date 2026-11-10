@@ -157,11 +157,11 @@ runden:
         frage: On which devices do you want to use your second brain?
         typ: mehrfach
         optionen: [Laptop or Chromebook in the browser, Smartphone, Tablet]
-        hilfe: Editing directly in Google Docs only works in the browser on a computer; on a phone Claude gives you a block to paste.
+        hilfe: Claude writes directly into your Google Docs, on a phone too; without the Docs connection Claude gives you a block to paste.
         pflicht: true
         profil_pfad: werkzeuge.geraete
         hinweis_wenn_nur:   # decision 2026-10-31 (F6)
-          Smartphone: "I recommend doing the setup once on a computer. On a smartphone you get a block to paste instead of direct editing."
+          Smartphone: "I recommend doing the setup once on a computer. On a smartphone Claude then writes directly into your documents."
 
       - id: s1.kanal
         modul: kern

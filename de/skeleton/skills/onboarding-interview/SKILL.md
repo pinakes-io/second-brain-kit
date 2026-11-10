@@ -73,11 +73,11 @@ Vorsatz (zählt nicht zu den acht Fragen): **Bevor wir starten – schreibst du 
    - Bei „andere Sprache“ sage: Im Chat antworte ich dir gern in deiner Sprache. Die Auswahlwörter im Profil bleiben deutsch; alles andere schreibe ich in deiner Dokumentsprache.
    - Folgefrage bei „andere Sprache“, zählt nicht mit: **Welche Sprache?**
    - Folgefrage bei „andere Sprache“, zählt nicht mit: **In welcher Sprache sollen die Dokumente sein?** wie der Chat (Empfohlen) · einfaches Deutsch · zweisprachig (deine Sprache und Deutsch)
-7. **Auf welchen Geräten willst du dein Second Brain nutzen?** (mehrere möglich) (Bearbeiten direkt in Google Docs geht nur im Browser am Rechner; am Handy gibt Claude einen Block zum Einfügen.)
+7. **Auf welchen Geräten willst du dein Second Brain nutzen?** (mehrere möglich) (Claude schreibt direkt in deine Google Docs, auch am Handy; ohne Docs-Verbindung gibt Claude einen Block zum Einfügen.)
    1. Laptop oder Chromebook im Browser
    2. Smartphone
    3. Tablet
-   - Wenn nur „Smartphone“: Die Einrichtung empfehle ich einmal am Rechner. Am Smartphone bekommst du einen Block zum Einfügen statt direkter Bearbeitung.
+   - Wenn nur „Smartphone“: Die Einrichtung empfehle ich einmal am Rechner. Am Smartphone schreibt Claude danach direkt in deine Dokumente.
 8. **Wie willst du die Detailfragen beantworten?**
    1. im Chat in kleinen Runden (Empfohlen) – kein zusätzliches Werkzeug; das Formular lohnt sich bei langen Blöcken oder einer zweiten Person
    2. als Formular zum Ausfüllen

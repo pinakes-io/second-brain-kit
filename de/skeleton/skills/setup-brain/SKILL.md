@@ -41,6 +41,17 @@ Reihenfolge: Ordner → Kern-Dokumente außer `00_Status` → Dokumente der akti
 | bauen | Bauprojekte |
 | eigen:<Name> | State_<Name> |
 
+## Skills je Bereich
+Für Punkt 5 unter „Prüfen und berichten“. Nachrüstbare Skills (style-profile, transcript-minutes, area-manager, skill-tailor) bietet das Interview an; nenne sie hier nicht.
+
+| Bereich | Skills (je ein ZIP) |
+|---|---|
+| entscheidungen | decision-clarify, decision-check |
+| wissen | knowledge-note |
+| termine | appointment-prep, letter-explain |
+| schreibstil | plain-prose-de, plain-prose-en |
+| bauen | build-router, vibe-pack |
+
 ## Prüfen und berichten
 1. Suche den Ordner noch einmal ab und vergleiche Soll und Ist. Zeige die Liste mit ✓ und ✗.
 2. Schreibe in `Journal` den Eintrag „Eingerichtet“ (Datum, Bereiche, Zahl der Aktionen), sofern nicht schon durch die Vorlage geschehen.
@@ -56,7 +67,8 @@ Speichere keine Ausweis-, Konto-, Steuer- oder Versicherungsnummern.
 Gehört mein Anliegen zum Projekt Second Brain, sage mir, dass ich dort weiterschreiben soll.
 ```
 
-5. Letzter Satz: „Füge `00_Status` und `01_Profil` im Projekt unter Files hinzu (aus Google Drive), dann sind sie immer geladen.“ Sage danach in einem Satz: Neue Bereiche kannst du später jederzeit dazunehmen („neuer Bereich“).
+5. Modul-Skills: Vergleiche deine eigene Skill-Liste mit den Skills der aktiven Bereiche aus der Tabelle „Skills je Bereich“. Nenne die fehlenden in einer Zeile mit ZIP-Namen (`<skill>.zip`, einzeln hochladen) und sage, dass du bis dahin ohne sie hilfst. Fehlt keiner, lass den Punkt weg.
+6. Letzter Satz: „Füge `00_Status` und `01_Profil` im Projekt unter Files hinzu (aus Google Drive), dann sind sie immer geladen.“ Sage danach in einem Satz: Neue Bereiche kannst du später jederzeit dazunehmen („neuer Bereich“).
 
 ## Grenzen
 - Nie löschen, nie teilen, nie Berechtigungen ändern, nichts außerhalb des Ordners „Second Brain“ anfassen.
@@ -87,7 +99,7 @@ Schreibe für jeden aktiven Bereich den passenden Baustein wörtlich in den Absc
 - Änderungen am Profil erst nach meinem Ja, mit Wert, Status, Herkunft und Datum.
 
 ## Bereich Werkzeuge
-- Geräte und Werkzeuge stehen in `01_Profil`, Abschnitt Technik. Am Smartphone gibst du Blöcke zum Einfügen aus statt direkter Bearbeitung.
+- Geräte und Werkzeuge stehen in `01_Profil`, Abschnitt Technik. Du schreibst auch am Smartphone direkt in die Dokumente; Blöcke zum Einfügen gibst du nur aus, wenn Google Docs nicht verbunden ist.
 - Kannst du ein Werkzeug nicht nutzen (zum Beispiel Drive nicht verbunden), sag das in einer Zeile und biete den Block-Modus an.
 
 ## Bereich Arbeit und Ziele
@@ -131,11 +143,11 @@ Schreibe für jeden aktiven Bereich den passenden Baustein wörtlich in den Absc
 ```
 
 ## Vorlagen
-Platzhalter in <spitzen Klammern> füllst du aus den bestätigten Antworten. Was nicht beantwortet ist, steht als „– · offen“. Jede Angabe im Profil: Wert · Status (beantwortet / offen / unbekannt / übersprungen / überholt) · Herkunft (nutzer / begleitperson / abgeleitet / unbekannt) · Datum. Nur diese Werte, keine eigenen („bestätigt“ ist kein Status).
+Platzhalter in <spitzen Klammern> füllst du aus den bestätigten Antworten. Was nicht beantwortet ist, steht als „– · offen“. Ist die Anrede noch offen, entfällt sie im Titel („# 00_Status – Second Brain“, „# 01_Profil“). Jede Angabe im Profil: Wert · Status (beantwortet / offen / unbekannt / übersprungen / überholt) · Herkunft (nutzer / begleitperson / abgeleitet / unbekannt) · Datum. Nur diese Werte, keine eigenen („bestätigt“ ist kein Status).
 
 ### 00_Status
 ```
-# 00_Status – Second Brain von <Anrede oder „noch offen“>
+# 00_Status – Second Brain von <Anrede>
 
 ## Versionsstempel
 - Paketversion: 0.1 (Skelett, Test)
@@ -148,7 +160,6 @@ Platzhalter in <spitzen Klammern> füllst du aus den bestätigten Antworten. Was
 - Letzte Monatsfrage: <Datum oder „noch keine“>
 - Antwortet: <die Person selbst oder Begleitperson (Rolle)> seit <Datum>
 - Profilversion: <ganze Zahl>
-- Skills geladen: <Liste> (<n> von 12)
 
 ## Feldkarte (aus Stufe 1)
 | Modul | Status | warum | Kanal Detail |
@@ -187,7 +198,7 @@ Platzhalter in <spitzen Klammern> füllst du aus den bestätigten Antworten. Was
 
 ### 01_Profil
 ```
-# 01_Profil – <Anrede oder „offen“>
+# 01_Profil – <Anrede>
 
 Profilversion: <ganze Zahl> · Quelle: Interview (<Datum>)
 
@@ -247,7 +258,7 @@ Format: Datum · Text · (optional) Ziel-Dokument
 ```
 # Journal
 
-Was passiert ist und warum. Neueste Einträge oben. Einmal im Monat verdichten, Altes ins Archiv.
+Was passiert ist und warum. Neueste Einträge unten, neue hängst du am Ende an. Einmal im Monat verdichten, Altes ins Archiv.
 
 ## <Datum> · System
 - Second Brain eingerichtet. Bereiche: <Liste>. Aktionen: <Zahl>.

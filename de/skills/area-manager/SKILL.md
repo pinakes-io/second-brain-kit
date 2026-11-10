@@ -13,9 +13,9 @@ Lies `00_Status` (Versionsstempel, Feldkarte mit Status und Version, Grenzen, Be
 
 ## A. Bereich dazunehmen
 1. **Klären:** Welcher Bereich? Zeige aus dem Verzeichnis unten die Bereiche, die noch nicht aktiv sind, dazu „eigener Bereich (bitte benennen)“. Frage genau einmal.
-2. **Prüfen:** (a) Grenzen: Felder und Fragen mit gesperrtem Tag lässt du weg und vermerkst sie unter „Unterdrückte Felder“. (b) Upload-Budget: Zähle die geladenen Skills (Zeile „Skills geladen“ in `00_Status`, sonst frage); mehr als 12 geht nicht, sage dann, was eine Pause bringt. (c) Folgeangebote aus der Spalte Hinweis, zum Beispiel entscheidungen bei arbeit.
+2. **Prüfen:** (a) Grenzen: Felder und Fragen mit gesperrtem Tag lässt du weg und vermerkst sie unter „Unterdrückte Felder“. (b) Upload-Budget: Zähle die Skills in deiner eigenen Skill-Liste (sonst frage); mehr als 12 geht nicht, sage dann, was eine Pause bringt. (c) Folgeangebote aus der Spalte Hinweis, zum Beispiel entscheidungen bei arbeit.
 3. **Plan zeigen:** Dokumente, die angelegt werden, Baustein, Skills, die ich noch laden muss. Frage genau einmal: „So dazunehmen? (ja / ändern)“.
-4. **Anlegen:** Rufe nach dem Ja setup-brain auf (es legt nur an, was fehlt, und ergänzt den Baustein). Trage danach in `00_Status` ein: Zeile in der Feldkarte (Status aktiv, Version, warum „später dazugenommen am <Datum>“), Ablage-Karte, aktive Module, „Skills geladen“, Profilversion plus 1. Schreibe einen Eintrag in `Journal`.
+4. **Anlegen:** Rufe nach dem Ja setup-brain auf (es legt nur an, was fehlt, und ergänzt den Baustein). Trage danach in `00_Status` ein: Zeile in der Feldkarte (Status aktiv, Version, warum „später dazugenommen am <Datum>“), Ablage-Karte, aktive Module, Profilversion plus 1. Schreibe einen Eintrag in `Journal`.
 5. **Skills:** Nenne die noch fehlenden ZIPs eines nach dem anderen und halte nach jedem an: „Stopp: sag Bescheid, wenn es geladen ist.“
 6. **Fragen:** Offene Pflichtfelder des Bereichs kommen als Zeilen in `02_Offene_Fragen` (Abschnitt = Bereich). Biete höchstens drei Fragen jetzt an, den Rest später.
 Eigener Bereich: nur `State_<Name>`, eine Zeile in Ablage-Karte und Feldkarte und der Baustein „Eigene Bereiche“. Ähnelt der Name einem Bereich im Verzeichnis, frage, ob stattdessen dieser passt.
@@ -62,7 +62,7 @@ Schreibe den Baustein wörtlich in den Abschnitt „Bereichsregeln“ von `00_St
 - Änderungen am Profil erst nach meinem Ja, mit Wert, Status, Herkunft und Datum.
 
 ## Bereich Werkzeuge
-- Geräte und Werkzeuge stehen in `01_Profil`, Abschnitt Technik. Am Smartphone gibst du Blöcke zum Einfügen aus statt direkter Bearbeitung.
+- Geräte und Werkzeuge stehen in `01_Profil`, Abschnitt Technik. Du schreibst auch am Smartphone direkt in die Dokumente; Blöcke zum Einfügen gibst du nur aus, wenn Google Docs nicht verbunden ist.
 - Kannst du ein Werkzeug nicht nutzen (zum Beispiel Drive nicht verbunden), sag das in einer Zeile und biete den Block-Modus an.
 
 ## Bereich Arbeit und Ziele

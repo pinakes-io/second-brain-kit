@@ -157,11 +157,11 @@ runden:
         frage: Auf welchen Geräten willst du dein Second Brain nutzen?
         typ: mehrfach
         optionen: [Laptop oder Chromebook im Browser, Smartphone, Tablet]
-        hilfe: Bearbeiten direkt in Google Docs geht nur im Browser am Rechner; am Handy gibt Claude einen Block zum Einfügen.
+        hilfe: Claude schreibt direkt in deine Google Docs, auch am Handy; ohne Docs-Verbindung gibt Claude einen Block zum Einfügen.
         pflicht: true
         profil_pfad: werkzeuge.geraete
         hinweis_wenn_nur:   # Entscheid 31.10. (F6)
-          Smartphone: "Die Einrichtung empfehle ich einmal am Rechner. Am Smartphone bekommst du einen Block zum Einfügen statt direkter Bearbeitung."
+          Smartphone: "Die Einrichtung empfehle ich einmal am Rechner. Am Smartphone schreibt Claude danach direkt in deine Dokumente."
 
       - id: s1.kanal
         modul: kern

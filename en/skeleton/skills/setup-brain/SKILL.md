@@ -41,6 +41,17 @@ Order: folder → core documents except `00_Status` → documents of the active 
 | bauen | Build_Projects |
 | eigen:<Name> | State_<Name> |
 
+## Skills per area
+For point 5 under "Check and report". Skills to add later (style-profile, transcript-minutes, area-manager, skill-tailor) are offered by the interview; do not name them here.
+
+| Area | Skills (one ZIP each) |
+|---|---|
+| entscheidungen | decision-clarify, decision-check |
+| wissen | knowledge-note |
+| termine | appointment-prep, letter-explain |
+| schreibstil | plain-prose-de, plain-prose-en |
+| bauen | build-router, vibe-pack |
+
 ## Check and report
 1. Search the folder again and compare target and actual. Show the list with ✓ and ✗.
 2. Write the entry "Set up" in `Journal` (date, areas, number of actions), unless the template already did.
@@ -56,7 +67,8 @@ Do not store ID, account, tax or insurance numbers.
 If my request belongs to the Second Brain project, tell me to continue writing there.
 ```
 
-5. Last sentence: "Add `00_Status` and `01_Profile` to the project under Files (from Google Drive), then they are always loaded." Then say in one sentence: you can add new areas at any time later ("new area").
+5. Module skills: Compare your own skill list with the skills of the active areas in the table "Skills per area". Name the missing ones in one line with their ZIP names (`<skill>.zip`, upload one by one) and say that you help without them until then. If none is missing, leave this point out.
+6. Last sentence: "Add `00_Status` and `01_Profile` to the project under Files (from Google Drive), then they are always loaded." Then say in one sentence: you can add new areas at any time later ("new area").
 
 ## Limits
 - Never delete, never share, never change permissions, touch nothing outside the folder "Second Brain".
@@ -87,7 +99,7 @@ Write for every active area the matching block word for word into the section "A
 - Changes to the profile only after my yes, with value, status, source and date.
 
 ## Area Tools
-- Devices and tools are in `01_Profile`, section Technology. On a smartphone you output blocks to paste instead of direct editing.
+- Devices and tools are in `01_Profile`, section Technology. You write directly into the documents on a smartphone too; you output blocks to paste only if Google Docs is not connected.
 - If you cannot use a tool (for example Drive is not connected), say so in one line and offer the block mode.
 
 ## Area Work and goals
@@ -131,11 +143,11 @@ Write for every active area the matching block word for word into the section "A
 ```
 
 ## Templates
-Placeholders in <angle brackets> you fill from the confirmed answers. What is not answered stands as "– · open". Every entry in the profile: value · status (answered / open / unknown / skipped / outdated) · source (user / companion / derived / unknown) · date. Only these values, none of your own ("confirmed" is not a status).
+Placeholders in <angle brackets> you fill from the confirmed answers. What is not answered stands as "– · open". If the name is still open, leave it out of the title ("# 00_Status – Second Brain", "# 01_Profile"). Every entry in the profile: value · status (answered / open / unknown / skipped / outdated) · source (user / companion / derived / unknown) · date. Only these values, none of your own ("confirmed" is not a status).
 
 ### 00_Status
 ```
-# 00_Status – Second Brain of <name or "still open">
+# 00_Status – Second Brain of <name>
 
 ## Version stamp
 - Package version: 0.1 (skeleton, test)
@@ -148,7 +160,6 @@ Placeholders in <angle brackets> you fill from the confirmed answers. What is no
 - Last monthly question: <date or "none yet">
 - Answers: <the person themselves or companion (role)> since <date>
 - Profile version: <integer>
-- Skills loaded: <list> (<n> of 12)
 
 ## Field map (from stage 1)
 | Module | Status | why | Detail channel |
@@ -187,7 +198,7 @@ Placeholders in <angle brackets> you fill from the confirmed answers. What is no
 
 ### 01_Profile
 ```
-# 01_Profile – <name or "open">
+# 01_Profile – <name>
 
 Profile version: <integer> · Source: interview (<date>)
 
@@ -247,7 +258,7 @@ Format: date · text · (optional) target document
 ```
 # Journal
 
-What happened and why. Newest entries on top. Condense once a month, move old material to the archive.
+What happened and why. Newest entries at the bottom, append new ones at the end. Condense once a month, move old material to the archive.
 
 ## <date> · System
 - Second brain set up. Areas: <list>. Actions: <number>.

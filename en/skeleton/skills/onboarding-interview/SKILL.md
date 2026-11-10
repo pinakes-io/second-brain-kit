@@ -73,11 +73,11 @@ Opening question (does not count towards the eight questions): **Before we start
    - For "another language" say: I am happy to answer you in your language in the chat. The choice words in the profile stay in English; everything else I write in your document language.
    - Follow-up for "another language", does not count: **Which language?**
    - Follow-up for "another language", does not count: **In which language should the documents be?** same as the chat (Recommended) · plain English · two languages (yours and English)
-7. **On which devices do you want to use your second brain?** (several possible) (Editing directly in Google Docs only works in the browser on a computer; on a phone Claude gives you a block to paste.)
+7. **On which devices do you want to use your second brain?** (several possible) (Claude writes directly into your Google Docs, on a phone too; without the Docs connection Claude gives you a block to paste.)
    1. Laptop or Chromebook in the browser
    2. Smartphone
    3. Tablet
-   - If only "Smartphone": I recommend doing the setup once on a computer. On a smartphone you get a block to paste instead of direct editing.
+   - If only "Smartphone": I recommend doing the setup once on a computer. On a smartphone Claude then writes directly into your documents.
 8. **How do you want to answer the detail questions?**
    1. in the chat in small rounds (Recommended) – no additional tool; the form pays off for long blocks or a second person
    2. as a form to fill in

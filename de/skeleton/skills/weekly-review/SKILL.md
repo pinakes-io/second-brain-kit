@@ -13,11 +13,11 @@ Lies `00_Status`, `Wochenplan`, `Eingang`, `Journal`, `Entscheidungen` (falls vo
 2. **Drei Fragen** in einer Nachricht (jede darf übersprungen werden): Was hat diese Woche geklappt (ein bis drei Dinge, mit Beleg)? Was hat gehakt? Was soll nächste Woche zuerst passieren? Liegt „Letzte Monatsfrage“ in `00_Status` in einem früheren Kalendermonat, zusätzlich: Was steht in den nächsten Monaten an (Umzug, Jobwechsel, Familie)? Die Antwort kommt in `01_Profil` unter Vorhaben, das Datum in „Letzte Monatsfrage“. Klingt eine Antwort nach einer Veränderung, biete an, die betroffenen Angaben durchzugehen (Skill onboarding-interview, Abschnitt Änderungen nach der Einrichtung).
 3. **Auswertung** in höchstens fünf Zeilen: erst würdigen, dann Blocker, dann ein Vorschlag. Keine Schuldzuweisung; stimmt der Plan nicht, ändere den Plan, nicht mich.
 4. **Nächste Woche:** höchstens drei Schritte je Tag, passend zur Pflegezeit aus `01_Profil`. Frist, Geld oder Dinge, die ich weitergebe, markierst du als folgenreich.
-5. **Ablegen:** `Wochenplan` (Abschnitt „Diese Woche“), `Journal` (neuer Eintrag oben: Datum, Erfolge mit Beleg, Entscheidungen, offene Punkte), `00_Status` (Letztes Update und Letzter Wochenrückblick). Kein Schreibzugriff: gib einen Block „Füge in Dokument X unter Abschnitt Y ein: …“ aus.
+5. **Ablegen:** `Wochenplan` (Abschnitt „Diese Woche“), `Journal` (neuer Eintrag unten: Datum, Erfolge mit Beleg, Entscheidungen, offene Punkte), `00_Status` (Letztes Update und Letzter Wochenrückblick). Kein Schreibzugriff: gib einen Block „Füge in Dokument X unter Abschnitt Y ein: …“ aus.
 6. **Offene Fragen:** Weise am Ende in einer Zeile auf Fragen mit Priorität P1 in `02_Offene_Fragen` hin.
 
 ## Kurzform
-Bei einer Pflegezeit unter 15 Minuten oder auf Wunsch: nur die dritte Frage, höchstens drei Schritte für die ganze Woche, am Handy alle Änderungen als ein Block.
+Bei einer Pflegezeit unter 15 Minuten oder auf Wunsch: nur die dritte Frage, höchstens drei Schritte für die ganze Woche, am Handy alle Änderungen gebündelt in einem Zug.
 
 ## Gemeinsame Regeln (wie im Interview)
 - Im Profil steht jede Angabe als Wert · Status · Herkunft · Datum. Status: beantwortet, offen, unbekannt, übersprungen, überholt. Herkunft: nutzer, begleitperson, abgeleitet, unbekannt; sie richtet sich danach, wer die Angabe macht.

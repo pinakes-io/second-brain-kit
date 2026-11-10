@@ -8,7 +8,7 @@ kanal_detail: chat
 skills: []
 anweisungsbaustein: |
   ## Bereich Werkzeuge
-  - Geräte und Werkzeuge stehen in `01_Profil`, Abschnitt Technik. Am Smartphone gibst du Blöcke zum Einfügen aus statt direkter Bearbeitung.
+  - Geräte und Werkzeuge stehen in `01_Profil`, Abschnitt Technik. Du schreibst auch am Smartphone direkt in die Dokumente; Blöcke zum Einfügen gibst du nur aus, wenn Google Docs nicht verbunden ist.
   - Kannst du ein Werkzeug nicht nutzen (zum Beispiel Drive nicht verbunden), sag das in einer Zeile und biete den Block-Modus an.
 vorlagen: []
 ablage_karte: []

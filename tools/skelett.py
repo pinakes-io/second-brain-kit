@@ -136,6 +136,24 @@ def pruefen():
     if 'Bereichsregeln' not in a and 'Area rules' not in a:
         F('Projekt-Anweisungen: Verweis auf die Bereichsregeln fehlt')
 
+    # Skills je Bereich (Befund F14, 10.11.2026): die Tabelle in setup-brain nennt die Skills jedes Moduls wie die Spec
+    tm = re.search(r'## (?:Skills je Bereich|Skills per area)\n(.*?)(?=\n## )', vorl, re.S)
+    if not tm:
+        F('setup-brain: Abschnitt "Skills je Bereich" fehlt')
+    else:
+        zeilen = {}
+        for z in tm.group(1).splitlines():
+            zellen = [c.strip() for c in z.strip().strip('|').split('|')]
+            if z.strip().startswith('|') and len(zellen) >= 2:
+                zeilen[zellen[0]] = zellen[1]
+        for p in sorted(glob.glob(os.path.join(root, 'spec', 'module', '*.yaml'))):
+            m = yaml.safe_load(open(p, encoding='utf-8'))
+            if m['id'] == 'kern' or not m['skills']:
+                continue
+            for s in m['skills']:
+                if s not in zeilen.get(m['id'], ''):
+                    F(f'setup-brain: Tabelle "Skills je Bereich": Skill {s} von {m["id"]} fehlt')
+
     # Skill area-manager (nachrüstbar, liegt in skills/): Verzeichnis und Bausteine gegen die Module
     am = os.path.join(root, 'skills', 'area-manager', 'SKILL.md')
     if os.path.exists(am):

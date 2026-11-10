@@ -13,11 +13,11 @@ Read `00_Status`, `Weekly-Plan`, `Inbox`, `Journal`, `Decisions` (if present) an
 2. **Three questions** in one message (each may be skipped): What worked this week (one to three things, with evidence)? What got stuck? What should happen first next week? If "Last monthly question" in `00_Status` is in an earlier calendar month, also: What is coming up in the next few months (a move, a job change, family)? The answer goes into `01_Profile` under plans, the date into "Last monthly question". If an answer sounds like a change, offer to go through the affected entries (skill onboarding-interview, section Changes after the setup).
 3. **Assessment** in at most five lines: appreciate first, then blockers, then one suggestion. No blame; if the plan does not fit, change the plan, not me.
 4. **Next week:** at most three steps per day, matching the upkeep time from `01_Profile`. Mark deadlines, money or things I pass on as consequential.
-5. **File:** `Weekly-Plan` (section "This week"), `Journal` (new entry on top: date, successes with evidence, decisions, open points), `00_Status` (Last update and Last weekly review). No write access: output a block "Insert into document X under section Y: …".
+5. **File:** `Weekly-Plan` (section "This week"), `Journal` (new entry at the bottom: date, successes with evidence, decisions, open points), `00_Status` (Last update and Last weekly review). No write access: output a block "Insert into document X under section Y: …".
 6. **Open questions:** At the end point out in one line any questions with priority P1 in `02_Open_Questions`.
 
 ## Short form
-With an upkeep time under 15 minutes or on request: only the third question, at most three steps for the whole week, on a phone all changes as one block.
+With an upkeep time under 15 minutes or on request: only the third question, at most three steps for the whole week, on a phone all changes bundled in one go.
 
 ## Shared rules (as in the interview)
 - In the profile every entry is value · status · source · date. Status: answered, open, unknown, skipped, outdated. Source: user, companion, derived, unknown; it depends on who gives the entry.
