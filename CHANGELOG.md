@@ -33,4 +33,6 @@ Fixed after the test of 2026-11-10: `skill-tailor` 0.5 reads the template in cod
 
 Fixed after the test of 2026-11-10 (second round): the project instructions say to read `00_Status` from Drive before the first answer in every chat, even if the question seems answerable without Drive, and the skills no longer say "if you may read Drive" but "first, skip only without a Drive connection"; in three tests Claude had skipped reading. The project knowledge stays empty: a copy there had gone stale in a test, so setup, README and START_HERE no longer ask to add documents to it. Where a skill sets a line limit, the instructions ask to count the lines before sending and cut.
 
+Changed after the test of 2026-11-10 (third round): the assistant asks before every entry in the profile, also after "remember this", and shows the line first.
+
 Known gaps: interview stage 2 has one question; the English wording has not been reviewed by a native speaker; most skills have not been run in a real account; the setup takes longer than the 20-minute target in simulation.
