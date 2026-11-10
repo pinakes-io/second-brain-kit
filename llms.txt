@@ -9,7 +9,8 @@ If a person gave you this repository and wants a second brain, read START_HERE.m
 - [START_HERE.md](START_HERE.md): the step-by-step guide for the assistant
 - [English core instructions](en/skeleton/anweisungen/Projekt-Anweisungen.txt): the text for the project instructions, English pack
 - [German core instructions](de/skeleton/anweisungen/Projekt-Anweisungen.txt): the same, German pack
-- [README.md](README.md): overview, status and limits
+- [README.md](README.md): overview in everyday words
+- [DEVELOPERS.md](DEVELOPERS.md): structure, manual setup, exact test status, checks
 
 ## Optional
 
