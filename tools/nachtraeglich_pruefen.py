@@ -2,7 +2,7 @@
 """Simuliert das nachträgliche Dazunehmen von Bereichen (Skill area-manager) für jede Persona. Entwurf 03.11.2026.
 Aufruf: python3 -I tools/nachtraeglich_pruefen.py <spec-ordner>      z. B. spec
 Für jede Persona und jeden noch nicht aktiven Bereich wird gerechnet:
-  - Upload-Budget: Skills des Kerns plus der aktiven Bereiche plus des neuen Bereichs gegen max_skill_uploads
+  - Skills: Zahl der Skills des Kerns plus der aktiven Bereiche plus des neuen Bereichs (ohne Obergrenze, Entscheid 11.11.)
   - Folgeangebote: Bereiche, deren Aktivierung wenn_modul auf den neuen Bereich zeigt
   - Sperren: Anteil der Profilfelder des neuen Bereichs, den die Grenzen der Persona sperren
   - Dokumente, die neu angelegt würden
@@ -17,7 +17,6 @@ spec = sys.argv[1]
 L = lambda rel: yaml.safe_load(open(os.path.join(spec, rel), encoding='utf-8'))
 module = {os.path.basename(p)[:-5]: yaml.safe_load(open(p, encoding='utf-8')) for p in glob.glob(os.path.join(spec, 'module', '*.yaml'))}
 fragen = L('Fragen_Stufe1.yaml')
-budget = L('Budget.yaml')['einrichtung']['max_skill_uploads']
 sperr = {}
 for r in fragen['runden']:
     for q in r['fragen']:
@@ -58,13 +57,12 @@ for p in sorted(glob.glob(os.path.join(spec, 'personas', 'persona_*.yaml'))):
             fehler.append(f"{d['id']}: Ableitung {sorted(abgeleitet)} weicht von erwartung {sorted(aktiv)} ab")
     gesperrt = {sperr.get(g) for g in d['antworten'].get('s1.grenzen', [])} - {None}
     skills = kern_skills + sum(len(module[m]['skills']) for m in aktiv if m in module and m != 'kern')
-    print(f"{d['id']}: aktiv{quelle} {sorted(aktiv - immer)}, Skills {skills} von {budget}")
+    print(f"{d['id']}: aktiv{quelle} {sorted(aktiv - immer)}, Skills {skills}")
     for mid in sorted(set(module) - aktiv - immer - {'kern'}):
         m = module[mid]
         neu = len(m['skills'])
         zeilen = []
-        if skills + neu > budget:
-            zeilen.append(f'Budget: {skills} + {neu} > {budget}')
+        zeilen.append(f'Skills danach: {skills + neu}')
         folge = [x for x, dx in module.items() if mid in dx['aktivierung'].get('wenn_modul', []) and x not in aktiv]
         if folge:
             zeilen.append(f'Folgeangebot: {", ".join(folge)}')

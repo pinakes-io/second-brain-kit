@@ -274,8 +274,6 @@ for datei in personas:
           f'{drive} Drive-Aktionen, ~{minuten:.0f} min | {s2_text}')
     if len(fragen) > b1['max_fragen'] or len(folgen) > b1['max_folgefragen'] or sek / 60 > b1['max_minuten']:
         befunde.append('Budget Stufe 1 überschritten')
-    if uploads > be['max_skill_uploads']:
-        befunde.append(f'Budget: {uploads} Skill-Uploads > {be["max_skill_uploads"]}')
     if drive > be['max_drive_aktionen']:
         befunde.append(f'Budget: {drive} Drive-Aktionen > {be["max_drive_aktionen"]}')
     if minuten > be['max_minuten']:
@@ -298,8 +296,6 @@ for datei in personas:
         soll2 = set((P.get('erwartung') or {}).get('module_nachher') or [])
         if soll2 and set(neu - {'kern'}) != soll2:
             befunde.append(f'Nachrüsten weicht ab: {sorted(neu - {"kern"})} statt {sorted(soll2)}')
-        if len(skills) + len(s_neu) > be['max_skill_uploads']:
-            befunde.append(f'Budget nach Nachrüsten: {len(skills) + len(s_neu)} Skill-Uploads > {be["max_skill_uploads"]}')
 
     print(f'Befunde: {len(befunde)}' if befunde else 'Keine Befunde')
     for x in befunde:

@@ -8,7 +8,6 @@ stufe1:
   max_minuten: 5
   sekunden_je_typ: {einfach: 15, mehrfach: 25, text: 30}
 einrichtung:
-  max_skill_uploads: 12         # Entscheid 01.11. (war 8): ein ZIP je Skill, Bündel nicht möglich (Befund D1)
   max_drive_aktionen: 15        # Ordner und Dokumente, die setup-brain anlegt (je eine Bestätigung, falls nötig)
   max_minuten: 20
   grundaufwand_minuten: 8       # Projekt anlegen, Anweisungen einfügen, Drive verbinden, Präferenzen

@@ -53,7 +53,7 @@ The core needs five skills: `setup-brain`, `onboarding-interview`, `weekly-revie
 2. Tell them to upload it in their Claude settings under the skills section (the label may differ) and to confirm when it appears.
 3. Repeat for the next ZIP.
 
-Further skills (decisions, knowledge, appointments and so on) come later, only after the interview says which areas are needed. The upload budget is 12 skills.
+Further skills (decisions, knowledge, appointments and so on) come later, only after the interview says which areas are needed.
 
 Then ask once how these later skills should come: a) ready-made (Recommended) · b) tailored to you where a template exists, if code execution is on (experimental, not yet tested in a real account). Remember the answer for step 7a. Tailored means: three to five short choices per skill, then a checked ZIP to download. Templates exist so far for `appointment-prep` and `letter-explain`; every other skill comes ready-made.
 
@@ -76,7 +76,7 @@ When the interview is done, the same chat runs `setup-brain`. It lists what it w
 - If the person chose tailored in step 4, code execution is on and `<pack>/spec/vorlagen/<skill>.md` exists: fetch `<pack>/skills/skill-tailor/SKILL.md` and follow its procedure for this skill (template from the raw link, its questions, only the marked places, check with code, ZIP to download). If all answers are recommendations, give the ready-made ZIP instead.
 - Otherwise: give the download link of `<pack>/dist/<skill>.zip`.
 
-One skill at a time, each with the stop line. Only if the person chose tailored in step 4, offer once afterwards the add-on `skill-tailor` (`<pack>/dist/skill-tailor.zip`), so further skills can be tailored later; it does not count towards the 12. Otherwise do not offer it.
+One skill at a time, each with the stop line. Only if the person chose tailored in step 4, offer once afterwards the add-on `skill-tailor` (`<pack>/dist/skill-tailor.zip`), so further skills can be tailored later. Otherwise do not offer it.
 
 ### 8. Make the two main documents permanent
 

@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Appointments, post and offices (`termine`) |
 | Upload | `en/dist/letter-explain.zip` · `de/dist/letter-explain.zip` (one skill per ZIP) |
-| Size | 6,890 characters (en) · 6,997 characters (de), limit 8,000 for module skills |
+| Size | 6,879 characters (en) · 6,986 characters (de), limit 8,000 for module skills |
 | Description | Explains a letter or official notice in plain words when I show a photo, a scan or the text of a letter or ask what a letter wants or whether I have to pay (office, health insurer, care insurer, tax office, bank, school, landlord, debt collector). Says first what I must do and by when, spots advertising and fraud, never copies blocked numbers and checks deadlines. If the letter contains an appointment, it offers appointment-prep. Not for pure translations without a question about the content. |
 <!-- facts:end -->
 

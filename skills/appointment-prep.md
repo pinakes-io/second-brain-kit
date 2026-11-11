@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Appointments, post and offices (`termine`) |
 | Upload | `en/dist/appointment-prep.zip` · `de/dist/appointment-prep.zip` (one skill per ZIP) |
-| Size | 7,777 characters (en) · 7,722 characters (de), limit 8,000 for module skills |
+| Size | 7,791 characters (en) · 7,730 characters (de), limit 8,000 for module skills |
 | Description | Prepares me for an upcoming appointment or records afterwards what was agreed (employment agency or job centre, immigration office or citizens' office, recognition counselling, job interview, doctor, school, bank and others). Use for "prepare appointment", "what to expect", "how do I prepare" and for "the appointment was today, …". Not for simply adding an appointment to the calendar. A letter with an invitation is explained first by letter-explain. Short by default, detailed on request. |
 <!-- facts:end -->
 
@@ -34,7 +34,7 @@ flowchart TD
   G -- "yes" --> H["Outline, counter-check, role play"]
   G -- "no" --> I["Suggest entries, add after yes"]
   H --> I
-  I --> J["Check line as a short footer"]
+  I --> J["Filed line at the end"]
 ```
 
 Knowledge comes in three levels: fresh with a source, "as a rule, unchecked" when a common rule carries the main question, and "usually like this, please ask on site" for tips. Nothing from the last two levels is filed as a fact. Health has three levels (open, appointments only, blocked); with "appointments only" Drive gets "appointment", date and time, at most the town.

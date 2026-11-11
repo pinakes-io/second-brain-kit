@@ -73,7 +73,7 @@ Areas can be added, paused and updated later with the add-on `area-manager`.
 
 ## The skills
 
-Every skill is one `SKILL.md` in its own ZIP. The kit keeps you to at most 12 uploads, so the skills come in three groups. Each one has its own page with a flow diagram, an example, its limits and what has really been tested: see [`skills/`](skills/README.md).
+Every skill is one `SKILL.md` in its own ZIP. The skills come in three groups, so you only upload what you need. Each one has its own page with a flow diagram, an example, its limits and what has really been tested: see [`skills/`](skills/README.md).
 
 **Always there (core)**
 
@@ -83,7 +83,7 @@ Every skill is one `SKILL.md` in its own ZIP. The kit keeps you to at most 12 up
 - [`fact-check`](skills/fact-check.md) `checks numbers, deadlines and rules against a source and records them`
 - [`brain-check`](skills/brain-check.md) `checks the second brain for order and proposes repairs`
 
-**Switched on by the interview (module skills, counted towards the 12)**
+**Switched on by the interview (module skills)**
 
 - [`decision-clarify`](skills/decision-clarify.md) `finds the few questions whose answer would tip a decision`
 - [`decision-check`](skills/decision-check.md) `gives a decision you call final exactly one blind-spot check`
@@ -94,7 +94,7 @@ Every skill is one `SKILL.md` in its own ZIP. The kit keeps you to at most 12 up
 - [`build-router`](skills/build-router.md) `entry point for anything you want built; builds nothing itself and hands over`
 - [`vibe-pack`](skills/vibe-pack.md) `turns a vague idea into a rules file and build plan for a coding agent`
 
-**Add-ons (offered when they fit, outside the 12)**
+**Add-ons (offered when they fit)**
 
 - [`transcript-minutes`](skills/transcript-minutes.md) `turns a transcript into verified minutes with decisions and tasks`
 - [`style-profile`](skills/style-profile.md) `derives your style profile from two or three of your own texts`
@@ -158,7 +158,7 @@ The same steps without the guide.
 A second brain is only useful if you can trust what it says. The kit relies on a few plain rules for that.
 
 - **Every entry says where it came from.** Value, status (`answered`, `open`, `unknown`, `skipped`), origin (`user`, `companion`, `derived`, `unknown`) and date. "Unknown" never turns into "certain".
-- **A check line on every consequential answer.** One line saying what was read and where something was filed. You can see at a glance whether Claude looked.
+- **A check line on every consequential answer.** One line at the top saying what was read, and one at the end saying where something was filed. You can see at a glance whether Claude looked. The line at the top matters: when it sat at the end, Claude answered first and stopped reading Drive (finding F72).
 - **Facts carry sources.** Numbers, deadlines and rules go through `fact-check` into the fact ledger, with source, date and status. Without a source they stay marked as unchecked.
 - **Nothing is deleted or renamed without asking**, and nothing is sent in your name without a clear yes. Old values are kept, not overwritten.
 - **Some things are never stored:** ID, account, tax and insurance numbers.
@@ -168,7 +168,7 @@ A second brain is only useful if you can trust what it says. The kit relies on a
 
 Be clear about what kind of safety this is. Every rule above is an instruction that Claude follows. None of it is enforced from outside. The check line makes slips visible; it does not make them impossible. In testing, the rules held in most cases and failed in a few, and those failures are why several of them are now worded the way they are.
 
-The platforms add their own limits. A free Claude account has a message limit that a full walkthrough can reach. Nothing is lost when that happens, because everything done so far is already in Drive, and you continue once the limit resets. Project instructions are length-limited, so the core instructions stay under 5,000 characters. A ZIP may contain only one skill. The kit itself sets a budget of 12 skill uploads.
+The platforms add their own limits. A free Claude account has a message limit that a full walkthrough can reach. Nothing is lost when that happens, because everything done so far is already in Drive, and you continue once the limit resets. Project instructions are length-limited, so the core instructions stay under 5,000 characters. A ZIP may contain only one skill. In a test, claude.ai accepted 16 skills in one account without complaint (2026-11-11); the kit sets no upper limit, but uploading only what the interview suggests keeps the choice of skill clear.
 
 The setup has further targets: at most eight questions in the first stage (about five minutes), at most 15 Drive actions and at most 20 minutes in total. The first two are met in simulation. The time is not: setup currently takes about 21 to 25 minutes.
 

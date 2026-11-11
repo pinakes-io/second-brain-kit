@@ -8,8 +8,8 @@ Every skill is one `SKILL.md`, packaged as one ZIP. This section has one page pe
 
 - **A. Out of the box.** Ready-made ZIPs in `de/dist` and `en/dist`.
   - **A1 Core:** always there, five skills.
-  - **A2 Module skills:** switched on by the interview, together with the core at most 12 uploads.
-  - **A3 Add-ons:** offered when they fit, outside the 12.
+  - **A2 Module skills:** switched on by the interview.
+  - **A3 Add-ons:** offered when they fit.
 - **B. Tailored to you.** Draft; version 0.4 ran once in claude.ai: `skill-tailor` reads a template, asks three to five choices and builds a checked ZIP. Templates exist for `appointment-prep` and `letter-explain`; every other skill comes as kind A.
 
 ## The map
@@ -99,10 +99,10 @@ sequenceDiagram
 | [`plain-prose-de`](plain-prose-de.md) | A2 · Module skill | Writing style (`schreibstil`) |
 | [`plain-prose-en`](plain-prose-en.md) | A2 · Module skill | Writing style (`schreibstil`) |
 | [`vibe-pack`](vibe-pack.md) | A2 · Module skill | Build (`bauen`) |
-| [`area-manager`](area-manager.md) | A3 · Add-on, outside the upload budget | Core |
-| [`skill-tailor`](skill-tailor.md) | A3 · Add-on, outside the upload budget | Core |
-| [`style-profile`](style-profile.md) | A3 · Add-on, outside the upload budget | Writing style (`schreibstil`) |
-| [`transcript-minutes`](transcript-minutes.md) | A3 · Add-on, outside the upload budget | Work and goals (`arbeit`) |
+| [`area-manager`](area-manager.md) | A3 · Add-on, offered when it fits | Core |
+| [`skill-tailor`](skill-tailor.md) | A3 · Add-on, offered when it fits | Core |
+| [`style-profile`](style-profile.md) | A3 · Add-on, offered when it fits | Writing style (`schreibstil`) |
+| [`transcript-minutes`](transcript-minutes.md) | A3 · Add-on, offered when it fits | Work and goals (`arbeit`) |
 <!-- index:end -->
 
 ## How to read a page

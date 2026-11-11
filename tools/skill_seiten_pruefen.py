@@ -12,7 +12,7 @@ import yaml
 
 FS, FE = '<!-- facts:start -->', '<!-- facts:end -->'
 IS, IE = '<!-- index:start -->', '<!-- index:end -->'
-ART = {'A1': 'A1 · Core, always', 'A2': 'A2 · Module skill', 'A3': 'A3 · Add-on, outside the upload budget'}
+ART = {'A1': 'A1 · Core, always', 'A2': 'A2 · Module skill', 'A3': 'A3 · Add-on, offered when it fits'}
 
 
 def seiten_dir(w):

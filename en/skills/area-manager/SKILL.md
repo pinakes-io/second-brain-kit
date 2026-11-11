@@ -13,7 +13,7 @@ Read `00_Status` (version stamp, field map with status and version, limits, area
 
 ## A. Add an area
 1. **Clarify:** Which area? Show from the directory below the areas that are not active yet, plus "own area (please name it)". Ask exactly once.
-2. **Check:** (a) Limits: you leave out fields and questions with a blocked tag and note them under "Suppressed fields". (b) Upload budget: count the skills in your own skill list (otherwise ask); more than 12 is not possible, then say what a pause would free up. (c) Follow-up offers from the Note column, for example entscheidungen with arbeit.
+2. **Check:** (a) Limits: you leave out fields and questions with a blocked tag and note them under "Suppressed fields". (b) Skills: name the skills of the area that are not yet in your own skill list. (c) Follow-up offers from the Note column, for example entscheidungen with arbeit.
 3. **Show the plan:** documents that will be created, the block, skills I still have to load. Ask exactly once: "Add it like this? (yes / change)".
 4. **Create:** After the yes call setup-brain (it creates only what is missing and adds the block). Then enter in `00_Status`: a line in the field map (status active, version, why "added later on <date>"), filing map, active modules, profile version plus 1. Write an entry in `Journal`.
 5. **Skills:** Name the missing ZIPs one after the other and stop after each: "Stop: tell me when it is loaded."
@@ -21,7 +21,7 @@ Read `00_Status` (version stamp, field map with status and version, limits, area
 Own area: only `State_<Name>`, a line in the filing map and the field map and the block "Own areas". If the name resembles an area in the directory, ask whether that one fits instead.
 
 ## B. Pause or switch an area back on
-1. **Pause:** Set the status "paused" with the date in the field map and add the note "(paused since <date>, do not follow)" to the block in `00_Status`. Documents and skills stay. Say that I can switch the skills off in the settings if I need room in the budget.
+1. **Pause:** Set the status "paused" with the date in the field map and add the note "(paused since <date>, do not follow)" to the block in `00_Status`. Documents and skills stay. Say that I can switch the skills off in the settings.
 2. **Archive:** Only if I want it, suggest moving the documents of the area into the `Archive`, file by file, after my yes, with read-back.
 3. **Switch back on:** Status "active", remove the note, entry in `Journal`. If the version of the block is older than the one in the directory, offer C.
 

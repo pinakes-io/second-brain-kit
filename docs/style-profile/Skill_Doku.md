@@ -7,7 +7,7 @@ From two or three of your own texts the skill derives your writing style profile
 
 ## 2. Design decisions
 - Name: `style-profile`.
-- Add-on: the interview offers it when the area `schreibstil` is active. It does not count toward the upload budget (`skills_nachruestbar` in the module).
+- Add-on: the interview offers it when the area `schreibstil` is active. It is listed under `skills_nachruestbar` in the module.
 - Privacy: only **derived traits** are stored, no text samples and no whole sentences. Under "Beispieltexte" there is only the note "no text samples stored".
 - Default: minimum amount about 250 words; below about 500 words the result counts as provisional. To be measured in the first claude.ai runs.
 

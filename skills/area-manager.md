@@ -5,10 +5,10 @@
 <!-- facts:start -->
 | | |
 |---|---|
-| Kind | A3 · Add-on, outside the upload budget |
+| Kind | A3 · Add-on, offered when it fits |
 | Area | Core |
 | Upload | `en/dist/area-manager.zip` · `de/dist/area-manager.zip` (one skill per ZIP) |
-| Size | 8,594 characters (en) · 9,092 characters (de), limit 8,000 for module skills |
+| Size | 8,503 characters (en) · 9,015 characters (de), limit 8,000 for module skills |
 | Description | Adds areas (modules) while the second brain is in use, pauses them or updates their rules. Use when the person writes "new area", "add an area", "pause an area", "update the rules" or "I also want to use …". Changes only additively and after a yes and never deletes. |
 <!-- facts:end -->
 
@@ -45,11 +45,11 @@ Paused areas keep their documents and their rule block with the note "(paused si
 ## Limits
 - Optional: without it, `setup-brain` creates the areas at the first setup.
 - Never deletes and never overwrites your own additions to a block.
-- The upload budget of 12 still applies to module skills.
+- It names the skills a new area needs; you upload them yourself.
 
 ## Files
 - `en/skills/area-manager/SKILL.md` and the German twin.
-- `tools/nachtraeglich_pruefen.py` computes, per invented persona, what adding an area would trigger (budget, follow-up offers, blocks).
+- `tools/nachtraeglich_pruefen.py` computes, per invented persona, what adding an area would trigger (skills, follow-up offers, blocks).
 
 ## Status
 - Checked by tool: spec, skeleton consistency (blocks, directory, skills), language parity, ZIP rules, mutation test.

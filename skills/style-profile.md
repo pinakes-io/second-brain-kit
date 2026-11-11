@@ -5,7 +5,7 @@
 <!-- facts:start -->
 | | |
 |---|---|
-| Kind | A3 · Add-on, outside the upload budget |
+| Kind | A3 · Add-on, offered when it fits |
 | Area | Writing style (`schreibstil`) |
 | Upload | `en/dist/style-profile.zip` · `de/dist/style-profile.zip` (one skill per ZIP) |
 | Size | 4,830 characters (en) · 4,903 characters (de), limit 8,000 for module skills |

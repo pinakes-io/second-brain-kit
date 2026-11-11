@@ -5,7 +5,7 @@
 <!-- facts:start -->
 | | |
 |---|---|
-| Kind | A3 · Add-on, outside the upload budget |
+| Kind | A3 · Add-on, offered when it fits |
 | Area | Work and goals (`arbeit`) |
 | Upload | `en/dist/transcript-minutes.zip` · `de/dist/transcript-minutes.zip` (one skill per ZIP) |
 | Size | 6,557 characters (en) · 6,686 characters (de), limit 8,000 for module skills |

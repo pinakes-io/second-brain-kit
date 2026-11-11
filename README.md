@@ -73,7 +73,7 @@ If Claude cannot open this page, it asks you to download it and hand over the fi
 
 ## What you can rely on
 
-- **Claude shows what it did.** One short line under important answers says what it read and where it wrote something. So you can see whether it looked.
+- **Claude shows what it did.** One short line at the top of important answers says what it read, and one at the end says where it wrote something. So you can see whether it looked.
 - **Numbers, deadlines and rules come with a source.** Without a source, Claude says *unchecked*.
 - **Nothing is deleted, and nothing is sent in your name,** unless you clearly say yes.
 - **Some things are never written down:** ID, passport, bank account, tax and insurance numbers.

@@ -46,7 +46,7 @@ The tool checks patterns and numbers, not meaning: identifier on every sentence 
 | `lang` | workshop with 160 paragraphs: counting, coverage, pressure on length and the free limit |
 
 ## 7. Design decisions
-Scope (all kinds of conversation, several passes), name `transcript-minutes`, identifier (timestamp, otherwise paragraph number), roles instead of names, a Doc in Drive with a short version in the chat, add-on of the area `arbeit` outside the upload budget, German, filing only after consent. **Assumptions, not confirmed:** the order of the passes, a section size of about 40 paragraphs for long inputs, category equal to topic block, the layout of the check line.
+Scope (all kinds of conversation, several passes), name `transcript-minutes`, identifier (timestamp, otherwise paragraph number), roles instead of names, a Doc in Drive with a short version in the chat, add-on of the area `arbeit`, German, filing only after consent. **Assumptions, not confirmed:** the order of the passes, a section size of about 40 paragraphs for long inputs, category equal to topic block, the layout of the check line.
 
 ## 8. Status
 | | |

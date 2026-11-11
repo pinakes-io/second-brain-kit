@@ -13,7 +13,7 @@ Lies `00_Status` (Versionsstempel, Feldkarte mit Status und Version, Grenzen, Be
 
 ## A. Bereich dazunehmen
 1. **Klären:** Welcher Bereich? Zeige aus dem Verzeichnis unten die Bereiche, die noch nicht aktiv sind, dazu „eigener Bereich (bitte benennen)“. Frage genau einmal.
-2. **Prüfen:** (a) Grenzen: Felder und Fragen mit gesperrtem Tag lässt du weg und vermerkst sie unter „Unterdrückte Felder“. (b) Upload-Budget: Zähle die Skills in deiner eigenen Skill-Liste (sonst frage); mehr als 12 geht nicht, sage dann, was eine Pause bringt. (c) Folgeangebote aus der Spalte Hinweis, zum Beispiel entscheidungen bei arbeit.
+2. **Prüfen:** (a) Grenzen: Felder und Fragen mit gesperrtem Tag lässt du weg und vermerkst sie unter „Unterdrückte Felder“. (b) Skills: Nenne die Skills des Bereichs, die noch nicht in deiner eigenen Skill-Liste stehen. (c) Folgeangebote aus der Spalte Hinweis, zum Beispiel entscheidungen bei arbeit.
 3. **Plan zeigen:** Dokumente, die angelegt werden, Baustein, Skills, die ich noch laden muss. Frage genau einmal: „So dazunehmen? (ja / ändern)“.
 4. **Anlegen:** Rufe nach dem Ja setup-brain auf (es legt nur an, was fehlt, und ergänzt den Baustein). Trage danach in `00_Status` ein: Zeile in der Feldkarte (Status aktiv, Version, warum „später dazugenommen am <Datum>“), Ablage-Karte, aktive Module, Profilversion plus 1. Schreibe einen Eintrag in `Journal`.
 5. **Skills:** Nenne die noch fehlenden ZIPs eines nach dem anderen und halte nach jedem an: „Stopp: sag Bescheid, wenn es geladen ist.“
@@ -21,7 +21,7 @@ Lies `00_Status` (Versionsstempel, Feldkarte mit Status und Version, Grenzen, Be
 Eigener Bereich: nur `State_<Name>`, eine Zeile in Ablage-Karte und Feldkarte und der Baustein „Eigene Bereiche“. Ähnelt der Name einem Bereich im Verzeichnis, frage, ob stattdessen dieser passt.
 
 ## B. Bereich pausieren oder wieder zuschalten
-1. **Pausieren:** Setze in der Feldkarte den Status „pausiert“ mit Datum und ergänze am Baustein in `00_Status` den Vermerk „(pausiert seit <Datum>, nicht befolgen)“. Dokumente und Skills bleiben. Sage, dass ich die Skills in den Einstellungen ausschalten kann, wenn ich Platz im Budget brauche.
+1. **Pausieren:** Setze in der Feldkarte den Status „pausiert“ mit Datum und ergänze am Baustein in `00_Status` den Vermerk „(pausiert seit <Datum>, nicht befolgen)“. Dokumente und Skills bleiben. Sage, dass ich die Skills in den Einstellungen ausschalten kann.
 2. **Archiv:** Nur wenn ich es wünsche, schlage vor, die Dokumente des Bereichs ins `Archiv` zu verschieben, je Datei einzeln, nach meinem Ja, mit Rücklesen.
 3. **Wieder zuschalten:** Status „aktiv“, Vermerk entfernen, Eintrag in `Journal`. Ist die Version des Bausteins älter als die im Verzeichnis, biete C an.
 
