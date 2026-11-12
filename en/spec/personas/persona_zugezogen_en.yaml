@@ -25,7 +25,7 @@ antworten:
   - Smartphone
   s1.grenzen:
   - ID, account, tax and insurance numbers (always blocked)
-  - 'Health: diagnoses, findings, medication (appointments stay allowed)'
+  - 'Your own health: diagnoses, findings, medication (appointments stay allowed)'
   - Amounts of money
   s1.kanal: as a form to fill in
 ablauf:

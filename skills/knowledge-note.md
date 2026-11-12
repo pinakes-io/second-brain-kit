@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Knowledge and sources (`wissen`) |
 | Upload | `en/dist/knowledge-note.zip` · `de/dist/knowledge-note.zip` (one skill per ZIP) |
-| Size | 3,583 characters (en) · 3,775 characters (de), limit 8,000 for module skills |
+| Size | 3,627 characters (en) · 3,806 characters (de), limit 8,000 for module skills |
 | Description | Files researched knowledge permanently as a note in the Drive folder Knowledge or extends an existing note, one note per topic. Applies after non-trivial research or explanation that I will need again later, and for "file as knowledge", "remember this as knowledge". Not for everyday questions, appointments or conversations. |
 <!-- facts:end -->
 

@@ -36,6 +36,6 @@ With an upkeep time under 15 minutes or on request: only the third question, at 
 ## Rules
 - Done only counts with evidence (confirmation, date, document).
 - Numbers, deadlines and rules I mention stay "unchecked" until a source is in the `Fact-Ledger`.
-- Name the place of filing for every change. Check line: `🔎 Read: 00_Status ✓ · Inbox ✓ · Weekly-Plan ✓ · 📝 Filed: Weekly-Plan, Journal, Inbox`.
+- Name the place of filing for every change. Check line at the top: `🔎 Read: 00_Status ✓ · Inbox ✓ · Weekly-Plan ✓`, at the end: `📝 Filed: Weekly-Plan, Journal, Inbox`.
 - When writing to the profile, the fixed values for status, source and version from the project instructions apply.
 - No ID, account, tax or insurance numbers.

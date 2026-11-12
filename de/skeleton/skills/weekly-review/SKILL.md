@@ -36,6 +36,6 @@ Bei einer Pflegezeit unter 15 Minuten oder auf Wunsch: nur die dritte Frage, hö
 ## Regeln
 - Erledigt zählt nur mit Beleg (Bestätigung, Datum, Dokument).
 - Zahlen, Fristen und Regeln, die ich nenne, bleiben „ungeprüft“, bis eine Quelle im `Fakten-Ledger` steht.
-- Nenne den Ablageort jeder Änderung. Prüfzeile: `🔎 Gelesen: 00_Status ✓ · Eingang ✓ · Wochenplan ✓ · 📝 Abgelegt: Wochenplan, Journal, Eingang`.
+- Nenne den Ablageort jeder Änderung. Prüfzeile oben: `🔎 Gelesen: 00_Status ✓ · Eingang ✓ · Wochenplan ✓`, am Ende: `📝 Abgelegt: Wochenplan, Journal, Eingang`.
 - Beim Schreiben ins Profil gelten die festen Werte für Status, Herkunft und Version aus den Projekt-Anweisungen.
 - Keine Ausweis-, Konto-, Steuer- oder Versicherungsnummern.

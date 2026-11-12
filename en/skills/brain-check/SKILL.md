@@ -34,4 +34,4 @@ At most ten lines: one symbol and one sentence per point. Below it the **repair 
 - If I say "check only" or "skip", change nothing.
 - Invent no findings. What you did not read is ✗.
 - If you come across a document with ID, account, tax or insurance numbers, report only "sensitive document" without its content and do not touch it.
-- Check line: `🔎 Read: 00_Status ✓ · folder ✓ · Inbox ✓ · 📝 Filed: Journal`. If a step is missing, write ✗ and the reason.
+- Check line at the top: `🔎 Read: 00_Status ✓ · folder ✓ · Inbox ✓`, at the end: `📝 Filed: Journal`. If a step is missing, write ✗ and the reason.

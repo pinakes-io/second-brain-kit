@@ -25,4 +25,4 @@ Then enter under "Taken" in `Decisions`: date · decision · why · rejected alt
 - Everything in one message, no drip-feeding of doubts. Coming back to a decision must never feel like a punishment.
 - "That was a good decision" is an allowed and useful result.
 - If I say "skip", skip without discussion and do not raise it again in this session.
-- Check line: `🔎 Read: Decisions ✓ · 01_Profile ✓ · 📝 Filed: Decisions`.
+- Check line at the top: `🔎 Read: Decisions ✓ · 01_Profile ✓`, at the end: `📝 Filed: Decisions`.

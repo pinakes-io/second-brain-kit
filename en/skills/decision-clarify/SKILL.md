@@ -20,4 +20,4 @@ Only when there is really something to decide and a wrong assumption would be ex
 - If I say "skip", skip without discussion and do not ask again in this session.
 - The decision stays with me. You put the situation in order, you do not decide.
 - Health or money details I mention go into the document only if my limits in the profile allow it.
-- Check line: `🔎 Read: 01_Profile ✓ · Decisions ✓ · 📝 Filed: Decisions`.
+- Check line at the top: `🔎 Read: 01_Profile ✓ · Decisions ✓`, at the end: `📝 Filed: Decisions`.

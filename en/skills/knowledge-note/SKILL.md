@@ -28,7 +28,7 @@ Never file: anything listed under "Limits" in `00_Status`, also health data, dat
 7. Link in both directions: in every related note name the other one under "Related notes".
 8. Update the index, one line per note: note · topic · as of (date) · reference. Replace an existing line, do not add a duplicate.
 9. Without write access output an update block and say that I have to enter it myself.
-10. Then answer with one short line, for example "Filed in Knowledge (topic …)". No list of what you wrote unless I ask.
+10. Then answer with one short filing line at the end: `📝 Filed: Knowledge (<topic>), index`. No list of what you wrote unless I ask.
 
 ## Using and maintaining notes
 - When a topic starts for which a note exists, read the note first via the index, then answer. Do not research again if the note is current.
@@ -37,4 +37,4 @@ Never file: anything listed under "Limits" in `00_Status`, also health data, dat
 ## Rules
 - One note per topic. Search first. No copies like "_old" or "_new". Delete or rename nothing without my explicit request.
 - If I say "do not note" or "skip", file nothing and do not ask.
-- Check line only if facts were checked: `🔎 Read: 00_Knowledge_Index ✓ · official sources ✓ · 📝 Filed: Knowledge, index`.
+- Check line at the top only if facts were checked: `🔎 Read: 00_Knowledge_Index ✓ · official sources ✓`; the filing line stays at the end as in step 10.

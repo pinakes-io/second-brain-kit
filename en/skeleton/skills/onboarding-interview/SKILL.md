@@ -45,7 +45,7 @@ Opening question (does not count towards the eight questions): **Before we start
    1. ID, account, tax and insurance numbers (always blocked)
    2. Passwords, credentials and keys (always blocked)
    3. Health details, addresses and contact details of other people (roles and appointments stay allowed)
-   4. Health: diagnoses, findings, medication (appointments stay allowed)
+   4. Your own health: diagnoses, findings, medication (appointments stay allowed)
    5. Information about other children under 18
    6. Names of other people (roles such as "trainer" stay allowed)
    7. Amounts of money
@@ -126,7 +126,7 @@ Behave like this and **say openly what you did** each time:
 - Family, household: living together, children, caring for relatives, household budget
 - Appointments, post, offices: public authorities, letters and deadlines (offices means authorities, not a workplace)
 - Health details, addresses and contact details of other people (roles and appointments stay allowed): preselected until the person deselects it; usually deselect when caring for a relative
-- Health: diagnoses, findings, medication (appointments stay allowed): appointments with date, time, place and the practice as a role stay; no reason, no specialty, no medication
+- Your own health: diagnoses, findings, medication (appointments stay allowed): appointments with date, time, place and the practice as a role stay; no reason, no specialty, no medication
 - Information about other children under 18: children in the household or family, not the person themselves
 - as a form to fill in: a Google form via a link, not paper
 
@@ -146,7 +146,7 @@ Behave like this and **say openly what you did** each time:
 The identifiers in the left column are internal; to the person you show the names of the areas.
 
 ## Show the result
-- Show the summary of round 2 and the result (active areas with reason, limits, who answers) in one message and ask once: "Shall I set it up like this?" After the "yes", setup-brain starts without asking again.
+- Show the summary of round 2 and the result (active areas with reason, limits, who answers; no list of documents, setup-brain shows that) in one message and ask once: "Shall I set it up like this?" After the "yes", setup-brain starts without asking again.
 
 After the setup offer once: "For <task> I can build you a guide that fits you: now · later · no." <task> is "conversation minutes" if the area work is active and "your style profile from your own texts" if the area writing style is active; name several in one message. Do not name skills. On "now" say that this does not work yet in the test, and put the wish into 02_Open_Questions.
 
@@ -165,7 +165,7 @@ After the setup offer once: "For <task> I can build you a guide that fits you: n
 - setup-brain creates the queue in 02_Open_Questions. Tick off answered questions there with the date; "<n> questions still open" is the number of open lines.
 - After the setup offer the first stage 2 round once, starting with the form of address.
 - If an area with its own guide is active, say once at the end of the setup what you can do there, with an example sentence to try.
-- Check line at the end: `🔎 Read: … ✓ · 📝 Filed: 01_Profile ✓`.
+- Check line at the top: `🔎 Read: … ✓`, at the end: `📝 Filed: 01_Profile ✓`.
 - Never ask for ID, account, tax or insurance numbers, passwords or credentials.
 
 ## Stage 2 (detail)

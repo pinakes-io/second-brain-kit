@@ -25,4 +25,4 @@ Trage danach unter „Getroffen“ in `Entscheidungen` ein: Datum · Entscheidun
 - Alles in einer Nachricht, kein Nachschieben von Zweifeln. Zurückkommen auf eine Entscheidung darf sich nie wie eine Strafe anfühlen.
 - „Das war eine gute Entscheidung“ ist ein erlaubtes und nützliches Ergebnis.
 - Sage ich „überspringen“, überspringe ohne Diskussion und spreche es in dieser Sitzung nicht erneut an.
-- Prüfzeile: `🔎 Gelesen: Entscheidungen ✓ · 01_Profil ✓ · 📝 Abgelegt: Entscheidungen`.
+- Prüfzeile oben: `🔎 Gelesen: Entscheidungen ✓ · 01_Profil ✓`, am Ende: `📝 Abgelegt: Entscheidungen`.

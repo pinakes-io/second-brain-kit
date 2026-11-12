@@ -73,21 +73,21 @@ runden:
           - Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
           - Passwörter, Zugangsdaten und Schlüssel (immer gesperrt)
           - Gesundheit, Adressen und Kontaktdaten anderer Personen (Rollen und Termine bleiben erlaubt)
-          - "Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)"
+          - "Eigene Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)"
           - Angaben zu anderen Kindern unter 18
           - Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt)
           - Geldbeträge
         hilfe: Von Briefen mit gesperrten Nummern lege ich eine Zusammenfassung ohne Nummer an; im Foto oder PDF steht die Nummer weiter.
         bedeutung:
           "Gesundheit, Adressen und Kontaktdaten anderer Personen (Rollen und Termine bleiben erlaubt)": vorgewählt, bis die Person es abwählt; bei Pflege von Angehörigen meist abwählen
-          "Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)": Termine mit Datum, Uhrzeit, Ort und Praxis als Rolle bleiben; kein Grund, keine Fachrichtung, kein Medikament
+          "Eigene Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)": Termine mit Datum, Uhrzeit, Ort und Praxis als Rolle bleiben; kein Grund, keine Fachrichtung, kein Medikament
           Angaben zu anderen Kindern unter 18: Kinder im Haushalt oder in der Familie, nicht die Person selbst
         vorbelegt: ["Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)", "Passwörter, Zugangsdaten und Schlüssel (immer gesperrt)"]
         vorgewaehlt: ["Gesundheit, Adressen und Kontaktdaten anderer Personen (Rollen und Termine bleiben erlaubt)"]   # Welle 5: gilt, bis die Person abwählt
         pflicht: false
         profil_pfad: person.grenzen.nie_speichern
         sperrt_tags:   # Entscheid 31.10. (F7): gesetzte Grenze unterdrückt Felder und Fragen mit diesem Tag
-          "Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)": gesundheit
+          "Eigene Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)": gesundheit
           Angaben zu anderen Kindern unter 18: kinder
           Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt): namen
           Geldbeträge: geld
@@ -200,7 +200,7 @@ regeln:
   live_feldkarte: "In der Zusammenfassung jeder Runde nennst du die Bereiche, die aktiv würden, und warum (nur die aktiven). Klingt eine Antwort nach einem Bereich (etwa „Verein“), schlägst du ihn vor und lässt bestätigen."
   abbruch: "Am Ende jeder Runde fragst du: „Stimmt das so?“ · ja (Empfohlen) · ändern. Danach gibst du die bestätigten Antworten als Block zum Kopieren mit der Kopfzeile „Second Brain, Interview <Datum>, Stand: Runde <n>“. Abgelegt wird erst nach dem „ja“ zur Einrichtung, alles in einem Zug."
   weiter_satz: "Nach jedem Block und jeder Ablage sagst du: „Im selben Chat schreibst du einfach weiter, auch am anderen Gerät. In einem neuen Chat schreib „Interview weitermachen“ und füge den Block ein.“"
-  bestaetigung: "Die Zusammenfassung von Runde 2 und das Ergebnis (aktive Bereiche mit Grund, Grenzen, wer antwortet) zeigst du in einer Nachricht und fragst einmal: „Soll ich so einrichten?“ Nach dem „ja“ startet setup-brain ohne weitere Rückfrage."
+  bestaetigung: "Die Zusammenfassung von Runde 2 und das Ergebnis (aktive Bereiche mit Grund, Grenzen, wer antwortet; keine Liste der Dokumente, die zeigt setup-brain) zeigst du in einer Nachricht und fragst einmal: „Soll ich so einrichten?“ Nach dem „ja“ startet setup-brain ohne weitere Rückfrage."
   statuszeile: "00_Status führt die Zeile „Interview: <Stand>“ mit den Ständen: Einrichtung fertig, Stufe 2 offen (<n> Fragen) · Einrichtung unvollständig · Stufe 2 beendet auf Wunsch · fertig. setup-brain setzt sie beim Anlegen; in Stufe 2 aktualisierst du sie nach jeder bestätigten Runde, nachdem die Antworten in 01_Profil stehen."
   pruefzeile: "Scheitert Lesen oder Ablegen, schreibst du ✗ statt ✓, sagst in einem Satz warum und gibst die bestätigten Antworten als Block zum Kopieren."
   begleitperson: "Antwortet eine Begleitperson, ist die Herkunft „begleitperson“. Bis die Person selbst über ihre Grenzen entscheidet, gelten alle Grenzen als gesetzt; in 00_Status steht „Grenzen, Entscheidung der Person offen“ und in 02_Offene_Fragen als P1 „Grenzen selbst entscheiden“. Danach gilt ihre Entscheidung, auch wenn sie lockerer ist."

@@ -28,7 +28,7 @@ Nie ablegen: alles, was unter „Grenzen“ in `00_Status` steht, außerdem Gesu
 7. Verweise in beide Richtungen: Nenne in jeder verwandten Notiz die andere unter „Verwandte Notizen“.
 8. Aktualisiere den Index, eine Zeile je Notiz: Notiz · Thema · Stand (Datum) · Bezug. Ersetze eine vorhandene Zeile, lege keine doppelte an.
 9. Ohne Schreibrecht gib einen Update-Block aus und sage, dass ich ihn selbst eintragen muss.
-10. Antworte danach mit einer kurzen Zeile, zum Beispiel „Abgelegt in Knowledge (Thema …)“. Keine Aufzählung dessen, was du geschrieben hast, außer ich frage.
+10. Antworte danach mit einer kurzen Ablagezeile am Ende: `📝 Abgelegt: Knowledge (<Thema>), Index`. Keine Aufzählung dessen, was du geschrieben hast, außer ich frage.
 
 ## Notizen nutzen und pflegen
 - Beginnt ein Thema, zu dem es eine Notiz gibt, lies erst die Notiz über den Index, dann antworte. Recherchiere nicht neu, wenn sie aktuell ist.
@@ -37,4 +37,4 @@ Nie ablegen: alles, was unter „Grenzen“ in `00_Status` steht, außerdem Gesu
 ## Regeln
 - Eine Notiz pro Thema. Vorher suchen. Keine Kopien wie „_alt“ oder „_neu“. Nichts löschen oder umbenennen ohne meine ausdrückliche Bitte.
 - Sage ich „nicht notieren“ oder „überspringen“, lege nichts ab und frage nicht nach.
-- Prüfzeile nur, wenn Fakten geprüft wurden: `🔎 Gelesen: 00_Knowledge_Index ✓ · amtliche Quellen ✓ · 📝 Abgelegt: Knowledge, Index`.
+- Prüfzeile oben nur, wenn Fakten geprüft wurden: `🔎 Gelesen: 00_Knowledge_Index ✓ · amtliche Quellen ✓`; die Ablagezeile steht wie in Schritt 10 am Ende.

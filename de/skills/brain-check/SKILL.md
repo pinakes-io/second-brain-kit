@@ -34,4 +34,4 @@ Höchstens zehn Zeilen: je Punkt ein Symbol und ein Satz. Darunter die **Reparat
 - Sage ich „nur prüfen“ oder „überspringen“, ändere nichts.
 - Erfinde keine Befunde. Was du nicht gelesen hast, ist ✗.
 - Stößt du auf ein Dokument mit Ausweis-, Konto-, Steuer- oder Versicherungsnummern, melde nur „sensibles Dokument“ ohne Inhalt und fasse es nicht an.
-- Prüfzeile: `🔎 Gelesen: 00_Status ✓ · Ordner ✓ · Eingang ✓ · 📝 Abgelegt: Journal`. Fehlt ein Schritt, schreibe ✗ und den Grund.
+- Prüfzeile oben: `🔎 Gelesen: 00_Status ✓ · Ordner ✓ · Eingang ✓`, am Ende: `📝 Abgelegt: Journal`. Fehlt ein Schritt, schreibe ✗ und den Grund.

@@ -73,21 +73,21 @@ runden:
           - ID, account, tax and insurance numbers (always blocked)
           - Passwords, credentials and keys (always blocked)
           - Health details, addresses and contact details of other people (roles and appointments stay allowed)
-          - "Health: diagnoses, findings, medication (appointments stay allowed)"
+          - "Your own health: diagnoses, findings, medication (appointments stay allowed)"
           - Information about other children under 18
           - Names of other people (roles such as "trainer" stay allowed)
           - Amounts of money
         hilfe: From letters with blocked numbers I file a summary without the number; the number stays in the photo or PDF.
         bedeutung:
           "Health details, addresses and contact details of other people (roles and appointments stay allowed)": preselected until the person deselects it; usually deselect when caring for a relative
-          "Health: diagnoses, findings, medication (appointments stay allowed)": appointments with date, time, place and the practice as a role stay; no reason, no specialty, no medication
+          "Your own health: diagnoses, findings, medication (appointments stay allowed)": appointments with date, time, place and the practice as a role stay; no reason, no specialty, no medication
           Information about other children under 18: children in the household or family, not the person themselves
         vorbelegt: ["ID, account, tax and insurance numbers (always blocked)", "Passwords, credentials and keys (always blocked)"]
         vorgewaehlt: ["Health details, addresses and contact details of other people (roles and appointments stay allowed)"]   # Welle 5: gilt, bis die Person abwählt
         pflicht: false
         profil_pfad: person.grenzen.nie_speichern
         sperrt_tags:   # decision 2026-10-31 (F7): a set limit suppresses fields and questions with this tag
-          "Health: diagnoses, findings, medication (appointments stay allowed)": gesundheit
+          "Your own health: diagnoses, findings, medication (appointments stay allowed)": gesundheit
           Information about other children under 18: kinder
           Names of other people (roles such as "trainer" stay allowed): namen
           Amounts of money: geld
@@ -200,7 +200,7 @@ regeln:
   live_feldkarte: "In the summary of each round, name the areas that would become active and why (only the active ones). If an answer sounds like an area (such as \"club\"), suggest it and have it confirmed."
   abbruch: "At the end of each round ask: \"Is that right?\" · yes (Recommended) · change. Then give the confirmed answers as a block to copy, headed \"Second Brain, interview <date>, status: round <n>\". Nothing is filed until the \"yes\" to the setup, then everything in one go."
   weiter_satz: "After every block and every filing say: \"In this chat you simply keep writing, also on another device. In a new chat write \"continue interview\" and paste the block.\""
-  bestaetigung: "Show the summary of round 2 and the result (active areas with reason, limits, who answers) in one message and ask once: \"Shall I set it up like this?\" After the \"yes\", setup-brain starts without asking again."
+  bestaetigung: "Show the summary of round 2 and the result (active areas with reason, limits, who answers; no list of documents, setup-brain shows that) in one message and ask once: \"Shall I set it up like this?\" After the \"yes\", setup-brain starts without asking again."
   statuszeile: "00_Status keeps the line \"Interview: <status>\" with the statuses: setup done, stage 2 open (<n> questions) · setup incomplete · stage 2 ended on request · done. setup-brain sets it when creating; in stage 2 you update it after each confirmed round, once the answers are in 01_Profile."
   pruefzeile: "If reading or filing fails, write ✗ instead of ✓, say why in one sentence and give the confirmed answers as a block to copy."
   begleitperson: "If a companion answers, the source is \"companion\". Until the person decides on their limits themselves, all limits count as set; 00_Status shows \"limits, decision by the person open\" and 02_Open_Questions has the P1 entry \"decide limits yourself\". After that their decision applies, even if it is looser."

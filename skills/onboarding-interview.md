@@ -8,7 +8,7 @@
 | Kind | A1 · Core, always |
 | Area | Core |
 | Upload | `en/dist/onboarding-interview.zip` · `de/dist/onboarding-interview.zip` (one skill per ZIP) |
-| Size | 24,661 characters (en) · 25,743 characters (de), limit 8,000 for module skills |
+| Size | 24,738 characters (en) · 25,814 characters (de), limit 8,000 for module skills |
 | Description | Runs the introductory interview for the second brain in the chat and the detail questions afterwards. Use when I write "interview", "continue interview", "detail questions", "where were we", "start setup" or "from now on I answer myself", when I tell you that something in my life is changing, when there is no folder "Second Brain" yet, or when 00_Status shows an open interview. Asks the stage 1 questions in two rounds, shows which areas become active, and runs stage 2 and later changes. |
 <!-- facts:end -->
 

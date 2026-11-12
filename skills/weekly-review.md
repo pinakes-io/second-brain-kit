@@ -8,7 +8,7 @@
 | Kind | A1 · Core, always |
 | Area | Core |
 | Upload | `en/dist/weekly-review.zip` · `de/dist/weekly-review.zip` (one skill per ZIP) |
-| Size | 4,979 characters (en) · 5,265 characters (de), limit 8,000 for module skills |
+| Size | 5,003 characters (en) · 5,280 characters (de), limit 8,000 for module skills |
 | Description | Weekly review and planning for the second brain. Use when I write "weekly review" or "weekly plan" or ask where I stand. Sorts the inbox, updates the weekly plan and the journal and suggests the next week. |
 <!-- facts:end -->
 

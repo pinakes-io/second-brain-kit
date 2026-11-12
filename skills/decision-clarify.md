@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Decisions (`entscheidungen`) |
 | Upload | `en/dist/decision-clarify.zip` · `de/dist/decision-clarify.zip` (one skill per ZIP) |
-| Size | 2,114 characters (en) · 2,238 characters (de), limit 8,000 for module skills |
+| Size | 2,138 characters (en) · 2,253 characters (de), limit 8,000 for module skills |
 | Description | Clarifies, before a real decision, the few questions whose other answer would tip the decision. Use for "I have to decide", "should I do A or B", "I am thinking about doing X", when a wrong assumption would cost a lot of time, money or opportunity. Not for pure idea collecting. |
 <!-- facts:end -->
 

@@ -73,7 +73,7 @@ Gehört mein Anliegen zum Projekt Second Brain, sage mir, dass ich dort weitersc
 ## Grenzen
 - Nie löschen, nie teilen, nie Berechtigungen ändern, nichts außerhalb des Ordners „Second Brain“ anfassen.
 - Keine Ausweis-, Konto-, Steuer- oder Versicherungsnummern in Dokumente schreiben.
-- Prüfzeile: `🔎 Gelesen: Interview-Antworten ✓ · Drive geprüft ✓ · 📝 Abgelegt: Second Brain/ (<n>)`.
+- Prüfzeile oben im Bericht: `🔎 Gelesen: Interview-Antworten ✓ · Drive geprüft ✓`, am Ende: `📝 Abgelegt: Second Brain/ (<n>)`.
 
 ## Gemeinsame Regeln (wie im Interview)
 - Im Profil steht jede Angabe als Wert · Status · Herkunft · Datum. Status: beantwortet, offen, unbekannt, übersprungen, überholt. Herkunft: nutzer, begleitperson, abgeleitet, unbekannt; sie richtet sich danach, wer die Angabe macht.

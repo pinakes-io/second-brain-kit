@@ -8,7 +8,7 @@
 | Kind | A1 · Core, always |
 | Area | Core |
 | Upload | `en/dist/brain-check.zip` · `de/dist/brain-check.zip` (one skill per ZIP) |
-| Size | 3,125 characters (en) · 3,257 characters (de), limit 8,000 for module skills |
+| Size | 3,149 characters (en) · 3,272 characters (de), limit 8,000 for module skills |
 | Description | Checks the second brain for order and proposes repairs. Use when I write "tidy up", "check the structure", "brain-check" or "it is a mess", or when documents are missing or duplicated. Reads first, changes only after my yes and never deletes. |
 <!-- facts:end -->
 

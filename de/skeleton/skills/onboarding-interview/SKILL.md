@@ -45,7 +45,7 @@ Vorsatz (zählt nicht zu den acht Fragen): **Bevor wir starten – schreibst du 
    1. Ausweis-, Konto-, Steuer- und Versicherungsnummern (immer gesperrt)
    2. Passwörter, Zugangsdaten und Schlüssel (immer gesperrt)
    3. Gesundheit, Adressen und Kontaktdaten anderer Personen (Rollen und Termine bleiben erlaubt)
-   4. Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)
+   4. Eigene Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt)
    5. Angaben zu anderen Kindern unter 18
    6. Namen anderer Personen (Rollen wie „Ausbilderin“ bleiben erlaubt)
    7. Geldbeträge
@@ -126,7 +126,7 @@ Verhalte dich so und **sage jeweils offen, was du getan hast**:
 - Familie, Haushalt: Zusammenleben, Kinder, Pflege von Angehörigen, Haushaltsgeld
 - Termine, Post, Ämter: Behörden, Briefe und Fristen (Ämter heißt Behörden, nicht Büro)
 - Gesundheit, Adressen und Kontaktdaten anderer Personen (Rollen und Termine bleiben erlaubt): vorgewählt, bis die Person es abwählt; bei Pflege von Angehörigen meist abwählen
-- Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt): Termine mit Datum, Uhrzeit, Ort und Praxis als Rolle bleiben; kein Grund, keine Fachrichtung, kein Medikament
+- Eigene Gesundheit: Diagnosen, Befunde, Medikamente (Termine bleiben erlaubt): Termine mit Datum, Uhrzeit, Ort und Praxis als Rolle bleiben; kein Grund, keine Fachrichtung, kein Medikament
 - Angaben zu anderen Kindern unter 18: Kinder im Haushalt oder in der Familie, nicht die Person selbst
 - als Formular zum Ausfüllen: ein Google-Formular per Link, kein Papier
 
@@ -146,7 +146,7 @@ Verhalte dich so und **sage jeweils offen, was du getan hast**:
 Die Kennungen in der linken Spalte sind intern; der Person zeigst du die Namen der Bereiche.
 
 ## Ergebnis zeigen
-- Die Zusammenfassung von Runde 2 und das Ergebnis (aktive Bereiche mit Grund, Grenzen, wer antwortet) zeigst du in einer Nachricht und fragst einmal: „Soll ich so einrichten?“ Nach dem „ja“ startet setup-brain ohne weitere Rückfrage.
+- Die Zusammenfassung von Runde 2 und das Ergebnis (aktive Bereiche mit Grund, Grenzen, wer antwortet; keine Liste der Dokumente, die zeigt setup-brain) zeigst du in einer Nachricht und fragst einmal: „Soll ich so einrichten?“ Nach dem „ja“ startet setup-brain ohne weitere Rückfrage.
 
 Nach der Einrichtung bietest du einmal an: „Für <Aufgabe> kann ich dir eine Anleitung bauen, die zu dir passt: jetzt · später · nein.“ <Aufgabe> ist bei aktivem Bereich Arbeit „Gesprächsprotokolle“, bei aktivem Bereich Schreibstil „dein Stilprofil aus eigenen Texten“; mehrere nennst du in einer Nachricht. Namen von Skills nennst du nicht. Bei „jetzt“ sagst du, dass das im Test noch nicht geht, und legst den Wunsch in 02_Offene_Fragen ab.
 
@@ -165,7 +165,7 @@ Nach der Einrichtung bietest du einmal an: „Für <Aufgabe> kann ich dir eine A
 - Die Warteschlange in 02_Offene_Fragen legt setup-brain an. Beantwortete Fragen hakst du dort mit Datum ab; „Noch <n> Fragen offen“ ist die Zahl der offenen Zeilen.
 - Nach der Einrichtung bietest du einmal die erste Runde Stufe 2 an, beginnend mit der Anrede.
 - Ist ein Bereich aktiv, für den es eine eigene Anleitung gibt, nennst du am Ende der Einrichtung einmal, was du dort kannst, mit einem Beispielsatz zum Ausprobieren.
-- Prüfzeile am Ende: `🔎 Gelesen: … ✓ · 📝 Abgelegt: 01_Profil ✓`.
+- Prüfzeile oben: `🔎 Gelesen: … ✓`, am Ende: `📝 Abgelegt: 01_Profil ✓`.
 - Frage nie nach Ausweis-, Konto-, Steuer- oder Versicherungsnummern, Passwörtern oder Zugangsdaten.
 
 ## Stufe 2 (Detail)
