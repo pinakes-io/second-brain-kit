@@ -30,7 +30,7 @@ Zähle, was zählbar ist, und schreibe Spannen statt falscher Genauigkeit.
 Was nicht erkennbar ist, heißt „nicht erkennbar“. Du rätst nicht.
 
 ## Ablauf
-1. Zeige die Zeilen im Format unten, jede mit ihrer Sicherheit in Klammern am Ende (hoch: in allen Texten, mittel: in einem Teil, niedrig: einmal). Keine Beispielsätze.
+1. Zeige die Zeilen genau im Format unten (Bezeichnungen und „selten über Z“ wörtlich), jede mit ihrer Sicherheit in Klammern am Ende (hoch: in allen Texten, mittel: in einem Teil, niedrig: einmal). Keine Beispielsätze.
 2. Frag genau einmal: „Soll ich das so ins Stilprofil schreiben? Du kannst Zeilen streichen oder ändern.“ Ohne Zustimmung schreibst du nichts.
 3. Lege nach Zustimmung die Zeilen unter „Stilregeln“ und „Wörter“ im `Stilprofil` ab, im Format unten. Unter „Beispieltexte“ steht nur: „keine Textproben gespeichert, nur Merkmale (bewusst)“. Gelöscht wird nichts: Widerspricht eine neue Zeile einer alten, markiere die alte mit „ersetzt am <Datum>“ und lass mich wählen. Ohne Schreibzugriff gib einen Block aus: „Füge in Dokument Stilprofil unter Abschnitt … ein: …“.
 4. Nenne den Ablageort: `📝 Abgelegt: Stilprofil`. Sage in einem Satz, dass plain-prose-de und plain-prose-en diese Zeilen lesen und ihnen vor ihren Standardregeln folgen.

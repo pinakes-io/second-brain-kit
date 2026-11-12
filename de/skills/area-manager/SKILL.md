@@ -15,7 +15,7 @@ Lies `00_Status` (Versionsstempel, Feldkarte mit Status und Version, Grenzen, Be
 1. **Klären:** Welcher Bereich? Zeige aus dem Verzeichnis unten die Bereiche, die noch nicht aktiv sind, dazu „eigener Bereich (bitte benennen)“. Frage genau einmal.
 2. **Prüfen:** (a) Grenzen: Felder und Fragen mit gesperrtem Tag lässt du weg und vermerkst sie unter „Unterdrückte Felder“. (b) Skills: Nenne die Skills des Bereichs, die noch nicht in deiner eigenen Skill-Liste stehen. (c) Folgeangebote aus der Spalte Hinweis, zum Beispiel entscheidungen bei arbeit.
 3. **Plan zeigen:** Dokumente, die angelegt werden, Baustein, Skills, die ich noch laden muss. Frage genau einmal: „So dazunehmen? (ja / ändern)“.
-4. **Anlegen:** Rufe nach dem Ja setup-brain auf (es legt nur an, was fehlt, und ergänzt den Baustein). Trage danach in `00_Status` ein: Zeile in der Feldkarte (Status aktiv, Version, warum „später dazugenommen am <Datum>“), Ablage-Karte, aktive Module, Profilversion plus 1. Schreibe einen Eintrag in `Journal`.
+4. **Anlegen:** Rufe nach dem Ja setup-brain auf (es legt nur an, was fehlt, und ergänzt den Baustein). Trage danach in `00_Status` ein: Zeile in der Feldkarte (Status aktiv, Version, warum „später dazugenommen am <Datum>“), Ablage-Karte, aktive Module, Profilversion plus 1 (in `00_Status` und `01_Profil`). Schreibe einen Eintrag in `Journal`.
 5. **Skills:** Nenne die noch fehlenden ZIPs eines nach dem anderen und halte nach jedem an: „Stopp: sag Bescheid, wenn es geladen ist.“
 6. **Fragen:** Offene Pflichtfelder des Bereichs kommen als Zeilen in `02_Offene_Fragen` (Abschnitt = Bereich). Biete höchstens drei Fragen jetzt an, den Rest später.
 Eigener Bereich: nur `State_<Name>`, eine Zeile in Ablage-Karte und Feldkarte und der Baustein „Eigene Bereiche“. Ähnelt der Name einem Bereich im Verzeichnis, frage, ob stattdessen dieser passt.
@@ -33,7 +33,7 @@ Eigener Bereich: nur `State_<Name>`, eine Zeile in Ablage-Karte und Feldkarte un
 
 ## Regeln
 - Nur additiv und nach meinem Ja; eine Bestätigung je Plan, nicht je Dokument.
-- Lies nach jeder Änderung zurück. Prüfzeile: `🔎 Gelesen: 00_Status ✓ · Ordner ✓ · 📝 Abgelegt: 00_Status, Journal, <neue Dokumente>`. Fehlt ein Schritt, schreibe ✗ und den Grund.
+- Lies nach jeder Änderung zurück. Prüfzeile oben: `🔎 Gelesen: 00_Status ✓ · Ordner ✓`, am Ende: `📝 Abgelegt: 00_Status, Journal, <neue Dokumente>`. Fehlt ein Schritt, schreibe ✗ und den Grund.
 - Keine Ausweis-, Konto-, Steuer- oder Versicherungsnummern.
 - Sage ich „überspringen“ oder „nur ansehen“, ändere nichts.
 - Dieser Skill ist optional. Ohne ihn legt setup-brain die Bereiche beim ersten Aufbau an.

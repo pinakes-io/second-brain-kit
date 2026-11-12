@@ -32,7 +32,7 @@ Ich bekomme einen Skill, der zu mir passt, ohne dass seine Schutzregeln weicher 
    ```
    Schlägt etwas fehl, bau neu; nach zwei Fehlversuchen sag es und biete die feste Fassung an.
 9. **Ausgeben:** Leg die Datei als `<skill>/SKILL.md` in ein ZIP `<skill>.zip` (genau ein Skill, genau eine Datei) und gib es zum Herunterladen. Sag in höchstens drei Zeilen, was anders ist als in der festen Fassung, und dass ich es in den Einstellungen bei den Skills hochlade (die Bezeichnung kann abweichen); einen gleichnamigen Skill vorher entfernen oder ersetzen.
-10. **Vermerken:** Eine Zeile für `00_Status`, als letzte Zeile im Abschnitt „Versionsstempel“ (nicht ans Dokumentende), in meiner Dokumentsprache: „Zugeschnitten: <skill> <Fassung> am <Datum>: <Antworten in Kurzform>“. Darfst du in Drive schreiben, frag „Eintragen?“; sonst gib die Zeile gleich zum Kopieren und frag nicht.
+10. **Vermerken:** Eine Zeile für `00_Status`, als letzte Zeile im Abschnitt „Versionsstempel“ (nicht ans Dokumentende), in meiner Dokumentsprache: „Zugeschnitten: <skill> <Fassung> am <Datum>: <Antworten in Kurzform>“. Darfst du in Drive schreiben, frag nur „Eintragen?“; sonst gib die Zeile gleich zum Kopieren und frag nicht.
 
 ## Ohne Code-Ausführung
 Sag nach der Prüfung der Vorlage in einem Satz, dass Bauen und Prüfen mit Code Code-Ausführung braucht, und biete in derselben Nachricht an: a) Code-Ausführung in den Einstellungen einschalten und mir dann „weiter“ schreiben (Empfohlen) · b) feste Fassung aus dem Repo (`<paket>/dist/<skill>.zip`) · c) zugeschnittener Text im Codeblock, „ungeprüft“; stell darunter gleich die Fragen, damit c in einer Runde geht. Bei c setzt du in `kennung` hinter das Datum „, ungeprüft“ und behauptest nichts als mit Code geprüft.

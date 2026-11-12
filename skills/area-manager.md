@@ -8,7 +8,7 @@
 | Kind | A3 · Add-on, offered when it fits |
 | Area | Core |
 | Upload | `en/dist/area-manager.zip` · `de/dist/area-manager.zip` (one skill per ZIP) |
-| Size | 8,503 characters (en) · 9,015 characters (de), limit 8,000 for module skills |
+| Size | 8,561 characters (en) · 9,063 characters (de), limit 8,000 for module skills |
 | Description | Adds areas (modules) while the second brain is in use, pauses them or updates their rules. Use when the person writes "new area", "add an area", "pause an area", "update the rules" or "I also want to use …". Changes only additively and after a yes and never deletes. |
 <!-- facts:end -->
 

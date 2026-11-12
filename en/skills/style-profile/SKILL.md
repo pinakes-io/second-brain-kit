@@ -30,7 +30,7 @@ Count what can be counted, and write ranges instead of false precision.
 What is not recognisable is called “not recognisable”. You do not guess.
 
 ## Procedure
-1. Show the lines in the format below, each with its certainty in brackets at the end (high: in all texts, medium: in part of them, low: once). No example sentences.
+1. Show the lines exactly in the format below (labels word for word), each with its certainty in brackets at the end (high: in all texts, medium: in part of them, low: once). No example sentences.
 2. Ask exactly once: “Shall I write this into the Style_Profile like this? You can strike or change lines.” Without agreement you write nothing.
 3. After agreement, file the lines under “Style rules” and “Words I use / never use” in the `Style_Profile`, in the format below. Under “Sample texts” write only: “no text samples stored, features only (deliberate)”. Nothing is deleted: if a new line contradicts an old one, mark the old one “replaced on <date>” and let me choose. Without write access output a block: “Insert into document Style_Profile under section …: …”.
 4. Name the place: `📝 Filed: Style_Profile`. Say in one sentence that plain-prose-de and plain-prose-en read these lines and follow them before their default rules.

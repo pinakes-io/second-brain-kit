@@ -32,7 +32,7 @@ I get a skill that fits me, without its protective rules becoming softer.
    ```
    If something fails, build again; after two failed attempts say so and offer the fixed version.
 9. **Hand over:** Put the file as `<skill>/SKILL.md` into a ZIP `<skill>.zip` (exactly one skill, exactly one file) and give it for download. Say in at most three lines what differs from the fixed version and that I upload it in the settings under skills (the label may differ); remove or replace a skill with the same name first.
-10. **Note it:** One line for `00_Status`, as the last line of the section "Version stamp" (not at the end of the document), in my document language: "Tailored: <skill> <version> on <date>: <answers in short>". If you may write in Drive, ask "Add it?"; otherwise give the line to copy straight away and do not ask.
+10. **Note it:** One line for `00_Status`, as the last line of the section "Version stamp" (not at the end of the document), in my document language: "Tailored: <skill> <version> on <date>: <answers in short>". If you may write in Drive, ask only "Add it?"; otherwise give the line to copy straight away and do not ask.
 
 ## Without code execution
 After checking the template, say in one sentence that building and checking with code needs code execution, and offer in the same message: a) turn on code execution in the settings and then write "continue" (Recommended) · b) the fixed version from the repository (`<pack>/dist/<skill>.zip`) · c) the tailored text in a code block, "unchecked"; put the questions right below, so c takes one round. With c you add ", unchecked" after the date in `kennung` and claim nothing as checked with code.

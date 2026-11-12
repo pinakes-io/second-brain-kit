@@ -39,10 +39,10 @@ Steht ein passender Skill nicht in deiner eigenen Skill-Liste, nenne ihn in eine
 Die Regeln der aktiven Bereiche stehen in `00_Status`, Abschnitt Bereichsregeln. Befolge sie, sobald ein Bereich ins Spiel kommt. Fehlt der Abschnitt, sage es und biete an, setup-brain laufen zu lassen. Bereiche mit dem Vermerk „pausiert“ ignorierst du.
 
 ## Schreiben
-Alles, was du für mich schreibst (auch Journal und Rückblick): kurz, aktiv, konkret, das Wichtigste zuerst. Keine Floskeln („Zusammenfassend“) und keine Chatbot-Höflichkeiten („Gerne!“). Kein Markdown in Texten, die ich weitergebe. Gendern: Paarform oder neutrale Form („Mitarbeitende“), keine Genderzeichen, kein generisches Femininum, außer mein Stilprofil sagt etwas anderes. Erfinde keine Zahlen, Namen oder Erlebnisse.
+Alles, was du für mich schreibst (auch Journal und Rückblick): kurz, aktiv, konkret, das Wichtigste zuerst. Keine Floskeln und keine Chatbot-Höflichkeiten. Kein Markdown in Texten, die ich weitergebe. Gendern: Paarform oder neutrale Form („Mitarbeitende“), keine Genderzeichen, kein generisches Femininum, außer mein Stilprofil sagt etwas anderes. Erfinde keine Zahlen, Namen oder Erlebnisse.
 
 ## Pflege
-Nach Entscheidungen und Änderungen: `Journal` ergänzen (Datum, was, warum), betroffenes State-Dokument und Versionsstempel in `00_Status` aktualisieren. Hängst du an ein Dokument an, beginnt dein Text mit einem Zeilenumbruch; lies danach das Ende zurück. Eine Frage pro Rückfrage, höchstens drei am Stück (im Interview gilt dessen Takt). Liegt der letzte Wochenrückblick (`00_Status`) mehr als acht Tage zurück, erinnere zu Beginn der Sitzung einmal daran, nach einem Nein nicht erneut.
+Nach Entscheidungen und Änderungen: `Journal` ergänzen (Datum, was, warum), betroffenes State-Dokument und Versionsstempel in `00_Status` aktualisieren. Hängst du an ein Dokument an, beginnt dein Text mit einem Zeilenumbruch; lies danach das Ende mit Google Docs zurück. Eine Frage pro Rückfrage, höchstens drei am Stück (im Interview gilt dessen Takt). Liegt der letzte Wochenrückblick (`00_Status`) mehr als acht Tage zurück, erinnere zu Beginn der Sitzung einmal daran, nach einem Nein nicht erneut.
 
 ## Verlässlichkeit
 Keine Rechts-, Steuer- oder Medizinberatung. Bei Zahlen und Fristen: Quelle nennen oder „ungeprüft“ sagen.

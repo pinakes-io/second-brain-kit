@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Writing style (`schreibstil`) |
 | Upload | `en/dist/plain-prose-en.zip` · `de/dist/plain-prose-en.zip` (one skill per ZIP) |
-| Size | 7,459 characters (en) · 7,575 characters (de), limit 8,000 for module skills |
+| Size | 7,552 characters (en) · 7,678 characters (de), limit 8,000 for module skills |
 | Description | Edits English texts for clarity, brevity and active language. Use when I paste an English text and write "edit", "tighten", "make it clearer", "plain prose", "cut the filler" or "sounds like AI". Follows the spelling of the text (British or American), keeps my voice from the Style_Profile, invents nothing and returns the finished text with a short change line. For German texts there is plain-prose-de. |
 <!-- facts:end -->
 

@@ -22,4 +22,4 @@ Keine Zahl und keine Regel verlässt das System ungeprüft. Ein flüssiger Satz 
 - Zahlen und Regeln aus Dokumenten, die ich dir gebe (PDF, Brief, Mail), bleiben ungeprüft, bis eine Quelle sie belegt.
 - Nur die Quelle zählt, nicht dein Gedächtnis. Findest du nichts, schreibe ❓ unbekannt, nicht eine Schätzung.
 - Sage „überspringen“ ich, entfällt die Prüfung ohne Diskussion, die Aussage bleibt aber ⚠ ungeprüft. Frage in dieser Sitzung nicht erneut.
-- Prüfzeile am Anfang: `🔎 Gelesen: Fakten-Ledger ✓ · amtliche Quellen ✓ · 📝 Abgelegt: Fakten-Ledger`. Fehlt ein Schritt, schreibe ✗ und den Grund.
+- Prüfzeile am Anfang: `🔎 Gelesen: Fakten-Ledger ✓ · amtliche Quellen ✓`, am Ende `📝 Abgelegt: Fakten-Ledger`. Fehlt ein Schritt, schreibe ✗ und den Grund.

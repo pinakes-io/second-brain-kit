@@ -8,7 +8,7 @@
 | Kind | A3 · Add-on, offered when it fits |
 | Area | Writing style (`schreibstil`) |
 | Upload | `en/dist/style-profile.zip` · `de/dist/style-profile.zip` (one skill per ZIP) |
-| Size | 4,830 characters (en) · 4,903 characters (de), limit 8,000 for module skills |
+| Size | 4,861 characters (en) · 4,954 characters (de), limit 8,000 for module skills |
 | Description | Derives my style profile from two or three of my own texts (sentence length, tone, form of address, punctuation, gender form, frequent words, English house rule) and, after my agreement, files it in the Drive document Style_Profile. Use when I write "create style profile", "learn my style", "how do I write" or "from my texts", or paste my own texts as a style sample. Stores only derived features, never text samples. The skills plain-prose-de and plain-prose-en read the result. |
 <!-- facts:end -->
 

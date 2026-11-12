@@ -15,7 +15,7 @@ Read `00_Status` (version stamp, field map with status and version, limits, area
 1. **Clarify:** Which area? Show from the directory below the areas that are not active yet, plus "own area (please name it)". Ask exactly once.
 2. **Check:** (a) Limits: you leave out fields and questions with a blocked tag and note them under "Suppressed fields". (b) Skills: name the skills of the area that are not yet in your own skill list. (c) Follow-up offers from the Note column, for example entscheidungen with arbeit.
 3. **Show the plan:** documents that will be created, the block, skills I still have to load. Ask exactly once: "Add it like this? (yes / change)".
-4. **Create:** After the yes call setup-brain (it creates only what is missing and adds the block). Then enter in `00_Status`: a line in the field map (status active, version, why "added later on <date>"), filing map, active modules, profile version plus 1. Write an entry in `Journal`.
+4. **Create:** After the yes call setup-brain (it creates only what is missing and adds the block). Then enter in `00_Status`: a line in the field map (status active, version, why "added later on <date>"), filing map, active modules, profile version plus 1 (in `00_Status` and `01_Profile`). Write an entry in `Journal`.
 5. **Skills:** Name the missing ZIPs one after the other and stop after each: "Stop: tell me when it is loaded."
 6. **Questions:** Open required fields of the area become lines in `02_Open_Questions` (section = area). Offer at most three questions now, the rest later.
 Own area: only `State_<Name>`, a line in the filing map and the field map and the block "Own areas". If the name resembles an area in the directory, ask whether that one fits instead.
@@ -33,7 +33,7 @@ Own area: only `State_<Name>`, a line in the filing map and the field map and th
 
 ## Rules
 - Only additive and after my yes; one confirmation per plan, not per document.
-- Read back after every change. Check line: `🔎 Read: 00_Status ✓ · folder ✓ · 📝 Filed: 00_Status, Journal, <new documents>`. If a step is missing, write ✗ and the reason.
+- Read back after every change. Check line at the top: `🔎 Read: 00_Status ✓ · folder ✓`, at the end: `📝 Filed: 00_Status, Journal, <new documents>`. If a step is missing, write ✗ and the reason.
 - No ID, account, tax or insurance numbers.
 - If I say "skip" or "just look", change nothing.
 - This skill is optional. Without it setup-brain creates the areas during the first setup.

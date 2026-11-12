@@ -22,4 +22,4 @@ No number and no rule leaves the system unchecked. A fluent sentence is not proo
 - Numbers and rules from documents I give you (PDF, letter, mail) stay unchecked until a source confirms them.
 - Only the source counts, not your memory. If you find nothing, write ❓ unknown, not a guess.
 - If I say "skip", the check is dropped without discussion, but the statement stays ⚠ unchecked. Do not ask again in this session.
-- Check line at the start: `🔎 Read: Fact-Ledger ✓ · official sources ✓ · 📝 Filed: Fact-Ledger`. If a step is missing, write ✗ and the reason.
+- Check line at the start: `🔎 Read: Fact-Ledger ✓ · official sources ✓`, at the end `📝 Filed: Fact-Ledger`. If a step is missing, write ✗ and the reason.

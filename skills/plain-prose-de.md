@@ -8,7 +8,7 @@
 | Kind | A2 · Module skill |
 | Area | Writing style (`schreibstil`) |
 | Upload | `en/dist/plain-prose-de.zip` · `de/dist/plain-prose-de.zip` (one skill per ZIP) |
-| Size | 7,981 characters (en) · 7,989 characters (de), limit 8,000 for module skills |
+| Size | 7,881 characters (en) · 7,898 characters (de), limit 8,000 for module skills |
 | Description | Edits German texts for clarity, brevity and active language. Use when I paste a German text and write "überarbeiten", "straffen", "kürzer", "klarer", "Klartext", "Floskeln raus" or "klingt nach KI". Keeps my voice from the Style_Profile, invents nothing and returns the finished text with a short change line. For English texts there is plain-prose-en. |
 <!-- facts:end -->
 
