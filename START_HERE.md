@@ -15,7 +15,7 @@ You are reading this because a person gave you the link to this repository and a
 - Everything the person tells you stays in their Google Drive later. Do not write personal data into this repository.
 - Prefer a separate Google account for the first run, ideally one without documents that other people shared with it (an assistant may follow instructions hidden in such documents). If the person wants to use their main account, say once that a test account is safer, then follow their choice.
 - End every step with the line "Stop: tell me when this is done." and do nothing else until the person confirms. Never combine two steps.
-- To read files from this repository use the raw form of the link (`https://raw.githubusercontent.com/<owner>/<repo>/main/<path>`, owner and repo from the link the person gave you) and fetch as few files as possible. Never crawl the repository.
+- To read files from this repository use the raw form of the link (`https://raw.githubusercontent.com/<owner>/<repo>/main/<path>`, owner and repo from the link the person gave you) and fetch as few files as possible. Never crawl the repository. If a fetch fails, do not search the web: write the full raw link in a code block, ask the person to paste it into the chat, then fetch it.
 - On the free plan the setup can use a large part of the message limit. If the limit is reached, stop. Everything done so far is in Drive. When the person comes back, read `00_Status` and `02_Open_Questions` and continue from there.
 
 ## Steps
@@ -49,7 +49,7 @@ First ask the person to check that **code execution is on** (claude.ai Settings,
 
 The core needs five skills: `setup-brain`, `onboarding-interview`, `weekly-review`, `fact-check`, `brain-check`. Each skill is its own ZIP with exactly one skill inside. A ZIP with several skills is rejected.
 
-1. Give the download link for the first ZIP from `<pack>/dist/` in this repository.
+1. Give the full download link for the first ZIP from `<pack>/dist/` in this repository as plain text, ready to paste into the browser.
 2. Tell them to upload it in their Claude settings under the skills section (the label may differ) and to confirm when it appears.
 3. Repeat for the next ZIP.
 
@@ -78,7 +78,7 @@ When the interview is done, the same chat runs `setup-brain`. It lists what it w
 
 One skill at a time, each with the stop line. Only if the person chose tailored in step 4, offer once afterwards the add-on `skill-tailor` (`<pack>/dist/skill-tailor.zip`), so further skills can be tailored later. Otherwise do not offer it.
 
-### 8. Make the two main documents permanent
+### 8. Keep the main documents in Drive only
 
 Do not add documents to the project knowledge: the assistant reads `00_Status` from Drive at the start of every chat, so a stale copy cannot get in the way.
 
